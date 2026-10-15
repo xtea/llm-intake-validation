@@ -30,3 +30,15 @@ Candidates: all Haiku candidates of the test table + sonnet/b2_plate_scale + opu
 transfer/compA_v4_sonnet_cal + transfer/compA_v4_opus_cal. Fitted constants are NOT refit on nvreal.
 Hypothesis stated in advance: candidates with dataset-fitted shrinkage toward ~300 kcal (compA_v2/v4, compC_v5) will lose
 part of their advantage on larger meals; the zero-constant harness (compB_v1) should transfer best.
+
+## Execution log and deviations (2026-10-16)
+- All pre-registered runs completed. Two operational deviations: (1) `transfer/compA_v4_opus_cal` on nvreal stopped at the
+  $20 per-run safety cap after partial completion and was RESUMED (cached calls reused, remaining calls made) — not re-run
+  or changed; (2) `sonnet/b2_plate_scale` on nvreal had 1 parse failure, scored as the worst error per evaluator rules.
+- Post-hoc (NOT pre-registered) sensitivity analysis on nvreal: every NutritionVerse-Real food type carries one constant
+  weight across all dishes (42/42 types), i.e. each physical item was weighed once and re-plated; "meatloaf" (701 g per
+  piece, 14 dishes) is visually implausible for the slices in the photos. Excluding those 14 dishes lowers all errors by
+  ~5–7 points but does not change the ranking or any conclusion.
+- Pre-registered decision rule 3 outcome: scenario C (no evolved system beats the plain baseline on nvreal). The predicted
+  direction held: dataset-fitted shrinkage (compA_v4, compC_v5) degrades most; the zero-constant harness (compB_v1) ties the
+  plain prompt.

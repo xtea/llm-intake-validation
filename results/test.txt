@@ -1,0 +1,58 @@
+compA_v4_sonnet_cal          MAE%  28.9 [ 26.2, 31.8]  r_kcal 0.862  r_mass 0.877  bias  +6.3  $/dish 0.0210  fail 0
+b0_direct                    MAE%  33.4 [ 28.9, 38.4]  r_kcal 0.835  r_mass 0.866  bias +23.4  $/dish 0.0018  fail 0
+h2_plate_scale               MAE%  32.6 [ 28.8, 36.6]  r_kcal 0.819  r_mass 0.842  bias +13.6  $/dish 0.0004  fail 0
+compA_v4_opus_cal            MAE%  27.3 [ 24.5, 30.4]  r_kcal 0.869  r_mass 0.900  bias  +4.3  $/dish 0.0524  fail 0
+b2_plate_scale               MAE%  29.4 [ 26.2, 33.1]  r_kcal 0.841  r_mass 0.875  bias  -0.7  $/dish 0.0037  fail 0
+compC_v5                     MAE%  27.4 [ 24.6, 30.3]  r_kcal 0.857  r_mass 0.849  bias  +2.1  $/dish 0.0005  fail 0
+h0_direct                    MAE%  42.4 [ 37.2, 48.0]  r_kcal 0.833  r_mass 0.849  bias +46.3  $/dish 0.0002  fail 0
+compA_v2                     MAE%  26.7 [ 24.1, 29.5]  r_kcal 0.879  r_mass 0.887  bias  +5.6  $/dish 0.0027  fail 0
+compA_v4                     MAE%  27.1 [ 24.3, 30.1]  r_kcal 0.874  r_mass 0.887  bias  +3.8  $/dish 0.0000  fail 0
+b2_plate_scale_opus          MAE%  28.8 [ 25.3, 32.8]  r_kcal 0.857  r_mass 0.889  bias +15.7  $/dish 0.0086  fail 0
+compB_v1                     MAE%  30.8 [ 27.7, 34.3]  r_kcal 0.835  r_mass 0.885  bias  -3.0  $/dish 0.0024  fail 0
+b0_direct_opus               MAE%  34.5 [ 29.6, 40.4]  r_kcal 0.846  r_mass 0.886  bias +31.8  $/dish 0.0030  fail 0
+
+n = 378 dishes, 149 plates; paired differences (row − ref), 95% plate-bootstrap CI:
+  compA_v4_sonnet_cal          − h2_plate_scale          -3.7 [ -7.9, -0.1]
+  b0_direct                    − h2_plate_scale          +0.8 [ -3.6, +5.1]
+  compA_v4_opus_cal            − h2_plate_scale          -5.3 [ -9.3, -1.8]
+  b2_plate_scale               − h2_plate_scale          -3.2 [ -6.8, +0.0]
+  compC_v5                     − h2_plate_scale          -5.2 [ -8.7, -2.3]
+  h0_direct                    − h2_plate_scale          +9.8 [ +5.5,+14.3]
+  compA_v2                     − h2_plate_scale          -5.9 [ -9.0, -3.0]
+  compA_v4                     − h2_plate_scale          -5.5 [ -8.8, -2.4]
+  b2_plate_scale_opus          − h2_plate_scale          -3.8 [ -7.3, -0.5]
+  compB_v1                     − h2_plate_scale          -1.8 [ -5.3, +1.6]
+  b0_direct_opus               − h2_plate_scale          +1.9 [ -2.5, +6.7]
+  compA_v4_sonnet_cal          − b2_plate_scale          -0.5 [ -2.4, +1.5]
+  b0_direct                    − b2_plate_scale          +4.0 [ +0.7, +7.6]
+  h2_plate_scale               − b2_plate_scale          +3.2 [ -0.0, +6.9]
+  compA_v4_opus_cal            − b2_plate_scale          -2.1 [ -4.1, -0.1]
+  compC_v5                     − b2_plate_scale          -2.0 [ -5.0, +1.0]
+  h0_direct                    − b2_plate_scale         +13.0 [ +7.9,+18.5]
+  compA_v2                     − b2_plate_scale          -2.7 [ -5.5, +0.1]
+  compA_v4                     − b2_plate_scale          -2.3 [ -4.9, +0.3]
+  b2_plate_scale_opus          − b2_plate_scale          -0.6 [ -3.0, +1.9]
+  compB_v1                     − b2_plate_scale          +1.4 [ -1.9, +4.7]
+  b0_direct_opus               − b2_plate_scale          +5.1 [ +0.7, +9.7]
+  compA_v4_sonnet_cal          − b2_plate_scale_opus     +0.1 [ -3.0, +3.0]
+  b0_direct                    − b2_plate_scale_opus     +4.6 [ +2.2, +7.2]
+  h2_plate_scale               − b2_plate_scale_opus     +3.8 [ +0.5, +7.3]
+  compA_v4_opus_cal            − b2_plate_scale_opus     -1.5 [ -4.2, +1.0]
+  b2_plate_scale               − b2_plate_scale_opus     +0.6 [ -1.9, +3.0]
+  compC_v5                     − b2_plate_scale_opus     -1.4 [ -5.2, +2.3]
+  h0_direct                    − b2_plate_scale_opus    +13.6 [ +9.6,+17.8]
+  compA_v2                     − b2_plate_scale_opus     -2.1 [ -5.6, +1.3]
+  compA_v4                     − b2_plate_scale_opus     -1.7 [ -5.4, +1.7]
+  compB_v1                     − b2_plate_scale_opus     +2.0 [ -2.0, +5.8]
+  b0_direct_opus               − b2_plate_scale_opus     +5.7 [ +2.9, +8.9]
+  compA_v4_sonnet_cal          − compA_v4                +1.8 [ -0.2, +3.8]
+  b0_direct                    − compA_v4                +6.3 [ +1.6,+11.2]
+  h2_plate_scale               − compA_v4                +5.5 [ +2.5, +8.8]
+  compA_v4_opus_cal            − compA_v4                +0.2 [ -2.0, +2.3]
+  b2_plate_scale               − compA_v4                +2.3 [ -0.3, +4.9]
+  compC_v5                     − compA_v4                +0.3 [ -1.6, +2.3]
+  h0_direct                    − compA_v4               +15.3 [ +9.7,+21.3]
+  compA_v2                     − compA_v4                -0.4 [ -1.6, +0.9]
+  b2_plate_scale_opus          − compA_v4                +1.7 [ -1.7, +5.4]
+  compB_v1                     − compA_v4                +3.7 [ +1.4, +6.4]
+  b0_direct_opus               − compA_v4                +7.4 [ +2.1,+13.2]
