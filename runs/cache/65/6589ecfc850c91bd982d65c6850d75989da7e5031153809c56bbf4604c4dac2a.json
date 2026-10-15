@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Grilled chicken\",\"grams\":35,\"kcal_per_100g\":165},{\"name\":\"Grilled eggplant\",\"grams\":30,\"kcal_per_100g\":35},{\"name\":\"Grilled zucchini\",\"grams\":15,\"kcal_per_100g\":20},{\"name\":\"Cooking oil\",\"grams\":2,\"kcal_per_100g\":884}]}", "model": "gpt-6-astra", "cost": 0.02875, "t": 1792102902.095167}

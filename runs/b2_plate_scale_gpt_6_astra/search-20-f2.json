@@ -1,0 +1,165 @@
+{
+ "metrics": {
+  "n": 20,
+  "failed": 0,
+  "mae_kcal": 124.7,
+  "mae_pct_of_mean": 41.85,
+  "median_ape": 27.1,
+  "within20": 45.0,
+  "bias_pct": 38.0,
+  "mass_slope": 0.777,
+  "mass_median_ratio": 1.226,
+  "small_bias_pct": 57.4,
+  "mid_bias_pct": 49.2,
+  "large_bias_pct": 10.2,
+  "candidate": "candidates/gpt/b2_plate_scale_gpt_6_astra.py",
+  "split": "search",
+  "subset": 20,
+  "usd": 0.4443,
+  "calls": 20,
+  "cache_hits": 0,
+  "secs": 20.7
+ },
+ "rows": [
+  {
+   "item": "759c9a247935",
+   "kcal": 340.03,
+   "mass_g": 395.0,
+   "est": 434.27,
+   "mass_est": 532.0
+  },
+  {
+   "item": "5333a9c88eb2",
+   "kcal": 333.11,
+   "mass_g": 378.0,
+   "est": 542.69,
+   "mass_est": 474.0
+  },
+  {
+   "item": "b875a31b4a35",
+   "kcal": 605.86,
+   "mass_g": 498.0,
+   "est": 1106.45,
+   "mass_est": 725.0
+  },
+  {
+   "item": "2e268ca6e41a",
+   "kcal": 142.09,
+   "mass_g": 108.0,
+   "est": 93.73,
+   "mass_est": 97.0
+  },
+  {
+   "item": "e645bac884cb",
+   "kcal": 92.55,
+   "mass_g": 60.0,
+   "est": 88.93,
+   "mass_est": 82.0
+  },
+  {
+   "item": "3a5ed65c211c",
+   "kcal": 265.87,
+   "mass_g": 240.0,
+   "est": 393.01,
+   "mass_est": 358.0
+  },
+  {
+   "item": "edc1386f3e6b",
+   "kcal": 541.24,
+   "mass_g": 349.0,
+   "est": 640.6,
+   "mass_est": 400.0
+  },
+  {
+   "item": "66b83006c07b",
+   "kcal": 200.39,
+   "mass_g": 288.0,
+   "est": 180.35,
+   "mass_est": 226.0
+  },
+  {
+   "item": "2c7d6429e317",
+   "kcal": 696.36,
+   "mass_g": 1102.0,
+   "est": 512.56,
+   "mass_est": 723.0
+  },
+  {
+   "item": "5c28a715b357",
+   "kcal": 31.46,
+   "mass_g": 28.0,
+   "est": 55.62,
+   "mass_est": 63.0
+  },
+  {
+   "item": "6dfb10997305",
+   "kcal": 464.89,
+   "mass_g": 422.0,
+   "est": 412.95,
+   "mass_est": 305.0
+  },
+  {
+   "item": "37bfd717db8f",
+   "kcal": 90.27,
+   "mass_g": 128.0,
+   "est": 308.0,
+   "mass_est": 145.0
+  },
+  {
+   "item": "765ca07f3f11",
+   "kcal": 196.56,
+   "mass_g": 378.0,
+   "est": 216.8,
+   "mass_est": 435.0
+  },
+  {
+   "item": "6f7aaf501cff",
+   "kcal": 318.82,
+   "mass_g": 299.0,
+   "est": 565.65,
+   "mass_est": 431.0
+  },
+  {
+   "item": "fb1a5d1bd871",
+   "kcal": 250.92,
+   "mass_g": 51.0,
+   "est": 280.0,
+   "mass_est": 100.0
+  },
+  {
+   "item": "96740cf3f9c6",
+   "kcal": 192.52,
+   "mass_g": 218.0,
+   "est": 302.66,
+   "mass_est": 368.0
+  },
+  {
+   "item": "b6cb7d1b65ff",
+   "kcal": 290.98,
+   "mass_g": 128.0,
+   "est": 711.85,
+   "mass_est": 305.0
+  },
+  {
+   "item": "e73cb5259767",
+   "kcal": 386.35,
+   "mass_g": 228.0,
+   "est": 327.52,
+   "mass_est": 273.0
+  },
+  {
+   "item": "d664b3ec477a",
+   "kcal": 396.19,
+   "mass_g": 149.0,
+   "est": 378.0,
+   "mass_est": 140.0
+  },
+  {
+   "item": "a8ca2f6d3292",
+   "kcal": 121.74,
+   "mass_g": 120.0,
+   "est": 130.46,
+   "mass_est": 132.0
+  }
+ ]
+}

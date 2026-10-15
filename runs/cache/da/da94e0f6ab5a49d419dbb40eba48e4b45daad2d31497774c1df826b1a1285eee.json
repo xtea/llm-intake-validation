@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Baby spinach\",\"grams\":30,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Pear slices\",\"grams\":22,\"kcal_per_100g\":57,\"greens\":false},{\"name\":\"Grated Parmesan cheese\",\"grams\":2,\"kcal_per_100g\":400,\"greens\":false}]}", "model": "gpt-6-astra", "cost": 0.01915, "t": 1792102795.992343}

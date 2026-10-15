@@ -16,16 +16,20 @@ PRICES = {
     "claude-haiku-5-5": (0.10, 0.50),
     "claude-sonnet-5-5": (2.00, 10.00),
     "claude-opus-5-5": (4.00, 20.00),
+    # OpenAI GPT-6 generation (developers.openai.com/api/docs/pricing, checked 2026-10-16)
+    "gpt-6-luna": (0.10, 0.50),
+    "gpt-6.1-sol": (2.00, 10.00),
+    "gpt-6-astra": (10.00, 50.00),
 }
+OPENAI_EFFORT = {"low": "low", "medium": "medium", "high": "high", "xhigh": "high", "max": "high"}
 
 
 def _load_key():
-    if os.environ.get("ANTHROPIC_API_KEY"):
-        return
     env = os.environ.get("FE_ENV_FILE", os.path.join(ROOT, "..", "dragonclaw", ".env"))
     for line in open(env):
-        if line.startswith("ANTHROPIC_API_KEY="):
-            os.environ["ANTHROPIC_API_KEY"] = line.split("=", 1)[1].strip().strip('"')
+        for k in ("ANTHROPIC_API_KEY", "OPENAI_API_KEY"):
+            if line.startswith(k + "=") and not os.environ.get(k):
+                os.environ[k] = line.split("=", 1)[1].strip().strip('"')
 
 
 class Budget(Exception):
@@ -36,6 +40,7 @@ class LLM:
     def __init__(self, max_usd=None):
         _load_key()
         self.client = anthropic.Anthropic(max_retries=6)
+        self._oa = None
         self.lock = threading.Lock()
         self.usd = 0.0
         self.calls = 0
@@ -63,6 +68,14 @@ class LLM:
         with self.lock:
             if self.max_usd is not None and self.usd >= self.max_usd:
                 raise Budget(f"budget {self.max_usd} reached")
+        if model.startswith("gpt-"):
+            text, cost = self._ask_openai(model, prompt, image, effort, system, max_tokens)
+            with self.lock:
+                self.usd += cost
+                self.calls += 1
+            os.makedirs(os.path.dirname(path), exist_ok=True)
+            json.dump({"text": text, "model": model, "cost": cost, "t": time.time()}, open(path, "w"))
+            return text
         content = []
         if image is not None:
             content.append({"type": "image", "source": {"type": "base64", "media_type": "image/png",
@@ -88,3 +101,20 @@ class LLM:
         json.dump({"text": text, "model": model, "usage": u.model_dump(), "cost": cost, "t": time.time()},
                   open(path, "w"))
         return text
+
+    def _ask_openai(self, model, prompt, image, effort, system, max_tokens):
+        if self._oa is None:
+            import openai
+            self._oa = openai.OpenAI(max_retries=6)
+        content = [{"type": "text", "text": prompt}]
+        if image is not None:
+            content.insert(0, {"type": "image_url", "image_url": {
+                "url": "data:image/png;base64," + base64.standard_b64encode(image).decode(), "detail": "high"}})
+        msgs = ([{"role": "system", "content": system}] if system else []) + [{"role": "user", "content": content}]
+        r = self._oa.chat.completions.create(model=model, messages=msgs, reasoning_effort=OPENAI_EFFORT.get(effort, "medium"),
+                                             max_completion_tokens=max(max_tokens, 16000))
+        text = r.choices[0].message.content or ""
+        u = r.usage
+        pin, pout = PRICES[model]
+        cost = (u.prompt_tokens * pin + u.completion_tokens * pout) / 1e6
+        return text, cost

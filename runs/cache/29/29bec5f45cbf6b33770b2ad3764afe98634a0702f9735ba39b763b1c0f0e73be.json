@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Grilled chicken breast\",\"grams\":35,\"kcal_per_100g\":165,\"greens\":false},{\"name\":\"Grilled eggplant\",\"grams\":30,\"kcal_per_100g\":35,\"greens\":false},{\"name\":\"Grilled zucchini\",\"grams\":15,\"kcal_per_100g\":25,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.00588, "t": 1792102637.818272}

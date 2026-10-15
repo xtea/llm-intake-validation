@@ -42,3 +42,13 @@ part of their advantage on larger meals; the zero-constant harness (compB_v1) sh
 - Decision rule 3 (stated in chat after the runs started, before any sealed result was read; NOT in the committed plan) outcome: scenario C (no evolved system beats the plain baseline on nvreal). The predicted
   direction held: dataset-fitted shrinkage (compA_v4, compC_v5) degrades most; the zero-constant harness (compB_v1) ties the
   plain prompt.
+
+## Addendum A: OpenAI GPT-6 family (added 2026-10-16, before any GPT run on test/cafe2/nvreal)
+Models (developers.openai.com pricing, 2026-10-16): gpt-6-luna (small, $0.10/$0.50), gpt-6.1-sol (mid, $2/$10),
+gpt-6-astra (large, $10/$50). Same systems as for Claude: direct prompt (b0), plate-as-ruler prompt (b2), and the Haiku-evolved
+harness A (compA_v4 structure) with its 2 calibration constants refit on the same 300 dishes of search fold 0 used for
+Sonnet/Opus. Prompts are byte-identical to the Claude versions; only the model id changes (OpenAI chat completions,
+image as data URL with detail=high; our effort levels map to reasoning_effort low/medium/high).
+Splits: test, cafe2, nvreal; each system run once per split. If budget is limited, gpt-6-astra harness A runs on test and
+nvreal only (decided before any result; will be stated). Same metric, same bootstrap, same decision rules as for Claude.
+Question added in advance: does a harness evolved for one vendor's small model transfer to another vendor's models?
