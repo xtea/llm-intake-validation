@@ -61,12 +61,33 @@ compB_v1 31.8 (no fitted constants, bias +3.7) · compB_v3 31.9 · disc_v7 34.6 
   prior view (0.65) >> geometry views (0.87, add nothing). A second call pays only if it is a different procedure
   (0.63 → −2 pts; same prompt resampled 0.93 → ~0).
 - [invariant] Per dollar, calibration beats reasoning: cheapest direct call + 2 constants ≈ rsn_v6 chain + 2 constants (6× cost).
-- [invariant] Density (kcal/g) error is as large as mass error (sd ≈ 0.45 vs 0.42 in log) and is shared across prompts
-  (r = 0.93): a model-knowledge limit, not a prompting problem.
+- [CORRECTED gen3/F] Density (kcal/g) error is as large as mass error (log sd ≈ 0.45 vs 0.42). The "r = 0.93" was SAME-prompt
+  resampling; ACROSS views density errors correlate 0.64–0.76. Much of the shared part is dataset labelling convention
+  (egg whites +0.53, Caesar salad +0.68, dressing counted in raw greens −0.3…−0.6): these alone = 29% of shared squared
+  density error over 980 dishes.
 - [dataset] RETAG den_v3/den_v7 rules ([domain] → [dataset]): their gains are egg-white-vs-feta and dressed/sautéed greens
   specific to this cafeteria; generic look-alike phrasing does not reproduce them (compB).
-- [invariant] Household-unit counting (tsp/tbsp/ping-pong ball/deck of cards/cup, or pieces × one piece) raises mass slope
-  0.81 → 0.915 with no constants; within the same physical plate slope ≈ 1.0. Remaining compression is BETWEEN dishes
+- [CORRECTED gen3/G] Household-unit counting (tsp/tbsp/ping-pong ball/deck of cards/cup, or pieces × one piece) raises mass_slope
+  0.81 → 0.915, BUT slope = r × (sd_est/sd_true): disc_v6 is r=0.846 × 1.08 over-dispersion; compA's mass r is HIGHER (0.894).
+  Within-plate slope ≈ 1.0 holds for every view, not only counting. Use r (log-mass correlation) as the discrimination
+  metric. Honest summary: evolution removed bias and some variance; discrimination (r) barely moved. Remaining compression is BETWEEN dishes
   (vessel size: Haiku calls ~90% of plates 26 cm; hidden layers). Heights written by the model are ~constant (r≈0.03 with
   true mass). Slope and MAE trade off: counting reads ~20% heavy and noisier (disc).
 - [invariant] Sonnet 5.5 reaches slope 0.94 with a plain prompt on the same dishes (disc) → scale judgment is partly capability.
+
+## Gen 3 (2026-10-16) — plateau. No candidate beats compA_v4 significantly on truly fresh dishes.
+- E (add counting/geo views to compA): ties compA at 75% cost (E_v3) — drop the 2nd reasoning chain (r=0.96 with the 1st);
+  but P (prior) resampling ×3 is worth 0.45 on fresh dishes.
+- F (decorrelate density: blind description → text-only density, probabilistic identity, Atwater from macros): standalone
+  35.3, no ensemble gain. Short single-call views give the best densities (DN 0.29, P 0.36 log sd); long itemised chains
+  the worst (0.44). Even perfect density would leave the ~0.36 mass error → density alone cannot reach 26.1.
+- G (vessel type/depth, bowls = fill × capacity): G_v5 30.71 vs compA 31.39 on fresh, CI [−1.42, +0.05]. Asking Haiku for
+  vessel size does not correlate with its error; between-dish "compression" is noise, not scale bias.
+- H (1,404 view subsets, robust combiners, item-level merging, guards): mean beats every robust combiner (errors are shared
+  bias, not outliers); item-level merge worse than totals; only guard that matters is all-views-fail fallback.
+- [invariant][method] Choosing compositions by CV on one 600-dish sample does not transfer, even with paired CIs excluding 0:
+  earlier seeds overlapped (only ~130–314 dishes were never used). FIX applied: search now has 3 disjoint plate-grouped
+  folds (`--fold 0/1/2`), each to be used once per decision; image-only no-food scan removed 4 search images
+  (data/exclude_nofood.json; select/test/cafe2 had none).
+- Residual error is 57–80% plate-level and shared across views (r 0.72–0.78): another single-image Haiku prompt will not
+  reach 26.1. Next lever is the model (harness transfer to Sonnet 5.5), not the harness.
