@@ -22,7 +22,7 @@ from fe.llm import LLM, Budget, ROOT
 ALLOWED_IMPORTS = {"json", "re", "math", "statistics", "itertools", "functools", "collections", "fractions"}
 FORBIDDEN_NAMES = {"open", "exec", "eval", "compile", "__import__", "globals", "locals", "vars",
                    "getattr", "setattr", "delattr", "input", "breakpoint", "memoryview"}
-SEALED = {"test", "cafe2"}
+SEALED = {"test", "cafe2", "nvreal"}
 
 
 MAX_SOURCE_CHARS = 30000

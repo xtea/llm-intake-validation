@@ -20,3 +20,13 @@ bias, tercile bias, log-kcal r, log-mass r, $/dish.
 
 cafe2: Haiku candidates + Sonnet/Opus b2 only (cost).
 Reference (not re-run): Nutrition5k paper Table 3 (2D direct 26.1%, trained on this data; different, uncleaned test split).
+
+## Out-of-distribution split `nvreal` (added 2026-10-16, before any run on it)
+NutritionVerse-Real (Univ. of Waterloo; Kaggle nutritionverse/nutritionverse-real; CC BY-NC-SA 4.0, academic use only,
+images not redistributed). iPhone 13 Pro Max photos, per-item weighed, Canadian Nutrient File. One image per dish (first
+file name in sorted order), dishes with ≥30 kcal: 224 dishes; median 586 kcal / 350 g (Nutrition5k median ≈ 250 kcal).
+Images converted to PNG, long side ≤1024 px, random ids. Sealed (`--final`), each candidate run once.
+Candidates: all Haiku candidates of the test table + sonnet/b2_plate_scale + opus/b2_plate_scale_opus +
+transfer/compA_v4_sonnet_cal + transfer/compA_v4_opus_cal. Fitted constants are NOT refit on nvreal.
+Hypothesis stated in advance: candidates with dataset-fitted shrinkage toward ~300 kcal (compA_v2/v4, compC_v5) will lose
+part of their advantage on larger meals; the zero-constant harness (compB_v1) should transfer best.
