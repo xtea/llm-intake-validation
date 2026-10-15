@@ -94,6 +94,7 @@ def main():
     ap.add_argument("candidate")
     ap.add_argument("--split", default="search")
     ap.add_argument("--n", type=int, default=0, help="fixed random subset size (0 = all)")
+    ap.add_argument("--seed", default=None, help="subset seed (default: split name, i.e. the same subset every time)")
     ap.add_argument("--final", action="store_true")
     ap.add_argument("--workers", type=int, default=16)
     ap.add_argument("--max-usd", type=float, default=None)
@@ -103,7 +104,7 @@ def main():
 
     labels = json.load(open(os.path.join(ROOT, "data", "labels", f"{a.split}.json")))
     if a.n:
-        labels = random.Random(a.split).sample(labels, min(a.n, len(labels)))  # same subset for every candidate
+        labels = random.Random(a.seed or a.split).sample(labels, min(a.n, len(labels)))  # same subset per seed
     estimate = load_candidate(a.candidate)
     llm = LLM(max_usd=a.max_usd)
     img_dir = os.path.join(ROOT, "data", "images")
@@ -131,7 +132,7 @@ def main():
     name = os.path.splitext(os.path.basename(a.candidate))[0]
     out_dir = os.path.join(ROOT, "runs", name)
     os.makedirs(out_dir, exist_ok=True)
-    tag = f"{a.split}-{a.n or 'all'}"
+    tag = f"{a.split}-{a.n or 'all'}" + (f"-s{a.seed}" if a.seed else "")
     json.dump({"metrics": res, "rows": rows}, open(os.path.join(out_dir, f"{tag}.json"), "w"), indent=1)
     if a.final:
         with open(os.path.join(ROOT, "runs", "FINAL-LOG.jsonl"), "a") as f:
