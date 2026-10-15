@@ -39,6 +39,6 @@ part of their advantage on larger meals; the zero-constant harness (compB_v1) sh
   weight across all dishes (42/42 types), i.e. each physical item was weighed once and re-plated; "meatloaf" (701 g per
   piece, 14 dishes) is visually implausible for the slices in the photos. Excluding those 14 dishes lowers all errors by
   ~5–7 points but does not change the ranking or any conclusion.
-- Pre-registered decision rule 3 outcome: scenario C (no evolved system beats the plain baseline on nvreal). The predicted
+- Decision rule 3 (stated in chat after the runs started, before any sealed result was read; NOT in the committed plan) outcome: scenario C (no evolved system beats the plain baseline on nvreal). The predicted
   direction held: dataset-fitted shrinkage (compA_v4, compC_v5) degrades most; the zero-constant harness (compB_v1) ties the
   plain prompt.
