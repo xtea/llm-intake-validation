@@ -1,0 +1,235 @@
+{
+ "metrics": {
+  "n": 30,
+  "failed": 0,
+  "mae_kcal": 130.0,
+  "mae_pct_of_mean": 42.43,
+  "median_ape": 34.2,
+  "within20": 36.7,
+  "bias_pct": 36.4,
+  "mass_slope": 0.776,
+  "mass_median_ratio": 1.027,
+  "small_bias_pct": 54.8,
+  "mid_bias_pct": 39.7,
+  "large_bias_pct": 14.8,
+  "candidate": "candidates/opus/b2_plate_scale_opus.py",
+  "split": "search",
+  "subset": 30,
+  "usd": 0.2895,
+  "calls": 30,
+  "cache_hits": 0,
+  "secs": 10.7
+ },
+ "rows": [
+  {
+   "item": "759c9a247935",
+   "kcal": 340.03,
+   "mass_g": 395.0,
+   "est": 605.5,
+   "mass_est": 566.0
+  },
+  {
+   "item": "5333a9c88eb2",
+   "kcal": 333.11,
+   "mass_g": 378.0,
+   "est": 494.07,
+   "mass_est": 383.0
+  },
+  {
+   "item": "b875a31b4a35",
+   "kcal": 605.86,
+   "mass_g": 498.0,
+   "est": 1032.95,
+   "mass_est": 650.0
+  },
+  {
+   "item": "2e268ca6e41a",
+   "kcal": 142.09,
+   "mass_g": 108.0,
+   "est": 84.97,
+   "mass_est": 80.0
+  },
+  {
+   "item": "e645bac884cb",
+   "kcal": 92.55,
+   "mass_g": 60.0,
+   "est": 97.02,
+   "mass_est": 58.0
+  },
+  {
+   "item": "3a5ed65c211c",
+   "kcal": 265.87,
+   "mass_g": 240.0,
+   "est": 282.14,
+   "mass_est": 267.0
+  },
+  {
+   "item": "edc1386f3e6b",
+   "kcal": 541.24,
+   "mass_g": 349.0,
+   "est": 656.15,
+   "mass_est": 373.0
+  },
+  {
+   "item": "66b83006c07b",
+   "kcal": 200.39,
+   "mass_g": 288.0,
+   "est": 187.0,
+   "mass_est": 220.0
+  },
+  {
+   "item": "2c7d6429e317",
+   "kcal": 696.36,
+   "mass_g": 1102.0,
+   "est": 381.3,
+   "mass_est": 525.0
+  },
+  {
+   "item": "5c28a715b357",
+   "kcal": 31.46,
+   "mass_g": 28.0,
+   "est": 46.95,
+   "mass_est": 53.0
+  },
+  {
+   "item": "6dfb10997305",
+   "kcal": 464.89,
+   "mass_g": 422.0,
+   "est": 461.57,
+   "mass_est": 278.0
+  },
+  {
+   "item": "37bfd717db8f",
+   "kcal": 90.27,
+   "mass_g": 128.0,
+   "est": 150.02,
+   "mass_est": 133.0
+  },
+  {
+   "item": "765ca07f3f11",
+   "kcal": 196.56,
+   "mass_g": 378.0,
+   "est": 180.6,
+   "mass_est": 230.0
+  },
+  {
+   "item": "6f7aaf501cff",
+   "kcal": 318.82,
+   "mass_g": 299.0,
+   "est": 610.5,
+   "mass_est": 438.0
+  },
+  {
+   "item": "fb1a5d1bd871",
+   "kcal": 250.92,
+   "mass_g": 51.0,
+   "est": 209.0,
+   "mass_est": 83.0
+  },
+  {
+   "item": "96740cf3f9c6",
+   "kcal": 192.52,
+   "mass_g": 218.0,
+   "est": 257.8,
+   "mass_est": 270.0
+  },
+  {
+   "item": "b6cb7d1b65ff",
+   "kcal": 290.98,
+   "mass_g": 128.0,
+   "est": 667.0,
+   "mass_est": 320.0
+  },
+  {
+   "item": "e73cb5259767",
+   "kcal": 386.35,
+   "mass_g": 228.0,
+   "est": 391.95,
+   "mass_est": 230.0
+  },
+  {
+   "item": "d664b3ec477a",
+   "kcal": 396.19,
+   "mass_g": 149.0,
+   "est": 364.0,
+   "mass_est": 140.0
+  },
+  {
+   "item": "a8ca2f6d3292",
+   "kcal": 121.74,
+   "mass_g": 120.0,
+   "est": 141.02,
+   "mass_est": 104.0
+  },
+  {
+   "item": "3ed41c251f0d",
+   "kcal": 324.25,
+   "mass_g": 348.0,
+   "est": 292.5,
+   "mass_est": 280.0
+  },
+  {
+   "item": "24a7d13454e3",
+   "kcal": 1009.18,
+   "mass_g": 557.0,
+   "est": 621.35,
+   "mass_est": 400.0
+  },
+  {
+   "item": "ae3d0524d12a",
+   "kcal": 259.87,
+   "mass_g": 315.0,
+   "est": 282.9,
+   "mass_est": 320.0
+  },
+  {
+   "item": "888b5f8addfd",
+   "kcal": 103.66,
+   "mass_g": 142.0,
+   "est": 320.22,
+   "mass_est": 258.0
+  },
+  {
+   "item": "a5f93d128982",
+   "kcal": 369.53,
+   "mass_g": 389.0,
+   "est": 497.02,
+   "mass_est": 373.0
+  },
+  {
+   "item": "1a4eabf1afa0",
+   "kcal": 204.37,
+   "mass_g": 263.0,
+   "est": 344.16,
+   "mass_est": 264.0
+  },
+  {
+   "item": "9d1854de0df6",
+   "kcal": 30.48,
+   "mass_g": 62.0,
+   "est": 23.8,
+   "mass_est": 68.0
+  },
+  {
+   "item": "0a9fd6471726",
+   "kcal": 387.87,
+   "mass_g": 311.0,
+   "est": 501.5,
+   "mass_est": 410.0
+  },
+  {
+   "item": "75b5223908c4",
+   "kcal": 481.5,
+   "mass_g": 296.0,
+   "est": 883.35,
+   "mass_est": 390.0
+  },
+  {
+   "item": "bd0352d06c21",
+   "kcal": 62.68,
+   "mass_g": 133.0,
+   "est": 212.64,
+   "mass_est": 188.0
+  }
+ ]
+}

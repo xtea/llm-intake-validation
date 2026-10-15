@@ -102,3 +102,13 @@ Haiku 30.3, Sonnet 32.9; log-mass r identical (0.907).
   prompt (33.4, ~$0.004/dish for one call) and Sonnet + transferred harness (32.7, ~$0.033/dish).
 - [invariant] Sonnet does not read portions better than Haiku inside the same harness (same mass r 0.907) — the gen2 note
   "Sonnet slope 0.94" was spread, not discrimination.
+
+## Opus 5.5 (2026-10-16)
+Select: Opus b0 direct 40.5 (bias +37%) · Opus b2 plate-scale 34.9 (bias +24%) — bigger model over-estimates MORE.
+Paired fresh fold 0 (300), compA_v4 views, 2-constant calibration (2-fold CV): Haiku 30.3 · Sonnet 32.9 · Opus 30.6;
+log-mass r 0.907 / 0.907 / 0.925; log-kcal r 0.846 / 0.836 / 0.851. Cost/dish ≈ $0.003 / $0.04 / $0.053.
+- [invariant] Ceiling is family-wide: Haiku, Sonnet and Opus 5.5 land at ~30–33% with the same harness and nearly the same
+  discrimination. Model scale buys ≤0.02 in r. The binding constraint is single-image portion information, not model size.
+- [invariant] With plain prompts larger models are NOT more accurate (Opus b0 40.5 vs Haiku h0 48.5 vs Sonnet b0 37.3;
+  Opus b2 34.9 vs Sonnet b2 33.4 vs Haiku h2 38.4): the harness matters more than the model, and the evolved Haiku harness
+  (29.5) beats every larger model's plain prompt at 1/3–1/18 of the cost.
