@@ -1,0 +1,116 @@
+"""gen2 discrimination v7: geometric mean of two portion readings that are both high-discrimination but err in
+opposite directions on scale:
+  A) disc_v6 household-unit counting (mass slope ~0.99 on dev, reads ~15% heavy),
+  B) cal_v3-style literal geometry with low/high bracketing (slope ~0.92 in gen1, reads ~25% light),
+     with the dataset word "cafeteria" removed.
+Same image, two procedures, one call each; kcal and mass are combined by geometric mean."""
+import json, re, math
+
+MODEL = "claude-haiku-5-5"
+UNIT_ML = {"tsp": 5.0, "tbsp": 15.0, "pingpong": 30.0, "deck": 60.0, "tennisball": 120.0, "cup": 240.0}
+P_UNITS = """Overhead photo of food on a plate, bowl or container. Measure each food in household volume units
+by comparing it with mental reference objects, like a dietitian doing a portion-size interview.
+
+Reference units (standard portion-size aids; volume of the food including the air between pieces):
+  tsp         5 ml  a teaspoon / the tip of a thumb / one die: a dab of sauce, one olive, a few seeds
+  tbsp       15 ml  a tablespoon / a whole thumb: a small spoonful, one 2.5 cm cube
+  pingpong   30 ml  a ping-pong ball (2 tbsp): an egg-yolk-sized lump, a meatball, a small scoop
+  deck       60 ml  a deck of cards (9 x 6 x 1.5 cm): for FLAT things - a fillet, a slice of pizza or meat
+  tennisball 120 ml a tennis ball / half a cup: a scoop of rice, a fist-sized potato
+  cup       240 ml  a baseball / one cup: a large scoop, a mound the size of a fist and a half
+Flat pieces are measured by area x thickness, so compare them with the deck of cards, not with balls
+(a thin 12 x 10 cm slice 1 cm thick is about 1 deck).
+
+Use the vessel as a ruler: a dinner plate (~26 cm) can hold about 4 cups of food spread 2 cm deep over its
+whole area; a cereal bowl (~15 cm) filled to the rim holds about 2 cups; a large salad bowl holds 6-8 cups.
+For each distinct food item (include visible oil, dressing or sauce):
+- if it is discrete pieces you can count (cubes, slices, florets, berries, nuts, nuggets, wedges), COUNT them
+  (count rows or groups; include pieces partly hidden under others) and give the size of ONE piece in units,
+  using fractions for small pieces: one almond 0.2 tsp, one grape or olive 1 tsp, one cherry tomato 3 tsp,
+  one 2 cm meat cube 0.5 tbsp, one broccoli floret 1 tbsp, one chicken drumstick 1 tennisball;
+- otherwise give how many units the whole pile is (e.g. 3 tbsp, 1.5 tennisball, 2 cup). Pick the unit that
+  needs a count between 1 and 6. A cup is a lot: a mound as big as a fist and a half.
+Count what you see; do not assume a typical serving. Also give the density in g/ml: for a pile its bulk density
+including air (leafy greens 0.15, chopped vegetables 0.5, rice / grains / scrambled egg 0.8, mash, meat, fish,
+cheese, sauce 1.0); for one counted piece the density of the piece itself (vegetables, fruit, nuts 0.8,
+bread or waffle 0.35, meat, fish, egg, cheese 1.0). White cubed or crumbled food can be egg white, tofu, potato or
+cheese: check texture and context before choosing, cheese has about four times the energy.
+Give kcal per 100 g as served.
+Reply with JSON only:
+{"items": [{"name": "...", "pieces": <count or 0 if not discrete>, "unit": "tsp|tbsp|pingpong|deck|tennisball|cup",
+            "units": <number of units: per piece if pieces > 0, else for the whole pile>,
+            "density": <number>, "kcal_per_100g": <number>}]}"""
+
+P_GEOM = """Overhead photo of food on a plate, bowl or container. Estimate each item's weight by geometry, not by
+what a typical serving would be.
+
+1. Identify the container and its inner diameter in cm (dinner plate ~26, side plate ~20, bowl ~15, small cup ~9;
+   use the visible size of utensils, fruit or packaging as extra cues). Its area is pi*(d/2)^2 cm2.
+2. For each food item: the fraction of the container area it covers, its average thickness in cm
+   (a scattered layer of leaves ~1 cm but mostly air; a mound of rice 2-4 cm; a single slice of meat ~1 cm),
+   then volume = area * thickness and grams = volume * bulk density (leafy greens ~0.1-0.2, chopped vegetables ~0.5,
+   rice/pasta/meat ~0.8-1.0, sauces ~1.0 g/cm3).
+   Give grams_low and grams_high bracketing the real weight, then your best grams. A few pieces stay a few grams:
+   do not round small items up to a serving.
+3. kcal_per_100g for the item as served (cooked weight): e.g. cooked rice ~130, cooked chicken breast ~165,
+   roasted potatoes ~150, steamed vegetables ~30-40, raw salad greens ~15-20, fruit ~50, scrambled eggs ~150,
+   bacon ~500, cheese ~400. Count visible oil, butter or dressing as its own item.
+Reply with JSON only:
+{"container_cm": <number>, "items": [{"name": "...", "grams_low": <number>, "grams_high": <number>, "grams": <number>, "kcal_per_100g": <number>}]}"""
+
+
+def parse(text):
+    m = re.search(r"\{.*\}", text, re.S)
+    return json.loads(m.group(0))
+
+
+def num(x, lo, hi, d):
+    try:
+        v = float(x)
+    except (TypeError, ValueError):
+        return d
+    return d if v != v else min(max(v, lo), hi)
+
+
+def units_total(obs):
+    g_tot = k_tot = 0.0
+    for it in obs["items"]:
+        ml = UNIT_ML.get(str(it.get("unit", "")).lower().replace(" ", "").replace("_", ""), 15.0)
+        n = num(it.get("units"), 0, 50, 1)
+        p = num(it.get("pieces"), 0, 300, 0)
+        g = ml * n * (p if p >= 1 else 1) * num(it.get("density"), 0.05, 1.3, 0.8)
+        g_tot += g
+        k_tot += g * num(it.get("kcal_per_100g"), 0, 900, 150) / 100
+    return k_tot, g_tot
+
+
+def geom_total(obs):
+    g_tot = k_tot = 0.0
+    for i in obs["items"]:
+        g = num(i.get("grams"), 0, 3000, 0)
+        lo, hi = num(i.get("grams_low"), 0, 3000, g), num(i.get("grams_high"), 0, 3000, g)
+        if lo > 0 and hi > 0 and g > 0:
+            g = math.exp((math.log(lo) + math.log(hi) + math.log(g)) / 3)
+        g_tot += g
+        k_tot += g * num(i.get("kcal_per_100g"), 0, 900, 150) / 100
+    return k_tot, g_tot
+
+
+def one(llm, image, prompt, fn):
+    for s in (0, 1):
+        try:
+            k, g = fn(parse(llm.ask(prompt, image, model=MODEL, effort="medium", sample=s)))
+            if k > 0 and g > 0:
+                return k, g
+        except (ValueError, KeyError, TypeError, AttributeError):
+            pass
+    return None
+
+
+def estimate(image, llm):
+    ests = [e for e in (one(llm, image, P_UNITS, units_total), one(llm, image, P_GEOM, geom_total)) if e]
+    if not ests:
+        raise ValueError("no parsable estimate")
+    k = math.exp(sum(math.log(e[0]) for e in ests) / len(ests))
+    g = math.exp(sum(math.log(e[1]) for e in ests) / len(ests))
+    return {"kcal": k, "mass_g": g}

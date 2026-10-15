@@ -51,3 +51,22 @@ See `python3 -m fe.board select-all`. h2 38.35 · cal_v7 31.52 · ens_v11 32.34 
 - calibration/ensembling: lowest MAE via shrinkage (slope 0.70–0.77, small bias ~+50%).
 - geometry (geo_v5): best discrimination (slope 0.87) and bias (+4.5%).
 - density rules (den_v5) mostly overfit search-300 (34.2 → 37.4 on select).
+
+## Gen 2 (2026-10-15/16) — Harness²-style composition; fitness = fresh search seeds g2/g2b (600)
+Select (784, scored once per finalist): compA_v2 29.5 · compA_v4 29.8 · compC_v5 31.1 (2 calls, slope 0.93) ·
+compB_v1 31.8 (no fitted constants, bias +3.7) · compB_v3 31.9 · disc_v7 34.6 (slope 0.92). gen1 best was 31.5; h2 38.4.
+- [invariant] Per-view stacking weights do not transfer between subsets; equal-weight geometric mean + 2-constant power law
+  is more robust (compA). Disagreement-driven shrinkage overfits.
+- [invariant] The partner worth adding is the one with least-correlated error: density-rules view (r=0.50 with rsn) >
+  prior view (0.65) >> geometry views (0.87, add nothing). A second call pays only if it is a different procedure
+  (0.63 → −2 pts; same prompt resampled 0.93 → ~0).
+- [invariant] Per dollar, calibration beats reasoning: cheapest direct call + 2 constants ≈ rsn_v6 chain + 2 constants (6× cost).
+- [invariant] Density (kcal/g) error is as large as mass error (sd ≈ 0.45 vs 0.42 in log) and is shared across prompts
+  (r = 0.93): a model-knowledge limit, not a prompting problem.
+- [dataset] RETAG den_v3/den_v7 rules ([domain] → [dataset]): their gains are egg-white-vs-feta and dressed/sautéed greens
+  specific to this cafeteria; generic look-alike phrasing does not reproduce them (compB).
+- [invariant] Household-unit counting (tsp/tbsp/ping-pong ball/deck of cards/cup, or pieces × one piece) raises mass slope
+  0.81 → 0.915 with no constants; within the same physical plate slope ≈ 1.0. Remaining compression is BETWEEN dishes
+  (vessel size: Haiku calls ~90% of plates 26 cm; hidden layers). Heights written by the model are ~constant (r≈0.03 with
+  true mass). Slope and MAE trade off: counting reads ~20% heavy and noisier (disc).
+- [invariant] Sonnet 5.5 reaches slope 0.94 with a plain prompt on the same dishes (disc) → scale judgment is partly capability.
