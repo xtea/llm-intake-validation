@@ -1,0 +1,34 @@
+"""cal_v1: h2_plate_scale prompt + post-hoc power calibration kcal_adj = A*REF*(kcal/REF)**B.
+A, B fitted (grid, min L1 kcal error) on runs/h2_plate_scale/search-300.json (search split)."""
+import json, re
+
+MODEL = "claude-haiku-5-5"
+PROMPT = """This is an overhead photo of a meal on a plate or in a bowl.
+Use the plate or bowl as a ruler: a standard dinner plate is about 26 cm across, a side plate about 20 cm,
+a cereal bowl about 15 cm. For each food item, judge its footprint (what fraction of the plate it covers)
+and its height, then estimate its weight in grams from that volume. Estimate only what is visible;
+do not assume a typical serving. Small amounts (a few leaves, a spoon of rice) must get small weights.
+Include oil, dressing or sauce as separate items when you can see them.
+Reply with JSON only: {"items": [{"name": "...", "grams": <number>, "kcal_per_100g": <number>}]}"""
+
+
+def parse(text):
+    m = re.search(r"\{.*\}", text, re.S)
+    return json.loads(m.group(0))
+
+
+def estimate(image, llm):
+    items = parse(llm.ask(PROMPT, image, model=MODEL, effort="medium"))["items"]
+    grams = sum(float(i["grams"]) for i in items)
+    kcal = sum(float(i["grams"]) * float(i["kcal_per_100g"]) / 100 for i in items)
+    return {"kcal": kcal, "mass_g": grams}
+
+
+_raw = estimate
+A, B, REF = 0.92, 0.74, 300.0
+
+
+def estimate(image, llm):
+    r = _raw(image, llm)
+    r["kcal"] = A * REF * (max(r["kcal"], 1.0) / REF) ** B
+    return r

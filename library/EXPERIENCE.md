@@ -45,3 +45,9 @@ Evidence = search-300 unless noted. All numbers are mae_pct_of_mean (lower is be
 - mass_slope stays 0.72–0.88 across all five directions: gen1 removed bias and variance, not portion discrimination.
 - Overfitting check (cal): cal_v7 30.5 on search-300 vs 34.4 on 321 unseen search dishes (h2 on those: ~38).
   search-300 has been used ~40× for selection → use full search or a fresh seed for gen2 fitness.
+
+## Gen 1 select-split results (784 held-out dishes; never used for tuning)
+See `python3 -m fe.board select-all`. h2 38.35 · cal_v7 31.52 · ens_v11 32.34 · geo_v5 32.89 · den_v7 34.87 · den_v5 37.39.
+- calibration/ensembling: lowest MAE via shrinkage (slope 0.70–0.77, small bias ~+50%).
+- geometry (geo_v5): best discrimination (slope 0.87) and bias (+4.5%).
+- density rules (den_v5) mostly overfit search-300 (34.2 → 37.4 on select).
