@@ -1,0 +1,165 @@
+{
+ "metrics": {
+  "n": 20,
+  "failed": 0,
+  "mae_kcal": 114.9,
+  "mae_pct_of_mean": 32.95,
+  "median_ape": 33.9,
+  "within20": 20.0,
+  "bias_pct": 31.8,
+  "mass_slope": 0.659,
+  "mass_median_ratio": 1.068,
+  "small_bias_pct": 108.8,
+  "mid_bias_pct": 4.7,
+  "large_bias_pct": -7.2,
+  "candidate": "candidates/b0_direct.py",
+  "split": "search",
+  "subset": 20,
+  "usd": 0.0399,
+  "calls": 20,
+  "cache_hits": 0,
+  "secs": 4.8
+ },
+ "rows": [
+  {
+   "item": "529b0ace08db",
+   "kcal": 493.72,
+   "mass_g": 429.0,
+   "est": 640.0,
+   "mass_est": 430.0
+  },
+  {
+   "item": "0d0b17e01341",
+   "kcal": 386.37,
+   "mass_g": 319.0,
+   "est": 520.0,
+   "mass_est": 380.0
+  },
+  {
+   "item": "becf466d9ddb",
+   "kcal": 322.0,
+   "mass_g": 163.0,
+   "est": 175.0,
+   "mass_est": 110.0
+  },
+  {
+   "item": "1548bce5c12b",
+   "kcal": 816.79,
+   "mass_g": 308.0,
+   "est": 450.0,
+   "mass_est": 230.0
+  },
+  {
+   "item": "313c9e41933f",
+   "kcal": 30.75,
+   "mass_g": 75.0,
+   "est": 115.0,
+   "mass_est": 130.0
+  },
+  {
+   "item": "2dd50b43a783",
+   "kcal": 274.08,
+   "mass_g": 116.0,
+   "est": 400.0,
+   "mass_est": 170.0
+  },
+  {
+   "item": "1cca4d1c01cf",
+   "kcal": 554.06,
+   "mass_g": 330.0,
+   "est": 400.0,
+   "mass_est": 300.0
+  },
+  {
+   "item": "53fa2f34235b",
+   "kcal": 296.09,
+   "mass_g": 285.0,
+   "est": 260.0,
+   "mass_est": 330.0
+  },
+  {
+   "item": "96e094c889bd",
+   "kcal": 465.64,
+   "mass_g": 358.0,
+   "est": 560.0,
+   "mass_est": 480.0
+  },
+  {
+   "item": "df1d4f48da06",
+   "kcal": 261.86,
+   "mass_g": 436.0,
+   "est": 380.0,
+   "mass_est": 280.0
+  },
+  {
+   "item": "bc08ecc14338",
+   "kcal": 165.74,
+   "mass_g": 158.0,
+   "est": 320.0,
+   "mass_est": 170.0
+  },
+  {
+   "item": "6b6ea916afd3",
+   "kcal": 163.42,
+   "mass_g": 166.0,
+   "est": 330.0,
+   "mass_est": 260.0
+  },
+  {
+   "item": "f9b012f1a06e",
+   "kcal": 297.93,
+   "mass_g": 234.0,
+   "est": 270.0,
+   "mass_est": 240.0
+  },
+  {
+   "item": "9a475a59c5d5",
+   "kcal": 643.62,
+   "mass_g": 441.0,
+   "est": 430.0,
+   "mass_est": 330.0
+  },
+  {
+   "item": "fc9a6c494c4e",
+   "kcal": 276.26,
+   "mass_g": 225.0,
+   "est": 205.0,
+   "mass_est": 220.0
+  },
+  {
+   "item": "7adca8134ccf",
+   "kcal": 139.56,
+   "mass_g": 119.0,
+   "est": 250.0,
+   "mass_est": 190.0
+  },
+  {
+   "item": "5257717357ca",
+   "kcal": 72.94,
+   "mass_g": 93.0,
+   "est": 130.0,
+   "mass_est": 120.0
+  },
+  {
+   "item": "f468ab67231f",
+   "kcal": 181.95,
+   "mass_g": 182.0,
+   "est": 230.0,
+   "mass_est": 240.0
+  },
+  {
+   "item": "b2ba47bf1b2f",
+   "kcal": 648.18,
+   "mass_g": 488.0,
+   "est": 640.0,
+   "mass_est": 430.0
+  },
+  {
+   "item": "f4ebdb212e8c",
+   "kcal": 485.19,
+   "mass_g": 217.0,
+   "est": 520.0,
+   "mass_est": 230.0
+  }
+ ]
+}
