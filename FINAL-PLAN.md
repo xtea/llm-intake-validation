@@ -52,3 +52,5 @@ image as data URL with detail=high; our effort levels map to reasoning_effort lo
 Splits: test, cafe2, nvreal; each system run once per split. If budget is limited, gpt-6-astra harness A runs on test and
 nvreal only (decided before any result; will be stated). Same metric, same bootstrap, same decision rules as for Claude.
 Question added in advance: does a harness evolved for one vendor's small model transfer to another vendor's models?
+Decision 2026-10-16 (before any GPT result on sealed splits): full design — all three GPT models, all systems, all three
+sealed splits (Jason: "完整版").
