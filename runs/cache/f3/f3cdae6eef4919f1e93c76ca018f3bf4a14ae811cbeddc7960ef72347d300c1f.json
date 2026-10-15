@@ -1,0 +1,1 @@
+{"text": "", "model": "claude-sonnet-5-5", "usage": {"cache_creation": {"ephemeral_1h_input_tokens": 0, "ephemeral_5m_input_tokens": 0}, "cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "inference_geo": "global", "input_tokens": 1805, "output_tokens": 0, "server_tool_use": null, "service_tier": "standard"}, "cost": 0.00361, "t": 1792090980.8877409}

@@ -91,3 +91,14 @@ compB_v1 31.8 (no fitted constants, bias +3.7) · compB_v3 31.9 · disc_v7 34.6 
   (data/exclude_nofood.json; select/test/cafe2 had none).
 - Residual error is 57–80% plate-level and shared across views (r 0.72–0.78): another single-image Haiku prompt will not
   reach 26.1. Next lever is the model (harness transfer to Sonnet 5.5), not the harness.
+
+## Transfer to Sonnet 5.5 (2026-10-16)
+Select (784): Sonnet b0 direct 37.3 · Sonnet b2 plate-scale 33.4 · compB_v1 moved verbatim to Sonnet 32.7
+(Haiku compB_v1 31.8) · Haiku compA_v4 29.8 / compA_v2 29.5.
+Paired on fresh fold 0 (300): compA_v4 views raw — Haiku 30.0, Sonnet 33.1; after 2-constant calibration (2-fold CV)
+Haiku 30.3, Sonnet 32.9; log-mass r identical (0.907).
+- [invariant] An evolved harness is model-specific: Haiku-evolved pipelines lose ~1–2.5 pts when moved to Sonnet.
+- [invariant] Harness > model here: Haiku 5.5 + evolved harness (29.5, ~$0.003/dish) beats Sonnet 5.5 + plain plate-scale
+  prompt (33.4, ~$0.004/dish for one call) and Sonnet + transferred harness (32.7, ~$0.033/dish).
+- [invariant] Sonnet does not read portions better than Haiku inside the same harness (same mass r 0.907) — the gen2 note
+  "Sonnet slope 0.94" was spread, not discrimination.
