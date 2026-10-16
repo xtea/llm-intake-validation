@@ -152,3 +152,6 @@ Budget: pilot ≤ $15; full study ≤ $150 (dev keys), requires the pilot GO.
 - 2026-10-16 POST HOC (after full results; external review): fe/intake_extra.py — leftover-group effect modification (pre-registered
   10% cut point; between-group difference tested directly), decomposition of before-only error into (estimate − served) + leftover,
   between-model heterogeneity vs Haiku, 90% CI equivalence check of day-level mean error vs ±10%. Exploratory. results/intake_extra.txt
+- 2026-10-16 POST HOC (outline review): fe/intake_more.py — leftover definition (energy, whole meal; 38 meals undefined), eaten-fraction
+  bias/MAE, kcal-scale decomposition with same-meal offset size, local k=20 recalibration of both-photos estimates (MAE, day bias, LoA,
+  within 800 kJ; allowed to move in different directions), errors by meal. results/intake_more.txt
