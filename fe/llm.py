@@ -25,7 +25,10 @@ OPENAI_EFFORT = {"low": "low", "medium": "medium", "high": "high", "xhigh": "hig
 
 
 def _load_key():
-    env = os.environ.get("FE_ENV_FILE", os.path.join(ROOT, "..", "dragonclaw", ".env"))
+    """API keys come from ANTHROPIC_API_KEY / OPENAI_API_KEY, or from a .env file (FE_ENV_FILE, default ./.env)."""
+    env = os.environ.get("FE_ENV_FILE", os.path.join(ROOT, ".env"))
+    if not os.path.exists(env):
+        return
     for line in open(env):
         for k in ("ANTHROPIC_API_KEY", "OPENAI_API_KEY"):
             if line.startswith(k + "=") and not os.environ.get(k):
