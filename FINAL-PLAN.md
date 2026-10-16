@@ -139,3 +139,9 @@ Pilot (go/no-go; ~$10): 100 meals drawn with seed "pilot-B" from meals that have
 - If the prompt is changed after the pilot, the 100 pilot meals are excluded from all final analyses. If not changed, they stay in.
 - NO-GO → fall back to direction A (no further dual-image runs).
 Budget: pilot ≤ $15; full study ≤ $150 (dev keys), requires the pilot GO.
+
+### Addendum H execution log
+- 2026-10-16 pilot (100 meals, prompt unchanged → pilot meals stay in): GPT-6.1 sol bias vs consumed +12.3% (single) → −1.9% (dual);
+  eaten-fraction Spearman 0.78. Haiku: bias −10.4% → −18.6%, MAE% 30.3 → 29.3, Spearman 0.67. Criteria met → GO. Pilot cost $0.61.
+- Full run: dual prompt for six models on all 802 meals; single-image comparator = existing direct prompt (same model) on split
+  acetada_intake (cache reused for the 765 meals already run; new calls only for missing model×meal pairs). Evaluator change: mass optional.

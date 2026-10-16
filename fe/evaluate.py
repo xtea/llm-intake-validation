@@ -22,7 +22,7 @@ from fe.llm import LLM, Budget, ROOT
 ALLOWED_IMPORTS = {"json", "re", "math", "statistics", "itertools", "functools", "collections", "fractions"}
 FORBIDDEN_NAMES = {"open", "exec", "eval", "compile", "__import__", "globals", "locals", "vars",
                    "getattr", "setattr", "delattr", "input", "breakpoint", "memoryview"}
-SEALED = {"test", "cafe2", "nvreal", "n5k_side", "acetada"}
+SEALED = {"test", "cafe2", "nvreal", "n5k_side", "acetada", "acetada_intake"}
 
 
 MAX_SOURCE_CHARS = 30000
@@ -75,7 +75,7 @@ def metrics(rows):
     out.update(mae_kcal=round(st.mean(ae), 1), mae_pct_of_mean=round(mae_pct, 2),
                median_ape=round(st.median(ape), 1), within20=round(sum(a <= 20 for a in ape) / len(ape) * 100, 1),
                bias_pct=round(st.mean(pe), 1))
-    m = [(r["mass_est"], r["mass_g"]) for r in ok if r.get("mass_est")]
+    m = [(r["mass_est"], r["mass_g"]) for r in ok if r.get("mass_est") and r.get("mass_g")]
     if len(m) > 10:
         lx = [math.log(t) for _, t in m]; ly = [math.log(e) for e, _ in m]
         mx, my = st.mean(lx), st.mean(ly)
@@ -122,7 +122,7 @@ def main():
 
     def run(lab):
         img = open(os.path.join(img_dir, lab["item"] + ".png"), "rb").read()
-        row = {"item": lab["item"], "kcal": lab["kcal"], "mass_g": lab["mass_g"]}
+        row = {"item": lab["item"], "kcal": lab["kcal"], "mass_g": lab.get("mass_g")}
         try:
             r = estimate(img, llm)
             row["est"] = float(r["kcal"])
