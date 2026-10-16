@@ -157,3 +157,7 @@ Budget: pilot ≤ $15; full study ≤ $150 (dev keys), requires the pilot GO.
   within 800 kJ; allowed to move in different directions), errors by meal. results/intake_more.txt
 - 2026-10-16 POST HOC (paper figure): fe/figures.py fig_intake_ba (day-level Bland–Altman, both photos, preset limits only);
   linear fit of day % error on true day intake: −9.0 to −12.4 points per 1,000 kcal for all six models (exploratory).
+- 2026-10-16 POST HOC (v0.1 paper review): fe/intake_rev.py — R1 model differences on the same 802 meals as Table 2;
+  R3 fixed eaten-fraction baseline (before-only × c, c = Σ eaten / Σ served of other participants, leave-one-participant-out; rule
+  fixed before computing); R4 kcal-scale leftover effect modification; R5 excluding pilot meals / pilot participants; R10 valid-output
+  subset. Exploratory. results/intake_rev.txt
