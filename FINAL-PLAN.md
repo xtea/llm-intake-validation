@@ -145,3 +145,7 @@ Budget: pilot ≤ $15; full study ≤ $150 (dev keys), requires the pilot GO.
   eaten-fraction Spearman 0.78. Haiku: bias −10.4% → −18.6%, MAE% 30.3 → 29.3, Spearman 0.67. Criteria met → GO. Pilot cost $0.61.
 - Full run: dual prompt for six models on all 802 meals; single-image comparator = existing direct prompt (same model) on split
   acetada_intake (cache reused for the 765 meals already run; new calls only for missing model×meal pairs). Evaluator change: mass optional.
+- 2026-10-16 (before any full-run call) — added comparator after a literature check: Nakagawa & Yamamoto (medRxiv 2026-10-13) ran
+  before and after photos in separate calls and found subtraction unreliable; DietDelta (Vinod et al., arXiv 2604.06352) reports a
+  paired-prompt closed-model baseline in grams. Added candidates/intake/sub_direct_{model}.py: single-image direct prompt on before and
+  after photos, eaten = before − after (≥0). Reported as a secondary comparator for Q1 (dual vs subtraction vs before-only).
