@@ -49,8 +49,8 @@ class LLM:
         os.makedirs(CACHE, exist_ok=True)
 
     def ask(self, prompt, image=None, model="claude-sonnet-5-5", effort="low",
-            system=None, max_tokens=4000, sample=0):
-        """Return the model's text answer. `image` is PNG bytes or None."""
+            system=None, max_tokens=4000, sample=0, images=None):
+        """Return the model's text answer. `image` is PNG bytes or None; `images` is a list of PNG bytes (in order)."""
         if model not in PRICES:
             raise ValueError(f"model not allowed: {model}")
         h = hashlib.sha256()
@@ -59,6 +59,9 @@ class LLM:
             h.update(b"\0")
         if image is not None:
             h.update(hashlib.sha256(image).digest())
+        for im in images or ():
+            h.update(b"\1")
+            h.update(hashlib.sha256(im).digest())
         key = h.hexdigest()
         path = os.path.join(CACHE, key[:2], key + ".json")
         if os.path.exists(path):
@@ -69,7 +72,7 @@ class LLM:
             if self.max_usd is not None and self.usd >= self.max_usd:
                 raise Budget(f"budget {self.max_usd} reached")
         if model.startswith("gpt-"):
-            text, cost = self._ask_openai(model, prompt, image, effort, system, max_tokens)
+            text, cost = self._ask_openai(model, prompt, ([image] if image is not None else []) + list(images or ()), effort, system, max_tokens)
             with self.lock:
                 self.usd += cost
                 self.calls += 1
@@ -77,9 +80,9 @@ class LLM:
             json.dump({"text": text, "model": model, "cost": cost, "t": time.time()}, open(path, "w"))
             return text
         content = []
-        if image is not None:
+        for im in ([image] if image is not None else []) + list(images or ()):
             content.append({"type": "image", "source": {"type": "base64", "media_type": "image/png",
-                                                        "data": base64.standard_b64encode(image).decode()}})
+                                                        "data": base64.standard_b64encode(im).decode()}})
         content.append({"type": "text", "text": prompt})
         kw = dict(model=model, max_tokens=max_tokens, output_config={"effort": effort},
                   messages=[{"role": "user", "content": content}])
@@ -102,14 +105,13 @@ class LLM:
                   open(path, "w"))
         return text
 
-    def _ask_openai(self, model, prompt, image, effort, system, max_tokens):
+    def _ask_openai(self, model, prompt, imgs, effort, system, max_tokens):
         if self._oa is None:
             import openai
             self._oa = openai.OpenAI(max_retries=6)
-        content = [{"type": "text", "text": prompt}]
-        if image is not None:
-            content.insert(0, {"type": "image_url", "image_url": {
-                "url": "data:image/png;base64," + base64.standard_b64encode(image).decode(), "detail": "high"}})
+        content = [{"type": "image_url", "image_url": {
+            "url": "data:image/png;base64," + base64.standard_b64encode(im).decode(), "detail": "high"}} for im in imgs]
+        content.append({"type": "text", "text": prompt})
         msgs = ([{"role": "system", "content": system}] if system else []) + [{"role": "user", "content": content}]
         r = self._oa.chat.completions.create(model=model, messages=msgs, reasoning_effort=OPENAI_EFFORT.get(effort, "medium"),
                                              max_completion_tokens=max(max_tokens, 16000))

@@ -117,3 +117,25 @@ Added after all other results were known, in response to a venue-fit review (CHI
 - Meal-level breakdown by meal slot (clock hour) and energy tertile on ACETADA and test.
 - Offline from cached outputs; no model calls. Code: fe/clinical.py, fe/figures.py (fig_ba). Output: results/clinical.txt.
 - Reported in the paper as post hoc and indicative (served vs consumed energy; selected days).
+
+## Addendum H (2026-10-16) — Direction B: consumed intake from before + after photos. PRE-REGISTERED (written before any dual-image call)
+Data: ACETADA, consumed energy and macros per meal (weighed). Labels: data/labels/acetada_intake.json (fe/intake.py build):
+802 meals, 152 participants (806 rows − 2 duplicate photo rows [3057 2021-08-03 Dinner, 3088 2021-10-19 Dinner] − 1 meal <30 kcal − 1 no-food photo).
+Before images = existing PNGs; after images = data/images_after/ (PNG, ≤1024 px).
+
+Primary questions
+- Q1. Does adding the after photo improve consumed-energy estimates vs the before photo alone (single image = existing direct prompt, i.e. assumes all eaten)?
+  Metric: meal-level MAE% vs consumed energy, and signed bias; paired participant bootstrap CI of the difference. Pre-specified subgroup: meals with ≥10% of served energy left.
+- Q2. Is the change (dual − single) consistent across model tiers? Models: Claude Haiku/Sonnet/Opus 5.5, GPT-6 luna / 6.1 sol / 6 astra. Report the difference per model with CI; "consistent" = same sign for all six.
+- Q3. Summed over complete feeding days (breakfast+lunch+dinner), are mean bias and individual error small enough?
+  Pre-set thresholds: |mean day % error| ≤ 10% (group level) and 95% Bland–Altman LoA within ±30% (individual level; the best recall method in the same trial, mFR-TA, reached about ±30%).
+  Indirect reference only: published Table 3 of Whitton et al. 2024 (ASA24, Intake24, mFR-TA, IA-24HR). We will not claim superiority over recall methods.
+Secondary: protein, carbohydrate and fat eaten (same metrics). Further optimization (calibration, agentic harness search, local recalibration) is a separate, exploratory section.
+
+Prompts (frozen now): candidates/intake/dual_direct_{model}.py — one call, both images, asks served, left over, eaten kcal and eaten macros. effort=low.
+
+Pilot (go/no-go; ~$10): 100 meals drawn with seed "pilot-B" from meals that have cached single-image runs; Haiku 5.5 and GPT-6.1 sol only.
+- GO if, for GPT-6.1 sol, the dual-image bias vs consumed is closer to zero than single-image by ≥5 points AND the Spearman correlation between predicted and true eaten fraction is ≥0.3.
+- If the prompt is changed after the pilot, the 100 pilot meals are excluded from all final analyses. If not changed, they stay in.
+- NO-GO → fall back to direction A (no further dual-image runs).
+Budget: pilot ≤ $15; full study ≤ $150 (dev keys), requires the pilot GO.
