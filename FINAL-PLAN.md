@@ -149,3 +149,6 @@ Budget: pilot ≤ $15; full study ≤ $150 (dev keys), requires the pilot GO.
   before and after photos in separate calls and found subtraction unreliable; DietDelta (Vinod et al., arXiv 2604.06352) reports a
   paired-prompt closed-model baseline in grams. Added candidates/intake/sub_direct_{model}.py: single-image direct prompt on before and
   after photos, eaten = before − after (≥0). Reported as a secondary comparator for Q1 (dual vs subtraction vs before-only).
+- 2026-10-16 POST HOC (after full results; external review): fe/intake_extra.py — leftover-group effect modification (pre-registered
+  10% cut point; between-group difference tested directly), decomposition of before-only error into (estimate − served) + leftover,
+  between-model heterogeneity vs Haiku, 90% CI equivalence check of day-level mean error vs ±10%. Exploratory. results/intake_extra.txt
