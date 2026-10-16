@@ -1,0 +1,17 @@
+{
+ "Haiku 5.5|Direct": "24.8 [23.5, 26.3]",
+ "Haiku 5.5|Plate-as-ruler": "25.3 [24.0, 26.7]",
+ "Haiku 5.5|Harness A": "40.0 [38.3, 41.5]",
+ "Haiku 5.5|Harness B (no fitted constants)": "26.7 [25.5, 28.0]",
+ "Haiku 5.5|Harness A-v2": "38.3 [35.9, 40.6]",
+ "Haiku 5.5|Harness C": "51.7 [50.2, 53.2]",
+ "Sonnet 5.5|Plate-as-ruler": "22.2 [21.0, 23.3]",
+ "Opus 5.5|Plate-as-ruler": "17.4 [16.4, 18.6]",
+ "GPT-6 luna|Direct": "20.3 [19.0, 21.6]",
+ "GPT-6 luna|Plate-as-ruler": "23.0 [21.7, 24.3]",
+ "GPT-6 luna|Harness A": "38.4 [36.6, 40.1]",
+ "GPT-6.1 sol|Direct": "18.3 [17.0, 19.7]",
+ "GPT-6.1 sol|Plate-as-ruler": "19.2 [17.9, 20.7]",
+ "GPT-6.1 sol|Harness A": "32.5 [30.6, 34.1]",
+ "GPT-6 astra|Plate-as-ruler": "19.0 [17.5, 20.6]"
+}
