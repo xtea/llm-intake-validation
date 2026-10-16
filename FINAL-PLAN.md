@@ -99,3 +99,11 @@ uncalibrated counterparts; serving sizes in a feeding trial are closer to Nutrit
 - 2026-10-16 operational deviation (ACETADA): `h2_plate_scale` had 33 API timeouts (network, not parse failures) in its single run;
   only those calls were retried (successful calls served from cache; same prompts, same sample indices). The pre-retry file is kept
   as runs/h2_plate_scale/acetada-all.before-retry.json. All other ACETADA systems ran without network failures.
+
+## Addendum F: view ablation of harness A (added 2026-10-16, before computing; exploratory; no new model calls)
+Question (raised by our own ACETADA result): does harness A fail on ACETADA without calibration because of its dataset-tagged
+views (P: direct view with cafeteria serving-size prior; DN: identification rules from Nutrition5k labels), or because of other
+structural differences from B? Variants re-use A's cached calls, with calibration removed (C=0) and equal weights:
+R only; DN only; P only; R+DN (no P); R+P (no DN); R+DN+P (= A-raw). Scored on test, nvreal, acetada.
+Reading rule written in advance: if dropping P (and/or DN) brings A-raw close to the plain prompts on acetada, the dataset-tagged
+content explains the gap; if not, the gap is not explained by the tagged content.
