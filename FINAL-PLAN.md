@@ -73,3 +73,8 @@ camera A (fallback B, C, D), PNG, long side ≤1024 px. The paper's 2D model use
 frame, zero-shot. Metric MAE% of mean (their Table 3 convention). Systems (run once): Haiku h0, Haiku h2, Haiku A (compA_v4),
 Haiku B (compB_v1), Sonnet b2, Opus b2, gpt-6-luna A (cal), gpt-6.1-sol b2, gpt-6.1-sol A (cal). No constants refit; the harness
 prompts say "overhead photo" and are not edited (a mismatch we report). Reference: 26.1% (Thames et al. 2021, Table 3).
+
+## Addendum D: target-domain recalibration (added 2026-10-16, before computing; exploratory, offline, no new model calls)
+On nvreal, for each model and for b0, b2 and A-raw outputs: draw k labelled dishes (k = 10, 20, 50) at random, fit the same 2-constant
+power law on them, score MAE% on the remaining dishes; 200 random draws per k; report mean and 5–95% range. Question: how many target
+labels does it take to recover from the source-domain calibration failure, and does A's structure help once calibration is local?
