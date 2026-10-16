@@ -89,3 +89,9 @@ Systems (run once; budget-limited, chosen before results): Haiku h0, h2, A (comp
 gpt-6-luna b0, b2, A; gpt-6.1-sol b0, b2, A; gpt-6-astra b2. Same metric/bootstrap; same calibration-ablation recipe (fold-0 fits).
 Prediction stated in advance (from the tags and the nvreal result): systems with source-fitted calibration lose more than their
 uncalibrated counterparts; serving sizes in a feeding trial are closer to Nutrition5k than nvreal, so the loss may be smaller.
+
+## Execution log, addenda C/E (2026-10-16)
+- Infrastructure errors (APITimeoutError / APIConnectionError, from running many jobs in parallel) are not model behaviour.
+  Rule applied to ALL systems on n5k_side and acetada, decided before looking at their scores: after the batch finishes, re-run each
+  system once; successful calls come from cache (unchanged), only infrastructure-failed items are retried. Model-output parse
+  failures are kept and scored as before.

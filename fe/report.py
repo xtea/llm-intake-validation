@@ -57,10 +57,11 @@ def main():
         rr = rows_of(n, items)
         point = mae_pct(rr)
         bs = sorted(mae_pct(rows_of(n, b)) for b in boots)
-        rk = corr([math.log(r["est"]) for r in rr], [math.log(r["kcal"]) for r in rr])
-        mm = [(math.log(r["mass_est"]), math.log(r["mass_g"])) for r in rr if r.get("mass_est")]
+        pos = [r for r in rr if r["est"] > 0 and r["kcal"] > 0]
+        rk = corr([math.log(r["est"]) for r in pos], [math.log(r["kcal"]) for r in pos])
+        mm = [(math.log(r["mass_est"]), math.log(r["mass_g"])) for r in rr if r.get("mass_est") and r["mass_g"] > 0]
         rm = corr(*zip(*mm)) if len(mm) > 10 else float("nan")
-        bias = sum((r["est"] - r["kcal"]) / r["kcal"] for r in rr) / len(rr) * 100   # MPE: mean per-dish percentage error
+        bias = sum((r["est"] - r["kcal"]) / r["kcal"] for r in pos) / len(pos) * 100   # MPE (dishes with kcal > 0): mean per-dish percentage error
         mae_k = sum(abs(r["est"] - r["kcal"]) for r in rr) / len(rr)
         m = runs[n]["metrics"]
         res[n] = point
