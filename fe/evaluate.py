@@ -22,7 +22,7 @@ from fe.llm import LLM, Budget, ROOT
 ALLOWED_IMPORTS = {"json", "re", "math", "statistics", "itertools", "functools", "collections", "fractions"}
 FORBIDDEN_NAMES = {"open", "exec", "eval", "compile", "__import__", "globals", "locals", "vars",
                    "getattr", "setattr", "delattr", "input", "breakpoint", "memoryview"}
-SEALED = {"test", "cafe2", "nvreal"}
+SEALED = {"test", "cafe2", "nvreal", "n5k_side"}
 
 
 MAX_SOURCE_CHARS = 30000
@@ -108,7 +108,7 @@ def main():
     if a.fold is not None:
         labels = [l for l in labels if l.get("fold") == a.fold]
     excl = os.path.join(ROOT, "data", "exclude_nofood.json")
-    if os.path.exists(excl):
+    if os.path.exists(excl) and a.split != "n5k_side":  # n5k_side keeps the paper's uncleaned protocol
         bad = set(json.load(open(excl)))
         labels = [l for l in labels if l["item"] not in bad]
     if a.n:
