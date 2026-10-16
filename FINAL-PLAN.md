@@ -92,6 +92,7 @@ uncalibrated counterparts; serving sizes in a feeding trial are closer to Nutrit
 
 ## Execution log, addenda C/E (2026-10-16)
 - Infrastructure errors (APITimeoutError / APIConnectionError, from running many jobs in parallel) are not model behaviour.
-  Rule applied to ALL systems on n5k_side and acetada, decided before looking at their scores: after the batch finishes, re-run each
-  system once; successful calls come from cache (unchanged), only infrastructure-failed items are retried. Model-output parse
+  Rule applied to ALL systems on n5k_side and acetada: after the batch finishes, re-run each
+  system once; successful calls come from cache (unchanged), only infrastructure-failed items are retried. Honest note: the rule
+  was written after interim scores of 8 systems had been seen; it is applied uniformly to every system. Model-output parse
   failures are kept and scored as before.
