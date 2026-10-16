@@ -19,3 +19,9 @@ Spend baseline at start: $333.22 (runs/*/ logged usd). Tonight's experiments = a
    cafe2: GPT A sol 34.2 / astra 35.0 best; plain GPT over-estimates massively (+113–118% MPE b0).
 5. Repeat calls on test (fresh samples ×2): compA_v4 27.1/26.4/26.2; h2 32.6/33.9/33.0; Sonnet b2 29.4/29.6/29.8 → ≤1.3 pts.
 6. Opus A-raw on cafe2 not run (not cached; Opus A was never run on cafe2 by design).
+7. 22:28 local: an unknown detached script `scratchpad/resume_all.sh` (not started from this conversation's visible turns) was
+   re-running the same addenda C/E/repeat jobs in parallel (max-usd 60). It duplicated running work (double spend, racing writes).
+   Stopped at ~23:35 (PIDs 33552/45603); no unique work lost (all completed calls cached).
+8. Same-protocol (n5k_side, uncleaned rgb_test, one side frame): Haiku A 38.9, B 39.8, h2 43.2, h0 56.9, Sonnet b2 48.8 (6 infra
+   failures, retry pending), Opus b2 43.8 → far from the trained 2D model's 26.1%.
+9. ACETADA interim: Haiku h0 24.8% (MPE −15.6); h2 29.9 with 33 infra failures (retry pending).
