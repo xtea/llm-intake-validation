@@ -54,3 +54,14 @@ nvreal only (decided before any result; will be stated). Same metric, same boots
 Question added in advance: does a harness evolved for one vendor's small model transfer to another vendor's models?
 Decision 2026-10-16 (before any GPT result on sealed splits): full design — all three GPT models, all systems, all three
 sealed splits (Jason: "完整版").
+
+## Addendum B: post-review exploratory analyses (added 2026-10-16, after an external review; NOT pre-registered)
+Requested by a methodological review of v0.2. All results below are labelled exploratory in the paper.
+1. Calibration ablation. For every model, fit the same 2-constant power law (kcal = 300·exp(C + W·ln(x/300)), grid as before,
+   minimise Σ|err| / Σ truth) on search fold 0 (the same 300 dishes used for the cross-model refit) for: direct prompt (b0),
+   plate-as-ruler prompt (b2). Apply the fitted constants unchanged to test, cafe2, nvreal outputs. Also score harness A with its
+   calibration removed (C=0, W=1; same model calls). Compare: b0, b0+cal, b2, b2+cal, A-raw, A.
+2. Repeated calls: Haiku A, Haiku b2 (h2) and Sonnet b2 re-run twice on test with new sample indices (fresh model calls) to
+   measure call-to-call variation.
+3. Metrics reported with explicit formulas: MAE% = Σ|ŷ−y| / Σy; MPE = mean((ŷ−y)/y); MAE in kcal.
+No harness, prompt or constant of the original systems is changed; no new tuning on sealed splits.
