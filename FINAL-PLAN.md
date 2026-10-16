@@ -155,3 +155,5 @@ Budget: pilot ≤ $15; full study ≤ $150 (dev keys), requires the pilot GO.
 - 2026-10-16 POST HOC (outline review): fe/intake_more.py — leftover definition (energy, whole meal; 38 meals undefined), eaten-fraction
   bias/MAE, kcal-scale decomposition with same-meal offset size, local k=20 recalibration of both-photos estimates (MAE, day bias, LoA,
   within 800 kJ; allowed to move in different directions), errors by meal. results/intake_more.txt
+- 2026-10-16 POST HOC (paper figure): fe/figures.py fig_intake_ba (day-level Bland–Altman, both photos, preset limits only);
+  linear fit of day % error on true day intake: −9.0 to −12.4 points per 1,000 kcal for all six models (exploratory).

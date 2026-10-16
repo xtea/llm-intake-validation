@@ -132,6 +132,41 @@ def fig_ba(out):
     fig.savefig(os.path.join(out, "fig_ba.png"), dpi=160)
 
 
+def fig_intake_ba(out):
+    """Addendum H: day-level Bland-Altman of consumed energy, both photos, six models; preset limits only (no recall overlay)."""
+    from fe import intake_report as ir
+    dd = ir.days()
+    fig, axes = plt.subplots(2, 3, figsize=(7.2, 4.6), sharex=True, sharey=True)
+    for ax, (m, (_, d, _)) in zip(axes.flat, ir.MODELS.items()):
+        est = ir.scored(d)[0]
+        xs, ys = [], []
+        for its in dd.values():
+            t = sum(ir.LAB[i]["kcal"] for i in its)
+            xs.append(t)
+            ys.append((sum(est[i] for i in its) - t) / t * 100)
+        mu, sd = st.mean(ys), st.stdev(ys)
+        for v in (-30, 30):
+            ax.axhline(v, color=MUTED, lw=0.8, ls=(0, (1, 2)))
+        for v in (-10, 10):
+            ax.axhline(v, color=GRID, lw=0.8)
+        ax.axhline(0, color=MUTED, lw=0.6)
+        ax.scatter(xs, ys, s=9, color="#2a78d6", alpha=0.75, edgecolor="white", linewidth=0.4, zorder=3)
+        ax.axhline(mu, color="#eb6834", lw=1.4, zorder=4)
+        for v in (mu - 1.96 * sd, mu + 1.96 * sd):
+            ax.axhline(v, color="#eb6834", lw=0.9, ls=(0, (4, 2)), zorder=4)
+        ax.set_title(m, fontsize=8.5, color=INK)
+        ax.text(0.97, 0.96, f"mean {mu:+.1f}%\nLoA {mu - 1.96 * sd:+.0f} to {mu + 1.96 * sd:+.0f}%", transform=ax.transAxes,
+                ha="right", va="top", fontsize=7, color=INK)
+        ax.set_ylim(-80, 100)
+    for ax in axes[1]:
+        ax.set_xlabel("True energy eaten per day (kcal)")
+    for ax in axes[:, 0]:
+        ax.set_ylabel("Day error (% of truth)")
+    fig.tight_layout()
+    fig.savefig(os.path.join(out, "fig_intake_ba.pdf"))
+    fig.savefig(os.path.join(out, "fig_intake_ba.png"), dpi=160)
+
+
 if __name__ == "__main__":
     out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "results")
     os.makedirs(out, exist_ok=True)
@@ -140,4 +175,6 @@ if __name__ == "__main__":
     fig_ratio(out, sp)
     if "acetada" in sp:
         fig_ba(out)
+    if os.path.exists(os.path.join(ROOT, "runs", "dual_direct_opus", "intake-all.json")):
+        fig_intake_ba(out)
     print("ok", sp)
