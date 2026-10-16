@@ -1,0 +1,5386 @@
+{
+ "metrics": {
+  "n": 766,
+  "failed": 1,
+  "mae_kcal": 151.2,
+  "mae_pct_of_mean": 19.24,
+  "median_ape": 16.3,
+  "within20": 58.7,
+  "bias_pct": 3.3,
+  "mass_slope": 0.887,
+  "mass_median_ratio": 0.908,
+  "small_bias_pct": 16.8,
+  "mid_bias_pct": 2.1,
+  "large_bias_pct": -9.1,
+  "candidate": "candidates/gpt/b2_plate_scale_gpt_6_1_sol.py",
+  "split": "acetada",
+  "subset": "all",
+  "usd": 0.0,
+  "calls": 0,
+  "cache_hits": 766,
+  "secs": 0.1
+ },
+ "rows": [
+  {
+   "item": "1dd07fe528a5",
+   "kcal": 199.19,
+   "mass_g": 329.4,
+   "est": 289.85,
+   "mass_est": 298.0
+  },
+  {
+   "item": "e666a8def6e3",
+   "kcal": 212.37,
+   "mass_g": 323.6,
+   "est": 283.02,
+   "mass_est": 272.0
+  },
+  {
+   "item": "c7fe29f327e6",
+   "kcal": 409.98,
+   "mass_g": 413.8,
+   "est": 318.0,
+   "mass_est": 365.0
+  },
+  {
+   "item": "ba0d6b986b16",
+   "kcal": 512.95,
+   "mass_g": 599.0,
+   "est": 481.06,
+   "mass_est": 311.0
+  },
+  {
+   "item": "dae60d4a8626",
+   "kcal": 472.67,
+   "mass_g": 588.2,
+   "est": 491.2,
+   "mass_est": 494.0
+  },
+  {
+   "item": "f4ca322ef769",
+   "kcal": 375.08,
+   "mass_g": 475.3,
+   "est": 568.75,
+   "mass_est": 560.0
+  },
+  {
+   "item": "a17115fafea6",
+   "kcal": 514.76,
+   "mass_g": 910.8,
+   "est": 576.3,
+   "mass_est": 745.0
+  },
+  {
+   "item": "53ef432afd84",
+   "kcal": 843.12,
+   "mass_g": 1139.1,
+   "est": 757.6,
+   "mass_est": 995.0
+  },
+  {
+   "item": "40e314f52803",
+   "kcal": 580.45,
+   "mass_g": 772.9,
+   "est": 720.9,
+   "mass_est": 780.0
+  },
+  {
+   "item": "2e7a7c27ce18",
+   "kcal": 1074.88,
+   "mass_g": 1248.1,
+   "est": 862.41,
+   "mass_est": 1024.0
+  },
+  {
+   "item": "2bf9984468da",
+   "kcal": 832.65,
+   "mass_g": 1067.0,
+   "est": 586.55,
+   "mass_est": 902.0
+  },
+  {
+   "item": "f135ac1bba76",
+   "kcal": 668.83,
+   "mass_g": 510.9,
+   "est": 832.45,
+   "mass_est": 310.0
+  },
+  {
+   "item": "411e08ae16e3",
+   "kcal": 478.67,
+   "mass_g": 268.7,
+   "est": 601.1,
+   "mass_est": 325.0
+  },
+  {
+   "item": "98d5af9ebf21",
+   "kcal": 983.79,
+   "mass_g": 1295.2,
+   "est": 820.35,
+   "mass_est": 1125.0
+  },
+  {
+   "item": "72391cd04d0a",
+   "kcal": 888.41,
+   "mass_g": 1130.6,
+   "est": 1183.85,
+   "mass_est": 1139.0
+  },
+  {
+   "item": "5a6d94ab087a",
+   "kcal": 784.17,
+   "mass_g": 1024.4,
+   "est": 756.8,
+   "mass_est": 895.0
+  },
+  {
+   "item": "92346a562a64",
+   "kcal": 1297.43,
+   "mass_g": 1208.7,
+   "est": 1713.8799999999999,
+   "mass_est": 772.0
+  },
+  {
+   "item": "09b9705cfebc",
+   "kcal": 964.23,
+   "mass_g": 1106.6,
+   "est": 922.0,
+   "mass_est": 1090.0
+  },
+  {
+   "item": "b96009e90d1a",
+   "kcal": 275.0,
+   "mass_g": 412.0,
+   "est": 242.24,
+   "mass_est": 314.0
+  },
+  {
+   "item": "bc4dde6326a3",
+   "kcal": 1097.56,
+   "mass_g": 1217.0,
+   "est": 1014.75,
+   "mass_est": 1015.0
+  },
+  {
+   "item": "cebce2a927e0",
+   "kcal": 733.64,
+   "mass_g": 1009.0,
+   "est": 641.07,
+   "mass_est": 627.0
+  },
+  {
+   "item": "522bc5b9f4cd",
+   "kcal": 471.14,
+   "mass_g": 904.7,
+   "est": 475.5,
+   "mass_est": 650.0
+  },
+  {
+   "item": "5d87705d8d6f",
+   "kcal": 643.72,
+   "mass_g": 924.9,
+   "est": 738.6,
+   "mass_est": 750.0
+  },
+  {
+   "item": "a6f87b063e6c",
+   "kcal": 685.44,
+   "mass_g": 821.3,
+   "est": 549.17,
+   "mass_est": 719.0
+  },
+  {
+   "item": "980f0891df3a",
+   "kcal": 631.0,
+   "mass_g": 729.9,
+   "est": 948.31,
+   "mass_est": 741.0
+  },
+  {
+   "item": "70afccd1ae58",
+   "kcal": 554.78,
+   "mass_g": 480.3,
+   "est": 722.05,
+   "mass_est": 530.0
+  },
+  {
+   "item": "a647b18f4854",
+   "kcal": 804.81,
+   "mass_g": 907.1,
+   "est": 722.05,
+   "mass_est": 530.0
+  },
+  {
+   "item": "8038cbdb2969",
+   "kcal": 1008.45,
+   "mass_g": 1131.6,
+   "est": 1001.45,
+   "mass_est": 795.0
+  },
+  {
+   "item": "64f89767147c",
+   "kcal": 834.16,
+   "mass_g": 744.7,
+   "est": 1097.75,
+   "mass_est": 725.0
+  },
+  {
+   "item": "1903ca76f306",
+   "kcal": 575.54,
+   "mass_g": 637.5,
+   "est": 743.52,
+   "mass_est": 712.0
+  },
+  {
+   "item": "e1604ad95d03",
+   "kcal": 785.65,
+   "mass_g": 797.5,
+   "est": 967.54,
+   "mass_est": 691.0
+  },
+  {
+   "item": "02585cf4f2bf",
+   "kcal": 763.32,
+   "mass_g": 1491.1,
+   "est": 675.46,
+   "mass_est": 1060.0
+  },
+  {
+   "item": "c299bf462ea5",
+   "kcal": 401.78,
+   "mass_g": 497.4,
+   "est": 258.0,
+   "mass_est": 390.0
+  },
+  {
+   "item": "210c2b914c93",
+   "kcal": 781.6,
+   "mass_g": 1186.1,
+   "est": 827.1,
+   "mass_est": 1115.0
+  },
+  {
+   "item": "852a0bfde065",
+   "kcal": 1117.94,
+   "mass_g": 1296.4,
+   "est": 1008.63,
+   "mass_est": 1226.0
+  },
+  {
+   "item": "2024993114b7",
+   "kcal": 609.79,
+   "mass_g": 969.4,
+   "est": 545.75,
+   "mass_est": 905.0
+  },
+  {
+   "item": "114898c9813d",
+   "kcal": 631.54,
+   "mass_g": 1033.3,
+   "est": 586.54,
+   "mass_est": 961.0
+  },
+  {
+   "item": "b98f83c15e49",
+   "kcal": 1573.1,
+   "mass_g": 1510.8,
+   "est": 1789.94,
+   "mass_est": 1621.0
+  },
+  {
+   "item": "17eff88623f0",
+   "kcal": 426.0,
+   "mass_g": 511.5,
+   "est": 462.95,
+   "mass_est": 560.0
+  },
+  {
+   "item": "783287d2c148",
+   "kcal": 782.12,
+   "mass_g": 767.2,
+   "est": 516.52,
+   "mass_est": 438.0
+  },
+  {
+   "item": "77a03a62be38",
+   "kcal": 632.45,
+   "mass_g": 643.6,
+   "est": 811.5,
+   "mass_est": 685.0
+  },
+  {
+   "item": "4f4c71523af3",
+   "kcal": 422.85,
+   "mass_g": 584.5,
+   "est": 450.2,
+   "mass_est": 547.0
+  },
+  {
+   "item": "73a56ec52cd5",
+   "kcal": 923.59,
+   "mass_g": 936.6,
+   "est": 1000.0,
+   "mass_est": 840.0
+  },
+  {
+   "item": "e308cba1da52",
+   "kcal": 1910.78,
+   "mass_g": 1329.8,
+   "est": 1771.25,
+   "mass_est": 1155.0
+  },
+  {
+   "item": "db410d355dbc",
+   "kcal": 1413.09,
+   "mass_g": 1141.8,
+   "est": 1838.81,
+   "mass_est": 1182.0
+  },
+  {
+   "item": "0852e8775831",
+   "kcal": 199.6,
+   "mass_g": 338.1,
+   "est": 247.35,
+   "mass_est": 280.0
+  },
+  {
+   "item": "0416f7c32bc1",
+   "kcal": 453.76,
+   "mass_g": 723.3,
+   "est": 589.85,
+   "mass_est": 745.0
+  },
+  {
+   "item": "f0ca77cdca06",
+   "kcal": 295.78,
+   "mass_g": 390.1,
+   "est": 258.9,
+   "mass_est": 285.0
+  },
+  {
+   "item": "bcf0e8b18668",
+   "kcal": 794.14,
+   "mass_g": 899.8,
+   "est": 655.35,
+   "mass_est": 795.0
+  },
+  {
+   "item": "44de38f616b0",
+   "kcal": 311.33,
+   "mass_g": 410.8,
+   "est": 281.0,
+   "mass_est": 305.0
+  },
+  {
+   "item": "08e9f9e9c336",
+   "kcal": 1157.26,
+   "mass_g": 1048.4,
+   "est": 1105.4,
+   "mass_est": 822.0
+  },
+  {
+   "item": "dd7698346272",
+   "kcal": 362.51,
+   "mass_g": 599.1,
+   "est": 492.3,
+   "mass_est": 600.0
+  },
+  {
+   "item": "a1237110a4a1",
+   "kcal": 343.92,
+   "mass_g": 579.3,
+   "est": 474.0,
+   "mass_est": 660.0
+  },
+  {
+   "item": "bf97e29f87f6",
+   "kcal": 611.2,
+   "mass_g": 1016.5,
+   "est": 893.3,
+   "mass_est": 980.0
+  },
+  {
+   "item": "859a9c0e9af0",
+   "kcal": 478.07,
+   "mass_g": 806.8,
+   "est": 582.0,
+   "mass_est": 790.0
+  },
+  {
+   "item": "e319664d4211",
+   "kcal": 339.96,
+   "mass_g": 541.9,
+   "est": 386.3,
+   "mass_est": 515.0
+  },
+  {
+   "item": "2256a5ab61e4",
+   "kcal": 1067.11,
+   "mass_g": 1201.7,
+   "est": 620.3,
+   "mass_est": 928.0
+  },
+  {
+   "item": "5eb878ae02e2",
+   "kcal": 217.75,
+   "mass_g": 349.7,
+   "est": 282.48,
+   "mass_est": 318.0
+  },
+  {
+   "item": "127556906961",
+   "kcal": 610.6,
+   "mass_g": 776.6,
+   "est": 890.05,
+   "mass_est": 865.0
+  },
+  {
+   "item": "219f2ba0ff33",
+   "kcal": 502.65,
+   "mass_g": 804.4,
+   "est": 517.78,
+   "mass_est": 926.0
+  },
+  {
+   "item": "974b848f0dc8",
+   "kcal": 766.65,
+   "mass_g": 881.1,
+   "est": 1005.86,
+   "mass_est": 781.0
+  },
+  {
+   "item": "4ca20787a79a",
+   "kcal": 664.47,
+   "mass_g": 806.4,
+   "est": 772.7,
+   "mass_est": 825.0
+  },
+  {
+   "item": "df9aa239b4c5",
+   "kcal": 769.85,
+   "mass_g": 1033.8,
+   "est": 572.97,
+   "mass_est": 795.0
+  },
+  {
+   "item": "5f83ebefa239",
+   "kcal": 663.14,
+   "mass_g": 866.7,
+   "est": 649.25,
+   "mass_est": 865.0
+  },
+  {
+   "item": "cb380d90a816",
+   "kcal": 781.06,
+   "mass_g": 981.8,
+   "est": 1121.95,
+   "mass_est": 996.0
+  },
+  {
+   "item": "ecf9466eefec",
+   "kcal": 653.71,
+   "mass_g": 859.1,
+   "est": 479.8,
+   "mass_est": 872.0
+  },
+  {
+   "item": "53227a486775",
+   "kcal": 370.09,
+   "mass_g": 901.3,
+   "est": 708.25,
+   "mass_est": 810.0
+  },
+  {
+   "item": "1fecb47a3a17",
+   "kcal": 422.0,
+   "mass_g": 522.4,
+   "est": 624.3,
+   "mass_est": 568.0
+  },
+  {
+   "item": "e0e8425930bf",
+   "kcal": 350.47,
+   "mass_g": 683.8,
+   "est": 434.6,
+   "mass_est": 618.0
+  },
+  {
+   "item": "b4adba84fb92",
+   "kcal": 998.55,
+   "mass_g": 1112.0,
+   "est": 1092.9,
+   "mass_est": 1007.0
+  },
+  {
+   "item": "bd1c089cecbd",
+   "kcal": 782.92,
+   "mass_g": 984.1,
+   "est": 1034.9,
+   "mass_est": 1020.0
+  },
+  {
+   "item": "46c777349206",
+   "kcal": 625.99,
+   "mass_g": 525.5,
+   "est": 728.13,
+   "mass_est": 509.0
+  },
+  {
+   "item": "3c76b5277aea",
+   "kcal": 960.46,
+   "mass_g": 666.9,
+   "est": 695.5,
+   "mass_est": 470.0
+  },
+  {
+   "item": "675b2a609dd4",
+   "kcal": 776.98,
+   "mass_g": 604.6,
+   "est": 859.5,
+   "mass_est": 645.0
+  },
+  {
+   "item": "ddafed55d14a",
+   "kcal": 667.3,
+   "mass_g": 373.4,
+   "est": 687.2,
+   "mass_est": 365.0
+  },
+  {
+   "item": "97aa5450d68d",
+   "kcal": 714.68,
+   "mass_g": 606.7,
+   "est": 636.7,
+   "mass_est": 513.0
+  },
+  {
+   "item": "02af64eacc3d",
+   "kcal": 704.1,
+   "mass_g": 645.2,
+   "est": 904.97,
+   "mass_est": 783.0
+  },
+  {
+   "item": "9d68e9dd07ac",
+   "kcal": 455.44,
+   "mass_g": 413.3,
+   "est": 703.7,
+   "mass_est": 245.0
+  },
+  {
+   "item": "b71188822d68",
+   "kcal": 347.7,
+   "mass_g": 491.4,
+   "est": 351.5,
+   "mass_est": 210.0
+  },
+  {
+   "item": "d64693d49f49",
+   "kcal": 444.8,
+   "mass_g": 507.9,
+   "est": 534.54,
+   "mass_est": 723.0
+  },
+  {
+   "item": "894a7e321c67",
+   "kcal": 272.99,
+   "mass_g": 439.2,
+   "est": 373.85,
+   "mass_est": 435.0
+  },
+  {
+   "item": "2e830626da34",
+   "kcal": 972.25,
+   "mass_g": 1394.6,
+   "est": 478.5,
+   "mass_est": 875.0
+  },
+  {
+   "item": "f020008bae5e",
+   "kcal": 746.29,
+   "mass_g": 719.3,
+   "est": 598.69,
+   "mass_est": 451.0
+  },
+  {
+   "item": "e8c34a5fbec1",
+   "kcal": 282.24,
+   "mass_g": 499.8,
+   "est": 437.1,
+   "mass_est": 495.0
+  },
+  {
+   "item": "88e47f7d2d97",
+   "kcal": 654.75,
+   "mass_g": 759.1,
+   "est": 631.45,
+   "mass_est": 475.0
+  },
+  {
+   "item": "4d672a1dc5c2",
+   "kcal": 455.4,
+   "mass_g": 811.0,
+   "est": 246.7,
+   "mass_est": 500.0
+  },
+  {
+   "item": "902c23755ca2",
+   "kcal": 319.06,
+   "mass_g": 585.9,
+   "est": 437.03000000000003,
+   "mass_est": 545.0
+  },
+  {
+   "item": "55b73c4fc6f4",
+   "kcal": 917.62,
+   "mass_g": 902.0,
+   "est": 872.6,
+   "mass_est": 805.0
+  },
+  {
+   "item": "99b566136123",
+   "kcal": 404.41,
+   "mass_g": 400.5,
+   "est": 368.82,
+   "mass_est": 331.0
+  },
+  {
+   "item": "ad4e3bac393d",
+   "kcal": 452.75,
+   "mass_g": 518.0,
+   "est": 571.45,
+   "mass_est": 580.0
+  },
+  {
+   "item": "999ad35c3ec1",
+   "kcal": 415.58,
+   "mass_g": 440.6,
+   "est": 537.85,
+   "mass_est": 411.0
+  },
+  {
+   "item": "b46d902514cd",
+   "kcal": 361.43,
+   "mass_g": 637.0,
+   "est": 454.59,
+   "mass_est": 623.0
+  },
+  {
+   "item": "17bc01a70173",
+   "kcal": 724.52,
+   "mass_g": 1321.0,
+   "est": 778.25,
+   "mass_est": 1157.0
+  },
+  {
+   "item": "396cb4d352c4",
+   "kcal": 533.61,
+   "mass_g": 540.6,
+   "est": 439.3,
+   "mass_est": 470.0
+  },
+  {
+   "item": "67d69344b254",
+   "kcal": 603.48,
+   "mass_g": 671.2,
+   "est": 685.69,
+   "mass_est": 565.0
+  },
+  {
+   "item": "9d22a3e106a9",
+   "kcal": 872.28,
+   "mass_g": 775.4,
+   "est": 851.5,
+   "mass_est": 565.0
+  },
+  {
+   "item": "c4805ad14dd3",
+   "kcal": 711.83,
+   "mass_g": 620.8,
+   "est": 687.21,
+   "mass_est": 600.0
+  },
+  {
+   "item": "fa2785d375cf",
+   "kcal": 697.0,
+   "mass_g": 770.5,
+   "est": 509.73,
+   "mass_est": 599.0
+  },
+  {
+   "item": "808e2565dc3e",
+   "kcal": 343.37,
+   "mass_g": 572.0,
+   "est": 650.7,
+   "mass_est": 540.0
+  },
+  {
+   "item": "42885279f201",
+   "kcal": 704.65,
+   "mass_g": 939.2,
+   "est": 849.34,
+   "mass_est": 853.0
+  },
+  {
+   "item": "dadf79fe489d",
+   "kcal": 656.96,
+   "mass_g": 532.3,
+   "est": 587.65,
+   "mass_est": 435.0
+  },
+  {
+   "item": "d969e3ca4902",
+   "kcal": 368.89,
+   "mass_g": 591.7,
+   "est": 448.25,
+   "mass_est": 483.0
+  },
+  {
+   "item": "119d3b011897",
+   "kcal": 435.32,
+   "mass_g": 516.6,
+   "est": 795.5,
+   "mass_est": 610.0
+  },
+  {
+   "item": "5e7f3293ff93",
+   "kcal": 541.15,
+   "mass_g": 554.4,
+   "est": 472.73,
+   "mass_est": 464.0
+  },
+  {
+   "item": "861792209ae3",
+   "kcal": 412.28,
+   "mass_g": 562.7,
+   "est": 349.25,
+   "mass_est": 505.0
+  },
+  {
+   "item": "64b4e0363b8e",
+   "kcal": 499.86,
+   "mass_g": 845.6,
+   "est": 764.45,
+   "mass_est": 845.0
+  },
+  {
+   "item": "0d55677a4213",
+   "kcal": 576.77,
+   "mass_g": 778.0,
+   "est": 812.15,
+   "mass_est": 707.0
+  },
+  {
+   "item": "884fb20e426b",
+   "kcal": 714.78,
+   "mass_g": 642.2,
+   "est": 748.65,
+   "mass_est": 540.0
+  },
+  {
+   "item": "d0db023b1780",
+   "kcal": 580.5,
+   "mass_g": 743.2,
+   "est": 655.8,
+   "mass_est": 680.0
+  },
+  {
+   "item": "a2d61daef1d7",
+   "kcal": 1180.19,
+   "mass_g": 860.3,
+   "est": 1491.4,
+   "mass_est": 910.0
+  },
+  {
+   "item": "f551645d88b0",
+   "kcal": 786.9,
+   "mass_g": 1103.6,
+   "est": 605.35,
+   "mass_est": 900.0
+  },
+  {
+   "item": "913412c8d781",
+   "kcal": 287.6,
+   "mass_g": 1059.4,
+   "est": 243.75,
+   "mass_est": 875.0
+  },
+  {
+   "item": "02b94c58e287",
+   "kcal": 725.49,
+   "mass_g": 1160.6,
+   "est": 927.83,
+   "mass_est": 935.0
+  },
+  {
+   "item": "fe8f1fb56f7a",
+   "kcal": 461.78,
+   "mass_g": 961.6,
+   "est": 437.24,
+   "mass_est": 878.0
+  },
+  {
+   "item": "41d5278b33d2",
+   "kcal": 622.42,
+   "mass_g": 1056.9,
+   "est": 481.0,
+   "mass_est": 745.0
+  },
+  {
+   "item": "2f00b6b5149d",
+   "kcal": 907.51,
+   "mass_g": 972.6,
+   "est": 619.2,
+   "mass_est": 620.0
+  },
+  {
+   "item": "935625e0128a",
+   "kcal": 523.23,
+   "mass_g": 1116.0,
+   "est": 334.4,
+   "mass_est": 972.0
+  },
+  {
+   "item": "42e9b55540a9",
+   "kcal": 398.42,
+   "mass_g": 747.1,
+   "est": 256.2,
+   "mass_est": 535.0
+  },
+  {
+   "item": "1b80d559c6a4",
+   "kcal": 806.96,
+   "mass_g": 1147.3,
+   "est": 719.7,
+   "mass_est": 745.0
+  },
+  {
+   "item": "ea82bba6e306",
+   "kcal": 724.79,
+   "mass_g": 772.4,
+   "est": 529.0,
+   "mass_est": 635.0
+  },
+  {
+   "item": "0dbc83218b81",
+   "kcal": 637.91,
+   "mass_g": 1152.2,
+   "est": 601.6,
+   "mass_est": 982.0
+  },
+  {
+   "item": "9707060ca020",
+   "kcal": 1359.7,
+   "mass_g": 1201.1,
+   "est": 1313.7,
+   "mass_est": 1236.0
+  },
+  {
+   "item": "f69bfc027fa6",
+   "kcal": 988.78,
+   "mass_g": 708.0,
+   "est": 810.91,
+   "mass_est": 578.0
+  },
+  {
+   "item": "688b57c8262b",
+   "kcal": 1188.72,
+   "mass_g": 1188.0,
+   "est": 851.9,
+   "mass_est": 1125.0
+  },
+  {
+   "item": "1e44ea526f9e",
+   "kcal": 510.4,
+   "mass_g": 657.1,
+   "est": 454.48,
+   "mass_est": 463.0
+  },
+  {
+   "item": "16d13a2f02ab",
+   "kcal": 806.54,
+   "mass_g": 1146.2,
+   "est": 922.51,
+   "mass_est": 1142.0
+  },
+  {
+   "item": "c753fa2bc154",
+   "kcal": 997.72,
+   "mass_g": 972.2,
+   "est": 574.14,
+   "mass_est": 504.0
+  },
+  {
+   "item": "4c02ce60abe0",
+   "kcal": 583.03,
+   "mass_g": 717.7,
+   "est": 682.95,
+   "mass_est": 681.0
+  },
+  {
+   "item": "7c936421011e",
+   "kcal": 912.99,
+   "mass_g": 1161.0,
+   "est": 921.45,
+   "mass_est": 1119.0
+  },
+  {
+   "item": "07dd6378223c",
+   "kcal": 649.32,
+   "mass_g": 860.0,
+   "est": 583.85,
+   "mass_est": 605.0
+  },
+  {
+   "item": "ce9ed7dc07b8",
+   "kcal": 925.27,
+   "mass_g": 1225.8,
+   "est": 629.95,
+   "mass_est": 1190.0
+  },
+  {
+   "item": "f7b75966ee8d",
+   "kcal": 1116.9,
+   "mass_g": 1477.9,
+   "est": 1065.25,
+   "mass_est": 1075.0
+  },
+  {
+   "item": "654fdf3c52d8",
+   "kcal": 858.36,
+   "mass_g": 1225.0,
+   "est": 893.16,
+   "mass_est": 1001.0
+  },
+  {
+   "item": "5bcf31015013",
+   "kcal": 740.8,
+   "mass_g": 1095.9,
+   "est": 670.7,
+   "mass_est": 1140.0
+  },
+  {
+   "item": "7e729eefaa6e",
+   "kcal": 824.88,
+   "mass_g": 997.9,
+   "est": 883.15,
+   "mass_est": 995.0
+  },
+  {
+   "item": "a205cb8ca563",
+   "kcal": 651.1,
+   "mass_g": 1079.6,
+   "est": 508.45,
+   "mass_est": 835.0
+  },
+  {
+   "item": "67374d8a86bd",
+   "kcal": 558.89,
+   "mass_g": 956.2,
+   "est": 568.0,
+   "mass_est": 880.0
+  },
+  {
+   "item": "0c28be7067a4",
+   "kcal": 678.79,
+   "mass_g": 1123.4,
+   "est": 637.3,
+   "mass_est": 980.0
+  },
+  {
+   "item": "a777897f36db",
+   "kcal": 626.56,
+   "mass_g": 1165.9,
+   "est": 1077.4,
+   "mass_est": 1210.0
+  },
+  {
+   "item": "85bf5e330447",
+   "kcal": 510.38,
+   "mass_g": 837.4,
+   "est": 655.4,
+   "mass_est": 845.0
+  },
+  {
+   "item": "58f7402e8027",
+   "kcal": 838.27,
+   "mass_g": 945.9,
+   "est": 493.13,
+   "mass_est": 639.0
+  },
+  {
+   "item": "e2460f6d7133",
+   "kcal": 1664.02,
+   "mass_g": 1347.5,
+   "est": 481.45,
+   "mass_est": 800.0
+  },
+  {
+   "item": "c3ed333504cd",
+   "kcal": 364.59,
+   "mass_g": 487.3,
+   "est": 475.31,
+   "mass_est": 578.0
+  },
+  {
+   "item": "a130ea569100",
+   "kcal": 857.99,
+   "mass_g": 718.7,
+   "est": 435.36,
+   "mass_est": 314.0
+  },
+  {
+   "item": "bd5745fb4c95",
+   "kcal": 975.92,
+   "mass_g": 661.5,
+   "est": 994.56,
+   "mass_est": 699.0
+  },
+  {
+   "item": "888e1a9caa40",
+   "kcal": 243.06,
+   "mass_g": 327.0,
+   "est": 310.85,
+   "mass_est": 310.0
+  },
+  {
+   "item": "3ff76aa6a2fd",
+   "kcal": 688.62,
+   "mass_g": 826.2,
+   "est": 636.3,
+   "mass_est": 795.0
+  },
+  {
+   "item": "c93ea4be51ff",
+   "kcal": 679.05,
+   "mass_g": 746.4,
+   "est": 675.43,
+   "mass_est": 732.0
+  },
+  {
+   "item": "f90488e4a4c9",
+   "kcal": 1018.02,
+   "mass_g": 1049.3,
+   "est": 670.88,
+   "mass_est": 802.0
+  },
+  {
+   "item": "0221349e8d37",
+   "kcal": 1387.68,
+   "mass_g": 1021.2,
+   "est": 1156.2,
+   "mass_est": 940.0
+  },
+  {
+   "item": "156e50c4e233",
+   "kcal": 1332.09,
+   "mass_g": 1335.4,
+   "est": 1485.25,
+   "mass_est": 1440.0
+  },
+  {
+   "item": "6e8dc4992097",
+   "kcal": 838.41,
+   "mass_g": 945.7,
+   "est": 952.29,
+   "mass_est": 754.0
+  },
+  {
+   "item": "67b977c9159f",
+   "kcal": 1582.0,
+   "mass_g": 1833.9,
+   "est": 1787.05,
+   "mass_est": 1571.0
+  },
+  {
+   "item": "4f057ac98b92",
+   "kcal": 1678.53,
+   "mass_g": 1056.1,
+   "est": 1608.0,
+   "mass_est": 963.0
+  },
+  {
+   "item": "acb86ea97f01",
+   "kcal": 962.01,
+   "mass_g": 864.8,
+   "est": 985.23,
+   "mass_est": 792.0
+  },
+  {
+   "item": "36fbf3897e83",
+   "kcal": 889.02,
+   "mass_g": 1172.8,
+   "est": 981.3,
+   "mass_est": 1065.0
+  },
+  {
+   "item": "f052fa4eee7e",
+   "kcal": 497.2,
+   "mass_g": 738.1,
+   "est": 678.95,
+   "mass_est": 820.0
+  },
+  {
+   "item": "0e28e415a0e2",
+   "kcal": 572.55,
+   "mass_g": 540.2,
+   "est": 603.13,
+   "mass_est": 524.0
+  },
+  {
+   "item": "a2f2e7548c7e",
+   "kcal": 1836.98,
+   "mass_g": 1686.7,
+   "est": 1334.3,
+   "mass_est": 1300.0
+  },
+  {
+   "item": "92a1f3840e8d",
+   "kcal": 1250.02,
+   "mass_g": 1097.1,
+   "est": 1281.45,
+   "mass_est": 945.0
+  },
+  {
+   "item": "0b78254cc4b9",
+   "kcal": 1046.57,
+   "mass_g": 1377.5,
+   "est": 1129.05,
+   "mass_est": 1210.0
+  },
+  {
+   "item": "4c23e50096f4",
+   "kcal": 1031.42,
+   "mass_g": 1432.3,
+   "est": 1083.2,
+   "mass_est": 1340.0
+  },
+  {
+   "item": "8043605e71e1",
+   "kcal": 1982.79,
+   "mass_g": 1262.6,
+   "est": 1509.15,
+   "mass_est": 1000.0
+  },
+  {
+   "item": "707c02e6f543",
+   "kcal": 1303.87,
+   "mass_g": 1372.5,
+   "est": 1550.5,
+   "mass_est": 1545.0
+  },
+  {
+   "item": "06b6269e4886",
+   "kcal": 1683.35,
+   "mass_g": 1608.6,
+   "est": 1717.85,
+   "mass_est": 1606.0
+  },
+  {
+   "item": "2ce58960e1b3",
+   "kcal": 748.68,
+   "mass_g": 690.5,
+   "est": 951.6,
+   "mass_est": 685.0
+  },
+  {
+   "item": "dc381cc22819",
+   "kcal": 1944.02,
+   "mass_g": 1960.3,
+   "est": 2001.7,
+   "mass_est": 1719.0
+  },
+  {
+   "item": "ff26213665ab",
+   "kcal": 1419.72,
+   "mass_g": 1649.2,
+   "est": 1465.0,
+   "mass_est": 1500.0
+  },
+  {
+   "item": "c26a3c9425ed",
+   "kcal": 1042.3,
+   "mass_g": 590.1,
+   "est": 777.85,
+   "mass_est": 478.0
+  },
+  {
+   "item": "f6eb1848281e",
+   "kcal": 1076.6,
+   "mass_g": 1107.1,
+   "est": 838.84,
+   "mass_est": 928.0
+  },
+  {
+   "item": "2d776c57adfc",
+   "kcal": 870.33,
+   "mass_g": 857.1,
+   "est": 674.3,
+   "mass_est": 658.0
+  },
+  {
+   "item": "45c8c68e6793",
+   "kcal": 652.0,
+   "mass_g": 495.3,
+   "est": 617.0,
+   "mass_est": 438.0
+  },
+  {
+   "item": "d2deb21b4470",
+   "kcal": 666.22,
+   "mass_g": 676.6,
+   "est": 656.3,
+   "mass_est": 600.0
+  },
+  {
+   "item": "1d7dd571449c",
+   "kcal": 400.35,
+   "mass_g": 660.7,
+   "est": 380.35,
+   "mass_est": 575.0
+  },
+  {
+   "item": "bf17cedf846f",
+   "kcal": 387.92,
+   "mass_g": 522.8,
+   "est": 508.35,
+   "mass_est": 432.0
+  },
+  {
+   "item": "0d45e981037a",
+   "kcal": 806.82,
+   "mass_g": 572.2,
+   "est": 849.0,
+   "mass_est": 535.0
+  },
+  {
+   "item": "741cdbfbec0b",
+   "kcal": 422.27,
+   "mass_g": 434.5,
+   "est": 431.76,
+   "mass_est": 752.0
+  },
+  {
+   "item": "8b5a96591180",
+   "kcal": 1276.69,
+   "mass_g": 1112.7,
+   "est": 1393.3,
+   "mass_est": 926.0
+  },
+  {
+   "item": "f0b95171112e",
+   "kcal": 1654.26,
+   "mass_g": 1433.2,
+   "est": 1830.53,
+   "mass_est": 1394.0
+  },
+  {
+   "item": "58c71ce70533",
+   "kcal": 867.41,
+   "mass_g": 729.9,
+   "est": 911.75,
+   "mass_est": 725.0
+  },
+  {
+   "item": "e417ef6020b1",
+   "kcal": 1195.23,
+   "mass_g": 1555.9,
+   "est": 1185.58,
+   "mass_est": 1265.0
+  },
+  {
+   "item": "383e67f82c34",
+   "kcal": 594.91,
+   "mass_g": 605.7,
+   "est": 605.01,
+   "mass_est": 584.0
+  },
+  {
+   "item": "d21b742a10ac",
+   "kcal": 1783.8,
+   "mass_g": 1807.3,
+   "est": 1507.5,
+   "mass_est": 1630.0
+  },
+  {
+   "item": "a6ca23a7dac0",
+   "kcal": 1162.35,
+   "mass_g": 1147.7,
+   "est": 1268.0,
+   "mass_est": 1080.0
+  },
+  {
+   "item": "37468ab8e4ce",
+   "kcal": 1456.24,
+   "mass_g": 1313.9,
+   "est": 1375.03,
+   "mass_est": 1228.0
+  },
+  {
+   "item": "97ac9187aec9",
+   "kcal": 803.88,
+   "mass_g": 563.5,
+   "est": 830.63,
+   "mass_est": 509.0
+  },
+  {
+   "item": "6d9d5b67dad1",
+   "kcal": 679.41,
+   "mass_g": 763.4,
+   "est": 645.6,
+   "mass_est": 626.0
+  },
+  {
+   "item": "8df4a754498d",
+   "kcal": 1812.61,
+   "mass_g": 1165.4,
+   "est": 1481.95,
+   "mass_est": 975.0
+  },
+  {
+   "item": "865872e7b0a8",
+   "kcal": 382.64,
+   "mass_g": 401.9,
+   "est": 585.4,
+   "mass_est": 440.0
+  },
+  {
+   "item": "4fd2ee39ba69",
+   "kcal": 803.04,
+   "mass_g": 901.6,
+   "est": 1070.0,
+   "mass_est": 830.0
+  },
+  {
+   "item": "9be98cd53966",
+   "kcal": 832.21,
+   "mass_g": 711.2,
+   "est": 803.5,
+   "mass_est": 566.0
+  },
+  {
+   "item": "efbe0973d313",
+   "kcal": 985.14,
+   "mass_g": 801.5,
+   "est": 927.3,
+   "mass_est": 762.0
+  },
+  {
+   "item": "724481f69e4d",
+   "kcal": 469.86,
+   "mass_g": 506.8,
+   "est": 397.1,
+   "mass_est": 465.0
+  },
+  {
+   "item": "1edf75d96d99",
+   "kcal": 907.72,
+   "mass_g": 729.6,
+   "est": 1069.7,
+   "mass_est": 682.0
+  },
+  {
+   "item": "5b7ea457cb7a",
+   "kcal": 883.54,
+   "mass_g": 768.8,
+   "est": 1206.0,
+   "mass_est": 795.0
+  },
+  {
+   "item": "6590322e664b",
+   "kcal": 371.88,
+   "mass_g": 608.1,
+   "est": 495.7,
+   "mass_est": 610.0
+  },
+  {
+   "item": "d162d3e5ece5",
+   "kcal": 725.45,
+   "mass_g": 523.3,
+   "est": 495.15,
+   "mass_est": 430.0
+  },
+  {
+   "item": "a850f5c4ec6b",
+   "kcal": 1182.98,
+   "mass_g": 1323.1,
+   "est": 1138.05,
+   "mass_est": 1174.0
+  },
+  {
+   "item": "06ba0ad1579e",
+   "kcal": 1043.01,
+   "mass_g": 1322.2,
+   "est": 659.25,
+   "mass_est": 1095.0
+  },
+  {
+   "item": "634776de3305",
+   "kcal": 376.92,
+   "mass_g": 365.0,
+   "est": 404.25,
+   "mass_est": 420.0
+  },
+  {
+   "item": "f77866f5d56b",
+   "kcal": 422.49,
+   "mass_g": 432.1,
+   "est": 515.75,
+   "mass_est": 450.0
+  },
+  {
+   "item": "a594efd95ce3",
+   "kcal": 641.11,
+   "mass_g": 945.1,
+   "est": 536.76,
+   "mass_est": 594.0
+  },
+  {
+   "item": "23bd65849ec3",
+   "kcal": 546.37,
+   "mass_g": 648.3,
+   "est": 468.5,
+   "mass_est": 570.0
+  },
+  {
+   "item": "372509490e09",
+   "kcal": 450.9,
+   "mass_g": 745.5,
+   "est": 447.5,
+   "mass_est": 505.0
+  },
+  {
+   "item": "7394b0752208",
+   "kcal": 756.11,
+   "mass_g": 647.2,
+   "est": 745.5,
+   "mass_est": 630.0
+  },
+  {
+   "item": "7da36aeffe24",
+   "kcal": 512.45,
+   "mass_g": 570.8,
+   "est": 447.2,
+   "mass_est": 605.0
+  },
+  {
+   "item": "8af804f6066e",
+   "kcal": 676.56,
+   "mass_g": 611.0,
+   "est": 666.4,
+   "mass_est": 557.0
+  },
+  {
+   "item": "0843fb249786",
+   "kcal": 779.99,
+   "mass_g": 784.5,
+   "est": 994.94,
+   "mass_est": 817.0
+  },
+  {
+   "item": "93c593e3d86b",
+   "kcal": 713.99,
+   "mass_g": 724.1,
+   "est": 1071.13,
+   "mass_est": 863.0
+  },
+  {
+   "item": "b1834a9cc0d2",
+   "kcal": 465.81,
+   "mass_g": 799.2,
+   "est": 499.42,
+   "mass_est": 751.0
+  },
+  {
+   "item": "f60abb9853d2",
+   "kcal": 563.1,
+   "mass_g": 721.9,
+   "est": 597.74,
+   "mass_est": 668.0
+  },
+  {
+   "item": "3e242e80fcae",
+   "kcal": 785.76,
+   "mass_g": 731.9,
+   "est": 918.5,
+   "mass_est": 625.0
+  },
+  {
+   "item": "7c576ddc933d",
+   "kcal": 306.92,
+   "mass_g": 473.2,
+   "est": 354.95,
+   "mass_est": 375.0
+  },
+  {
+   "item": "f588a7059553",
+   "kcal": 267.48,
+   "mass_g": 515.6,
+   "est": 401.87,
+   "mass_est": 539.0
+  },
+  {
+   "item": "ffa5f5be0031",
+   "kcal": 629.63,
+   "mass_g": 733.3,
+   "est": 821.2,
+   "mass_est": 610.0
+  },
+  {
+   "item": "05ba86675c3c",
+   "kcal": 628.92,
+   "mass_g": 859.2,
+   "est": 814.96,
+   "mass_est": 909.0
+  },
+  {
+   "item": "1853aad05771",
+   "kcal": 410.39,
+   "mass_g": 617.2,
+   "est": 343.32,
+   "mass_est": 443.0
+  },
+  {
+   "item": "794145fa1937",
+   "kcal": 663.21,
+   "mass_g": 875.5,
+   "est": 942.81,
+   "mass_est": 1192.0
+  },
+  {
+   "item": "9c544b8a67eb",
+   "kcal": 621.47,
+   "mass_g": 584.1,
+   "est": 578.85,
+   "mass_est": 490.0
+  },
+  {
+   "item": "abfcb61f259a",
+   "kcal": 500.94,
+   "mass_g": 689.0,
+   "est": 501.5,
+   "mass_est": 645.0
+  },
+  {
+   "item": "08d9c7f1477d",
+   "kcal": 815.82,
+   "mass_g": 1036.7,
+   "est": 592.5,
+   "mass_est": 1020.0
+  },
+  {
+   "item": "5355ebb52f0d",
+   "kcal": 649.15,
+   "mass_g": 777.7,
+   "est": 828.97,
+   "mass_est": 648.0
+  },
+  {
+   "item": "d2a31de0a4ea",
+   "kcal": 912.31,
+   "mass_g": 915.5,
+   "est": 1107.1299999999999,
+   "mass_est": 772.0
+  },
+  {
+   "item": "ddc50fbd99f0",
+   "kcal": 524.97,
+   "mass_g": 664.8,
+   "est": 612.26,
+   "mass_est": 544.0
+  },
+  {
+   "item": "76a148b2e13d",
+   "kcal": 656.64,
+   "mass_g": 648.0,
+   "est": 555.33,
+   "mass_est": 606.0
+  },
+  {
+   "item": "859ebe5c00e2",
+   "kcal": 675.18,
+   "mass_g": 1017.3,
+   "est": 887.73,
+   "mass_est": 659.0
+  },
+  {
+   "item": "beaa541f0793",
+   "kcal": 333.19,
+   "mass_g": 493.7,
+   "est": 366.89,
+   "mass_est": 523.0
+  },
+  {
+   "item": "5e841a98a0a3",
+   "kcal": 540.75,
+   "mass_g": 598.5,
+   "est": 430.75,
+   "mass_est": 322.0
+  },
+  {
+   "item": "6003ee0fe6cd",
+   "kcal": 1311.55,
+   "mass_g": 1276.8,
+   "est": 1554.15,
+   "mass_est": 1225.0
+  },
+  {
+   "item": "7fc8723085d9",
+   "kcal": 1546.75,
+   "mass_g": 1907.7,
+   "est": 1389.65,
+   "mass_est": 1548.0
+  },
+  {
+   "item": "8371ce7efbd6",
+   "kcal": 1262.39,
+   "mass_g": 1063.7,
+   "est": 1485.75,
+   "mass_est": 695.0
+  },
+  {
+   "item": "30edd34dd685",
+   "kcal": 1124.71,
+   "mass_g": 1450.0,
+   "est": 1109.46,
+   "mass_est": 1296.0
+  },
+  {
+   "item": "0ea7c604c97f",
+   "kcal": 1643.75,
+   "mass_g": 1617.3,
+   "est": 1633.15,
+   "mass_est": 1430.0
+  },
+  {
+   "item": "b9adc425d743",
+   "kcal": 472.08,
+   "mass_g": 788.0,
+   "est": 642.44,
+   "mass_est": 832.0
+  },
+  {
+   "item": "09e2a5dec698",
+   "kcal": 308.98,
+   "mass_g": 447.3,
+   "est": 186.9,
+   "mass_est": 445.0
+  },
+  {
+   "item": "bf00bb14eca9",
+   "kcal": 428.34,
+   "mass_g": 596.9,
+   "est": 298.22,
+   "mass_est": 523.0
+  },
+  {
+   "item": "7a8a69b7a1a1",
+   "kcal": 477.57,
+   "mass_g": 453.6,
+   "est": 535.0,
+   "mass_est": 455.0
+  },
+  {
+   "item": "bd5c000d3750",
+   "kcal": 1200.04,
+   "mass_g": 635.4,
+   "est": 981.84,
+   "mass_est": 477.0
+  },
+  {
+   "item": "47b99e221b8b",
+   "kcal": 500.34,
+   "mass_g": 518.5,
+   "est": 561.36,
+   "mass_est": 507.0
+  },
+  {
+   "item": "e2ab8d74b3f4",
+   "kcal": 748.94,
+   "mass_g": 647.0,
+   "est": 673.79,
+   "mass_est": 461.0
+  },
+  {
+   "item": "7d70800967ab",
+   "kcal": 593.22,
+   "mass_g": 509.6,
+   "est": 527.75,
+   "mass_est": 490.0
+  },
+  {
+   "item": "5060192b35ff",
+   "kcal": 497.31,
+   "mass_g": 542.7,
+   "est": 588.6,
+   "mass_est": 480.0
+  },
+  {
+   "item": "b00059d4b1a5",
+   "kcal": 563.51,
+   "mass_g": 636.5,
+   "est": 680.0,
+   "mass_est": 475.0
+  },
+  {
+   "item": "060939d1ccc5",
+   "kcal": 695.63,
+   "mass_g": 549.8,
+   "est": 483.85,
+   "mass_est": 400.0
+  },
+  {
+   "item": "712b60b94218",
+   "kcal": 376.69,
+   "mass_g": 397.8,
+   "est": 406.85,
+   "mass_est": 335.0
+  },
+  {
+   "item": "2d4180092a3c",
+   "kcal": 679.12,
+   "mass_g": 769.4,
+   "est": 898.5,
+   "mass_est": 795.0
+  },
+  {
+   "item": "b163ec9fe65f",
+   "kcal": 787.19,
+   "mass_g": 1394.5,
+   "est": 698.61,
+   "mass_est": 1222.0
+  },
+  {
+   "item": "912fc88760cc",
+   "kcal": 649.44,
+   "mass_g": 618.8,
+   "est": 691.46,
+   "mass_est": 726.0
+  },
+  {
+   "item": "bc9cd84f8982",
+   "kcal": 1564.58,
+   "mass_g": 1213.6,
+   "est": 1089.79,
+   "mass_est": 851.0
+  },
+  {
+   "item": "3d48c31740de",
+   "kcal": 933.59,
+   "mass_g": 1789.4,
+   "est": 840.04,
+   "mass_est": 1213.0
+  },
+  {
+   "item": "5e772113d64d",
+   "kcal": 440.63,
+   "mass_g": 556.3,
+   "est": 636.3,
+   "mass_est": 410.0
+  },
+  {
+   "item": "64e5d7570e4e",
+   "kcal": 208.06,
+   "mass_g": 400.6,
+   "est": 252.5,
+   "mass_est": 365.0
+  },
+  {
+   "item": "1748e1fab6cd",
+   "kcal": 93.13,
+   "mass_g": 323.4,
+   "est": 218.8,
+   "mass_est": 325.0
+  },
+  {
+   "item": "b2e636ab8371",
+   "kcal": 143.16,
+   "mass_g": 283.7,
+   "est": 117.62,
+   "mass_est": 212.0
+  },
+  {
+   "item": "c46c6a4e6248",
+   "kcal": 299.08,
+   "mass_g": 498.0,
+   "est": 369.8,
+   "mass_est": 490.0
+  },
+  {
+   "item": "bd01476562a7",
+   "kcal": 285.05,
+   "mass_g": 428.7,
+   "est": 252.37,
+   "mass_est": 353.0
+  },
+  {
+   "item": "827c2600f586",
+   "kcal": 339.68,
+   "mass_g": 366.4,
+   "est": 397.7,
+   "mass_est": 462.0
+  },
+  {
+   "item": "6c023edb61f4",
+   "kcal": 113.93,
+   "mass_g": 333.5,
+   "est": 67.15,
+   "mass_est": 230.0
+  },
+  {
+   "item": "b1131fd312f1",
+   "kcal": 977.86,
+   "mass_g": 694.1,
+   "est": 1159.94,
+   "mass_est": 705.0
+  },
+  {
+   "item": "3f632b378185",
+   "kcal": 1414.08,
+   "mass_g": 1170.5,
+   "est": 1203.35,
+   "mass_est": 985.0
+  },
+  {
+   "item": "902f4c9d279a",
+   "kcal": 617.97,
+   "mass_g": 470.6,
+   "est": 635.57,
+   "mass_est": 486.0
+  },
+  {
+   "item": "22d620eaa583",
+   "kcal": 1066.97,
+   "mass_g": 1158.4,
+   "est": 828.62,
+   "mass_est": 957.0
+  },
+  {
+   "item": "3cb14c928b52",
+   "kcal": 664.8,
+   "mass_g": 1082.3,
+   "est": 736.7,
+   "mass_est": 1036.0
+  },
+  {
+   "item": "b68bb53dc7c5",
+   "kcal": 1683.57,
+   "mass_g": 1154.5,
+   "est": 1665.7,
+   "mass_est": 947.0
+  },
+  {
+   "item": "ac57f8aca90a",
+   "kcal": 878.55,
+   "mass_g": 1697.5,
+   "est": 957.54,
+   "mass_est": 1381.0
+  },
+  {
+   "item": "ce87267bb1c8",
+   "kcal": 1288.52,
+   "mass_g": 1557.1,
+   "est": 1136.2,
+   "mass_est": 1283.0
+  },
+  {
+   "item": "1cc0abb241a3",
+   "kcal": 1905.67,
+   "mass_g": 1902.8,
+   "est": 1674.7,
+   "mass_est": 1620.0
+  },
+  {
+   "item": "c653aba8f79f",
+   "kcal": 2074.57,
+   "mass_g": 1928.5,
+   "est": 1774.86,
+   "mass_est": 1529.0
+  },
+  {
+   "item": "6d785848c4d9",
+   "kcal": 1157.34,
+   "mass_g": 1336.2,
+   "est": 986.1899999999999,
+   "mass_est": 968.0
+  },
+  {
+   "item": "c18a571c1634",
+   "kcal": 1698.52,
+   "mass_g": 1969.0,
+   "est": 1634.75,
+   "mass_est": 1455.0
+  },
+  {
+   "item": "8acff2b95d23",
+   "kcal": 1402.29,
+   "mass_g": 1451.4,
+   "est": 1384.38,
+   "mass_est": 1259.0
+  },
+  {
+   "item": "dfd030cc72d3",
+   "kcal": 2088.23,
+   "mass_g": 2245.9,
+   "est": 2151.51,
+   "mass_est": 2056.0
+  },
+  {
+   "item": "639303cb60ed",
+   "kcal": 2359.32,
+   "mass_g": 1902.0,
+   "est": 1725.0,
+   "mass_est": 1313.0
+  },
+  {
+   "item": "07800b8e16c7",
+   "kcal": 1441.07,
+   "mass_g": 1480.6,
+   "est": 1379.13,
+   "mass_est": 1266.0
+  },
+  {
+   "item": "da4cbdc7c9d7",
+   "kcal": 1276.27,
+   "mass_g": 1375.3,
+   "est": 1347.61,
+   "mass_est": 1156.0
+  },
+  {
+   "item": "1bbca7858efa",
+   "kcal": 2074.24,
+   "mass_g": 1711.9,
+   "est": 1970.81,
+   "mass_est": 1494.0
+  },
+  {
+   "item": "b01d1e4ffad6",
+   "kcal": 1021.17,
+   "mass_g": 589.9,
+   "est": 1168.0,
+   "mass_est": 640.0
+  },
+  {
+   "item": "31d6defab1e1",
+   "kcal": 778.39,
+   "mass_g": 574.6,
+   "est": 883.5,
+   "mass_est": 575.0
+  },
+  {
+   "item": "8ff727f0db8c",
+   "kcal": 612.81,
+   "mass_g": 553.8,
+   "est": 857.0,
+   "mass_est": 630.0
+  },
+  {
+   "item": "18daa8cbae79",
+   "kcal": 579.14,
+   "mass_g": 593.4,
+   "est": 493.15,
+   "mass_est": 497.0
+  },
+  {
+   "item": "ee8bb7af945f",
+   "kcal": 676.4,
+   "mass_g": 855.8,
+   "est": 655.0,
+   "mass_est": 780.0
+  },
+  {
+   "item": "1d9061ade99b",
+   "kcal": 607.19,
+   "mass_g": 604.3,
+   "est": 400.0,
+   "mass_est": 500.0
+  },
+  {
+   "item": "4f50b151d79c",
+   "kcal": 658.23,
+   "mass_g": 829.5,
+   "est": 446.65,
+   "mass_est": 580.0
+  },
+  {
+   "item": "7d84d74c9be4",
+   "kcal": 866.91,
+   "mass_g": 836.1,
+   "est": 574.1,
+   "mass_est": 690.0
+  },
+  {
+   "item": "770dd7c95e83",
+   "kcal": 440.24,
+   "mass_g": 439.3,
+   "est": 433.58,
+   "mass_est": 359.0
+  },
+  {
+   "item": "7b628dfc56d1",
+   "kcal": 543.0,
+   "mass_g": 784.8,
+   "est": 600.04,
+   "mass_est": 608.0
+  },
+  {
+   "item": "b744b4159d47",
+   "kcal": 798.69,
+   "mass_g": 896.5,
+   "est": 453.5,
+   "mass_est": 592.0
+  },
+  {
+   "item": "8ccd5a88057d",
+   "kcal": 675.07,
+   "mass_g": 577.7,
+   "est": 708.2,
+   "mass_est": 540.0
+  },
+  {
+   "item": "97ca8ed79026",
+   "kcal": 683.89,
+   "mass_g": 709.8,
+   "est": 466.35,
+   "mass_est": 445.0
+  },
+  {
+   "item": "f12fef634b77",
+   "kcal": 983.99,
+   "mass_g": 1180.6,
+   "est": 882.05,
+   "mass_est": 1033.0
+  },
+  {
+   "item": "5c92eaf239b3",
+   "kcal": 701.49,
+   "mass_g": 578.4,
+   "est": 664.7,
+   "mass_est": 435.0
+  },
+  {
+   "item": "8e1168c20bbc",
+   "kcal": 705.57,
+   "mass_g": 821.3,
+   "est": 678.75,
+   "mass_est": 842.0
+  },
+  {
+   "item": "959561e590f0",
+   "kcal": 1045.74,
+   "mass_g": 981.6,
+   "est": 588.3,
+   "mass_est": 810.0
+  },
+  {
+   "item": "b105cd00b197",
+   "kcal": 295.85,
+   "mass_g": 209.5,
+   "est": 247.88,
+   "mass_est": 173.0
+  },
+  {
+   "item": "7c6b2eed4129",
+   "kcal": 282.04,
+   "mass_g": 452.0,
+   "est": 296.85,
+   "mass_est": 206.0
+  },
+  {
+   "item": "9395bbfcf5de",
+   "kcal": 154.22,
+   "mass_g": 248.0,
+   "est": 149.66,
+   "mass_est": 298.0
+  },
+  {
+   "item": "eccaa05a7835",
+   "kcal": 590.38,
+   "mass_g": 897.6,
+   "est": 675.78,
+   "mass_est": 618.0
+  },
+  {
+   "item": "133123b394b3",
+   "kcal": 600.24,
+   "mass_g": 553.1,
+   "est": 626.4,
+   "mass_est": 603.0
+  },
+  {
+   "item": "355d04fa5bef",
+   "kcal": 310.64,
+   "mass_g": 221.1,
+   "est": 276.5,
+   "mass_est": 175.0
+  },
+  {
+   "item": "42521cb0d652",
+   "kcal": 317.15,
+   "mass_g": 740.0,
+   "est": 540.65,
+   "mass_est": 548.0
+  },
+  {
+   "item": "cb09a2566aa6",
+   "kcal": 1152.02,
+   "mass_g": 647.2,
+   "est": 936.72,
+   "mass_est": 543.0
+  },
+  {
+   "item": "770efbd3f100",
+   "kcal": 756.79,
+   "mass_g": 828.4,
+   "est": 706.6,
+   "mass_est": 811.0
+  },
+  {
+   "item": "36e0a3286919",
+   "kcal": 1087.11,
+   "mass_g": 810.3,
+   "est": 959.94,
+   "mass_est": 632.0
+  },
+  {
+   "item": "8120fc2ba4f0",
+   "kcal": 920.97,
+   "mass_g": 838.9,
+   "est": 356.75,
+   "mass_est": 390.0
+  },
+  {
+   "item": "79eb009a268a",
+   "kcal": 398.8,
+   "mass_g": 603.2,
+   "est": 487.75,
+   "mass_est": 495.0
+  },
+  {
+   "item": "c9463872f130",
+   "kcal": 919.41,
+   "mass_g": 1193.8,
+   "est": 726.0500000000001,
+   "mass_est": 1005.0
+  },
+  {
+   "item": "16dec0adb83d",
+   "kcal": 653.6,
+   "mass_g": 795.6,
+   "est": 685.65,
+   "mass_est": 665.0
+  },
+  {
+   "item": "d85d5caa1e73",
+   "kcal": 759.85,
+   "mass_g": 890.6,
+   "est": 680.97,
+   "mass_est": 847.0
+  },
+  {
+   "item": "cbc20b8dc059",
+   "kcal": 806.52,
+   "mass_g": 1071.6,
+   "est": 674.0600000000001,
+   "mass_est": 969.0
+  },
+  {
+   "item": "004fd1dfc2ed",
+   "kcal": 316.54,
+   "mass_g": 200.7,
+   "est": 277.58,
+   "mass_est": 169.0
+  },
+  {
+   "item": "7f7a36f9599d",
+   "kcal": 937.91,
+   "mass_g": 831.4,
+   "est": 1268.75,
+   "mass_est": 540.0
+  },
+  {
+   "item": "7fb168fca1fe",
+   "kcal": 743.82,
+   "mass_g": 610.4,
+   "est": 437.57,
+   "mass_est": 268.0
+  },
+  {
+   "item": "02a9a3765824",
+   "kcal": 531.32,
+   "mass_g": 756.2,
+   "est": 493.7,
+   "mass_est": 500.0
+  },
+  {
+   "item": "e26d6f2bb2a2",
+   "kcal": 554.32,
+   "mass_g": 662.6,
+   "est": 478.54,
+   "mass_est": 298.0
+  },
+  {
+   "item": "84a61900df42",
+   "kcal": 450.26,
+   "mass_g": 448.6,
+   "est": 332.0,
+   "mass_est": 395.0
+  },
+  {
+   "item": "6313cc516df1",
+   "kcal": 1239.3,
+   "mass_g": 908.1,
+   "est": 1155.2,
+   "mass_est": 845.0
+  },
+  {
+   "item": "369486c60c9f",
+   "kcal": 1701.94,
+   "mass_g": 1333.7,
+   "est": 1378.3,
+   "mass_est": 1030.0
+  },
+  {
+   "item": "b6919d94edd3",
+   "kcal": 1010.21,
+   "mass_g": 539.0,
+   "est": 827.14,
+   "mass_est": 445.0
+  },
+  {
+   "item": "c7167a3af481",
+   "kcal": 1193.56,
+   "mass_g": 987.4,
+   "est": 1362.7,
+   "mass_est": 918.0
+  },
+  {
+   "item": "73c374ed05cf",
+   "kcal": 881.05,
+   "mass_g": 894.4,
+   "est": 747.3,
+   "mass_est": 670.0
+  },
+  {
+   "item": "8e0c2bc94b4f",
+   "kcal": 626.16,
+   "mass_g": 611.9,
+   "est": 805.5,
+   "mass_est": 565.0
+  },
+  {
+   "item": "42bbda3c95ac",
+   "kcal": 468.35,
+   "mass_g": 477.4,
+   "est": 631.83,
+   "mass_est": 567.0
+  },
+  {
+   "item": "b43d93ae5ada",
+   "kcal": 964.7,
+   "mass_g": 800.8,
+   "est": 1092.35,
+   "mass_est": 734.0
+  },
+  {
+   "item": "5de0f4fad307",
+   "kcal": 1146.94,
+   "mass_g": 968.4,
+   "est": 979.95,
+   "mass_est": 785.0
+  },
+  {
+   "item": "9a012a4ac55c",
+   "kcal": 703.37,
+   "mass_g": 685.4,
+   "est": 667.8,
+   "mass_est": 580.0
+  },
+  {
+   "item": "a3eba0c4d942",
+   "kcal": 808.44,
+   "mass_g": 912.6,
+   "est": 847.66,
+   "mass_est": 833.0
+  },
+  {
+   "item": "7249282f1f7d",
+   "kcal": 1115.96,
+   "mass_g": 731.9,
+   "est": 1035.5,
+   "mass_est": 710.0
+  },
+  {
+   "item": "3da642d89c00",
+   "kcal": 615.76,
+   "mass_g": 831.4,
+   "est": 146.4,
+   "mass_est": 240.0
+  },
+  {
+   "item": "588ee07fbf98",
+   "kcal": 352.46,
+   "mass_g": 558.3,
+   "est": 280.69,
+   "mass_est": 613.0
+  },
+  {
+   "item": "1326a32a823d",
+   "kcal": 1176.57,
+   "mass_g": 1134.0,
+   "est": 687.4,
+   "mass_est": 888.0
+  },
+  {
+   "item": "1917f9e8b459",
+   "kcal": 499.81,
+   "mass_g": 433.4,
+   "est": 339.1,
+   "mass_est": 205.0
+  },
+  {
+   "item": "e8036d274709",
+   "kcal": 804.75,
+   "mass_g": 777.3,
+   "est": 700.3,
+   "mass_est": 707.0
+  },
+  {
+   "item": "749b05df82af",
+   "kcal": 654.46,
+   "mass_g": 694.5,
+   "est": 517.7,
+   "mass_est": 430.0
+  },
+  {
+   "item": "3d6c273a362a",
+   "kcal": 420.04,
+   "mass_g": 372.2,
+   "est": 327.75,
+   "mass_est": 345.0
+  },
+  {
+   "item": "4c973ea21ea6",
+   "kcal": 661.51,
+   "mass_g": 911.8,
+   "est": 819.67,
+   "mass_est": 870.0
+  },
+  {
+   "item": "d3409558137e",
+   "kcal": 1264.9,
+   "mass_g": 698.2,
+   "est": 1334.86,
+   "mass_est": 762.0
+  },
+  {
+   "item": "15f619269028",
+   "kcal": 1648.53,
+   "mass_g": 1088.5,
+   "est": 1229.76,
+   "mass_est": 964.0
+  },
+  {
+   "item": "312f0aad9dca",
+   "kcal": 2419.31,
+   "mass_g": 1718.5,
+   "est": 1607.75,
+   "mass_est": 1350.0
+  },
+  {
+   "item": "79563ef484d2",
+   "kcal": 1314.4,
+   "mass_g": 877.2,
+   "est": 837.8,
+   "mass_est": 770.0
+  },
+  {
+   "item": "0c9272022fd0",
+   "kcal": 790.95,
+   "mass_g": 675.1,
+   "est": 554.4,
+   "mass_est": 370.0
+  },
+  {
+   "item": "f3e0aa5255d2",
+   "kcal": 430.15,
+   "mass_g": 367.9,
+   "est": 551.21,
+   "mass_est": 463.0
+  },
+  {
+   "item": "7c54562aebc9",
+   "kcal": 490.64,
+   "mass_g": 701.8,
+   "est": 818.65,
+   "mass_est": 767.0
+  },
+  {
+   "item": "a10adc48d508",
+   "kcal": 844.62,
+   "mass_g": 818.7,
+   "est": 1087.8,
+   "mass_est": 800.0
+  },
+  {
+   "item": "d6c7dcc8027d",
+   "kcal": 427.94,
+   "mass_g": 595.7,
+   "est": 575.5,
+   "mass_est": 565.0
+  },
+  {
+   "item": "e45735b3662f",
+   "kcal": 316.9,
+   "mass_g": 449.2,
+   "est": 421.72,
+   "mass_est": 452.0
+  },
+  {
+   "item": "5bb6d9e753a8",
+   "kcal": 608.18,
+   "mass_g": 491.0,
+   "est": 498.38,
+   "mass_est": 474.0
+  },
+  {
+   "item": "dbd9f488e04a",
+   "kcal": 857.35,
+   "mass_g": 1108.3,
+   "est": 946.5,
+   "mass_est": 970.0
+  },
+  {
+   "item": "d2c3e5040ebf",
+   "kcal": 713.79,
+   "mass_g": 540.1,
+   "est": 754.3,
+   "mass_est": 505.0
+  },
+  {
+   "item": "a0c21b6fae8c",
+   "kcal": 656.49,
+   "mass_g": 679.9,
+   "est": 566.11,
+   "mass_est": 638.0
+  },
+  {
+   "item": "d7cd9794b009",
+   "kcal": 1214.33,
+   "mass_g": 1070.4,
+   "est": 1326.45,
+   "mass_est": 1070.0
+  },
+  {
+   "item": "da6185f591ae",
+   "kcal": 611.01,
+   "mass_g": 633.8,
+   "est": 744.8,
+   "mass_est": 665.0
+  },
+  {
+   "item": "cf8b1afdc91f",
+   "kcal": 807.89,
+   "mass_g": 751.3,
+   "est": 906.55,
+   "mass_est": 657.0
+  },
+  {
+   "item": "c5a32d1d242b",
+   "kcal": 621.46,
+   "mass_g": 710.0,
+   "est": 727.21,
+   "mass_est": 729.0
+  },
+  {
+   "item": "b8fd32d5e3e9",
+   "kcal": 493.33,
+   "mass_g": 514.8,
+   "est": 360.5,
+   "mass_est": 500.0
+  },
+  {
+   "item": "f4bd081cb699",
+   "kcal": 796.77,
+   "mass_g": 807.5,
+   "est": 969.76,
+   "mass_est": 824.0
+  },
+  {
+   "item": "2fefee5017fc",
+   "kcal": 1120.15,
+   "mass_g": 1206.0,
+   "est": 1169.95,
+   "mass_est": 1180.0
+  },
+  {
+   "item": "fde4a5a339f9",
+   "kcal": 552.72,
+   "mass_g": 846.2,
+   "est": 548.3,
+   "mass_est": 714.0
+  },
+  {
+   "item": "cdcc89221e2f",
+   "kcal": 1080.17,
+   "mass_g": 1747.7,
+   "est": 1075.91,
+   "mass_est": 1549.0
+  },
+  {
+   "item": "b86d74256505",
+   "kcal": 1378.58,
+   "mass_g": 1875.0,
+   "est": 1171.65,
+   "mass_est": 1515.0
+  },
+  {
+   "item": "257bf87b63eb",
+   "kcal": 592.15,
+   "mass_g": 762.1,
+   "est": 677.24,
+   "mass_est": 762.0
+  },
+  {
+   "item": "93578284b778",
+   "kcal": 603.28,
+   "mass_g": 612.4,
+   "est": 487.0,
+   "mass_est": 650.0
+  },
+  {
+   "item": "c088f512dd02",
+   "kcal": 1156.46,
+   "mass_g": 960.2,
+   "est": 800.65,
+   "mass_est": 735.0
+  },
+  {
+   "item": "69d743b45bf4",
+   "kcal": 826.82,
+   "mass_g": 811.0,
+   "est": 748.0,
+   "mass_est": 805.0
+  },
+  {
+   "item": "72072263df0b",
+   "kcal": 724.82,
+   "mass_g": 1304.1,
+   "est": 650.35,
+   "mass_est": 1021.0
+  },
+  {
+   "item": "40ae518b6add",
+   "kcal": 480.9,
+   "mass_g": 651.6,
+   "est": 389.15,
+   "mass_est": 515.0
+  },
+  {
+   "item": "61ac93ac6509",
+   "kcal": 454.97,
+   "mass_g": 651.9,
+   "est": 473.1,
+   "mass_est": 625.0
+  },
+  {
+   "item": "0b78e7ecb6a1",
+   "kcal": 652.28,
+   "mass_g": 1006.6,
+   "est": 332.4,
+   "mass_est": 700.0
+  },
+  {
+   "item": "3e7084f17575",
+   "kcal": 408.0,
+   "mass_g": 568.2,
+   "est": 521.5,
+   "mass_est": 650.0
+  },
+  {
+   "item": "980f17de11ff",
+   "kcal": 517.01,
+   "mass_g": 520.5,
+   "est": 723.0,
+   "mass_est": 430.0
+  },
+  {
+   "item": "74eccd47ceaf",
+   "kcal": 851.1,
+   "mass_g": 721.9,
+   "est": 948.3,
+   "mass_est": 780.0
+  },
+  {
+   "item": "4a5700536653",
+   "kcal": 588.35,
+   "mass_g": 774.5,
+   "est": 686.7,
+   "mass_est": 870.0
+  },
+  {
+   "item": "b2e127e75606",
+   "kcal": 1786.32,
+   "mass_g": 1357.7,
+   "est": 1085.4,
+   "mass_est": 1140.0
+  },
+  {
+   "item": "129f72d0a29e",
+   "kcal": 738.21,
+   "mass_g": 984.0,
+   "est": 927.25,
+   "mass_est": 1118.0
+  },
+  {
+   "item": "51fbdc5da569",
+   "kcal": 787.27,
+   "mass_g": 942.2,
+   "est": 665.8,
+   "mass_est": 870.0
+  },
+  {
+   "item": "e7508914b969",
+   "kcal": 2077.72,
+   "mass_g": 1551.8,
+   "est": 1244.99,
+   "mass_est": 1136.0
+  },
+  {
+   "item": "d5ab41e3cf5c",
+   "kcal": 1425.27,
+   "mass_g": 1296.9,
+   "est": 1275.55,
+   "mass_est": 1130.0
+  },
+  {
+   "item": "2c725bf5e93e",
+   "kcal": 851.06,
+   "mass_g": 800.2,
+   "est": 946.5,
+   "mass_est": 795.0
+  },
+  {
+   "item": "f6fb3cd20a20",
+   "kcal": 1052.63,
+   "mass_g": 745.4,
+   "est": 601.09,
+   "mass_est": 556.0
+  },
+  {
+   "item": "09dec907a439",
+   "kcal": 542.28,
+   "mass_g": 560.8,
+   "est": 433.0,
+   "mass_est": 460.0
+  },
+  {
+   "item": "538ed1884208",
+   "kcal": 541.79,
+   "mass_g": 513.0,
+   "est": 495.75,
+   "mass_est": 472.0
+  },
+  {
+   "item": "7b11e7a36b3b",
+   "kcal": 749.17,
+   "mass_g": 877.2,
+   "est": 766.2,
+   "mass_est": 790.0
+  },
+  {
+   "item": "d1400bf18d31",
+   "kcal": 448.68,
+   "mass_g": 452.5,
+   "est": 438.8,
+   "mass_est": 452.0
+  },
+  {
+   "item": "ab5307e3ac6b",
+   "kcal": 892.64,
+   "mass_g": 848.5,
+   "est": 1029.06,
+   "mass_est": 737.0
+  },
+  {
+   "item": "89d25be96d76",
+   "kcal": 928.46,
+   "mass_g": 941.7,
+   "est": 1056.2,
+   "mass_est": 750.0
+  },
+  {
+   "item": "2442b8b8ede0",
+   "kcal": 1535.98,
+   "mass_g": 1576.3,
+   "est": 1450.05,
+   "mass_est": 1390.0
+  },
+  {
+   "item": "04912b87c55c",
+   "kcal": 984.44,
+   "mass_g": 1108.9,
+   "est": 907.23,
+   "mass_est": 854.0
+  },
+  {
+   "item": "ac25d0e4a853",
+   "kcal": 2171.08,
+   "mass_g": 1518.5,
+   "est": 1619.18,
+   "mass_est": 1288.0
+  },
+  {
+   "item": "6b5be1a27566",
+   "kcal": 1557.75,
+   "mass_g": 1152.0,
+   "est": 1513.0,
+   "mass_est": 1035.0
+  },
+  {
+   "item": "740d4807c75a",
+   "kcal": 815.23,
+   "mass_g": 509.4,
+   "est": 735.25,
+   "mass_est": 500.0
+  },
+  {
+   "item": "8c1b440f293e",
+   "kcal": 338.32,
+   "mass_g": 784.1,
+   "est": 554.75,
+   "mass_est": 749.0
+  },
+  {
+   "item": "0698929a06db",
+   "kcal": 569.42,
+   "mass_g": 857.7,
+   "est": 838.25,
+   "mass_est": 947.0
+  },
+  {
+   "item": "27093b2f8902",
+   "kcal": 503.93,
+   "mass_g": 908.7,
+   "est": 551.91,
+   "mass_est": 801.0
+  },
+  {
+   "item": "f6d0ed43aca2",
+   "kcal": 428.79,
+   "mass_g": 526.9,
+   "est": 458.03000000000003,
+   "mass_est": 567.0
+  },
+  {
+   "item": "8fd27cdc3dce",
+   "kcal": 444.17,
+   "mass_g": 513.6,
+   "est": 473.38,
+   "mass_est": 474.0
+  },
+  {
+   "item": "10657ca3e060",
+   "kcal": 363.37,
+   "mass_g": 804.3,
+   "est": 589.45,
+   "mass_est": 865.0
+  },
+  {
+   "item": "a4780a349d98",
+   "kcal": 412.75,
+   "mass_g": 683.1,
+   "est": 556.34,
+   "mass_est": 526.0
+  },
+  {
+   "item": "3c69d69b36fe",
+   "kcal": 849.05,
+   "mass_g": 960.0,
+   "est": 863.55,
+   "mass_est": 872.0
+  },
+  {
+   "item": "0c3e1847dc75",
+   "kcal": 1234.71,
+   "mass_g": 1057.8,
+   "est": 1097.6,
+   "mass_est": 791.0
+  },
+  {
+   "item": "eb00b1331c21",
+   "kcal": 1095.14,
+   "mass_g": 1086.7,
+   "est": 1430.84,
+   "mass_est": 1215.0
+  },
+  {
+   "item": "b0789e8ac358",
+   "kcal": 470.19,
+   "mass_g": 626.9,
+   "est": 652.25,
+   "mass_est": 325.0
+  },
+  {
+   "item": "4ab48fa231b5",
+   "kcal": 645.59,
+   "mass_g": 620.8,
+   "est": 742.61,
+   "mass_est": 664.0
+  },
+  {
+   "item": "b73e50a13c14",
+   "kcal": 762.54,
+   "mass_g": 1191.2,
+   "est": 1212.29,
+   "mass_est": 1298.0
+  },
+  {
+   "item": "ced70baca019",
+   "kcal": 601.46,
+   "mass_g": 606.8,
+   "est": 658.25,
+   "mass_est": 610.0
+  },
+  {
+   "item": "0ceda8cbf01b",
+   "kcal": 646.06,
+   "mass_g": 762.6,
+   "est": 488.15,
+   "mass_est": 580.0
+  },
+  {
+   "item": "fb92b94b757d",
+   "kcal": 416.78,
+   "mass_g": 707.5,
+   "est": 726.2,
+   "mass_est": 745.0
+  },
+  {
+   "item": "51d971451483",
+   "kcal": 550.13,
+   "mass_g": 581.1,
+   "est": 513.25,
+   "mass_est": 490.0
+  },
+  {
+   "item": "7179e5535f88",
+   "kcal": 402.02,
+   "mass_g": 494.2,
+   "est": 507.1,
+   "mass_est": 485.0
+  },
+  {
+   "item": "9459bb47e968",
+   "kcal": 591.01,
+   "mass_g": 618.2,
+   "est": 411.65,
+   "mass_est": 450.0
+  },
+  {
+   "item": "1076174028c2",
+   "kcal": 510.86,
+   "mass_g": 484.9,
+   "est": 435.5,
+   "mass_est": 495.0
+  },
+  {
+   "item": "db81544d4cd9",
+   "kcal": 669.98,
+   "mass_g": 703.1,
+   "est": 533.75,
+   "mass_est": 735.0
+  },
+  {
+   "item": "6d451020dd9a",
+   "kcal": 570.16,
+   "mass_g": 908.3,
+   "est": 646.2,
+   "mass_est": 620.0
+  },
+  {
+   "item": "67e5c80a5fb4",
+   "kcal": 582.35,
+   "mass_g": 640.2,
+   "est": 541.51,
+   "mass_est": 744.0
+  },
+  {
+   "item": "59f9f907a1c5",
+   "kcal": 1149.75,
+   "mass_g": 972.3,
+   "est": 748.9,
+   "mass_est": 413.0
+  },
+  {
+   "item": "8914133815fb",
+   "kcal": 598.04,
+   "mass_g": 706.4,
+   "est": 786.35,
+   "mass_est": 577.0
+  },
+  {
+   "item": "a6e8677f71d6",
+   "kcal": 1221.75,
+   "mass_g": 551.5,
+   "est": 822.88,
+   "mass_est": 434.0
+  },
+  {
+   "item": "ea4a7b78fe0a",
+   "kcal": 302.77,
+   "mass_g": 654.6,
+   "est": 526.46,
+   "mass_est": 760.0
+  },
+  {
+   "item": "79d81ae543eb",
+   "kcal": 877.34,
+   "mass_g": 685.8,
+   "est": 988.0,
+   "mass_est": 705.0
+  },
+  {
+   "item": "cf9cc20f1875",
+   "kcal": 675.43,
+   "mass_g": 781.3,
+   "est": 924.5,
+   "mass_est": 777.0
+  },
+  {
+   "item": "a0d7e18fcc2d",
+   "kcal": 626.45,
+   "mass_g": 709.9,
+   "est": 817.5,
+   "mass_est": 655.0
+  },
+  {
+   "item": "e479804e5849",
+   "kcal": 849.97,
+   "mass_g": 603.6,
+   "est": 792.5,
+   "mass_est": 565.0
+  },
+  {
+   "item": "646ff70b6533",
+   "kcal": 631.84,
+   "mass_g": 792.4,
+   "est": 883.53,
+   "mass_est": 1072.0
+  },
+  {
+   "item": "647d30736106",
+   "kcal": 611.45,
+   "mass_g": 453.6,
+   "est": 667.0,
+   "mass_est": 455.0
+  },
+  {
+   "item": "78d779b6ab44",
+   "kcal": 596.3,
+   "mass_g": 644.5,
+   "est": 790.81,
+   "mass_est": 736.0
+  },
+  {
+   "item": "d45e77b0b2a1",
+   "kcal": 1286.84,
+   "mass_g": 1443.7,
+   "est": 995.29,
+   "mass_est": 1320.0
+  },
+  {
+   "item": "93cef7f15de5",
+   "kcal": 1015.29,
+   "mass_g": 848.8,
+   "est": 1158.5,
+   "mass_est": 770.0
+  },
+  {
+   "item": "47a23bff7747",
+   "kcal": 1344.52,
+   "mass_g": 1157.7,
+   "est": 1400.47,
+   "mass_est": 1116.0
+  },
+  {
+   "item": "20e08391c2b7",
+   "kcal": 1031.18,
+   "mass_g": 839.7,
+   "est": 1190.76,
+   "mass_est": 859.0
+  },
+  {
+   "item": "da1151b294c1",
+   "kcal": 1300.1,
+   "mass_g": 1111.9,
+   "est": 1192.75,
+   "mass_est": 940.0
+  },
+  {
+   "item": "5d43b989d51a",
+   "kcal": 372.22,
+   "mass_g": 608.7,
+   "est": 802.1,
+   "mass_est": 645.0
+  },
+  {
+   "item": "9c2e8402a2ba",
+   "kcal": 480.08,
+   "mass_g": 937.3,
+   "est": 597.5,
+   "mass_est": 855.0
+  },
+  {
+   "item": "150b027e1f45",
+   "kcal": 376.43,
+   "mass_g": 368.1,
+   "est": 403.9,
+   "mass_est": 365.0
+  },
+  {
+   "item": "df98af70e8ec",
+   "kcal": 1086.86,
+   "mass_g": 840.3,
+   "est": 799.05,
+   "mass_est": 567.0
+  },
+  {
+   "item": "caa32063f6f8",
+   "kcal": 408.89,
+   "mass_g": 499.9,
+   "est": 461.56,
+   "mass_est": 559.0
+  },
+  {
+   "item": "adbe78188628",
+   "kcal": 534.26,
+   "mass_g": 625.8,
+   "est": 552.42,
+   "mass_est": 526.0
+  },
+  {
+   "item": "e86b606dcb1e",
+   "kcal": 786.19,
+   "mass_g": 824.0,
+   "est": 631.45,
+   "mass_est": 668.0
+  },
+  {
+   "item": "bfc8f4a0fa34",
+   "kcal": 789.71,
+   "mass_g": 899.8,
+   "est": 480.35,
+   "mass_est": 595.0
+  },
+  {
+   "item": "97f0e5ddc5cc",
+   "kcal": 469.73,
+   "mass_g": 599.5,
+   "est": 453.25,
+   "mass_est": 525.0
+  },
+  {
+   "item": "3590acdd4f75",
+   "kcal": 625.04,
+   "mass_g": 785.0,
+   "est": 531.6,
+   "mass_est": 660.0
+  },
+  {
+   "item": "1ddacce84f0c",
+   "kcal": 473.92,
+   "mass_g": 327.7,
+   "est": 464.0,
+   "mass_est": 361.0
+  },
+  {
+   "item": "25ef01a70ac0",
+   "kcal": 477.41,
+   "mass_g": 864.5,
+   "est": 657.0,
+   "mass_est": 740.0
+  },
+  {
+   "item": "4e81a8db6602",
+   "kcal": 639.04,
+   "mass_g": 640.3,
+   "est": 630.09,
+   "mass_est": 726.0
+  },
+  {
+   "item": "dbc88dcce663",
+   "kcal": 414.72,
+   "mass_g": 418.7,
+   "est": 381.5,
+   "mass_est": 355.0
+  },
+  {
+   "item": "6589eb07e961",
+   "kcal": 380.28,
+   "mass_g": 819.3,
+   "est": 492.39,
+   "mass_est": 853.0
+  },
+  {
+   "item": "95a4c8f4f529",
+   "kcal": 400.96,
+   "mass_g": 539.0,
+   "est": 392.27,
+   "mass_est": 344.0
+  },
+  {
+   "item": "ace166c2afd6",
+   "kcal": 520.79,
+   "mass_g": 617.8,
+   "est": 401.82,
+   "mass_est": 558.0
+  },
+  {
+   "item": "622fe5ff0c4f",
+   "kcal": 666.9,
+   "mass_g": 1071.2,
+   "est": 496.6,
+   "mass_est": 960.0
+  },
+  {
+   "item": "c9730ba04017",
+   "kcal": 616.31,
+   "mass_g": 849.5,
+   "est": 691.5,
+   "mass_est": 883.0
+  },
+  {
+   "item": "a7aa056ee4bf",
+   "kcal": 383.48,
+   "mass_g": 398.6,
+   "est": 302.03,
+   "mass_est": 357.0
+  },
+  {
+   "item": "0a7ef5d9c41f",
+   "kcal": 293.6,
+   "mass_g": 879.3,
+   "est": 505.91,
+   "mass_est": 1002.0
+  },
+  {
+   "item": "9c284ef73efc",
+   "kcal": 511.26,
+   "mass_g": 412.8,
+   "est": 533.5799999999999,
+   "mass_est": 399.0
+  },
+  {
+   "item": "1e54a0bf8a97",
+   "kcal": 518.43,
+   "mass_g": 822.2,
+   "est": 548.2,
+   "mass_est": 552.0
+  },
+  {
+   "item": "1842799396c3",
+   "kcal": 550.67,
+   "mass_g": 760.5,
+   "est": 388.7,
+   "mass_est": 480.0
+  },
+  {
+   "item": "a794c14bba46",
+   "kcal": 439.93,
+   "mass_g": 556.7,
+   "est": 494.64,
+   "mass_est": 552.0
+  },
+  {
+   "item": "8d5dcc254bbe",
+   "kcal": 681.44,
+   "mass_g": 951.2,
+   "est": 867.8,
+   "mass_est": 730.0
+  },
+  {
+   "item": "c98eeaee7348",
+   "kcal": 786.16,
+   "mass_g": 656.4,
+   "est": 943.25,
+   "mass_est": 690.0
+  },
+  {
+   "item": "c047cdf32d72",
+   "kcal": 877.43,
+   "mass_g": 783.1,
+   "est": 544.43,
+   "mass_est": 493.0
+  },
+  {
+   "item": "bf52326e5d20",
+   "kcal": 488.64,
+   "mass_g": 734.0,
+   "est": 500.0,
+   "mass_est": 610.0
+  },
+  {
+   "item": "3ad079a0ea85",
+   "kcal": 471.28,
+   "mass_g": 706.8,
+   "est": 812.6,
+   "mass_est": 875.0
+  },
+  {
+   "item": "4916e79e80c4",
+   "kcal": 817.34,
+   "mass_g": 931.6,
+   "est": 1054.0,
+   "mass_est": 975.0
+  },
+  {
+   "item": "7deec59521da",
+   "kcal": 324.3,
+   "mass_g": 440.9,
+   "est": 413.25,
+   "mass_est": 460.0
+  },
+  {
+   "item": "3eef02bc8fc0",
+   "kcal": 386.26,
+   "mass_g": 534.0,
+   "est": 511.5,
+   "mass_est": 569.0
+  },
+  {
+   "item": "42eaaa314582",
+   "kcal": 485.46,
+   "mass_g": 480.6,
+   "est": 657.5,
+   "mass_est": 558.0
+  },
+  {
+   "item": "c1fc9c1ff581",
+   "kcal": 273.88,
+   "mass_g": 537.1,
+   "est": 722.33,
+   "mass_est": 787.0
+  },
+  {
+   "item": "189d3a8ee5a0",
+   "kcal": 435.93,
+   "mass_g": 511.0,
+   "est": 528.13,
+   "mass_est": 559.0
+  },
+  {
+   "item": "ab26ecfe9dd1",
+   "kcal": 822.31,
+   "mass_g": 1035.2,
+   "est": 721.0,
+   "mass_est": 975.0
+  },
+  {
+   "item": "533992993796",
+   "kcal": 408.33,
+   "mass_g": 332.2,
+   "est": 450.25,
+   "mass_est": 385.0
+  },
+  {
+   "item": "2986726c8bed",
+   "kcal": 727.74,
+   "mass_g": 576.0,
+   "est": 464.25,
+   "mass_est": 355.0
+  },
+  {
+   "item": "513512ae73a6",
+   "kcal": 699.06,
+   "mass_g": 575.8,
+   "est": 289.95,
+   "mass_est": 440.0
+  },
+  {
+   "item": "da86ffc01712",
+   "kcal": 703.12,
+   "mass_g": 1163.1,
+   "est": 781.5,
+   "mass_est": 1040.0
+  },
+  {
+   "item": "00defdf1f3ad",
+   "kcal": 764.89,
+   "mass_g": 724.6,
+   "est": 751.7,
+   "mass_est": 675.0
+  },
+  {
+   "item": "b4e9c466a8f0",
+   "kcal": 580.14,
+   "mass_g": 1177.8,
+   "est": 660.72,
+   "mass_est": 1081.0
+  },
+  {
+   "item": "6556a2ea76b9",
+   "kcal": 897.75,
+   "mass_g": 1350.1,
+   "est": 945.26,
+   "mass_est": 1254.0
+  },
+  {
+   "item": "b3ec22199469",
+   "kcal": 574.43,
+   "mass_g": 773.2,
+   "est": 615.2,
+   "mass_est": 710.0
+  },
+  {
+   "item": "7ad3b512e791",
+   "kcal": 668.45,
+   "mass_g": 586.2,
+   "est": 719.9,
+   "mass_est": 565.0
+  },
+  {
+   "item": "46a5dccbdd87",
+   "kcal": 1000.91,
+   "mass_g": 1094.2,
+   "est": 1259.03,
+   "mass_est": 1153.0
+  },
+  {
+   "item": "9fe4f626f80d",
+   "kcal": 589.54,
+   "mass_g": 458.3,
+   "est": 668.69,
+   "mass_est": 472.0
+  },
+  {
+   "item": "e31c9b58f342",
+   "kcal": 743.1,
+   "mass_g": 789.0,
+   "est": 822.05,
+   "mass_est": 923.0
+  },
+  {
+   "item": "9fe7db2bcb95",
+   "kcal": 983.68,
+   "mass_g": 965.3,
+   "est": 1166.15,
+   "mass_est": 975.0
+  },
+  {
+   "item": "21d473a1f3e9",
+   "kcal": 1001.03,
+   "mass_g": 731.3,
+   "est": 954.8,
+   "mass_est": 700.0
+  },
+  {
+   "item": "ec94fe74c6fa",
+   "kcal": 827.07,
+   "mass_g": 942.3,
+   "est": 751.56,
+   "mass_est": 854.0
+  },
+  {
+   "item": "d6d66ffda478",
+   "kcal": 1150.55,
+   "mass_g": 976.4,
+   "est": 894.0600000000001,
+   "mass_est": 779.0
+  },
+  {
+   "item": "dbeac9895916",
+   "kcal": 1163.01,
+   "mass_g": 749.7,
+   "est": 720.49,
+   "mass_est": 592.0
+  },
+  {
+   "item": "3b949d7c55ad",
+   "kcal": 734.61,
+   "mass_g": 772.9,
+   "est": 728.2,
+   "mass_est": 779.0
+  },
+  {
+   "item": "deb1fee88771",
+   "kcal": 1122.59,
+   "mass_g": 1348.1,
+   "est": 1338.35,
+   "mass_est": 1115.0
+  },
+  {
+   "item": "7b7fe7cc5f41",
+   "kcal": 534.39,
+   "mass_g": 667.7,
+   "est": 459.5,
+   "mass_est": 485.0
+  },
+  {
+   "item": "f32b1a7c8df4",
+   "kcal": 558.79,
+   "mass_g": 594.5,
+   "est": 658.0,
+   "mass_est": 740.0
+  },
+  {
+   "item": "7a4c3330cc7b",
+   "kcal": 469.11,
+   "mass_g": 395.0,
+   "est": 278.75,
+   "mass_est": 345.0
+  },
+  {
+   "item": "3d76ec00081b",
+   "kcal": 926.03,
+   "mass_g": 779.3,
+   "est": 1047.9,
+   "mass_est": 745.0
+  },
+  {
+   "item": "2e150af4641f",
+   "kcal": 523.19,
+   "mass_g": 920.8,
+   "est": 621.8,
+   "mass_est": 900.0
+  },
+  {
+   "item": "719e288b5bde",
+   "kcal": 333.68,
+   "mass_g": 788.8,
+   "est": 219.57999999999998,
+   "mass_est": 551.0
+  },
+  {
+   "item": "18fe10a654d6",
+   "kcal": 780.39,
+   "mass_g": 853.4,
+   "est": 859.5,
+   "mass_est": 725.0
+  },
+  {
+   "item": "fc327e240067",
+   "kcal": 442.14,
+   "mass_g": 808.1,
+   "est": 859.5,
+   "mass_est": 725.0
+  },
+  {
+   "item": "c704a05d22b5",
+   "kcal": 559.06,
+   "mass_g": 524.5,
+   "est": 619.45,
+   "mass_est": 455.0
+  },
+  {
+   "item": "2c4d64fc73d8",
+   "kcal": 1037.05,
+   "mass_g": 882.7,
+   "est": 893.9,
+   "mass_est": 815.0
+  },
+  {
+   "item": "b015bb8edf66",
+   "kcal": 362.11,
+   "mass_g": 348.5,
+   "est": 362.38,
+   "mass_est": 307.0
+  },
+  {
+   "item": "1e8fa26a0e44",
+   "kcal": 526.58,
+   "mass_g": 516.9,
+   "est": 247.71,
+   "mass_est": 329.0
+  },
+  {
+   "item": "80b05c81033f",
+   "kcal": 800.0,
+   "mass_g": 908.2,
+   "est": 830.15,
+   "mass_est": 865.0
+  },
+  {
+   "item": "14b957439493",
+   "kcal": 1456.39,
+   "mass_g": 1210.6,
+   "est": 1042.4,
+   "mass_est": 873.0
+  },
+  {
+   "item": "00aef81ad116",
+   "kcal": 702.41,
+   "mass_g": 693.1,
+   "est": 549.32,
+   "mass_est": 498.0
+  },
+  {
+   "item": "cdbe1a145997",
+   "kcal": 458.44,
+   "mass_g": 689.1,
+   "est": 444.35,
+   "mass_est": 545.0
+  },
+  {
+   "item": "eaff42ec47e2",
+   "kcal": 798.83,
+   "mass_g": 887.2,
+   "est": 786.2,
+   "mass_est": 869.0
+  },
+  {
+   "item": "eca4a05edb9b",
+   "kcal": 894.94,
+   "mass_g": 807.6,
+   "est": 713.5,
+   "mass_est": 600.0
+  },
+  {
+   "item": "2b57811375b0",
+   "kcal": 1092.9,
+   "mass_g": 863.9,
+   "est": 1245.6,
+   "mass_est": 725.0
+  },
+  {
+   "item": "c8c7000b27d5",
+   "kcal": 517.35,
+   "mass_g": 554.5,
+   "est": 663.7,
+   "mass_est": 465.0
+  },
+  {
+   "item": "2c25878272ec",
+   "kcal": 369.91,
+   "mass_g": 825.1,
+   "est": 509.54,
+   "mass_est": 483.0
+  },
+  {
+   "item": "f981cf58b6d8",
+   "kcal": 823.2,
+   "mass_g": 735.2,
+   "est": 821.54,
+   "mass_est": 601.0
+  },
+  {
+   "item": "6761fa5dc648",
+   "kcal": 933.16,
+   "mass_g": 766.8,
+   "est": 1074.88,
+   "mass_est": 679.0
+  },
+  {
+   "item": "506eb80ae8e5",
+   "kcal": 1212.22,
+   "mass_g": 1381.3,
+   "est": 1298.12,
+   "mass_est": 906.0
+  },
+  {
+   "item": "ee353f7d74f2",
+   "kcal": 1582.36,
+   "mass_g": 1478.9,
+   "est": 1218.55,
+   "mass_est": 1175.0
+  },
+  {
+   "item": "0834f2ef5cf7",
+   "kcal": 511.92,
+   "mass_g": 646.9,
+   "est": 642.14,
+   "mass_est": 657.0
+  },
+  {
+   "item": "1749b92e951d",
+   "kcal": 1041.57,
+   "mass_g": 1226.8,
+   "est": 975.71,
+   "mass_est": 793.0
+  },
+  {
+   "item": "a6990db499f2",
+   "kcal": 415.44,
+   "mass_g": 663.4,
+   "est": 455.68,
+   "mass_est": 642.0
+  },
+  {
+   "item": "016bc697bc3e",
+   "kcal": 790.93,
+   "mass_g": 1130.9,
+   "est": 504.97,
+   "mass_est": 843.0
+  },
+  {
+   "item": "b0af9f3d097e",
+   "kcal": 1444.58,
+   "mass_g": 1269.4,
+   "est": 1250.45,
+   "mass_est": 1120.0
+  },
+  {
+   "item": "72c4f2fe851d",
+   "kcal": 1213.63,
+   "mass_g": 1074.5,
+   "est": 1072.25,
+   "mass_est": 1005.0
+  },
+  {
+   "item": "bf165dc7220e",
+   "kcal": 871.44,
+   "mass_g": 715.6,
+   "est": 987.1,
+   "mass_est": 755.0
+  },
+  {
+   "item": "7bf608d3fb2a",
+   "kcal": 771.55,
+   "mass_g": 1143.3,
+   "est": 1012.0,
+   "mass_est": 1200.0
+  },
+  {
+   "item": "80e48acc54a0",
+   "kcal": 721.66,
+   "mass_g": 1087.3,
+   "est": 746.45,
+   "mass_est": 965.0
+  },
+  {
+   "item": "69a4bf0482aa",
+   "kcal": 867.92,
+   "mass_g": 693.3,
+   "est": 836.2,
+   "mass_est": 665.0
+  },
+  {
+   "item": "7174a6e8724b",
+   "kcal": 667.9,
+   "mass_g": 744.6,
+   "est": 954.59,
+   "mass_est": 799.0
+  },
+  {
+   "item": "39b3e33bf19f",
+   "kcal": 524.99,
+   "mass_g": 965.4,
+   "est": 705.7,
+   "mass_est": 1000.0
+  },
+  {
+   "item": "4d0c309d7cc2",
+   "kcal": 1068.87,
+   "mass_g": 796.6,
+   "est": 924.7,
+   "mass_est": 680.0
+  },
+  {
+   "item": "bc7c8663172e",
+   "kcal": 658.49,
+   "mass_g": 1222.9,
+   "est": 856.7,
+   "mass_est": 1242.0
+  },
+  {
+   "item": "39a4e494f2bf",
+   "kcal": 752.78,
+   "mass_g": 783.2,
+   "est": 709.22,
+   "mass_est": 588.0
+  },
+  {
+   "item": "c3d6ef9a3902",
+   "kcal": 1175.68,
+   "mass_g": 1035.1,
+   "est": 756.95,
+   "mass_est": 725.0
+  },
+  {
+   "item": "da88d4f7ea03",
+   "kcal": 908.17,
+   "mass_g": 1052.1,
+   "est": 783.5,
+   "mass_est": 1043.0
+  },
+  {
+   "item": "6cb0fa839fc5",
+   "kcal": 503.25,
+   "mass_g": 409.1,
+   "est": 524.2,
+   "mass_est": 410.0
+  },
+  {
+   "item": "8524d0bb8f99",
+   "kcal": 1472.46,
+   "mass_g": 1041.6,
+   "est": 824.59,
+   "mass_est": 813.0
+  },
+  {
+   "item": "7988fd5b5eb0",
+   "kcal": 782.8,
+   "mass_g": 721.0,
+   "est": 1313.35,
+   "mass_est": 922.0
+  },
+  {
+   "item": "3c3781f5e551",
+   "kcal": 934.47,
+   "mass_g": 740.4,
+   "est": 721.78,
+   "mass_est": 655.0
+  },
+  {
+   "item": "5c9f57e8ab91",
+   "kcal": 729.36,
+   "mass_g": 781.4,
+   "est": 608.3,
+   "mass_est": 600.0
+  },
+  {
+   "item": "66d831a0e7b0",
+   "kcal": 1133.88,
+   "mass_g": 799.9,
+   "est": 705.47,
+   "mass_est": 618.0
+  },
+  {
+   "item": "323b1550ddd8",
+   "kcal": 484.01,
+   "mass_g": 846.8,
+   "est": 584.4,
+   "mass_est": 795.0
+  },
+  {
+   "item": "97af52a4e507",
+   "kcal": 494.25,
+   "mass_g": 682.0,
+   "est": 528.28,
+   "mass_est": 578.0
+  },
+  {
+   "item": "30d26520ce0d",
+   "kcal": 1868.74,
+   "mass_g": 1819.3,
+   "est": 1854.2,
+   "mass_est": 1736.0
+  },
+  {
+   "item": "5fdcc820e105",
+   "kcal": 514.23,
+   "mass_g": 777.9,
+   "est": 529.2,
+   "mass_est": 770.0
+  },
+  {
+   "item": "6016a4bc742e",
+   "kcal": 1792.52,
+   "mass_g": 1452.7,
+   "est": 1250.79,
+   "mass_est": 991.0
+  },
+  {
+   "item": "34d469f61817",
+   "kcal": 975.03,
+   "mass_g": 923.9,
+   "est": 770.76,
+   "mass_est": 723.0
+  },
+  {
+   "item": "0615fdb04a4a",
+   "kcal": 1221.2,
+   "mass_g": 1137.8,
+   "est": 1237.1,
+   "mass_est": 818.0
+  },
+  {
+   "item": "77fa3c3bfb92",
+   "kcal": 1913.15,
+   "mass_g": 1670.9,
+   "est": 1556.25,
+   "mass_est": 1445.0
+  },
+  {
+   "item": "019dd3251dcd",
+   "kcal": 1261.15,
+   "mass_g": 1119.0,
+   "est": 1253.45,
+   "mass_est": 1055.0
+  },
+  {
+   "item": "6b83aa924e1d",
+   "kcal": 353.0,
+   "mass_g": 501.2,
+   "est": 423.56,
+   "mass_est": 379.0
+  },
+  {
+   "item": "524e81d2f240",
+   "kcal": 1330.72,
+   "mass_g": 1288.5,
+   "est": 951.0,
+   "mass_est": 930.0
+  },
+  {
+   "item": "623b961d431f",
+   "kcal": 836.37,
+   "mass_g": 800.3,
+   "est": 948.35,
+   "mass_est": 714.0
+  },
+  {
+   "item": "1d1a165e49c0",
+   "kcal": 755.49,
+   "mass_g": 613.8,
+   "est": 620.2,
+   "mass_est": 530.0
+  },
+  {
+   "item": "c757adb57722",
+   "kcal": 1326.02,
+   "mass_g": 1042.6,
+   "est": 937.05,
+   "mass_est": 835.0
+  },
+  {
+   "item": "7ba36976bba3",
+   "kcal": 1143.03,
+   "mass_g": 1060.7,
+   "est": 853.6,
+   "mass_est": 910.0
+  },
+  {
+   "item": "2325628f4271",
+   "kcal": 1181.7,
+   "mass_g": 1052.8,
+   "est": 1063.66,
+   "mass_est": 972.0
+  },
+  {
+   "item": "ad651ef104b1",
+   "kcal": 1893.57,
+   "mass_g": 1391.7,
+   "est": 1417.42,
+   "mass_est": 1128.0
+  },
+  {
+   "item": "61168a7bdd29",
+   "kcal": 1303.98,
+   "mass_g": 1024.6,
+   "est": 1329.55,
+   "mass_est": 955.0
+  },
+  {
+   "item": "50f07c181e4e",
+   "kcal": 722.48,
+   "mass_g": 805.5,
+   "est": 635.45,
+   "mass_est": 790.0
+  },
+  {
+   "item": "2dd4743bb9c2",
+   "kcal": 634.86,
+   "mass_g": 486.5,
+   "est": 592.5,
+   "mass_est": 400.0
+  },
+  {
+   "item": "7597b0d74df3",
+   "kcal": 1103.43,
+   "mass_g": 856.0,
+   "est": 548.83,
+   "mass_est": 753.0
+  },
+  {
+   "item": "272d3b08c0ae",
+   "kcal": 1404.66,
+   "mass_g": 1034.8,
+   "est": 1258.35,
+   "mass_est": 970.0
+  },
+  {
+   "item": "3fafbc73c980",
+   "kcal": 685.22,
+   "mass_g": 510.6,
+   "est": 742.06,
+   "mass_est": 624.0
+  },
+  {
+   "item": "b09b005ff4e6",
+   "kcal": 494.35,
+   "mass_g": 374.5,
+   "est": 323.45,
+   "mass_est": 330.0
+  },
+  {
+   "item": "b428281d11b2",
+   "kcal": 681.97,
+   "mass_g": 806.9,
+   "est": 887.37,
+   "mass_est": 802.0
+  },
+  {
+   "item": "93ac0fa97356",
+   "kcal": 646.17,
+   "mass_g": 567.2,
+   "est": 611.49,
+   "mass_est": 636.0
+  },
+  {
+   "item": "cd0d5f608d62",
+   "kcal": 1078.38,
+   "mass_g": 748.7,
+   "est": 966.0,
+   "mass_est": 660.0
+  },
+  {
+   "item": "0901d324d133",
+   "kcal": 832.13,
+   "mass_g": 813.7,
+   "est": 994.75,
+   "mass_est": 770.0
+  },
+  {
+   "item": "82bef014feda",
+   "kcal": 1050.63,
+   "mass_g": 972.0,
+   "est": 952.63,
+   "mass_est": 949.0
+  },
+  {
+   "item": "f3fa2f7a6b16",
+   "kcal": 1189.38,
+   "mass_g": 867.5,
+   "est": 643.0,
+   "mass_est": 675.0
+  },
+  {
+   "item": "08ba7bb6be6a",
+   "kcal": 914.95,
+   "mass_g": 1395.4,
+   "est": 757.01,
+   "mass_est": 1035.0
+  },
+  {
+   "item": "9784d3b13b1f",
+   "kcal": 383.92,
+   "mass_g": 578.3,
+   "est": 423.11,
+   "mass_est": 403.0
+  },
+  {
+   "item": "409fd10cf209",
+   "kcal": 785.24,
+   "mass_g": 802.0,
+   "est": 827.26,
+   "mass_est": 794.0
+  },
+  {
+   "item": "a7925b90c7fb",
+   "kcal": 1038.38,
+   "mass_g": 538.2,
+   "est": 510.25,
+   "mass_est": 350.0
+  },
+  {
+   "item": "775de2f5e1b6",
+   "kcal": 465.6,
+   "mass_g": 466.1,
+   "est": 392.5,
+   "mass_est": 388.0
+  },
+  {
+   "item": "dc0265829720",
+   "kcal": 771.2,
+   "mass_g": 611.7,
+   "est": 463.5,
+   "mass_est": 530.0
+  },
+  {
+   "item": "154c9a89a93d",
+   "kcal": 471.4,
+   "mass_g": 608.8,
+   "est": 570.09,
+   "mass_est": 661.0
+  },
+  {
+   "item": "4f16e856b0cd",
+   "kcal": 576.58,
+   "mass_g": 789.4,
+   "est": 606.6,
+   "mass_est": 835.0
+  },
+  {
+   "item": "fb0eb0eec267",
+   "kcal": 1102.79,
+   "mass_g": 1185.5,
+   "est": 837.25,
+   "mass_est": 870.0
+  },
+  {
+   "item": "d9f5d2a30da9",
+   "kcal": 1093.33,
+   "mass_g": 1128.2,
+   "est": 830.83,
+   "mass_est": 543.0
+  },
+  {
+   "item": "ff664e3e229f",
+   "kcal": 410.63,
+   "mass_g": 544.8,
+   "est": 330.5,
+   "mass_est": 250.0
+  },
+  {
+   "item": "918d6cab14e5",
+   "kcal": 1126.18,
+   "mass_g": 1035.4,
+   "est": 1386.75,
+   "mass_est": 925.0
+  },
+  {
+   "item": "fbe5230b7bef",
+   "kcal": 817.35,
+   "mass_g": 776.1,
+   "est": 736.7,
+   "mass_est": 745.0
+  },
+  {
+   "item": "f9ee4cfd5d86",
+   "kcal": 996.67,
+   "mass_g": 1039.5,
+   "est": 740.12,
+   "mass_est": 608.0
+  },
+  {
+   "item": "ba5c618c42e3",
+   "kcal": 647.4,
+   "mass_g": 774.9,
+   "est": 792.25,
+   "mass_est": 775.0
+  },
+  {
+   "item": "4de4c6abf1aa",
+   "kcal": 406.71,
+   "mass_g": 453.7,
+   "est": 429.88,
+   "mass_est": 247.0
+  },
+  {
+   "item": "7a6ad57cc882",
+   "kcal": 485.15,
+   "mass_g": 250.2,
+   "est": 509.5,
+   "mass_est": 225.0
+  },
+  {
+   "item": "f98f1c53a12d",
+   "kcal": 797.48,
+   "mass_g": 629.2,
+   "est": 661.15,
+   "mass_est": 575.0
+  },
+  {
+   "item": "c24c078a7f10",
+   "kcal": 609.75,
+   "mass_g": 718.2,
+   "est": 403.8,
+   "mass_est": 536.0
+  },
+  {
+   "item": "eda58b99c5c3",
+   "kcal": 963.41,
+   "mass_g": 760.1,
+   "est": 789.54,
+   "mass_est": 678.0
+  },
+  {
+   "item": "89224d62fa78",
+   "kcal": 483.1,
+   "mass_g": 616.3,
+   "est": 415.76,
+   "mass_est": 649.0
+  },
+  {
+   "item": "4846773ddf04",
+   "kcal": 709.85,
+   "mass_g": 450.7,
+   "est": 683.5,
+   "mass_est": 395.0
+  },
+  {
+   "item": "e0ac6aecf0c7",
+   "kcal": 939.29,
+   "mass_g": 1233.2,
+   "est": 1174.17,
+   "mass_est": 1177.0
+  },
+  {
+   "item": "e3339591d5ae",
+   "kcal": 549.61,
+   "mass_g": 383.8,
+   "est": 451.4,
+   "mass_est": 382.0
+  },
+  {
+   "item": "7633f456c131",
+   "kcal": 535.89,
+   "mass_g": 679.5,
+   "est": 1057.0,
+   "mass_est": 900.0
+  },
+  {
+   "item": "0dd05f5a6c66",
+   "kcal": 529.32,
+   "mass_g": 642.6,
+   "est": 369.46,
+   "mass_est": 708.0
+  },
+  {
+   "item": "c0ae0c6f8c6a",
+   "kcal": 661.42,
+   "mass_g": 612.6,
+   "est": 502.05,
+   "mass_est": 525.0
+  },
+  {
+   "item": "f803b186f217",
+   "kcal": 511.57,
+   "mass_g": 728.2,
+   "est": 464.0,
+   "mass_est": 395.0
+  },
+  {
+   "item": "90b6f3950e68",
+   "kcal": 461.2,
+   "mass_g": 760.5,
+   "est": 569.51,
+   "mass_est": 778.0
+  },
+  {
+   "item": "90e179079599",
+   "kcal": 487.31,
+   "mass_g": 866.7,
+   "est": 532.7,
+   "mass_est": 720.0
+  },
+  {
+   "item": "113173963559",
+   "kcal": 345.35,
+   "mass_g": 545.1,
+   "est": 417.45,
+   "mass_est": 617.0
+  },
+  {
+   "item": "fbc800994ae4",
+   "kcal": 1018.54,
+   "mass_g": 1101.1,
+   "est": 973.85,
+   "mass_est": 1020.0
+  },
+  {
+   "item": "c6cfb0f0819c",
+   "kcal": 398.44,
+   "mass_g": 472.9,
+   "est": 570.53,
+   "mass_est": 456.0
+  },
+  {
+   "item": "eb097c506fd0",
+   "kcal": 742.88,
+   "mass_g": 952.7,
+   "est": 824.5,
+   "mass_est": 607.0
+  },
+  {
+   "item": "867f0885cc6a",
+   "kcal": 737.14,
+   "mass_g": 751.6,
+   "est": 702.71,
+   "mass_est": 702.0
+  },
+  {
+   "item": "faa6cf6d66cb",
+   "kcal": 1162.62,
+   "mass_g": 937.9,
+   "est": 765.55,
+   "mass_est": 770.0
+  },
+  {
+   "item": "485560dfc818",
+   "kcal": 926.29,
+   "mass_g": 971.0,
+   "est": 1105.73,
+   "mass_est": 983.0
+  },
+  {
+   "item": "a3008c36cccc",
+   "kcal": 1226.83,
+   "mass_g": 1133.5,
+   "est": 1126.65,
+   "mass_est": 1047.0
+  },
+  {
+   "item": "fcd7b6b17415",
+   "kcal": 445.25,
+   "mass_g": 674.9,
+   "est": 489.8,
+   "mass_est": 730.0
+  },
+  {
+   "item": "ca54ba03d0e3",
+   "kcal": 724.05,
+   "mass_g": 764.8,
+   "est": 861.5,
+   "mass_est": 720.0
+  },
+  {
+   "item": "3f5b0eedaf6f",
+   "kcal": 467.74,
+   "mass_g": 539.9,
+   "est": 524.9,
+   "mass_est": 555.0
+  },
+  {
+   "item": "255e77378dbf",
+   "kcal": 696.36,
+   "mass_g": 478.5,
+   "est": 702.4,
+   "mass_est": 458.0
+  },
+  {
+   "item": "86e9019b3617",
+   "kcal": 421.71,
+   "mass_g": 566.6,
+   "est": 529.9,
+   "mass_est": 535.0
+  },
+  {
+   "item": "ddd236c1d3c2",
+   "kcal": 546.4,
+   "mass_g": 662.9,
+   "est": 615.55,
+   "mass_est": 570.0
+  },
+  {
+   "item": "61b73a93979b",
+   "kcal": 604.06,
+   "mass_g": 532.1,
+   "est": 491.8,
+   "mass_est": 325.0
+  },
+  {
+   "item": "696b3587f2e5",
+   "kcal": 519.09,
+   "mass_g": 473.8,
+   "est": 780.96,
+   "mass_est": 600.0
+  },
+  {
+   "item": "fb4414d3d8e2",
+   "kcal": 739.82,
+   "mass_g": 620.8,
+   "est": 713.2,
+   "mass_est": 605.0
+  },
+  {
+   "item": "81424c3b5291",
+   "kcal": 463.99,
+   "mass_g": 680.3,
+   "est": 547.9,
+   "mass_est": 645.0
+  },
+  {
+   "item": "a66e4b006704",
+   "kcal": 664.52,
+   "mass_g": 878.9,
+   "est": 706.1,
+   "mass_est": 710.0
+  },
+  {
+   "item": "acf524e7a38f",
+   "kcal": 872.9,
+   "mass_g": 765.9,
+   "est": 940.0,
+   "mass_est": 645.0
+  },
+  {
+   "item": "a4ed266eb8fe",
+   "kcal": 679.45,
+   "mass_g": 745.0,
+   "est": 741.7,
+   "mass_est": 597.0
+  },
+  {
+   "item": "bf047d95fb36",
+   "kcal": 813.19,
+   "mass_g": 720.5,
+   "est": 900.73,
+   "mass_est": 684.0
+  },
+  {
+   "item": "629d56838561",
+   "kcal": 1305.6,
+   "mass_g": 1003.9,
+   "est": 950.7,
+   "mass_est": 675.0
+  },
+  {
+   "item": "e678d111d301",
+   "kcal": 377.07,
+   "mass_g": 522.5,
+   "est": 479.2,
+   "mass_est": 650.0
+  },
+  {
+   "item": "b481498dcfe0",
+   "kcal": 924.07,
+   "mass_g": 933.6,
+   "est": 1005.54,
+   "mass_est": 1101.0
+  },
+  {
+   "item": "d92498923d58",
+   "kcal": 254.48,
+   "mass_g": 462.1,
+   "est": 304.5,
+   "mass_est": 500.0
+  },
+  {
+   "item": "4d93064c56ef",
+   "kcal": 925.74,
+   "mass_g": 1199.1,
+   "error": "JSONDecodeError('Expecting value: line 1 column 286 (char 285)')"
+  },
+  {
+   "item": "8748e0eae064",
+   "kcal": 556.6,
+   "mass_g": 725.1,
+   "est": 608.7,
+   "mass_est": 810.0
+  },
+  {
+   "item": "8a29d7f8d565",
+   "kcal": 1083.14,
+   "mass_g": 867.8,
+   "est": 1092.33,
+   "mass_est": 817.0
+  },
+  {
+   "item": "224170b2a749",
+   "kcal": 1477.47,
+   "mass_g": 1154.9,
+   "est": 1292.98,
+   "mass_est": 1018.0
+  },
+  {
+   "item": "e293b90d1ec8",
+   "kcal": 2339.75,
+   "mass_g": 1985.8,
+   "est": 1982.6,
+   "mass_est": 1520.0
+  },
+  {
+   "item": "44b64540463b",
+   "kcal": 827.3,
+   "mass_g": 856.2,
+   "est": 858.07,
+   "mass_est": 827.0
+  },
+  {
+   "item": "e01c8e11c378",
+   "kcal": 1945.58,
+   "mass_g": 1006.0,
+   "est": 759.65,
+   "mass_est": 550.0
+  },
+  {
+   "item": "47f2d97654b2",
+   "kcal": 1664.04,
+   "mass_g": 1032.9,
+   "est": 1743.5,
+   "mass_est": 860.0
+  },
+  {
+   "item": "e426342eb820",
+   "kcal": 1497.0,
+   "mass_g": 1463.4,
+   "est": 1641.75,
+   "mass_est": 1235.0
+  },
+  {
+   "item": "8e567ea82107",
+   "kcal": 516.31,
+   "mass_g": 361.2,
+   "est": 517.45,
+   "mass_est": 330.0
+  },
+  {
+   "item": "d74a7453cbd0",
+   "kcal": 1311.52,
+   "mass_g": 1210.0,
+   "est": 1527.86,
+   "mass_est": 1237.0
+  },
+  {
+   "item": "ef2598c5e3d1",
+   "kcal": 2184.97,
+   "mass_g": 2038.4,
+   "est": 1619.27,
+   "mass_est": 1463.0
+  },
+  {
+   "item": "821a83d1cf23",
+   "kcal": 1693.31,
+   "mass_g": 1553.5,
+   "est": 1755.95,
+   "mass_est": 1380.0
+  },
+  {
+   "item": "274af3b6ef8d",
+   "kcal": 1633.95,
+   "mass_g": 1814.2,
+   "est": 1231.29,
+   "mass_est": 1371.0
+  },
+  {
+   "item": "d819d4748406",
+   "kcal": 985.18,
+   "mass_g": 1129.2,
+   "est": 919.3,
+   "mass_est": 1050.0
+  },
+  {
+   "item": "76625949f755",
+   "kcal": 1430.85,
+   "mass_g": 1266.0,
+   "est": 1388.15,
+   "mass_est": 1147.0
+  },
+  {
+   "item": "fed1699ceecb",
+   "kcal": 1492.93,
+   "mass_g": 1812.5,
+   "est": 1764.85,
+   "mass_est": 1535.0
+  },
+  {
+   "item": "531a36c0eb3d",
+   "kcal": 1708.83,
+   "mass_g": 1696.7,
+   "est": 1806.5,
+   "mass_est": 1605.0
+  },
+  {
+   "item": "939a945f8308",
+   "kcal": 536.32,
+   "mass_g": 852.9,
+   "est": 896.1,
+   "mass_est": 1085.0
+  },
+  {
+   "item": "5648564b88c6",
+   "kcal": 738.75,
+   "mass_g": 657.6,
+   "est": 621.6,
+   "mass_est": 515.0
+  },
+  {
+   "item": "8853b713c68b",
+   "kcal": 525.65,
+   "mass_g": 945.3,
+   "est": 471.6,
+   "mass_est": 775.0
+  },
+  {
+   "item": "97ea1bb058d9",
+   "kcal": 1164.52,
+   "mass_g": 872.3,
+   "est": 1141.2,
+   "mass_est": 925.0
+  },
+  {
+   "item": "e87642c437a3",
+   "kcal": 653.53,
+   "mass_g": 553.6,
+   "est": 752.0,
+   "mass_est": 460.0
+  },
+  {
+   "item": "2e42b395927d",
+   "kcal": 1728.36,
+   "mass_g": 1018.3,
+   "est": 2066.2,
+   "mass_est": 1145.0
+  },
+  {
+   "item": "176b152322f2",
+   "kcal": 1056.79,
+   "mass_g": 969.6,
+   "est": 911.85,
+   "mass_est": 958.0
+  },
+  {
+   "item": "f99bbdbd2342",
+   "kcal": 1305.66,
+   "mass_g": 888.0,
+   "est": 1060.08,
+   "mass_est": 772.0
+  },
+  {
+   "item": "15862d7b52e0",
+   "kcal": 556.3,
+   "mass_g": 570.5,
+   "est": 595.1,
+   "mass_est": 595.0
+  },
+  {
+   "item": "edc8b7fc240b",
+   "kcal": 928.85,
+   "mass_g": 704.5,
+   "est": 750.55,
+   "mass_est": 675.0
+  },
+  {
+   "item": "7997cc8fd73b",
+   "kcal": 1078.08,
+   "mass_g": 800.1,
+   "est": 1237.5,
+   "mass_est": 740.0
+  },
+  {
+   "item": "da94b99f8d7c",
+   "kcal": 1036.92,
+   "mass_g": 757.3,
+   "est": 770.47,
+   "mass_est": 613.0
+  },
+  {
+   "item": "a3445983dd21",
+   "kcal": 996.92,
+   "mass_g": 1323.0,
+   "est": 1032.7,
+   "mass_est": 1395.0
+  },
+  {
+   "item": "3e2a451e25a7",
+   "kcal": 1610.07,
+   "mass_g": 1486.8,
+   "est": 1597.11,
+   "mass_est": 1120.0
+  },
+  {
+   "item": "347382deca3d",
+   "kcal": 1356.99,
+   "mass_g": 1191.6,
+   "est": 953.72,
+   "mass_est": 943.0
+  },
+  {
+   "item": "8f4a43d3e640",
+   "kcal": 979.41,
+   "mass_g": 1083.0,
+   "est": 1050.35,
+   "mass_est": 898.0
+  },
+  {
+   "item": "c2cc11ed8128",
+   "kcal": 1685.75,
+   "mass_g": 1318.5,
+   "est": 1664.37,
+   "mass_est": 1246.0
+  },
+  {
+   "item": "0aea68edfcec",
+   "kcal": 1269.95,
+   "mass_g": 989.8,
+   "est": 1160.75,
+   "mass_est": 858.0
+  },
+  {
+   "item": "f1a7ca205e0c",
+   "kcal": 1023.89,
+   "mass_g": 690.4,
+   "est": 974.05,
+   "mass_est": 710.0
+  },
+  {
+   "item": "2ec9100cf28b",
+   "kcal": 221.05,
+   "mass_g": 255.5,
+   "est": 522.0,
+   "mass_est": 490.0
+  },
+  {
+   "item": "37c5f869f4f9",
+   "kcal": 1108.68,
+   "mass_g": 925.9,
+   "est": 995.24,
+   "mass_est": 829.0
+  },
+  {
+   "item": "68b7e33e1cb3",
+   "kcal": 1220.79,
+   "mass_g": 1051.2,
+   "est": 1432.31,
+   "mass_est": 975.0
+  },
+  {
+   "item": "13d5f81c27e0",
+   "kcal": 573.15,
+   "mass_g": 436.3,
+   "est": 556.75,
+   "mass_est": 445.0
+  },
+  {
+   "item": "0ea1e00bfb48",
+   "kcal": 1097.21,
+   "mass_g": 1119.7,
+   "est": 1063.67,
+   "mass_est": 1070.0
+  },
+  {
+   "item": "2fcb33c95d1b",
+   "kcal": 785.05,
+   "mass_g": 765.1,
+   "est": 760.25,
+   "mass_est": 745.0
+  },
+  {
+   "item": "a7d892d2e801",
+   "kcal": 869.83,
+   "mass_g": 1061.7,
+   "est": 989.96,
+   "mass_est": 1032.0
+  },
+  {
+   "item": "0d9072c1a083",
+   "kcal": 997.84,
+   "mass_g": 1086.6,
+   "est": 908.75,
+   "mass_est": 705.0
+  },
+  {
+   "item": "f10a9f157756",
+   "kcal": 810.07,
+   "mass_g": 903.0,
+   "est": 977.2,
+   "mass_est": 939.0
+  },
+  {
+   "item": "ce6e09ef201d",
+   "kcal": 811.91,
+   "mass_g": 766.9,
+   "est": 893.99,
+   "mass_est": 798.0
+  },
+  {
+   "item": "541bc061ce5a",
+   "kcal": 908.32,
+   "mass_g": 1103.0,
+   "est": 842.5,
+   "mass_est": 950.0
+  },
+  {
+   "item": "5a2a846487d7",
+   "kcal": 430.01,
+   "mass_g": 603.8,
+   "est": 814.85,
+   "mass_est": 660.0
+  },
+  {
+   "item": "3a0efbdd28f2",
+   "kcal": 667.89,
+   "mass_g": 956.8,
+   "est": 786.75,
+   "mass_est": 950.0
+  },
+  {
+   "item": "8115d891305b",
+   "kcal": 785.48,
+   "mass_g": 844.0,
+   "est": 991.21,
+   "mass_est": 775.0
+  },
+  {
+   "item": "738bb50eac06",
+   "kcal": 1225.8,
+   "mass_g": 1192.3,
+   "est": 607.58,
+   "mass_est": 679.0
+  },
+  {
+   "item": "8a2b5f2d68af",
+   "kcal": 719.54,
+   "mass_g": 891.4,
+   "est": 597.2,
+   "mass_est": 678.0
+  },
+  {
+   "item": "6626e1f56ea7",
+   "kcal": 1096.34,
+   "mass_g": 1190.2,
+   "est": 875.2,
+   "mass_est": 1040.0
+  },
+  {
+   "item": "bd5c3d5c7d64",
+   "kcal": 1110.3,
+   "mass_g": 1192.2,
+   "est": 1272.6,
+   "mass_est": 1179.0
+  },
+  {
+   "item": "62c853873d04",
+   "kcal": 855.68,
+   "mass_g": 846.0,
+   "est": 1040.5,
+   "mass_est": 775.0
+  },
+  {
+   "item": "7008ffd64783",
+   "kcal": 1041.33,
+   "mass_g": 1080.1,
+   "est": 1011.33,
+   "mass_est": 1039.0
+  },
+  {
+   "item": "211ba8b872f3",
+   "kcal": 1429.93,
+   "mass_g": 1497.3,
+   "est": 1488.75,
+   "mass_est": 998.0
+  },
+  {
+   "item": "cd981b8e531f",
+   "kcal": 1019.01,
+   "mass_g": 805.2,
+   "est": 1227.53,
+   "mass_est": 704.0
+  },
+  {
+   "item": "9b9c75bf5d26",
+   "kcal": 1021.64,
+   "mass_g": 904.7,
+   "est": 719.34,
+   "mass_est": 806.0
+  },
+  {
+   "item": "92e8f5f839dd",
+   "kcal": 1004.29,
+   "mass_g": 1130.8,
+   "est": 1091.34,
+   "mass_est": 1048.0
+  },
+  {
+   "item": "c305149d9c10",
+   "kcal": 563.91,
+   "mass_g": 1052.8,
+   "est": 625.65,
+   "mass_est": 1080.0
+  },
+  {
+   "item": "0a79b5ac9c63",
+   "kcal": 1375.23,
+   "mass_g": 1395.8,
+   "est": 830.71,
+   "mass_est": 658.0
+  },
+  {
+   "item": "5a69be6df6d4",
+   "kcal": 765.87,
+   "mass_g": 1246.2,
+   "est": 819.15,
+   "mass_est": 1335.0
+  },
+  {
+   "item": "c452faae1ef3",
+   "kcal": 539.44,
+   "mass_g": 414.8,
+   "est": 734.58,
+   "mass_est": 454.0
+  },
+  {
+   "item": "d5ec4a5013d1",
+   "kcal": 1117.33,
+   "mass_g": 756.6,
+   "est": 1015.78,
+   "mass_est": 654.0
+  },
+  {
+   "item": "9a77b84beaa5",
+   "kcal": 943.3,
+   "mass_g": 1112.3,
+   "est": 889.38,
+   "mass_est": 969.0
+  },
+  {
+   "item": "110039bed17e",
+   "kcal": 580.8,
+   "mass_g": 904.1,
+   "est": 611.75,
+   "mass_est": 775.0
+  },
+  {
+   "item": "ade1defa5bd5",
+   "kcal": 730.55,
+   "mass_g": 611.6,
+   "est": 746.95,
+   "mass_est": 600.0
+  },
+  {
+   "item": "3cab2989a27c",
+   "kcal": 980.66,
+   "mass_g": 1140.4,
+   "est": 581.08,
+   "mass_est": 788.0
+  },
+  {
+   "item": "5a8e8342e887",
+   "kcal": 680.72,
+   "mass_g": 793.7,
+   "est": 785.84,
+   "mass_est": 899.0
+  },
+  {
+   "item": "0fa376f81161",
+   "kcal": 618.23,
+   "mass_g": 818.0,
+   "est": 411.03,
+   "mass_est": 623.0
+  },
+  {
+   "item": "39374d773cbc",
+   "kcal": 499.63,
+   "mass_g": 788.6,
+   "est": 681.25,
+   "mass_est": 785.0
+  },
+  {
+   "item": "ee59e8500099",
+   "kcal": 1030.57,
+   "mass_g": 773.2,
+   "est": 915.38,
+   "mass_est": 727.0
+  },
+  {
+   "item": "f1a8ccf98d86",
+   "kcal": 553.5,
+   "mass_g": 550.8,
+   "est": 607.95,
+   "mass_est": 635.0
+  },
+  {
+   "item": "afb59bd1c924",
+   "kcal": 385.52,
+   "mass_g": 554.8,
+   "est": 569.25,
+   "mass_est": 660.0
+  },
+  {
+   "item": "64d99aa77cdb",
+   "kcal": 387.31,
+   "mass_g": 592.2,
+   "est": 663.77,
+   "mass_est": 511.0
+  },
+  {
+   "item": "44e8eed1869e",
+   "kcal": 677.45,
+   "mass_g": 882.6,
+   "est": 821.88,
+   "mass_est": 1047.0
+  },
+  {
+   "item": "fdf6e4f21e93",
+   "kcal": 568.31,
+   "mass_g": 808.3,
+   "est": 705.4,
+   "mass_est": 890.0
+  },
+  {
+   "item": "9ffce132c2e6",
+   "kcal": 433.18,
+   "mass_g": 396.0,
+   "est": 565.65,
+   "mass_est": 470.0
+  },
+  {
+   "item": "eb0475aeaa4a",
+   "kcal": 458.9,
+   "mass_g": 574.7,
+   "est": 424.2,
+   "mass_est": 745.0
+  },
+  {
+   "item": "5626a305c14f",
+   "kcal": 436.15,
+   "mass_g": 509.8,
+   "est": 425.5,
+   "mass_est": 480.0
+  },
+  {
+   "item": "34caccfdb5bc",
+   "kcal": 313.65,
+   "mass_g": 545.4,
+   "est": 538.85,
+   "mass_est": 350.0
+  },
+  {
+   "item": "7c28217f6f95",
+   "kcal": 656.83,
+   "mass_g": 622.9,
+   "est": 521.9,
+   "mass_est": 595.0
+  },
+  {
+   "item": "12999a550153",
+   "kcal": 564.96,
+   "mass_g": 632.8,
+   "est": 546.6,
+   "mass_est": 690.0
+  },
+  {
+   "item": "afe880b4e12a",
+   "kcal": 365.74,
+   "mass_g": 461.5,
+   "est": 422.81,
+   "mass_est": 457.0
+  },
+  {
+   "item": "bbdad6fb67ca",
+   "kcal": 549.19,
+   "mass_g": 534.9,
+   "est": 342.75,
+   "mass_est": 470.0
+  },
+  {
+   "item": "c5e2ad5fe364",
+   "kcal": 216.85,
+   "mass_g": 349.9,
+   "est": 305.95,
+   "mass_est": 410.0
+  },
+  {
+   "item": "a5b40d57066e",
+   "kcal": 503.7,
+   "mass_g": 435.5,
+   "est": 814.75,
+   "mass_est": 490.0
+  },
+  {
+   "item": "b6313f622729",
+   "kcal": 567.46,
+   "mass_g": 627.6,
+   "est": 906.75,
+   "mass_est": 705.0
+  },
+  {
+   "item": "3cc01bd44b39",
+   "kcal": 420.58,
+   "mass_g": 536.2,
+   "est": 494.23,
+   "mass_est": 500.0
+  },
+  {
+   "item": "af1a64dd28b3",
+   "kcal": 405.04,
+   "mass_g": 643.1,
+   "est": 414.15,
+   "mass_est": 605.0
+  },
+  {
+   "item": "fd7b0f7f5c04",
+   "kcal": 454.57,
+   "mass_g": 420.4,
+   "est": 465.5,
+   "mass_est": 385.0
+  },
+  {
+   "item": "500cf596df3a",
+   "kcal": 1090.8,
+   "mass_g": 1008.9,
+   "est": 656.65,
+   "mass_est": 535.0
+  },
+  {
+   "item": "d2f6c6977a96",
+   "kcal": 397.09,
+   "mass_g": 690.2,
+   "est": 564.15,
+   "mass_est": 435.0
+  },
+  {
+   "item": "daac9233b1f7",
+   "kcal": 1109.61,
+   "mass_g": 894.1,
+   "est": 644.0,
+   "mass_est": 805.0
+  },
+  {
+   "item": "965365983ca8",
+   "kcal": 519.52,
+   "mass_g": 503.3,
+   "est": 565.22,
+   "mass_est": 496.0
+  },
+  {
+   "item": "8a1cd1c544dc",
+   "kcal": 1190.69,
+   "mass_g": 825.2,
+   "est": 1182.7,
+   "mass_est": 527.0
+  },
+  {
+   "item": "bf7cdd98b4cb",
+   "kcal": 932.04,
+   "mass_g": 590.5,
+   "est": 886.85,
+   "mass_est": 665.0
+  },
+  {
+   "item": "a497e1ca57e8",
+   "kcal": 519.93,
+   "mass_g": 516.9,
+   "est": 643.76,
+   "mass_est": 524.0
+  },
+  {
+   "item": "6161ee10b73a",
+   "kcal": 1017.07,
+   "mass_g": 846.1,
+   "est": 660.5,
+   "mass_est": 560.0
+  },
+  {
+   "item": "4a7d1d4b41ed",
+   "kcal": 914.39,
+   "mass_g": 766.4,
+   "est": 1179.35,
+   "mass_est": 765.0
+  },
+  {
+   "item": "9c5c290bf906",
+   "kcal": 412.74,
+   "mass_g": 432.8,
+   "est": 617.36,
+   "mass_est": 587.0
+  },
+  {
+   "item": "3d85fa977a59",
+   "kcal": 1069.68,
+   "mass_g": 1584.9,
+   "est": 960.0,
+   "mass_est": 1045.0
+  },
+  {
+   "item": "87d120e04e85",
+   "kcal": 948.96,
+   "mass_g": 1048.1,
+   "est": 1065.4,
+   "mass_est": 961.0
+  },
+  {
+   "item": "b3f1eecb248d",
+   "kcal": 291.43,
+   "mass_g": 388.2,
+   "est": 472.75,
+   "mass_est": 400.0
+  },
+  {
+   "item": "a4c46cc67c39",
+   "kcal": 480.65,
+   "mass_g": 723.6,
+   "est": 576.0,
+   "mass_est": 745.0
+  },
+  {
+   "item": "142c845d9a0c",
+   "kcal": 637.47,
+   "mass_g": 833.4,
+   "est": 774.55,
+   "mass_est": 690.0
+  },
+  {
+   "item": "ca3a687ff6b5",
+   "kcal": 1121.31,
+   "mass_g": 1290.7,
+   "est": 1039.83,
+   "mass_est": 1231.0
+  },
+  {
+   "item": "26e9062f32c7",
+   "kcal": 1168.31,
+   "mass_g": 1287.7,
+   "est": 1316.7,
+   "mass_est": 1242.0
+  },
+  {
+   "item": "e9b3aa7b68b9",
+   "kcal": 639.57,
+   "mass_g": 714.1,
+   "est": 751.55,
+   "mass_est": 785.0
+  },
+  {
+   "item": "5f63dac11e94",
+   "kcal": 1317.61,
+   "mass_g": 1254.3,
+   "est": 941.2,
+   "mass_est": 770.0
+  },
+  {
+   "item": "cae0af14e943",
+   "kcal": 558.04,
+   "mass_g": 623.5,
+   "est": 677.65,
+   "mass_est": 685.0
+  },
+  {
+   "item": "920d24472854",
+   "kcal": 992.1,
+   "mass_g": 1061.7,
+   "est": 883.0,
+   "mass_est": 745.0
+  },
+  {
+   "item": "390c7a660da2",
+   "kcal": 1346.33,
+   "mass_g": 1222.2,
+   "est": 1278.8,
+   "mass_est": 953.0
+  },
+  {
+   "item": "ab51bf054a83",
+   "kcal": 353.91,
+   "mass_g": 373.8,
+   "est": 415.3,
+   "mass_est": 407.0
+  },
+  {
+   "item": "4df1942b2fce",
+   "kcal": 419.02,
+   "mass_g": 548.9,
+   "est": 373.7,
+   "mass_est": 587.0
+  },
+  {
+   "item": "df8ef1098ba6",
+   "kcal": 856.81,
+   "mass_g": 660.9,
+   "est": 985.12,
+   "mass_est": 738.0
+  },
+  {
+   "item": "a3224040bd2e",
+   "kcal": 428.99,
+   "mass_g": 519.8,
+   "est": 496.75,
+   "mass_est": 560.0
+  },
+  {
+   "item": "e2267c628666",
+   "kcal": 362.56,
+   "mass_g": 618.7,
+   "est": 303.23,
+   "mass_est": 329.0
+  },
+  {
+   "item": "a243af3b784d",
+   "kcal": 667.34,
+   "mass_g": 676.0,
+   "est": 599.25,
+   "mass_est": 645.0
+  },
+  {
+   "item": "77eafaccc7d0",
+   "kcal": 923.31,
+   "mass_g": 1054.8,
+   "est": 574.1,
+   "mass_est": 585.0
+  },
+  {
+   "item": "6405c0beb771",
+   "kcal": 1447.82,
+   "mass_g": 1561.1,
+   "est": 1093.96,
+   "mass_est": 1170.0
+  },
+  {
+   "item": "95def4e835b3",
+   "kcal": 709.89,
+   "mass_g": 914.9,
+   "est": 618.5,
+   "mass_est": 855.0
+  },
+  {
+   "item": "78fd520c1326",
+   "kcal": 840.28,
+   "mass_g": 969.6,
+   "est": 824.97,
+   "mass_est": 683.0
+  },
+  {
+   "item": "b3463de2846a",
+   "kcal": 450.46,
+   "mass_g": 692.5,
+   "est": 477.52,
+   "mass_est": 380.0
+  },
+  {
+   "item": "016bd36e8634",
+   "kcal": 762.39,
+   "mass_g": 695.3,
+   "est": 827.9,
+   "mass_est": 750.0
+  },
+  {
+   "item": "102c33408213",
+   "kcal": 588.7,
+   "mass_g": 586.1,
+   "est": 705.2,
+   "mass_est": 585.0
+  },
+  {
+   "item": "c62c06a3c65f",
+   "kcal": 479.3,
+   "mass_g": 399.4,
+   "est": 635.3,
+   "mass_est": 447.0
+  },
+  {
+   "item": "1d617b9e37ee",
+   "kcal": 570.81,
+   "mass_g": 916.2,
+   "est": 617.55,
+   "mass_est": 895.0
+  },
+  {
+   "item": "fb7cebeaa5f2",
+   "kcal": 616.36,
+   "mass_g": 701.4,
+   "est": 678.0,
+   "mass_est": 620.0
+  },
+  {
+   "item": "3ba5aa86c425",
+   "kcal": 1405.51,
+   "mass_g": 1221.0,
+   "est": 819.1,
+   "mass_est": 735.0
+  },
+  {
+   "item": "64e9cc8ffa6f",
+   "kcal": 981.77,
+   "mass_g": 1015.1,
+   "est": 919.0,
+   "mass_est": 935.0
+  },
+  {
+   "item": "42f58bdf2995",
+   "kcal": 571.15,
+   "mass_g": 919.8,
+   "est": 695.15,
+   "mass_est": 848.0
+  },
+  {
+   "item": "ac508b2cdb54",
+   "kcal": 1676.56,
+   "mass_g": 1045.1,
+   "est": 1888.95,
+   "mass_est": 1130.0
+  },
+  {
+   "item": "4e45321051e2",
+   "kcal": 831.25,
+   "mass_g": 634.8,
+   "est": 900.7,
+   "mass_est": 635.0
+  },
+  {
+   "item": "c834668aec8c",
+   "kcal": 780.59,
+   "mass_g": 957.1,
+   "est": 573.3,
+   "mass_est": 472.0
+  },
+  {
+   "item": "4851689c8a3f",
+   "kcal": 876.48,
+   "mass_g": 673.8,
+   "est": 1026.6,
+   "mass_est": 595.0
+  },
+  {
+   "item": "21d68548be6c",
+   "kcal": 425.63,
+   "mass_g": 356.1,
+   "est": 648.0,
+   "mass_est": 450.0
+  },
+  {
+   "item": "40c21e9e137b",
+   "kcal": 289.66,
+   "mass_g": 356.3,
+   "est": 380.45,
+   "mass_est": 422.0
+  },
+  {
+   "item": "6ad63f87b13a",
+   "kcal": 1319.04,
+   "mass_g": 916.1,
+   "est": 857.0,
+   "mass_est": 825.0
+  },
+  {
+   "item": "d4e1282f3fe2",
+   "kcal": 572.83,
+   "mass_g": 607.4,
+   "est": 529.55,
+   "mass_est": 513.0
+  },
+  {
+   "item": "2ddf7fd218d9",
+   "kcal": 345.98,
+   "mass_g": 519.2,
+   "est": 460.2,
+   "mass_est": 360.0
+  },
+  {
+   "item": "d083dbe8b56c",
+   "kcal": 499.79,
+   "mass_g": 437.4,
+   "est": 678.8,
+   "mass_est": 495.0
+  },
+  {
+   "item": "f3dc403a2804",
+   "kcal": 607.1,
+   "mass_g": 757.2,
+   "est": 784.9,
+   "mass_est": 885.0
+  },
+  {
+   "item": "51212a901574",
+   "kcal": 363.61,
+   "mass_g": 344.1,
+   "est": 489.58,
+   "mass_est": 377.0
+  },
+  {
+   "item": "5e646c286381",
+   "kcal": 309.97,
+   "mass_g": 685.9,
+   "est": 427.06,
+   "mass_est": 782.0
+  },
+  {
+   "item": "9cd71b060fd1",
+   "kcal": 382.81,
+   "mass_g": 459.9,
+   "est": 519.16,
+   "mass_est": 564.0
+  }
+ ]
+}
