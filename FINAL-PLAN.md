@@ -96,3 +96,6 @@ uncalibrated counterparts; serving sizes in a feeding trial are closer to Nutrit
   system once; successful calls come from cache (unchanged), only infrastructure-failed items are retried. Honest note: the rule
   was written after interim scores of 8 systems had been seen; it is applied uniformly to every system. Model-output parse
   failures are kept and scored as before.
+- 2026-10-16 operational deviation (ACETADA): `h2_plate_scale` had 33 API timeouts (network, not parse failures) in its single run;
+  only those calls were retried (successful calls served from cache; same prompts, same sample indices). The pre-retry file is kept
+  as runs/h2_plate_scale/acetada-all.before-retry.json. All other ACETADA systems ran without network failures.
