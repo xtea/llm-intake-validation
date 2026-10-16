@@ -1,48 +1,108 @@
-compA_v4_sonnet_cal          MAE%  57.3 [ 52.5, 61.8]  r_kcal 0.777  r_mass 0.838  bias -31.8  $/dish 0.0309  fail 0
-h2_plate_scale               MAE%  50.7 [ 45.3, 56.0]  r_kcal 0.735  r_mass 0.805  bias -18.0  $/dish 0.0005  fail 0
-compA_v4_opus_cal            MAE%  50.4 [ 45.2, 55.4]  r_kcal 0.804  r_mass 0.863  bias -24.5  $/dish 0.0020  fail 0
-b2_plate_scale               MAE%  50.7 [ 45.5, 55.7]  r_kcal 0.781  r_mass 0.842  bias -24.3  $/dish 0.0057  fail 1
-compC_v5                     MAE%  56.8 [ 52.0, 61.4]  r_kcal 0.764  r_mass 0.800  bias -32.6  $/dish 0.0009  fail 0
-h0_direct                    MAE%  50.4 [ 44.7, 55.7]  r_kcal 0.701  r_mass 0.785  bias  -4.1  $/dish 0.0003  fail 0
-compA_v2                     MAE%  52.3 [ 47.1, 57.5]  r_kcal 0.745  r_mass 0.820  bias -22.3  $/dish 0.0037  fail 0
-compA_v4                     MAE%  55.6 [ 50.5, 60.4]  r_kcal 0.749  r_mass 0.820  bias -28.3  $/dish 0.0000  fail 0
-b2_plate_scale_opus          MAE%  44.9 [ 39.6, 50.3]  r_kcal 0.803  r_mass 0.862  bias -12.1  $/dish 0.0135  fail 0
-compB_v1                     MAE%  51.4 [ 46.2, 56.3]  r_kcal 0.764  r_mass 0.830  bias -22.7  $/dish 0.0031  fail 0
+compA_v4_sonnet_cal          MAE%  57.3 [ 52.5, 61.8]  r_kcal 0.777  r_mass 0.838  MPE -31.8  MAEkcal  498.6  $/dish 0.0309  fail 0
+compA_v4_cal_gpt_6_luna      MAE%  53.1 [ 48.1, 57.9]  r_kcal 0.762  r_mass 0.834  MPE -23.6  MAEkcal  462.4  $/dish 0.0025  fail 0
+compA_v4_opus_raw            MAE%  44.8 [ 39.3, 50.2]  r_kcal 0.804  r_mass 0.863  MPE -13.2  MAEkcal  390.3  $/dish 0.0000  fail 0
+b2_plate_scale_gpt_6_luna    MAE%  48.9 [ 43.7, 54.0]  r_kcal 0.754  r_mass 0.828  MPE -15.4  MAEkcal  425.4  $/dish 0.0004  fail 2
+h2_plate_scale               MAE%  50.7 [ 45.3, 56.0]  r_kcal 0.735  r_mass 0.805  MPE -18.0  MAEkcal  441.2  $/dish 0.0005  fail 0
+compA_v4_opus_cal            MAE%  50.4 [ 45.2, 55.4]  r_kcal 0.804  r_mass 0.863  MPE -24.5  MAEkcal  438.7  $/dish 0.0020  fail 0
+b2_plate_scale               MAE%  50.7 [ 45.5, 55.7]  r_kcal 0.781  r_mass 0.842  MPE -24.3  MAEkcal  440.9  $/dish 0.0057  fail 1
+compC_v5                     MAE%  56.8 [ 52.0, 61.4]  r_kcal 0.764  r_mass 0.800  MPE -32.6  MAEkcal  494.5  $/dish 0.0009  fail 0
+b2_plate_scale_gpt_6_1_sol   MAE%  42.6 [ 37.4, 48.0]  r_kcal 0.807  r_mass 0.871  MPE  +2.1  MAEkcal  371.1  $/dish 0.0053  fail 0
+h0_direct                    MAE%  50.4 [ 44.7, 55.7]  r_kcal 0.701  r_mass 0.785  MPE  -4.1  MAEkcal  438.4  $/dish 0.0003  fail 0
+b0_direct_gpt_6_1_sol        MAE%  43.9 [ 38.6, 49.3]  r_kcal 0.808  r_mass 0.869  MPE  +0.3  MAEkcal  382.0  $/dish 0.0030  fail 0
+compA_v4_sonnet_raw          MAE%  53.2 [ 48.0, 58.1]  r_kcal 0.777  r_mass 0.838  MPE -28.0  MAEkcal  463.3  $/dish 0.0000  fail 0
+compA_v4_cal_gpt_6_astra     MAE%  51.1 [ 46.1, 56.0]  r_kcal 0.826  r_mass 0.872  MPE -27.2  MAEkcal  444.4  $/dish 0.0143  fail 0
+compA_v4_cal_gpt_6_1_sol     MAE%  51.5 [ 46.6, 56.5]  r_kcal 0.815  r_mass 0.870  MPE -27.6  MAEkcal  448.7  $/dish 0.0403  fail 0
+b0_direct_gpt_6_astra        MAE%  43.3 [ 38.1, 48.6]  r_kcal 0.814  r_mass 0.868  MPE  +1.9  MAEkcal  377.0  $/dish 0.0143  fail 0
+compA_v2                     MAE%  52.3 [ 47.1, 57.5]  r_kcal 0.745  r_mass 0.820  MPE -22.3  MAEkcal  455.4  $/dish 0.0037  fail 0
+compA_v4                     MAE%  55.6 [ 50.5, 60.4]  r_kcal 0.749  r_mass 0.820  MPE -28.3  MAEkcal  483.6  $/dish 0.0000  fail 0
+b2_plate_scale_gpt_6_astra   MAE%  42.3 [ 37.2, 47.6]  r_kcal 0.816  r_mass 0.869  MPE  +4.3  MAEkcal  367.9  $/dish 0.0267  fail 0
+compA_v4_haiku_raw           MAE%  51.8 [ 46.4, 56.9]  r_kcal 0.749  r_mass 0.820  MPE -21.5  MAEkcal  450.5  $/dish 0.0000  fail 0
+b2_plate_scale_opus          MAE%  44.9 [ 39.6, 50.3]  r_kcal 0.803  r_mass 0.862  MPE -12.1  MAEkcal  391.2  $/dish 0.0135  fail 0
+b0_direct_gpt_6_luna         MAE%  48.3 [ 43.2, 53.4]  r_kcal 0.739  r_mass 0.811  MPE  -6.2  MAEkcal  420.4  $/dish 0.0002  fail 0
+compB_v1                     MAE%  51.4 [ 46.2, 56.3]  r_kcal 0.764  r_mass 0.830  MPE -22.7  MAEkcal  447.0  $/dish 0.0031  fail 0
 
 n = 224 dishes, 224 plates; paired differences (row − ref), 95% plate-bootstrap CI:
   compA_v4_sonnet_cal          − h2_plate_scale          +6.6 [ +4.6, +8.5]
+  compA_v4_cal_gpt_6_luna      − h2_plate_scale          +2.4 [ +0.6, +4.2]
+  compA_v4_opus_raw            − h2_plate_scale          -5.8 [ -7.6, -4.2]
+  b2_plate_scale_gpt_6_luna    − h2_plate_scale          -1.8 [ -3.9, +0.4]
   compA_v4_opus_cal            − h2_plate_scale          -0.3 [ -2.0, +1.3]
   b2_plate_scale               − h2_plate_scale          -0.0 [ -2.1, +2.3]
   compC_v5                     − h2_plate_scale          +6.1 [ +4.4, +7.9]
+  b2_plate_scale_gpt_6_1_sol   − h2_plate_scale          -8.0 [-10.5, -5.5]
   h0_direct                    − h2_plate_scale          -0.3 [ -2.4, +1.8]
+  b0_direct_gpt_6_1_sol        − h2_plate_scale          -6.8 [ -9.0, -4.5]
+  compA_v4_sonnet_raw          − h2_plate_scale          +2.5 [ +0.8, +4.2]
+  compA_v4_cal_gpt_6_astra     − h2_plate_scale          +0.4 [ -1.6, +2.3]
+  compA_v4_cal_gpt_6_1_sol     − h2_plate_scale          +0.9 [ -1.0, +2.8]
+  b0_direct_gpt_6_astra        − h2_plate_scale          -7.4 [ -9.7, -4.9]
   compA_v2                     − h2_plate_scale          +1.6 [ +0.4, +2.9]
   compA_v4                     − h2_plate_scale          +4.9 [ +3.3, +6.4]
+  b2_plate_scale_gpt_6_astra   − h2_plate_scale          -8.4 [-10.8, -5.8]
+  compA_v4_haiku_raw           − h2_plate_scale          +1.1 [ -0.2, +2.3]
   b2_plate_scale_opus          − h2_plate_scale          -5.7 [ -7.7, -3.9]
+  b0_direct_gpt_6_luna         − h2_plate_scale          -2.4 [ -4.3, -0.4]
   compB_v1                     − h2_plate_scale          +0.7 [ -0.7, +2.1]
   compA_v4_sonnet_cal          − b2_plate_scale          +6.6 [ +4.7, +8.2]
+  compA_v4_cal_gpt_6_luna      − b2_plate_scale          +2.5 [ +0.2, +4.5]
+  compA_v4_opus_raw            − b2_plate_scale          -5.8 [ -7.9, -4.0]
+  b2_plate_scale_gpt_6_luna    − b2_plate_scale          -1.8 [ -4.2, +0.5]
   h2_plate_scale               − b2_plate_scale          +0.0 [ -2.3, +2.1]
   compA_v4_opus_cal            − b2_plate_scale          -0.3 [ -2.2, +1.3]
   compC_v5                     − b2_plate_scale          +6.2 [ +4.2, +7.9]
+  b2_plate_scale_gpt_6_1_sol   − b2_plate_scale          -8.0 [-10.8, -5.3]
   h0_direct                    − b2_plate_scale          -0.3 [ -2.7, +2.2]
+  b0_direct_gpt_6_1_sol        − b2_plate_scale          -6.8 [ -9.2, -4.5]
+  compA_v4_sonnet_raw          − b2_plate_scale          +2.6 [ +0.7, +4.0]
+  compA_v4_cal_gpt_6_astra     − b2_plate_scale          +0.4 [ -1.6, +2.1]
+  compA_v4_cal_gpt_6_1_sol     − b2_plate_scale          +0.9 [ -1.1, +2.6]
+  b0_direct_gpt_6_astra        − b2_plate_scale          -7.3 [ -9.9, -4.9]
   compA_v2                     − b2_plate_scale          +1.7 [ -0.6, +3.5]
   compA_v4                     − b2_plate_scale          +4.9 [ +2.8, +6.7]
+  b2_plate_scale_gpt_6_astra   − b2_plate_scale          -8.4 [-11.1, -5.7]
+  compA_v4_haiku_raw           − b2_plate_scale          +1.1 [ -1.1, +2.9]
   b2_plate_scale_opus          − b2_plate_scale          -5.7 [ -8.0, -3.8]
+  b0_direct_gpt_6_luna         − b2_plate_scale          -2.4 [ -4.5, -0.2]
   compB_v1                     − b2_plate_scale          +0.7 [ -1.5, +2.6]
   compA_v4_sonnet_cal          − b2_plate_scale_opus    +12.3 [+10.3,+14.4]
+  compA_v4_cal_gpt_6_luna      − b2_plate_scale_opus     +8.2 [ +6.4,+10.0]
+  compA_v4_opus_raw            − b2_plate_scale_opus     -0.1 [ -1.2, +1.0]
+  b2_plate_scale_gpt_6_luna    − b2_plate_scale_opus     +3.9 [ +2.2, +5.9]
   h2_plate_scale               − b2_plate_scale_opus     +5.7 [ +3.9, +7.7]
   compA_v4_opus_cal            − b2_plate_scale_opus     +5.5 [ +4.1, +6.8]
   b2_plate_scale               − b2_plate_scale_opus     +5.7 [ +3.8, +8.0]
   compC_v5                     − b2_plate_scale_opus    +11.9 [ +9.9,+13.8]
+  b2_plate_scale_gpt_6_1_sol   − b2_plate_scale_opus     -2.3 [ -4.2, -0.2]
   h0_direct                    − b2_plate_scale_opus     +5.4 [ +3.2, +7.9]
+  b0_direct_gpt_6_1_sol        − b2_plate_scale_opus     -1.1 [ -2.6, +0.7]
+  compA_v4_sonnet_raw          − b2_plate_scale_opus     +8.3 [ +6.5,+10.1]
+  compA_v4_cal_gpt_6_astra     − b2_plate_scale_opus     +6.1 [ +4.5, +7.8]
+  compA_v4_cal_gpt_6_1_sol     − b2_plate_scale_opus     +6.6 [ +5.0, +8.3]
+  b0_direct_gpt_6_astra        − b2_plate_scale_opus     -1.6 [ -3.4, +0.2]
   compA_v2                     − b2_plate_scale_opus     +7.4 [ +5.6, +9.3]
   compA_v4                     − b2_plate_scale_opus    +10.6 [ +8.7,+12.6]
+  b2_plate_scale_gpt_6_astra   − b2_plate_scale_opus     -2.7 [ -4.7, -0.6]
+  compA_v4_haiku_raw           − b2_plate_scale_opus     +6.8 [ +5.0, +8.7]
+  b0_direct_gpt_6_luna         − b2_plate_scale_opus     +3.4 [ +1.5, +5.3]
   compB_v1                     − b2_plate_scale_opus     +6.4 [ +4.5, +8.5]
   compA_v4_sonnet_cal          − compA_v4                +1.7 [ +0.7, +2.9]
+  compA_v4_cal_gpt_6_luna      − compA_v4                -2.4 [ -3.6, -1.2]
+  compA_v4_opus_raw            − compA_v4               -10.7 [-12.4, -8.9]
+  b2_plate_scale_gpt_6_luna    − compA_v4                -6.7 [ -8.8, -4.5]
   h2_plate_scale               − compA_v4                -4.9 [ -6.4, -3.3]
   compA_v4_opus_cal            − compA_v4                -5.2 [ -6.4, -3.9]
   b2_plate_scale               − compA_v4                -4.9 [ -6.7, -2.8]
   compC_v5                     − compA_v4                +1.2 [ +0.3, +2.2]
+  b2_plate_scale_gpt_6_1_sol   − compA_v4               -12.9 [-15.6,-10.1]
   h0_direct                    − compA_v4                -5.2 [ -7.6, -2.8]
+  b0_direct_gpt_6_1_sol        − compA_v4               -11.7 [-14.0, -9.1]
+  compA_v4_sonnet_raw          − compA_v4                -2.3 [ -3.5, -1.2]
+  compA_v4_cal_gpt_6_astra     − compA_v4                -4.5 [ -5.8, -3.1]
+  compA_v4_cal_gpt_6_1_sol     − compA_v4                -4.0 [ -5.4, -2.6]
+  b0_direct_gpt_6_astra        − compA_v4               -12.3 [-14.7, -9.6]
   compA_v2                     − compA_v4                -3.2 [ -3.9, -2.5]
+  b2_plate_scale_gpt_6_astra   − compA_v4               -13.3 [-16.0,-10.4]
+  compA_v4_haiku_raw           − compA_v4                -3.8 [ -4.4, -3.2]
   b2_plate_scale_opus          − compA_v4               -10.6 [-12.6, -8.6]
+  b0_direct_gpt_6_luna         − compA_v4                -7.3 [ -9.2, -5.1]
   compB_v1                     − compA_v4                -4.2 [ -5.3, -3.1]

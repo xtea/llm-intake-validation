@@ -14,3 +14,8 @@ Spend baseline at start: $333.22 (runs/*/ logged usd). Tonight's experiments = a
    for every method → OOD error is mostly noise/discrimination, not bias. GPT-sol plain prompt best on nvreal (42.6%).
 ## Pending
 - n5k_side same-protocol (addendum C), GPT nvreal for sol/astra harness, repeats on test, ACETADA (2nd OOD) download.
+4. GPT-6 full (test/cafe2/nvreal) done. nvreal: GPT-sol b0 43.9, b2 42.6, A 51.5, A-raw 43.8; astra b0 43.3, b2 42.3, A 51.1,
+   A-raw 42.2. Same pattern for all 6 models: source-fitted calibration hurts OOD (GPT-large by 8–9 pts); A-raw ≈ plain prompts.
+   cafe2: GPT A sol 34.2 / astra 35.0 best; plain GPT over-estimates massively (+113–118% MPE b0).
+5. Repeat calls on test (fresh samples ×2): compA_v4 27.1/26.4/26.2; h2 32.6/33.9/33.0; Sonnet b2 29.4/29.6/29.8 → ≤1.3 pts.
+6. Opus A-raw on cafe2 not run (not cached; Opus A was never run on cafe2 by design).
