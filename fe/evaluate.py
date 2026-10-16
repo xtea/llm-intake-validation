@@ -99,6 +99,7 @@ def main():
     ap.add_argument("--final", action="store_true")
     ap.add_argument("--workers", type=int, default=16)
     ap.add_argument("--max-usd", type=float, default=None)
+    ap.add_argument("--resample", type=int, default=0, help="add k*1000 to every sample index (fresh calls; repeat-run variance)")
     a = ap.parse_args()
     if a.split in SEALED and not a.final:
         sys.exit(f"split '{a.split}' is sealed; pass --final (logged) only for the final report")
@@ -114,6 +115,9 @@ def main():
         labels = random.Random(a.seed or a.split).sample(labels, min(a.n, len(labels)))  # same subset per seed
     estimate = load_candidate(a.candidate)
     llm = LLM(max_usd=a.max_usd)
+    if a.resample:
+        base_ask = llm.ask
+        llm.ask = lambda *x, sample=0, **k: base_ask(*x, sample=sample + 1000 * a.resample, **k)
     img_dir = os.path.join(ROOT, "data", "images")
 
     def run(lab):
@@ -139,7 +143,7 @@ def main():
     name = os.path.splitext(os.path.basename(a.candidate))[0]
     out_dir = os.path.join(ROOT, "runs", name)
     os.makedirs(out_dir, exist_ok=True)
-    tag = f"{a.split}-{a.n or 'all'}" + (f"-s{a.seed}" if a.seed else "") + (f"-f{a.fold}" if a.fold is not None else "")
+    tag = f"{a.split}-{a.n or 'all'}" + (f"-s{a.seed}" if a.seed else "") + (f"-f{a.fold}" if a.fold is not None else "") + (f"-r{a.resample}" if a.resample else "")
     json.dump({"metrics": res, "rows": rows}, open(os.path.join(out_dir, f"{tag}.json"), "w"), indent=1)
     if a.final:
         with open(os.path.join(ROOT, "runs", "FINAL-LOG.jsonl"), "a") as f:

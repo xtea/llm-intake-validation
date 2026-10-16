@@ -65,3 +65,11 @@ Requested by a methodological review of v0.2. All results below are labelled exp
    measure call-to-call variation.
 3. Metrics reported with explicit formulas: MAE% = Σ|ŷ−y| / Σy; MPE = mean((ŷ−y)/y); MAE in kcal.
 No harness, prompt or constant of the original systems is changed; no new tuning on sealed splits.
+
+## Addendum C: same-protocol comparison with the Nutrition5k paper (added 2026-10-16 before any run; exploratory)
+Split `n5k_side`: the official `rgb_test_ids` (709 dishes) with NO cleaning, as in the original paper (re-scans, sub-30 kcal and
+saturated labels kept; cafe2 totals recomputed from item rows). Input: ONE frame per dish, the first decodable frame of side-angle
+camera A (fallback B, C, D), PNG, long side ≤1024 px. The paper's 2D model used every 5th frame of the side videos; ours sees one
+frame, zero-shot. Metric MAE% of mean (their Table 3 convention). Systems (run once): Haiku h0, Haiku h2, Haiku A (compA_v4),
+Haiku B (compB_v1), Sonnet b2, Opus b2, gpt-6-luna A (cal), gpt-6.1-sol b2, gpt-6.1-sol A (cal). No constants refit; the harness
+prompts say "overhead photo" and are not edited (a mismatch we report). Reference: 26.1% (Thames et al. 2021, Table 3).

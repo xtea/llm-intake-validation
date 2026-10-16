@@ -60,11 +60,12 @@ def main():
         rk = corr([math.log(r["est"]) for r in rr], [math.log(r["kcal"]) for r in rr])
         mm = [(math.log(r["mass_est"]), math.log(r["mass_g"])) for r in rr if r.get("mass_est")]
         rm = corr(*zip(*mm)) if len(mm) > 10 else float("nan")
-        bias = sum((r["est"] - r["kcal"]) / r["kcal"] for r in rr) / len(rr) * 100
+        bias = sum((r["est"] - r["kcal"]) / r["kcal"] for r in rr) / len(rr) * 100   # MPE: mean per-dish percentage error
+        mae_k = sum(abs(r["est"] - r["kcal"]) for r in rr) / len(rr)
         m = runs[n]["metrics"]
         res[n] = point
         print(f"{n:28s} MAE% {point:5.1f} [{bs[int(.025*B)]:5.1f},{bs[int(.975*B)]:5.1f}]  r_kcal {rk:.3f}  r_mass {rm:.3f}  "
-              f"bias {bias:+5.1f}  $/dish {m['usd']/max(1,m['n']):.4f}  fail {m['failed']}")
+              f"MPE {bias:+5.1f}  MAEkcal {mae_k:6.1f}  $/dish {m['usd']/max(1,m['n']):.4f}  fail {m['failed']}")
     print(f"\nn = {len(items)} dishes, {len(pk)} plates; paired differences (row − ref), 95% plate-bootstrap CI:")
     for ref in [x for x in REFS if x in runs]:
         for n in runs:
