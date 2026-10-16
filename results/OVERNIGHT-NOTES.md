@@ -25,3 +25,11 @@ Spend baseline at start: $333.22 (runs/*/ logged usd). Tonight's experiments = a
 8. Same-protocol (n5k_side, uncleaned rgb_test, one side frame): Haiku A 38.9, B 39.8, h2 43.2, h0 56.9, Sonnet b2 48.8 (6 infra
    failures, retry pending), Opus b2 43.8 → far from the trained 2D model's 26.1%.
 9. ACETADA interim: Haiku h0 24.8% (MPE −15.6); h2 29.9 with 33 infra failures (retry pending).
+10. ACETADA final (766 meals): plain prompts 17.4–25.3% (Opus plate best); A 40.0, A-v2 38.3, C 51.7, B 26.7; GPT-sol A 32.5.
+    Source calibration hurts by 7–21 pts. A-raw 33.2 still worse than plain.
+11. Addendum F view ablation (cached, $0): on ACETADA the worst view is R (written reasoning, tagged INVARIANT) 39.0%; DN (tagged
+    dataset) 26.2%; dropping P does not help (33.5). R's prompt assumes an overhead photo + standard plate diameters → hidden
+    dataset assumption inside an "invariant" component. Tags are NOT a reliable predictor; paper says so.
+12. Merged into the other session's fuller v0.3 (doc/credit/drafts/paper4-v03.md); PDF 14–15 pp, arXiv source compiles.
+13. Spend (per-call cache records): whole project $573; since 20:50 CDT $242 (includes the approved GPT-full tail and the duplicate
+    session's runs) → overnight $200 exceeded by ~$40.
