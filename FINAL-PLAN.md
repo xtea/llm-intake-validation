@@ -107,3 +107,13 @@ structural differences from B? Variants re-use A's cached calls, with calibratio
 R only; DN only; P only; R+DN (no P); R+P (no DN); R+DN+P (= A-raw). Scored on test, nvreal, acetada.
 Reading rule written in advance: if dropping P (and/or DN) brings A-raw close to the plain prompts on acetada, the dataset-tagged
 content explains the gap; if not, the gap is not explained by the tagged content.
+
+## Addendum G (2026-10-16, POST HOC — written after computing; not pre-registered)
+Day-level agreement on ACETADA for comparison with the trial's 24-hour recall report (Whitton et al., AJCN 2024).
+Added after all other results were known, in response to a venue-fit review (CHIL criteria: clinical anchoring).
+- Unit: participant feeding day = breakfast + lunch + dinner, only days with all three meals in the cleaned set (130 days, 94 participants).
+- Statistics: mean of day % errors (participant bootstrap 95% CI, 2,000), Bland-Altman 95% LoA, share of days within 800 kJ.
+- Local recalibration: 2 constants refit on k=20 meals from other participants; days of those participants excluded; 200 draws.
+- Meal-level breakdown by meal slot (clock hour) and energy tertile on ACETADA and test.
+- Offline from cached outputs; no model calls. Code: fe/clinical.py, fe/figures.py (fig_ba). Output: results/clinical.txt.
+- Reported in the paper as post hoc and indicative (served vs consumed energy; selected days).

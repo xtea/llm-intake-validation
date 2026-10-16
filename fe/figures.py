@@ -100,10 +100,44 @@ def fig_ratio(out, splits):
     fig.savefig(os.path.join(out, "fig_ratio.png"), dpi=160)
 
 
+def fig_ba(out):
+    """day-level Bland-Altman on ACETADA feeding days (post hoc), same layout as the trial's own recall comparison."""
+    from fe import clinical as cl
+    lab = cl.labels("acetada")
+    dd = cl.days(lab)
+    sy = cl.systems("acetada")
+    panels = [("Haiku 5.5", "Harness A"), ("Haiku 5.5", "Direct"), ("gpt-6.1-sol", "Direct"), ("Opus 5.5", "Plate")]
+    names = {"gpt-6.1-sol": "GPT-6.1 sol", "Plate": "Plate-as-ruler"}
+    fig, axes = plt.subplots(1, 4, figsize=(9.4, 2.6), sharey=True)
+    for ax, (m, k) in zip(axes, panels):
+        est = sy[(m, k)]
+        xs, ys = [], []
+        for its in dd.values():
+            t = sum(lab[i]["kcal"] for i in its)
+            xs.append(t)
+            ys.append((sum(est[i] for i in its) - t) / t * 100)
+        mu, sd = st.mean(ys), st.stdev(ys)
+        ax.scatter(xs, ys, s=10, color="#2a78d6", alpha=0.7, edgecolor="white", linewidth=0.4)
+        ax.axhline(0, color=MUTED, lw=0.8, ls=(0, (3, 3)))
+        for v, lw in ((mu, 1.4), (mu - 1.96 * sd, 0.9), (mu + 1.96 * sd, 0.9)):
+            ax.axhline(v, color="#eb6834", lw=lw)
+        ax.set_title(f"{names.get(m, m)}, {names.get(k, k)}", fontsize=8.5, color=INK)
+        ax.text(0.97, 0.96, f"mean {mu:+.0f}%\nLoA {mu - 1.96 * sd:+.0f} to {mu + 1.96 * sd:+.0f}%", transform=ax.transAxes,
+                ha="right", va="top", fontsize=7.5, color=INK)
+        ax.set_xlabel("True energy served per day (kcal)")
+        ax.grid(axis="y", color=GRID, lw=0.6)
+    axes[0].set_ylabel("Day error (% of truth)")
+    fig.tight_layout()
+    fig.savefig(os.path.join(out, "fig_ba.pdf"))
+    fig.savefig(os.path.join(out, "fig_ba.png"), dpi=160)
+
+
 if __name__ == "__main__":
     out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "results")
     os.makedirs(out, exist_ok=True)
     sp = ["test", "nvreal"] + (["acetada"] if os.path.exists(os.path.join(ROOT, "runs", "compA_v4", "acetada-all.json")) else [])
     fig_ablation(out, sp)
     fig_ratio(out, sp)
+    if "acetada" in sp:
+        fig_ba(out)
     print("ok", sp)
