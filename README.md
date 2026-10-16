@@ -1,4 +1,4 @@
-# food-evolve
+# llm-intake-validation
 
 Code, prompts and per-meal model outputs for:
 
