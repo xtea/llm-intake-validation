@@ -78,3 +78,14 @@ prompts say "overhead photo" and are not edited (a mismatch we report). Referenc
 On nvreal, for each model and for b0, b2 and A-raw outputs: draw k labelled dishes (k = 10, 20, 50) at random, fit the same 2-constant
 power law on them, score MAE% on the remaining dishes; 200 random draws per k; report mean and 5–95% range. Question: how many target
 labels does it take to recover from the source-domain calibration failure, and does A's structure help once calibration is local?
+
+## Addendum E: second out-of-distribution set ACETADA (added 2026-10-16, before any run; exploratory)
+ACETADA (Coburn et al., BHI 2025; CC BY-NC 4.0, non-commercial research; images not redistributed): controlled feeding trial,
+Perth, Western Australia; 806 meals with a before-eating photo; each item weighed before and after. Truth = energy SERVED on the
+plate in the before photo: per item, density = energy_kcal / consumed_g, served kcal = density × before_portion_g. Meals where any
+item has before_portion_g > 0 but consumed_g = 0 (density unknown) are excluded; ≥30 kcal inclusion as before. Image: before photo,
+converted to PNG (EXIF incl. GPS/time removed), long side ≤1024. Grouping for bootstrap: participant_id.
+Systems (run once; budget-limited, chosen before results): Haiku h0, h2, A (compA_v4), A-v2, B, C; Sonnet b2; Opus b2;
+gpt-6-luna b0, b2, A; gpt-6.1-sol b0, b2, A; gpt-6-astra b2. Same metric/bootstrap; same calibration-ablation recipe (fold-0 fits).
+Prediction stated in advance (from the tags and the nvreal result): systems with source-fitted calibration lose more than their
+uncalibrated counterparts; serving sizes in a feeding trial are closer to Nutrition5k than nvreal, so the loss may be smaller.
