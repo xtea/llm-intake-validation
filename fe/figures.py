@@ -1,5 +1,6 @@
 """Paper figures (static PDF for LaTeX). python3 -m fe.figures <outdir>"""
 import json, math, os, statistics as st, sys
+import numpy as np
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -154,6 +155,17 @@ def fig_intake_ba(out):
         ax.axhline(mu, color="#eb6834", lw=1.4, zorder=4)
         for v in (mu - 1.96 * sd, mu + 1.96 * sd):
             ax.axhline(v, color="#eb6834", lw=0.9, ls=(0, (4, 2)), zorder=4)
+        # local-linear smoother (tricube weights, span 0.6), the usual LOESS reading of a Bland-Altman plot
+        xs_a, ys_a = np.array(xs), np.array(ys)
+        grid = np.linspace(np.percentile(xs_a, 2), np.percentile(xs_a, 98), 60)
+        h = 0.6 * (xs_a.max() - xs_a.min()) / 2
+        sm = []
+        for g in grid:
+            w = np.clip(1 - (np.abs(xs_a - g) / h) ** 3, 0, None) ** 3
+            A = np.vstack([np.ones_like(xs_a), xs_a - g]).T
+            beta = np.linalg.lstsq(A * w[:, None] ** 0.5, ys_a * w ** 0.5, rcond=None)[0]
+            sm.append(beta[0])
+        ax.plot(grid, sm, color=INK, lw=1.0, ls=(0, (2, 1.5)), zorder=5)
         ax.set_title(m, fontsize=8.5, color=INK)
         ax.text(0.97, 0.96, f"mean {mu:+.1f}%\nLoA {mu - 1.96 * sd:+.0f} to {mu + 1.96 * sd:+.0f}%", transform=ax.transAxes,
                 ha="right", va="top", fontsize=7, color=INK)

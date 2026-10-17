@@ -79,10 +79,13 @@ def load2(path):
     return mod.estimate2
 
 
-def run(cand, name, max_usd=30.0):
+def run(cand, name, max_usd=30.0, resample=0):
     labels = subset(name, json.load(open(LABELS)))
     est2 = load2(cand)
     llm = LLM(max_usd=max_usd)
+    if resample:  # fresh calls with a different sample index (test-retest); cache keys differ
+        base_ask = llm.ask
+        llm.ask = lambda *x, sample=0, **k: base_ask(*x, sample=sample + 1000 * resample, **k)
 
     def one(l):
         b = open(os.path.join(DATA, "images", l["item"] + ".png"), "rb").read()
@@ -101,7 +104,7 @@ def run(cand, name, max_usd=30.0):
     d = os.path.join(ROOT, "runs", tag)
     os.makedirs(d, exist_ok=True)
     m = {"n": len(rows), "failed": sum("est" not in r for r in rows), "usd": round(llm.usd, 4), "calls": llm.calls, "cache_hits": llm.cached}
-    json.dump({"metrics": m, "rows": rows}, open(os.path.join(d, f"intake-{name}.json"), "w"), indent=1)
+    json.dump({"metrics": m, "rows": rows}, open(os.path.join(d, f"intake-{name}" + (f"-r{resample}" if resample else "") + ".json"), "w"), indent=1)
     print(tag, name, m)
 
 
@@ -148,6 +151,6 @@ if __name__ == "__main__":
     if cmd == "build":
         build()
     elif cmd == "run":
-        run(sys.argv[2], sys.argv[3], float(sys.argv[4]) if len(sys.argv) > 4 else 30.0)
+        run(sys.argv[2], sys.argv[3], float(sys.argv[4]) if len(sys.argv) > 4 else 30.0, int(sys.argv[5]) if len(sys.argv) > 5 else 0)
     elif cmd == "report":
         report(sys.argv[2])

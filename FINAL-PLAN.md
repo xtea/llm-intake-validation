@@ -161,3 +161,19 @@ Budget: pilot ≤ $15; full study ≤ $150 (dev keys), requires the pilot GO.
   R3 fixed eaten-fraction baseline (before-only × c, c = Σ eaten / Σ served of other participants, leave-one-participant-out; rule
   fixed before computing); R4 kcal-scale leftover effect modification; R5 excluding pilot meals / pilot participants; R10 valid-output
   subset. Exploratory. results/intake_rev.txt
+
+## Addendum I (2026-10-16, after v0.2 review) — ablations and reliability. REGISTERED BEFORE ANY OF THESE CALLS
+Reason: condition (3) changed both the input (two photos) and the prompt (structured fields); the review asks to separate them,
+to measure call-to-call variability, and to test a higher reasoning effort. Budget cap USD 130 (dev keys).
+- (3a) `dual_simple_{model}`: both photos + the simple before-only prompt (kcal, mass_g eaten). All 802 meals, 6 models.
+- (3b) `before_struct_{model}`: before photo only + the structured prompt (served / leftover / eaten / macros). All 802 meals, 6 models.
+  Reading: Q1 is answered by (3) vs (3b) [photo effect, prompt held] and (3a) vs (1) [photo effect, simple prompt held];
+  (3) vs (3a) and (3b) vs (1) give the prompt effect. Metrics as in addendum H; paired participant bootstrap.
+  Grams eaten from (3a) allow a weight-error comparison with DietDelta (PMAE of grams).
+- Test–retest: `dual_direct_{model}` on the 100 pilot meals, 2 further fresh calls (resample 1, 2) → 3 estimates per meal.
+  Report per-meal coefficient of variation (median), and MAE% of each repeat and its range.
+- High effort: `dual_high_{model}` (same prompt, effort "high") on the 100 pilot meals, 6 models; compare MAE% and bias with
+  the low-effort estimates on the same meals; report cost per meal.
+- Offline (done before these calls, fe/intake_rev2.py): repeated-measures LoA and ICC, log-scale LoA, shrinkage slopes,
+  heterogeneity of Δ and all pairwise differences, protein error vs composition, sanity check vs Coburn 2025.
+All items are exploratory; the main conclusions remain those of addendum H.
