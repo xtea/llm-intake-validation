@@ -93,7 +93,7 @@ def run(cand, name, max_usd=30.0, resample=0):
         row = {"item": l["item"], "kcal": l["kcal"]}
         try:
             r = est2(b, a, llm)
-            row.update(est=float(r["kcal"]), **{k: float(r[k]) for k in ("served_kcal", "leftover_kcal", "protein_g", "carbs_g", "fat_g") if r.get(k) is not None})
+            row.update(est=float(r["kcal"]), **{k: float(r[k]) for k in ("served_kcal", "leftover_kcal", "protein_g", "carbs_g", "fat_g", "mass_g") if r.get(k) is not None})
         except Exception as e:
             row["error"] = repr(e)[:300]
         return row

@@ -177,3 +177,12 @@ to measure call-to-call variability, and to test a higher reasoning effort. Budg
 - Offline (done before these calls, fe/intake_rev2.py): repeated-measures LoA and ICC, log-scale LoA, shrinkage slopes,
   heterogeneity of Δ and all pairwise differences, protein error vs composition, sanity check vs Coburn 2025.
 All items are exploratory; the main conclusions remain those of addendum H.
+
+### Addendum I execution log (2026-10-16 22:21 – 23:5x CDT; all runs complete; cost USD 94.68; study total USD 182.57)
+- Photo effect with the structured prompt held, (3)−(3b), MAE% points: Haiku −1.3 [−2.8,+0.4], Sonnet −5.1, Opus −2.5, luna −2.5, sol −6.7, astra −8.1 (5 of 6 clear).
+  Photo effect with the simple prompt held, (3a)−(1): +0.2, −5.3, −9.7, −3.1, −8.2, −9.2. Prompt effect ≈ 0 except Opus before-only (−7.1) and Sonnet both-photos (+2.9, incl. its 11 failures).
+- Grams from (3a): PMAE 20.6% (Opus) to 37.9% (Haiku); all under-estimate grams (−12% to −37%).
+- Test–retest (100 meals × 3): MAE% range across repeats 0.7–1.4 points; median per-meal CV 3.5–8.2%.
+- High effort: MAE% change −4.2 (Haiku) to +0.9 (luna); cost ×1.1–×2.6. No consistent gain.
+- Bug fixed after the runs: intake.py did not store mass_g for (3a); rows rebuilt from the cache (0 new calls).
+Results: results/intake_abl.txt (fe/intake_abl.py).
