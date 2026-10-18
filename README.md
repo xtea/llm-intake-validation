@@ -2,7 +2,7 @@
 
 Code, prompts and per-meal model outputs for:
 
-> Xiaomeng Li. *Validating General-Purpose Multimodal LLMs for Estimating Consumed Energy from Meal Photos in a Controlled Feeding Trial.* Preprint, 2026.
+> Xiaomeng Li. *Small Average Error, Wide Individual Error: General-Purpose LLMs Estimating Energy Intake from Meal Photos in a Feeding Trial.* Preprint, 2026.
 
 The repository also contains an earlier background experiment (agentic search over estimation pipelines on Nutrition5k), reported in Appendix E of the paper.
 
