@@ -2,7 +2,19 @@
 
 Code, prompts and per-meal model outputs for:
 
-> Xiaomeng Li. *Small Average Error, Wide Individual Error: General-Purpose LLMs Estimating Energy Intake from Meal Photos in a Feeding Trial.* Preprint, 2026.
+> Xiaomeng Li. *Small Average Error, Wide Individual Error: General-Purpose LLMs Estimating Energy Intake from Meal Photos in a Feeding Trial.* arXiv:2610.26538 [cs.HC], 2026. https://arxiv.org/abs/2610.26538
+
+```bibtex
+@misc{li2026intake,
+  author        = {Li, Xiaomeng},
+  title         = {Small Average Error, Wide Individual Error: General-Purpose LLMs Estimating Energy Intake from Meal Photos in a Feeding Trial},
+  year          = {2026},
+  eprint        = {2610.26538},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.HC},
+  url           = {https://arxiv.org/abs/2610.26538}
+}
+```
 
 The repository also contains an earlier background experiment (agentic search over estimation pipelines on Nutrition5k), reported in Appendix E of the paper.
 
