@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Raw spinach leaves\",\"grams\":35,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Shredded carrot\",\"grams\":10,\"kcal_per_100g\":40,\"greens\":false},{\"name\":\"Tomato pieces\",\"grams\":15,\"kcal_per_100g\":25,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.003992, "t": 1792125381.93205}

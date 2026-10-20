@@ -1,0 +1,1 @@
+{"text": "```json\n{\"served_kcal\": 625, \"leftover_kcal\": 170, \"kcal\": 455, \"protein_g\": 23, \"carbs_g\": 40, \"fat_g\": 21}\n```", "model": "gemini-3.8-flash", "cost": 0.0065865, "t": 1792513380.519568}

@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Banana\",\"grams\":120,\"kcal_per_100g\":89,\"greens\":false},{\"name\":\"Chocolate milk\",\"grams\":150,\"kcal_per_100g\":75,\"greens\":false},{\"name\":\"Muffin\",\"grams\":50,\"kcal_per_100g\":400,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.00026660000000000003, "t": 1792126420.553231}

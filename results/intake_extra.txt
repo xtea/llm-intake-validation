@@ -8,6 +8,8 @@
 | GPT-6 luna | -2.6 [-4.7, -0.7] | -6.6 [-11.0, -2.2] | -0.2 [-1.5, +1.1] | -6.4 [-11.0, -2.0] |
 | GPT-6.1 sol | -6.7 [-9.6, -3.8] | -17.2 [-21.9, -12.5] | -0.5 [-2.4, +1.9] | -16.8 [-21.9, -11.9] |
 | GPT-6 astra | -8.1 [-10.8, -5.7] | -20.0 [-24.7, -15.2] | -1.1 [-2.2, -0.0] | -18.9 [-23.6, -14.1] |
+| Gemini 3.8 Flash | -4.8 [-6.8, -3.0] | -13.3 [-17.3, -9.4] | +0.2 [-0.7, +1.2] | -13.6 [-17.9, -9.5] |
+| Gemini 4 Argon | -9.1 [-11.8, -6.9] | -19.8 [-24.5, -15.4] | -2.8 [-4.4, -1.3] | -17.0 [-22.0, -12.4] |
 
 ## 2. Decomposition of the before-only error (meals with served energy known), % of total consumed energy
 
@@ -21,6 +23,8 @@ Before-only error vs consumed = (estimate − served) + (served − consumed). T
 | GPT-6 luna | -11.5 | +14.9 | +3.4 | 20.3 | 23.5 | 141/292 |
 | GPT-6.1 sol | -1.1 | +14.9 | +13.8 | 18.3 | 26.3 | 84/292 |
 | GPT-6 astra | +0.5 | +14.9 | +15.4 | 18.4 | 27.0 | 88/292 |
+| Gemini 3.8 Flash | -8.0 | +14.9 | +6.9 | 16.1 | 21.4 | 111/292 |
+| Gemini 4 Argon | +1.7 | +14.9 | +16.6 | 17.8 | 27.3 | 71/292 |
 
 *Among meals with ≥10% left: under-estimated the served energy AND the estimate is closer to consumed than to served.
 
@@ -33,6 +37,8 @@ Before-only error vs consumed = (estimate − served) + (served − consumed). T
 | GPT-6 luna | -2.8 [-4.9, -0.6] |
 | GPT-6.1 sol | -6.9 [-9.6, -4.3] |
 | GPT-6 astra | -8.3 [-10.7, -6.1] |
+| Gemini 3.8 Flash | -5.0 [-7.1, -2.9] |
+| Gemini 4 Argon | -9.3 [-11.9, -7.0] |
 
 ## 4. Day-level mean error, 90% CI vs ±10% equivalence margin (148 days)
 
@@ -50,3 +56,7 @@ Before-only error vs consumed = (estimate − served) + (served − consumed). T
 | GPT-6.1 sol, both photos | +3.4 | [+0.8, +6.0] | yes |
 | GPT-6 astra, before only | +20.2 | [+15.6, +25.0] | no |
 | GPT-6 astra, both photos | +7.6 | [+5.0, +10.3] | no |
+| Gemini 3.8 Flash, before only | +10.6 | [+6.4, +15.0] | no |
+| Gemini 3.8 Flash, both photos | -0.5 | [-2.5, +1.6] | yes |
+| Gemini 4 Argon, before only | +20.4 | [+15.8, +25.4] | no |
+| Gemini 4 Argon, both photos | +4.5 | [+2.3, +6.7] | yes |

@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Bacon\",\"grams\":110,\"kcal_per_100g\":500,\"greens\":false},{\"name\":\"Scrambled eggs\",\"grams\":60,\"kcal_per_100g\":150,\"greens\":false}]}", "model": "gpt-6-astra", "cost": 0.02225, "t": 1792115318.112433}

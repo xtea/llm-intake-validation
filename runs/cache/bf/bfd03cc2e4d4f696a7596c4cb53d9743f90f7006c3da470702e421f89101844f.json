@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Muffin\",\"grams\":85,\"kcal_per_100g\":380},{\"name\":\"Blueberries\",\"grams\":55,\"kcal_per_100g\":57},{\"name\":\"Milk\",\"grams\":260,\"kcal_per_100g\":61},{\"name\":\"Water\",\"grams\":280,\"kcal_per_100g\":0}]}", "model": "gpt-6-astra", "cost": 0.03376, "t": 1792132558.575663}

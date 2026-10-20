@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Spinach and mixed leafy greens\",\"grams\":30,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Onion\",\"grams\":5,\"kcal_per_100g\":40,\"greens\":false},{\"name\":\"Cheese\",\"grams\":3,\"kcal_per_100g\":380,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.000352, "t": 1792109645.403457}

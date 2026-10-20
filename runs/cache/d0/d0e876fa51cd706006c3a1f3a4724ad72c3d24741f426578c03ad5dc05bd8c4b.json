@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Apple\",\"grams\":170,\"kcal_per_100g\":52},{\"name\":\"Grapes\",\"grams\":90,\"kcal_per_100g\":69},{\"name\":\"Raw cauliflower\",\"grams\":95,\"kcal_per_100g\":25},{\"name\":\"Almonds\",\"grams\":28,\"kcal_per_100g\":579}]}", "model": "gpt-6-astra", "cost": 0.03045, "t": 1792116430.3804958}

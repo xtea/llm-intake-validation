@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Toast\",\"grams\":30,\"kcal_per_100g\":260,\"greens\":false},{\"name\":\"Eggs\",\"grams\":100,\"kcal_per_100g\":150,\"greens\":false},{\"name\":\"Coffee with milk\",\"grams\":180,\"kcal_per_100g\":45,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.00040060000000000003, "t": 1792127546.060624}

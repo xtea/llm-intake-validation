@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Cooked white rice\",\"grams\":100,\"kcal_per_100g\":130,\"greens\":false},{\"name\":\"Grilled chicken breast\",\"grams\":125,\"kcal_per_100g\":165,\"greens\":false},{\"name\":\"Cooked egg\",\"grams\":15,\"kcal_per_100g\":150,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.005852, "t": 1792124337.445812}

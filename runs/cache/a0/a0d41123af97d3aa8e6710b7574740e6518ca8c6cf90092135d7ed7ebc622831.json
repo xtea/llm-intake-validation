@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"pizza\",\"grams\":80,\"kcal_per_100g\":270,\"greens\":false},{\"name\":\"lettuce\",\"grams\":5,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"corn on the cob\",\"grams\":100,\"kcal_per_100g\":96,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.00047260000000000005, "t": 1792122919.842222}

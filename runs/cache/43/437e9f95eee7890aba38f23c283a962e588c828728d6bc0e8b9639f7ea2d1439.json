@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Cheese and tomato pizza\",\"grams\":230,\"kcal_per_100g\":270,\"greens\":false},{\"name\":\"Green olives\",\"grams\":18,\"kcal_per_100g\":130,\"greens\":false},{\"name\":\"Mixed leafy greens\",\"grams\":25,\"kcal_per_100g\":20,\"greens\":true}]}", "model": "gpt-6-astra", "cost": 0.0265, "t": 1792115675.9944088}

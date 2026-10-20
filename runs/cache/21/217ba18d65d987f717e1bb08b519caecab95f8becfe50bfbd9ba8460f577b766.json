@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Mixed leafy greens\",\"grams\":35,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Tomato pieces\",\"grams\":8,\"kcal_per_100g\":25,\"greens\":false},{\"name\":\"Chopped nuts\",\"grams\":3,\"kcal_per_100g\":600,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.004252, "t": 1792125101.307897}

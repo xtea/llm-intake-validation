@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Roasted chicken breast\",\"grams\":100,\"kcal_per_100g\":165,\"greens\":false},{\"name\":\"Roasted potato pieces\",\"grams\":40,\"kcal_per_100g\":130,\"greens\":false},{\"name\":\"Arugula\",\"grams\":12,\"kcal_per_100g\":20,\"greens\":true}]}", "model": "gpt-6-astra", "cost": 0.0363, "t": 1792115626.9051461}

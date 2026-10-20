@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Apple\",\"grams\":240,\"kcal_per_100g\":52,\"greens\":false},{\"name\":\"Sliced cucumber\",\"grams\":75,\"kcal_per_100g\":15,\"greens\":false},{\"name\":\"Cooked Brussels sprouts\",\"grams\":45,\"kcal_per_100g\":40,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.004342, "t": 1792124504.8686771}

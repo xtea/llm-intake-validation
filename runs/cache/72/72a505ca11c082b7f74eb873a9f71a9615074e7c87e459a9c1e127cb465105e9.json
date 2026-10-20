@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Mixed leafy greens\",\"grams\":65,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Cooked cauliflower\",\"grams\":130,\"kcal_per_100g\":25,\"greens\":false},{\"name\":\"Roasted potatoes\",\"grams\":150,\"kcal_per_100g\":130,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.004772, "t": 1792125235.824739}

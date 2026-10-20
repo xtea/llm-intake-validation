@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Chicken\",\"grams\":70,\"kcal_per_100g\":165,\"greens\":false},{\"name\":\"Leafy greens\",\"grams\":15,\"kcal_per_100g\":20,\"greens\":true}]}", "model": "gpt-6-luna", "cost": 0.0003466, "t": 1792123158.364811}

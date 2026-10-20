@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"mixed leafy greens\",\"grams\":20,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"orange squash cubes\",\"grams\":150,\"kcal_per_100g\":90,\"greens\":false},{\"name\":\"corn on the cob\",\"grams\":35,\"kcal_per_100g\":96,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.000454, "t": 1792103078.1376379}

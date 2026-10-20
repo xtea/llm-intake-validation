@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Fried eggs\",\"grams\":100,\"kcal_per_100g\":150,\"greens\":false},{\"name\":\"Avocado\",\"grams\":30,\"kcal_per_100g\":160,\"greens\":false},{\"name\":\"Espresso\",\"grams\":25,\"kcal_per_100g\":2,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0003211, "t": 1792126623.9398541}

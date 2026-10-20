@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Raw baby spinach\",\"grams\":35,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Sliced raw mushrooms\",\"grams\":12,\"kcal_per_100g\":25,\"greens\":false},{\"name\":\"Shaved Parmesan cheese\",\"grams\":6,\"kcal_per_100g\":400,\"greens\":false}]}", "model": "gpt-6-astra", "cost": 0.02585, "t": 1792112735.135266}

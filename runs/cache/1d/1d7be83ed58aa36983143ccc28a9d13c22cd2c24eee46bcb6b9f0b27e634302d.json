@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Mixed leafy greens\",\"grams\":45,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Roasted squash cubes\",\"grams\":35,\"kcal_per_100g\":90,\"greens\":false},{\"name\":\"Walnuts and pecans\",\"grams\":12,\"kcal_per_100g\":600,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.007222, "t": 1792124887.25348}

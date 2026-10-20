@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Scrambled eggs\",\"grams\":180,\"kcal_per_100g\":150,\"greens\":false},{\"name\":\"Cooked spinach mixed into eggs\",\"grams\":40,\"kcal_per_100g\":30,\"greens\":false},{\"name\":\"Raw spinach leaves\",\"grams\":30,\"kcal_per_100g\":20,\"greens\":true}]}", "model": "gpt-6.1-sol", "cost": 0.00417, "t": 1792110993.118628}

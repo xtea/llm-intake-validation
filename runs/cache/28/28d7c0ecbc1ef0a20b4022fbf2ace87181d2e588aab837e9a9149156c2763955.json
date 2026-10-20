@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Mixed leafy greens\",\"grams\":55,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Pine nuts\",\"grams\":3,\"kcal_per_100g\":600,\"greens\":false},{\"name\":\"Red pepper\",\"grams\":1,\"kcal_per_100g\":30,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.00388, "t": 1792104296.604983}

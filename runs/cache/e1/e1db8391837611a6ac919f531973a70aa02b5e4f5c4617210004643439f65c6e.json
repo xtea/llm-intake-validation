@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Cooked rice\",\"grams\":135,\"kcal_per_100g\":130,\"greens\":false},{\"name\":\"Cooked chicken with skin, edible portion\",\"grams\":125,\"kcal_per_100g\":215,\"greens\":false},{\"name\":\"Corn on the cob, edible kernels\",\"grams\":45,\"kcal_per_100g\":96,\"greens\":false}]}", "model": "gpt-6-astra", "cost": 0.0262, "t": 1792112414.187752}

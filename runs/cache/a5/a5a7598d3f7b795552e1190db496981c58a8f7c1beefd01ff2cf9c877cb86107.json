@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Lettuce\",\"grams\":90,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Cooked chicken breast\",\"grams\":170,\"kcal_per_100g\":165,\"greens\":false},{\"name\":\"Olives\",\"grams\":10,\"kcal_per_100g\":130,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.00028010000000000003, "t": 1792122152.084061}

@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Lettuce with dressing\",\"grams\":35,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Cooked beef or pork\",\"grams\":130,\"kcal_per_100g\":250,\"greens\":false},{\"name\":\"Shredded cheese\",\"grams\":25,\"kcal_per_100g\":380,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0004081, "t": 1792122562.9724648}

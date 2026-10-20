@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Mixed leafy greens\",\"grams\":30,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Black olives\",\"grams\":15,\"kcal_per_100g\":130,\"greens\":false},{\"name\":\"Walnut pieces\",\"grams\":5,\"kcal_per_100g\":600,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.004902, "t": 1792125428.791445}

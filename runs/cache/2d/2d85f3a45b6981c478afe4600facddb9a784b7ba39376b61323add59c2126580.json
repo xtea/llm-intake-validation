@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"scrambled eggs\",\"grams\":120,\"kcal_per_100g\":150,\"greens\":false},{\"name\":\"bacon\",\"grams\":12,\"kcal_per_100g\":500,\"greens\":false},{\"name\":\"bread\",\"grams\":55,\"kcal_per_100g\":260,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.000569, "t": 1792109638.567164}

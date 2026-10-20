@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Raw spinach\",\"grams\":30,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Almonds\",\"grams\":50,\"kcal_per_100g\":600,\"greens\":false},{\"name\":\"Raw carrot strips\",\"grams\":12,\"kcal_per_100g\":40,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.003872, "t": 1792125241.0850382}

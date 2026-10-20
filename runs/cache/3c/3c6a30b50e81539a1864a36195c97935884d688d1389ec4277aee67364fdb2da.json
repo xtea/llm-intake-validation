@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Pizza with tomato sauce and cheese\",\"grams\":190,\"kcal_per_100g\":270,\"greens\":false},{\"name\":\"Olives\",\"grams\":15,\"kcal_per_100g\":130,\"greens\":false},{\"name\":\"Leafy greens\",\"grams\":25,\"kcal_per_100g\":20,\"greens\":true}]}", "model": "gpt-6-luna", "cost": 0.0004235, "t": 1792113858.445459}

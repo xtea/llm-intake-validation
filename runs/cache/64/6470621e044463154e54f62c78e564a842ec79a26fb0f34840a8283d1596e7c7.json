@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Lasagna\",\"grams\":270,\"kcal_per_100g\":165},{\"name\":\"Tomato sauce topping\",\"grams\":45,\"kcal_per_100g\":45},{\"name\":\"Grated Parmesan topping\",\"grams\":3,\"kcal_per_100g\":420},{\"name\":\"Grilled steak\",\"grams\":80,\"kcal_per_100g\":230}]}", "model": "gpt-6-astra", "cost": 0.02556, "t": 1792119772.295979}

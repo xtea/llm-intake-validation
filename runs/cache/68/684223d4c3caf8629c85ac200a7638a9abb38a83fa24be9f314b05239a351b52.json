@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Bread\",\"grams\":55,\"kcal_per_100g\":260,\"greens\":false},{\"name\":\"Pineapple\",\"grams\":100,\"kcal_per_100g\":50,\"greens\":false},{\"name\":\"Cherry tomatoes\",\"grams\":90,\"kcal_per_100g\":18,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0003171, "t": 1792122373.561344}

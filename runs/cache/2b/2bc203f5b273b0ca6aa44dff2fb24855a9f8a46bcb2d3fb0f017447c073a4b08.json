@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Plain yogurt\",\"grams\":90,\"kcal_per_100g\":65,\"greens\":false},{\"name\":\"Granola\",\"grams\":25,\"kcal_per_100g\":450,\"greens\":false},{\"name\":\"Strawberries\",\"grams\":35,\"kcal_per_100g\":32,\"greens\":false}]}", "model": "gpt-6-astra", "cost": 0.0183, "t": 1792115748.3532212}

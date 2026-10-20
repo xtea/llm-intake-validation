@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Eggs\",\"grams\":100,\"kcal_per_100g\":143},{\"name\":\"Whole-wheat toast\",\"grams\":65,\"kcal_per_100g\":265},{\"name\":\"Avocado slices\",\"grams\":65,\"kcal_per_100g\":160},{\"name\":\"Milk\",\"grams\":240,\"kcal_per_100g\":61}]}", "model": "gpt-6.1-sol", "cost": 0.004482, "t": 1792128914.538091}

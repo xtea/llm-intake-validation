@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Bacon\",\"grams\":55,\"kcal_per_100g\":500,\"greens\":false},{\"name\":\"Shredded potato hash browns\",\"grams\":190,\"kcal_per_100g\":180,\"greens\":false},{\"name\":\"Tomato, onion and cilantro salsa\",\"grams\":50,\"kcal_per_100g\":30,\"greens\":false}]}", "model": "gpt-6-astra", "cost": 0.0201, "t": 1792115768.1839921}

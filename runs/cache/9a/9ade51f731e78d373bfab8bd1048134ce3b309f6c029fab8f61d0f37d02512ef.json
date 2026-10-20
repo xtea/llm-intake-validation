@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Baked potato\",\"grams\":190,\"kcal_per_100g\":130,\"greens\":false},{\"name\":\"Beef chili topping\",\"grams\":110,\"kcal_per_100g\":170,\"greens\":false},{\"name\":\"Shredded cheese\",\"grams\":12,\"kcal_per_100g\":380,\"greens\":false}]}", "model": "gpt-6-astra", "cost": 0.03015, "t": 1792115496.4017248}

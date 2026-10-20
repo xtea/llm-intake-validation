@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Almonds\",\"grams\":105,\"kcal_per_100g\":600,\"greens\":false},{\"name\":\"Cooked white rice\",\"grams\":130,\"kcal_per_100g\":130,\"greens\":false},{\"name\":\"Raw spinach\",\"grams\":12,\"kcal_per_100g\":20,\"greens\":true}]}", "model": "gpt-6.1-sol", "cost": 0.004352, "t": 1792125585.977675}

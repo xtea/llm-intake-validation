@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Leafy greens\",\"grams\":20,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Apple\",\"grams\":35,\"kcal_per_100g\":52,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.00021960000000000003, "t": 1792122543.007288}

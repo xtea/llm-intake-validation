@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Roast beef\",\"grams\":100,\"kcal_per_100g\":220},{\"name\":\"Roast potatoes\",\"grams\":145,\"kcal_per_100g\":150},{\"name\":\"Cauliflower\",\"grams\":150,\"kcal_per_100g\":25},{\"name\":\"Cheese sauce over cauliflower\",\"grams\":50,\"kcal_per_100g\":160}]}", "model": "gpt-6-astra", "cost": 0.02435, "t": 1792115034.549323}

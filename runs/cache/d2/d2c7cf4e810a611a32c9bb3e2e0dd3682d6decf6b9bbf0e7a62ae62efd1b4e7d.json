@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Mixed leafy greens (arugula and spinach)\",\"grams\":40,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Black olives\",\"grams\":28,\"kcal_per_100g\":130,\"greens\":false},{\"name\":\"Walnut pieces\",\"grams\":7,\"kcal_per_100g\":600,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.004242, "t": 1792123789.108364}

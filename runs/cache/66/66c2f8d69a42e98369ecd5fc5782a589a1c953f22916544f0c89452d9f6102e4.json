@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Bacon\",\"grams\":95,\"kcal_per_100g\":500,\"greens\":false},{\"name\":\"Scrambled eggs\",\"grams\":75,\"kcal_per_100g\":150,\"greens\":false},{\"name\":\"Cooked spinach\",\"grams\":85,\"kcal_per_100g\":30,\"greens\":false}]}", "model": "gpt-6-astra", "cost": 0.02235, "t": 1792115324.3912692}

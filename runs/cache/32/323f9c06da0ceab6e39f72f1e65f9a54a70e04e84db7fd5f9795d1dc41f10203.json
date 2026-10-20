@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Toast\",\"grams\":40,\"kcal_per_100g\":260,\"greens\":false},{\"name\":\"Apple\",\"grams\":220,\"kcal_per_100g\":52,\"greens\":false},{\"name\":\"Asian pear\",\"grams\":230,\"kcal_per_100g\":42,\"greens\":false}]}", "model": "gpt-6-astra", "cost": 0.02336, "t": 1792121238.133046}

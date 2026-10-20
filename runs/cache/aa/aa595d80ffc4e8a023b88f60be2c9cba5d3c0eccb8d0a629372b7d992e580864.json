@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Apple\",\"grams\":155,\"kcal_per_100g\":52,\"greens\":false},{\"name\":\"Almonds\",\"grams\":33,\"kcal_per_100g\":600,\"greens\":false},{\"name\":\"Cauliflower florets\",\"grams\":140,\"kcal_per_100g\":25,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.0051, "t": 1792104149.780143}

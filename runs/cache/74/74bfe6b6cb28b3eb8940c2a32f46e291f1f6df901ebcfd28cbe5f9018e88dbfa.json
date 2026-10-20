@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"lettuce\",\"grams\":35,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"broccoli\",\"grams\":110,\"kcal_per_100g\":34,\"greens\":false},{\"name\":\"chicken breast\",\"grams\":140,\"kcal_per_100g\":165,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0002566, "t": 1792122350.190002}

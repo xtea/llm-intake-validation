@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"yellow rice\",\"grams\":110,\"kcal_per_100g\":130,\"greens\":false},{\"name\":\"green beans\",\"grams\":100,\"kcal_per_100g\":35,\"greens\":false},{\"name\":\"leafy greens\",\"grams\":40,\"kcal_per_100g\":20,\"greens\":true}]}", "model": "gpt-6-luna", "cost": 0.0002655, "t": 1792109644.9702988}

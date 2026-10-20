@@ -1,0 +1,1011 @@
+{
+ "metrics": {
+  "n": 100,
+  "failed": 0,
+  "usd": 0.3934,
+  "calls": 100,
+  "cache_hits": 0
+ },
+ "rows": [
+  {
+   "item": "3f632b378185",
+   "kcal": 1324.35,
+   "est": 755.0,
+   "served_kcal": 820.0,
+   "leftover_kcal": 65.0,
+   "protein_g": 46.0,
+   "carbs_g": 94.0,
+   "fat_g": 21.0
+  },
+  {
+   "item": "211ba8b872f3",
+   "kcal": 616.11,
+   "est": 700.0,
+   "served_kcal": 1680.0,
+   "leftover_kcal": 980.0,
+   "protein_g": 33.0,
+   "carbs_g": 90.0,
+   "fat_g": 18.0
+  },
+  {
+   "item": "7b628dfc56d1",
+   "kcal": 541.87,
+   "est": 647.0,
+   "served_kcal": 655.0,
+   "leftover_kcal": 8.0,
+   "protein_g": 24.0,
+   "carbs_g": 96.0,
+   "fat_g": 18.0
+  },
+  {
+   "item": "5f83ebefa239",
+   "kcal": 415.59,
+   "est": 410.0,
+   "served_kcal": 520.0,
+   "leftover_kcal": 110.0,
+   "protein_g": 14.0,
+   "carbs_g": 46.0,
+   "fat_g": 19.0
+  },
+  {
+   "item": "ba0d6b986b16",
+   "kcal": 470.14,
+   "est": 440.0,
+   "served_kcal": 470.0,
+   "leftover_kcal": 30.0,
+   "protein_g": 26.0,
+   "carbs_g": 45.0,
+   "fat_g": 16.0
+  },
+  {
+   "item": "6589eb07e961",
+   "kcal": 374.39,
+   "est": 467.0,
+   "served_kcal": 475.0,
+   "leftover_kcal": 8.0,
+   "protein_g": 12.0,
+   "carbs_g": 93.0,
+   "fat_g": 6.0
+  },
+  {
+   "item": "50f07c181e4e",
+   "kcal": 716.21,
+   "est": 640.0,
+   "served_kcal": 655.0,
+   "leftover_kcal": 15.0,
+   "protein_g": 24.0,
+   "carbs_g": 98.0,
+   "fat_g": 16.0
+  },
+  {
+   "item": "93ac0fa97356",
+   "kcal": 632.25,
+   "est": 635.0,
+   "served_kcal": 660.0,
+   "leftover_kcal": 25.0,
+   "protein_g": 25.0,
+   "carbs_g": 55.0,
+   "fat_g": 35.0
+  },
+  {
+   "item": "02af64eacc3d",
+   "kcal": 696.43,
+   "est": 660.0,
+   "served_kcal": 665.0,
+   "leftover_kcal": 5.0,
+   "protein_g": 27.0,
+   "carbs_g": 74.0,
+   "fat_g": 29.0
+  },
+  {
+   "item": "bf00bb14eca9",
+   "kcal": 369.63,
+   "est": 450.0,
+   "served_kcal": 460.0,
+   "leftover_kcal": 10.0,
+   "protein_g": 24.0,
+   "carbs_g": 23.0,
+   "fat_g": 30.0
+  },
+  {
+   "item": "999ad35c3ec1",
+   "kcal": 341.89,
+   "est": 577.0,
+   "served_kcal": 655.0,
+   "leftover_kcal": 78.0,
+   "protein_g": 18.0,
+   "carbs_g": 59.8,
+   "fat_g": 30.6
+  },
+  {
+   "item": "cae0af14e943",
+   "kcal": 539.77,
+   "est": 620.0,
+   "served_kcal": 625.0,
+   "leftover_kcal": 5.0,
+   "protein_g": 25.0,
+   "carbs_g": 81.0,
+   "fat_g": 22.0
+  },
+  {
+   "item": "2ec9100cf28b",
+   "kcal": 211.4,
+   "est": 345.0,
+   "served_kcal": 350.0,
+   "leftover_kcal": 5.0,
+   "protein_g": 6.0,
+   "carbs_g": 56.5,
+   "fat_g": 11.5
+  },
+  {
+   "item": "1d7dd571449c",
+   "kcal": 395.79,
+   "est": 427.0,
+   "served_kcal": 427.0,
+   "leftover_kcal": 0.0,
+   "protein_g": 16.5,
+   "carbs_g": 52.8,
+   "fat_g": 18.0
+  },
+  {
+   "item": "390c7a660da2",
+   "kcal": 1060.41,
+   "est": 1165.0,
+   "served_kcal": 1530.0,
+   "leftover_kcal": 365.0,
+   "protein_g": 48.0,
+   "carbs_g": 149.0,
+   "fat_g": 41.0
+  },
+  {
+   "item": "afe880b4e12a",
+   "kcal": 359.73,
+   "est": 419.0,
+   "served_kcal": 425.0,
+   "leftover_kcal": 6.0,
+   "protein_g": 16.0,
+   "carbs_g": 69.0,
+   "fat_g": 8.0
+  },
+  {
+   "item": "888e1a9caa40",
+   "kcal": 241.54,
+   "est": 240.0,
+   "served_kcal": 240.0,
+   "leftover_kcal": 0.0,
+   "protein_g": 5.0,
+   "carbs_g": 41.0,
+   "fat_g": 7.0
+  },
+  {
+   "item": "da1151b294c1",
+   "kcal": 1286.22,
+   "est": 915.0,
+   "served_kcal": 915.0,
+   "leftover_kcal": 0.0,
+   "protein_g": 32.0,
+   "carbs_g": 107.0,
+   "fat_g": 40.0
+  },
+  {
+   "item": "85bf5e330447",
+   "kcal": 471.14,
+   "est": 550.0,
+   "served_kcal": 560.0,
+   "leftover_kcal": 10.0,
+   "protein_g": 19.0,
+   "carbs_g": 75.0,
+   "fat_g": 20.0
+  },
+  {
+   "item": "82bef014feda",
+   "kcal": 1006.6,
+   "est": 1010.0,
+   "served_kcal": 1020.0,
+   "leftover_kcal": 10.0,
+   "protein_g": 32.0,
+   "carbs_g": 115.0,
+   "fat_g": 47.0
+  },
+  {
+   "item": "80b05c81033f",
+   "kcal": 786.91,
+   "est": 1025.0,
+   "served_kcal": 1050.0,
+   "leftover_kcal": 25.0,
+   "protein_g": 31.0,
+   "carbs_g": 145.0,
+   "fat_g": 35.0
+  },
+  {
+   "item": "2e150af4641f",
+   "kcal": 422.88,
+   "est": 364.0,
+   "served_kcal": 650.0,
+   "leftover_kcal": 286.0,
+   "protein_g": 7.4,
+   "carbs_g": 62.7,
+   "fat_g": 9.4
+  },
+  {
+   "item": "c704a05d22b5",
+   "kcal": 552.93,
+   "est": 565.0,
+   "served_kcal": 570.0,
+   "leftover_kcal": 5.0,
+   "protein_g": 28.0,
+   "carbs_g": 55.0,
+   "fat_g": 26.0
+  },
+  {
+   "item": "ea4a7b78fe0a",
+   "kcal": 287.08,
+   "est": 400.0,
+   "served_kcal": 460.0,
+   "leftover_kcal": 60.0,
+   "protein_g": 9.0,
+   "carbs_g": 84.0,
+   "fat_g": 4.0
+  },
+  {
+   "item": "894a7e321c67",
+   "kcal": 245.6,
+   "est": 265.0,
+   "served_kcal": 280.0,
+   "leftover_kcal": 15.0,
+   "protein_g": 12.0,
+   "carbs_g": 23.0,
+   "fat_g": 13.0
+  },
+  {
+   "item": "867f0885cc6a",
+   "kcal": 724.34,
+   "est": 648.0,
+   "served_kcal": 650.0,
+   "leftover_kcal": 2.0,
+   "protein_g": 42.0,
+   "carbs_g": 74.0,
+   "fat_g": 20.0
+  },
+  {
+   "item": "7249282f1f7d",
+   "kcal": 1111.37,
+   "est": 935.0,
+   "served_kcal": 935.0,
+   "leftover_kcal": 0.0,
+   "protein_g": 39.0,
+   "carbs_g": 119.0,
+   "fat_g": 32.0
+  },
+  {
+   "item": "86e9019b3617",
+   "kcal": 420.94,
+   "est": 470.0,
+   "served_kcal": 475.0,
+   "leftover_kcal": 5.0,
+   "protein_g": 21.0,
+   "carbs_g": 62.0,
+   "fat_g": 14.0
+  },
+  {
+   "item": "df8ef1098ba6",
+   "kcal": 797.27,
+   "est": 672.0,
+   "served_kcal": 725.0,
+   "leftover_kcal": 53.0,
+   "protein_g": 24.0,
+   "carbs_g": 89.0,
+   "fat_g": 25.0
+  },
+  {
+   "item": "127556906961",
+   "kcal": 351.98,
+   "est": 495.0,
+   "served_kcal": 715.0,
+   "leftover_kcal": 220.0,
+   "protein_g": 22.0,
+   "carbs_g": 57.0,
+   "fat_g": 20.0
+  },
+  {
+   "item": "d0db023b1780",
+   "kcal": 571.14,
+   "est": 545.0,
+   "served_kcal": 550.0,
+   "leftover_kcal": 5.0,
+   "protein_g": 29.0,
+   "carbs_g": 60.0,
+   "fat_g": 21.0
+  },
+  {
+   "item": "d819d4748406",
+   "kcal": 883.4,
+   "est": 775.0,
+   "served_kcal": 775.0,
+   "leftover_kcal": 0.0,
+   "protein_g": 27.0,
+   "carbs_g": 125.0,
+   "fat_g": 18.0
+  },
+  {
+   "item": "783287d2c148",
+   "kcal": 613.51,
+   "est": 400.0,
+   "served_kcal": 565.0,
+   "leftover_kcal": 165.0,
+   "protein_g": 12.0,
+   "carbs_g": 56.0,
+   "fat_g": 14.0
+  },
+  {
+   "item": "ca54ba03d0e3",
+   "kcal": 535.12,
+   "est": 710.0,
+   "served_kcal": 930.0,
+   "leftover_kcal": 220.0,
+   "protein_g": 32.0,
+   "carbs_g": 85.0,
+   "fat_g": 27.0
+  },
+  {
+   "item": "14b957439493",
+   "kcal": 709.06,
+   "est": 555.0,
+   "served_kcal": 930.0,
+   "leftover_kcal": 375.0,
+   "protein_g": 51.0,
+   "carbs_g": 46.0,
+   "fat_g": 20.0
+  },
+  {
+   "item": "80e48acc54a0",
+   "kcal": 659.45,
+   "est": 720.0,
+   "served_kcal": 880.0,
+   "leftover_kcal": 160.0,
+   "protein_g": 31.0,
+   "carbs_g": 94.0,
+   "fat_g": 24.0
+  },
+  {
+   "item": "b163ec9fe65f",
+   "kcal": 781.71,
+   "est": 770.0,
+   "served_kcal": 780.0,
+   "leftover_kcal": 10.0,
+   "protein_g": 28.0,
+   "carbs_g": 126.0,
+   "fat_g": 15.0
+  },
+  {
+   "item": "7da36aeffe24",
+   "kcal": 467.66,
+   "est": 440.0,
+   "served_kcal": 450.0,
+   "leftover_kcal": 10.0,
+   "protein_g": 48.0,
+   "carbs_g": 28.0,
+   "fat_g": 15.0
+  },
+  {
+   "item": "cf8b1afdc91f",
+   "kcal": 797.04,
+   "est": 920.0,
+   "served_kcal": 930.0,
+   "leftover_kcal": 10.0,
+   "protein_g": 37.0,
+   "carbs_g": 138.0,
+   "fat_g": 26.0
+  },
+  {
+   "item": "fc327e240067",
+   "kcal": 673.32,
+   "est": 697.0,
+   "served_kcal": 705.0,
+   "leftover_kcal": 8.0,
+   "protein_g": 19.0,
+   "carbs_g": 115.0,
+   "fat_g": 20.0
+  },
+  {
+   "item": "c93ea4be51ff",
+   "kcal": 649.62,
+   "est": 565.0,
+   "served_kcal": 575.0,
+   "leftover_kcal": 10.0,
+   "protein_g": 29.0,
+   "carbs_g": 68.0,
+   "fat_g": 19.0
+  },
+  {
+   "item": "5b7ea457cb7a",
+   "kcal": 688.69,
+   "est": 700.0,
+   "served_kcal": 1040.0,
+   "leftover_kcal": 340.0,
+   "protein_g": 36.0,
+   "carbs_g": 75.0,
+   "fat_g": 26.0
+  },
+  {
+   "item": "0a79b5ac9c63",
+   "kcal": 1369.68,
+   "est": 860.0,
+   "served_kcal": 870.0,
+   "leftover_kcal": 10.0,
+   "protein_g": 52.0,
+   "carbs_g": 110.0,
+   "fat_g": 17.0
+  },
+  {
+   "item": "2f00b6b5149d",
+   "kcal": 859.94,
+   "est": 595.0,
+   "served_kcal": 680.0,
+   "leftover_kcal": 85.0,
+   "protein_g": 41.0,
+   "carbs_g": 62.0,
+   "fat_g": 17.0
+  },
+  {
+   "item": "7e729eefaa6e",
+   "kcal": 510.09,
+   "est": 570.0,
+   "served_kcal": 705.0,
+   "leftover_kcal": 135.0,
+   "protein_g": 30.0,
+   "carbs_g": 54.0,
+   "fat_g": 26.0
+  },
+  {
+   "item": "3e242e80fcae",
+   "kcal": 736.66,
+   "est": 905.0,
+   "served_kcal": 930.0,
+   "leftover_kcal": 25.0,
+   "protein_g": 35.0,
+   "carbs_g": 90.0,
+   "fat_g": 45.0
+  },
+  {
+   "item": "13d5f81c27e0",
+   "kcal": 567.18,
+   "est": 555.0,
+   "served_kcal": 560.0,
+   "leftover_kcal": 5.0,
+   "protein_g": 13.0,
+   "carbs_g": 94.0,
+   "fat_g": 15.0
+  },
+  {
+   "item": "cd0d5f608d62",
+   "kcal": 1060.35,
+   "est": 635.0,
+   "served_kcal": 635.0,
+   "leftover_kcal": 0.0,
+   "protein_g": 35.0,
+   "carbs_g": 57.0,
+   "fat_g": 28.0
+  },
+  {
+   "item": "ce87267bb1c8",
+   "kcal": 1271.88,
+   "est": 1130.0,
+   "served_kcal": 1130.0,
+   "leftover_kcal": 0.0,
+   "protein_g": 36.0,
+   "carbs_g": 157.0,
+   "fat_g": 40.0
+  },
+  {
+   "item": "7597b0d74df3",
+   "kcal": 1058.8,
+   "est": 1003.0,
+   "served_kcal": 1058.0,
+   "leftover_kcal": 55.0,
+   "protein_g": 37.0,
+   "carbs_g": 113.0,
+   "fat_g": 44.0
+  },
+  {
+   "item": "0dbc83218b81",
+   "kcal": 625.22,
+   "est": 785.0,
+   "served_kcal": 794.0,
+   "leftover_kcal": 9.0,
+   "protein_g": 24.8,
+   "carbs_g": 118.8,
+   "fat_g": 23.3
+  },
+  {
+   "item": "d3409558137e",
+   "kcal": 1224.72,
+   "est": 1030.0,
+   "served_kcal": 1120.0,
+   "leftover_kcal": 90.0,
+   "protein_g": 35.0,
+   "carbs_g": 114.0,
+   "fat_g": 47.0
+  },
+  {
+   "item": "c834668aec8c",
+   "kcal": 472.53,
+   "est": 510.0,
+   "served_kcal": 820.0,
+   "leftover_kcal": 310.0,
+   "protein_g": 19.0,
+   "carbs_g": 65.0,
+   "fat_g": 20.0
+  },
+  {
+   "item": "9fe4f626f80d",
+   "kcal": 505.88,
+   "est": 565.0,
+   "served_kcal": 615.0,
+   "leftover_kcal": 50.0,
+   "protein_g": 31.0,
+   "carbs_g": 41.0,
+   "fat_g": 31.0
+  },
+  {
+   "item": "372509490e09",
+   "kcal": 368.8,
+   "est": 460.0,
+   "served_kcal": 460.0,
+   "leftover_kcal": 0.0,
+   "protein_g": 20.0,
+   "carbs_g": 68.0,
+   "fat_g": 9.0
+  },
+  {
+   "item": "23bd65849ec3",
+   "kcal": 529.46,
+   "est": 575.0,
+   "served_kcal": 575.0,
+   "leftover_kcal": 0.0,
+   "protein_g": 28.0,
+   "carbs_g": 62.0,
+   "fat_g": 23.0
+  },
+  {
+   "item": "74eccd47ceaf",
+   "kcal": 748.2,
+   "est": 755.0,
+   "served_kcal": 850.0,
+   "leftover_kcal": 95.0,
+   "protein_g": 36.0,
+   "carbs_g": 86.0,
+   "fat_g": 28.0
+  },
+  {
+   "item": "eb0475aeaa4a",
+   "kcal": 447.57,
+   "est": 495.0,
+   "served_kcal": 500.0,
+   "leftover_kcal": 5.0,
+   "protein_g": 24.0,
+   "carbs_g": 60.0,
+   "fat_g": 18.0
+  },
+  {
+   "item": "7b7fe7cc5f41",
+   "kcal": 528.83,
+   "est": 520.0,
+   "served_kcal": 535.0,
+   "leftover_kcal": 15.0,
+   "protein_g": 22.0,
+   "carbs_g": 55.0,
+   "fat_g": 22.0
+  },
+  {
+   "item": "6d785848c4d9",
+   "kcal": 973.13,
+   "est": 1050.0,
+   "served_kcal": 1410.0,
+   "leftover_kcal": 360.0,
+   "protein_g": 48.0,
+   "carbs_g": 142.0,
+   "fat_g": 31.0
+  },
+  {
+   "item": "8371ce7efbd6",
+   "kcal": 924.57,
+   "est": 1014.0,
+   "served_kcal": 1210.0,
+   "leftover_kcal": 196.0,
+   "protein_g": 52.0,
+   "carbs_g": 94.0,
+   "fat_g": 47.0
+  },
+  {
+   "item": "daac9233b1f7",
+   "kcal": 1080.92,
+   "est": 1020.0,
+   "served_kcal": 1035.0,
+   "leftover_kcal": 15.0,
+   "protein_g": 35.0,
+   "carbs_g": 112.0,
+   "fat_g": 51.0
+  },
+  {
+   "item": "97af52a4e507",
+   "kcal": 389.83,
+   "est": 550.0,
+   "served_kcal": 655.0,
+   "leftover_kcal": 105.0,
+   "protein_g": 31.0,
+   "carbs_g": 64.0,
+   "fat_g": 18.0
+  },
+  {
+   "item": "4fd2ee39ba69",
+   "kcal": 425.34,
+   "est": 470.0,
+   "served_kcal": 1000.0,
+   "leftover_kcal": 530.0,
+   "protein_g": 13.0,
+   "carbs_g": 68.0,
+   "fat_g": 16.0
+  },
+  {
+   "item": "67b977c9159f",
+   "kcal": 279.33,
+   "est": 260.0,
+   "served_kcal": 1820.0,
+   "leftover_kcal": 1560.0,
+   "protein_g": 10.0,
+   "carbs_g": 41.0,
+   "fat_g": 5.0
+  },
+  {
+   "item": "c8c7000b27d5",
+   "kcal": 508.4,
+   "est": 490.0,
+   "served_kcal": 495.0,
+   "leftover_kcal": 5.0,
+   "protein_g": 24.0,
+   "carbs_g": 67.0,
+   "fat_g": 15.0
+  },
+  {
+   "item": "8df4a754498d",
+   "kcal": 1681.17,
+   "est": 1205.0,
+   "served_kcal": 1500.0,
+   "leftover_kcal": 295.0,
+   "protein_g": 71.0,
+   "carbs_g": 108.0,
+   "fat_g": 54.0
+  },
+  {
+   "item": "c299bf462ea5",
+   "kcal": 357.43,
+   "est": 255.0,
+   "served_kcal": 360.0,
+   "leftover_kcal": 105.0,
+   "protein_g": 8.0,
+   "carbs_g": 45.0,
+   "fat_g": 5.0
+  },
+  {
+   "item": "1903ca76f306",
+   "kcal": 569.67,
+   "est": 775.0,
+   "served_kcal": 780.0,
+   "leftover_kcal": 5.0,
+   "protein_g": 35.0,
+   "carbs_g": 80.0,
+   "fat_g": 35.0
+  },
+  {
+   "item": "fdf6e4f21e93",
+   "kcal": 551.74,
+   "est": 665.0,
+   "served_kcal": 680.0,
+   "leftover_kcal": 15.0,
+   "protein_g": 30.0,
+   "carbs_g": 72.0,
+   "fat_g": 28.0
+  },
+  {
+   "item": "0852e8775831",
+   "kcal": 189.81,
+   "est": 150.0,
+   "served_kcal": 150.0,
+   "leftover_kcal": 0.0,
+   "protein_g": 3.5,
+   "carbs_g": 31.5,
+   "fat_g": 1.1
+  },
+  {
+   "item": "6016a4bc742e",
+   "kcal": 1687.23,
+   "est": 995.0,
+   "served_kcal": 1070.0,
+   "leftover_kcal": 75.0,
+   "protein_g": 60.0,
+   "carbs_g": 107.0,
+   "fat_g": 37.0
+  },
+  {
+   "item": "bc7c8663172e",
+   "kcal": 340.5,
+   "est": 550.0,
+   "served_kcal": 930.0,
+   "leftover_kcal": 380.0,
+   "protein_g": 24.0,
+   "carbs_g": 85.0,
+   "fat_g": 12.0
+  },
+  {
+   "item": "2c25878272ec",
+   "kcal": 310.78,
+   "est": 529.0,
+   "served_kcal": 597.0,
+   "leftover_kcal": 68.0,
+   "protein_g": 31.9,
+   "carbs_g": 62.4,
+   "fat_g": 17.5
+  },
+  {
+   "item": "588ee07fbf98",
+   "kcal": 345.41,
+   "est": 290.0,
+   "served_kcal": 305.0,
+   "leftover_kcal": 15.0,
+   "protein_g": 13.0,
+   "carbs_g": 29.0,
+   "fat_g": 14.0
+  },
+  {
+   "item": "f0ca77cdca06",
+   "kcal": 286.5,
+   "est": 255.0,
+   "served_kcal": 255.0,
+   "leftover_kcal": 0.0,
+   "protein_g": 7.1,
+   "carbs_g": 48.0,
+   "fat_g": 2.8
+  },
+  {
+   "item": "f3fa2f7a6b16",
+   "kcal": 1045.76,
+   "est": 535.0,
+   "served_kcal": 685.0,
+   "leftover_kcal": 150.0,
+   "protein_g": 34.0,
+   "carbs_g": 50.0,
+   "fat_g": 22.0
+  },
+  {
+   "item": "1cc0abb241a3",
+   "kcal": 1883.85,
+   "est": 1605.0,
+   "served_kcal": 1620.0,
+   "leftover_kcal": 15.0,
+   "protein_g": 70.0,
+   "carbs_g": 195.0,
+   "fat_g": 61.0
+  },
+  {
+   "item": "1d9061ade99b",
+   "kcal": 592.91,
+   "est": 690.0,
+   "served_kcal": 690.0,
+   "leftover_kcal": 0.0,
+   "protein_g": 25.0,
+   "carbs_g": 66.0,
+   "fat_g": 36.0
+  },
+  {
+   "item": "bc9cd84f8982",
+   "kcal": 1239.48,
+   "est": 774.0,
+   "served_kcal": 1058.0,
+   "leftover_kcal": 284.0,
+   "protein_g": 38.0,
+   "carbs_g": 90.0,
+   "fat_g": 28.0
+  },
+  {
+   "item": "646ff70b6533",
+   "kcal": 626.12,
+   "est": 660.0,
+   "served_kcal": 660.0,
+   "leftover_kcal": 0.0,
+   "protein_g": 46.0,
+   "carbs_g": 72.0,
+   "fat_g": 19.0
+  },
+  {
+   "item": "e479804e5849",
+   "kcal": 699.17,
+   "est": 660.0,
+   "served_kcal": 820.0,
+   "leftover_kcal": 160.0,
+   "protein_g": 27.0,
+   "carbs_g": 59.0,
+   "fat_g": 30.0
+  },
+  {
+   "item": "08e9f9e9c336",
+   "kcal": 1140.33,
+   "est": 975.0,
+   "served_kcal": 990.0,
+   "leftover_kcal": 15.0,
+   "protein_g": 58.0,
+   "carbs_g": 114.0,
+   "fat_g": 32.0
+  },
+  {
+   "item": "08d9c7f1477d",
+   "kcal": 784.5,
+   "est": 800.0,
+   "served_kcal": 880.0,
+   "leftover_kcal": 80.0,
+   "protein_g": 29.0,
+   "carbs_g": 95.0,
+   "fat_g": 34.0
+  },
+  {
+   "item": "ab51bf054a83",
+   "kcal": 333.82,
+   "est": 360.0,
+   "served_kcal": 375.0,
+   "leftover_kcal": 15.0,
+   "protein_g": 12.0,
+   "carbs_g": 43.0,
+   "fat_g": 16.0
+  },
+  {
+   "item": "ee59e8500099",
+   "kcal": 1003.68,
+   "est": 745.0,
+   "served_kcal": 760.0,
+   "leftover_kcal": 15.0,
+   "protein_g": 22.0,
+   "carbs_g": 105.0,
+   "fat_g": 27.0
+  },
+  {
+   "item": "852a0bfde065",
+   "kcal": 1059.72,
+   "est": 825.0,
+   "served_kcal": 880.0,
+   "leftover_kcal": 55.0,
+   "protein_g": 49.0,
+   "carbs_g": 87.0,
+   "fat_g": 30.0
+  },
+  {
+   "item": "2ddf7fd218d9",
+   "kcal": 332.61,
+   "est": 490.0,
+   "served_kcal": 495.0,
+   "leftover_kcal": 5.0,
+   "protein_g": 38.0,
+   "carbs_g": 32.0,
+   "fat_g": 24.0
+  },
+  {
+   "item": "5f63dac11e94",
+   "kcal": 1266.52,
+   "est": 1070.0,
+   "served_kcal": 1250.0,
+   "leftover_kcal": 180.0,
+   "protein_g": 56.0,
+   "carbs_g": 118.0,
+   "fat_g": 45.0
+  },
+  {
+   "item": "67374d8a86bd",
+   "kcal": 544.9,
+   "est": 530.0,
+   "served_kcal": 530.0,
+   "leftover_kcal": 0.0,
+   "protein_g": 29.0,
+   "carbs_g": 65.0,
+   "fat_g": 16.0
+  },
+  {
+   "item": "623b961d431f",
+   "kcal": 819.28,
+   "est": 825.0,
+   "served_kcal": 835.0,
+   "leftover_kcal": 10.0,
+   "protein_g": 35.0,
+   "carbs_g": 96.0,
+   "fat_g": 33.0
+  },
+  {
+   "item": "bf165dc7220e",
+   "kcal": 620.13,
+   "est": 670.0,
+   "served_kcal": 880.0,
+   "leftover_kcal": 210.0,
+   "protein_g": 16.0,
+   "carbs_g": 85.0,
+   "fat_g": 30.0
+  },
+  {
+   "item": "5d43b989d51a",
+   "kcal": 372.22,
+   "est": 595.0,
+   "served_kcal": 595.0,
+   "leftover_kcal": 0.0,
+   "protein_g": 16.0,
+   "carbs_g": 90.0,
+   "fat_g": 18.0
+  },
+  {
+   "item": "3d6c273a362a",
+   "kcal": 418.51,
+   "est": 415.0,
+   "served_kcal": 415.0,
+   "leftover_kcal": 0.0,
+   "protein_g": 22.0,
+   "carbs_g": 39.0,
+   "fat_g": 18.0
+  },
+  {
+   "item": "51fbdc5da569",
+   "kcal": 749.12,
+   "est": 850.0,
+   "served_kcal": 880.0,
+   "leftover_kcal": 30.0,
+   "protein_g": 24.0,
+   "carbs_g": 139.0,
+   "fat_g": 23.0
+  },
+  {
+   "item": "d5ec4a5013d1",
+   "kcal": 1025.3,
+   "est": 1070.0,
+   "served_kcal": 1130.0,
+   "leftover_kcal": 60.0,
+   "protein_g": 34.0,
+   "carbs_g": 135.0,
+   "fat_g": 44.0
+  },
+  {
+   "item": "bd01476562a7",
+   "kcal": 282.98,
+   "est": 270.0,
+   "served_kcal": 270.0,
+   "leftover_kcal": 0.0,
+   "protein_g": 14.0,
+   "carbs_g": 7.0,
+   "fat_g": 21.0
+  },
+  {
+   "item": "e01c8e11c378",
+   "kcal": 1926.39,
+   "est": 770.0,
+   "served_kcal": 770.0,
+   "leftover_kcal": 0.0,
+   "protein_g": 30.0,
+   "carbs_g": 102.0,
+   "fat_g": 27.0
+  },
+  {
+   "item": "c757adb57722",
+   "kcal": 1295.16,
+   "est": 915.0,
+   "served_kcal": 915.0,
+   "leftover_kcal": 0.0,
+   "protein_g": 66.0,
+   "carbs_g": 108.0,
+   "fat_g": 23.0
+  },
+  {
+   "item": "81424c3b5291",
+   "kcal": 463.99,
+   "est": 485.0,
+   "served_kcal": 485.0,
+   "leftover_kcal": 0.0,
+   "protein_g": 20.0,
+   "carbs_g": 68.0,
+   "fat_g": 12.0
+  }
+ ]
+}

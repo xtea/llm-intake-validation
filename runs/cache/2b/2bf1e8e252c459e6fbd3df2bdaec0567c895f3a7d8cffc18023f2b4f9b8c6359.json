@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Meat lasagna\",\"grams\":120,\"kcal_per_100g\":180,\"greens\":false},{\"name\":\"Meatballs\",\"grams\":60,\"kcal_per_100g\":260,\"greens\":false},{\"name\":\"Tomato sauce\",\"grams\":20,\"kcal_per_100g\":40,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0004221, "t": 1792116116.4800482}

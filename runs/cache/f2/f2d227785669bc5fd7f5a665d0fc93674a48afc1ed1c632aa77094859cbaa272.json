@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Cooked salmon\",\"grams\":130,\"kcal_per_100g\":200,\"greens\":false},{\"name\":\"Cooked zucchini\",\"grams\":100,\"kcal_per_100g\":25,\"greens\":false},{\"name\":\"Cooked yellow squash\",\"grams\":65,\"kcal_per_100g\":30,\"greens\":false}]}", "model": "gpt-6-astra", "cost": 0.02625, "t": 1792108547.4914718}

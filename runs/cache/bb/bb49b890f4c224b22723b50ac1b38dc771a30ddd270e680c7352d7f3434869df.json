@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Strawberries\",\"grams\":70,\"kcal_per_100g\":35,\"greens\":false},{\"name\":\"Roasted potatoes\",\"grams\":180,\"kcal_per_100g\":130,\"greens\":false},{\"name\":\"Bacon\",\"grams\":35,\"kcal_per_100g\":500,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.006622, "t": 1792125520.741212}

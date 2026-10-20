@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Romaine lettuce\",\"grams\":45,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Shaved Parmesan cheese\",\"grams\":7,\"kcal_per_100g\":400,\"greens\":false}]}", "model": "gpt-6-astra", "cost": 0.01685, "t": 1792112380.242126}

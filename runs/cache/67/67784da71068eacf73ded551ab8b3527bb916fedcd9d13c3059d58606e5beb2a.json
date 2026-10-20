@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Vegetable pizza slice\",\"grams\":125,\"kcal_per_100g\":270,\"greens\":false},{\"name\":\"Arugula\",\"grams\":4,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Parmesan shavings\",\"grams\":5,\"kcal_per_100g\":400,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.00491, "t": 1792114323.5118568}

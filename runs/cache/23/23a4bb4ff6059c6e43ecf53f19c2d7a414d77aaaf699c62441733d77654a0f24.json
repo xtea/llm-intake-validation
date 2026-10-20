@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Bacon\",\"grams\":50,\"kcal_per_100g\":500,\"greens\":false},{\"name\":\"Roasted potatoes\",\"grams\":140,\"kcal_per_100g\":130,\"greens\":false},{\"name\":\"Cantaloupe chunks\",\"grams\":200,\"kcal_per_100g\":50,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.004712, "t": 1792125319.98036}

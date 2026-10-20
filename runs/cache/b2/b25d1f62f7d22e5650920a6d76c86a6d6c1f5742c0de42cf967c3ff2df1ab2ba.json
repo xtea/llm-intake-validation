@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Tomato and cheese pizza slice\",\"grams\":130,\"kcal_per_100g\":270,\"greens\":false},{\"name\":\"Arugula\",\"grams\":4,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Parmesan shavings\",\"grams\":5,\"kcal_per_100g\":400,\"greens\":false}]}", "model": "gpt-6-astra", "cost": 0.02445, "t": 1792115251.205531}

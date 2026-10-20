@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Beef patty\",\"grams\":110,\"kcal_per_100g\":250,\"greens\":false},{\"name\":\"Cooked leafy greens with a little carrot\",\"grams\":90,\"kcal_per_100g\":35,\"greens\":false},{\"name\":\"Scrambled eggs\",\"grams\":130,\"kcal_per_100g\":150,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0005585, "t": 1792113872.87796}

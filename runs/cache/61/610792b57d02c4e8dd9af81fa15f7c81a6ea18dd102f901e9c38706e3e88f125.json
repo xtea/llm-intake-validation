@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Lasagna\",\"grams\":250,\"kcal_per_100g\":165,\"greens\":false},{\"name\":\"Mixed vegetables (corn, peas, and green beans)\",\"grams\":90,\"kcal_per_100g\":40,\"greens\":false},{\"name\":\"Cola\",\"grams\":180,\"kcal_per_100g\":42,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.00035860000000000004, "t": 1792126759.2255151}

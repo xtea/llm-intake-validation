@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Cooked broccoli\",\"grams\":90,\"kcal_per_100g\":35,\"greens\":false},{\"name\":\"Bacon\",\"grams\":35,\"kcal_per_100g\":500,\"greens\":false},{\"name\":\"Scrambled eggs\",\"grams\":80,\"kcal_per_100g\":150,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.0048, "t": 1792110704.257165}

@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Strawberries\",\"grams\":100,\"kcal_per_100g\":50,\"greens\":false},{\"name\":\"Blueberries\",\"grams\":18,\"kcal_per_100g\":57,\"greens\":false},{\"name\":\"Plain yogurt\",\"grams\":100,\"kcal_per_100g\":60,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0002975, "t": 1792103407.505707}

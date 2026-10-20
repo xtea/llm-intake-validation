@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Cooked pasta\",\"grams\":85,\"kcal_per_100g\":150,\"greens\":false},{\"name\":\"Apple slices\",\"grams\":130,\"kcal_per_100g\":52,\"greens\":false},{\"name\":\"Cucumber slices\",\"grams\":90,\"kcal_per_100g\":15,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.004612, "t": 1792124493.326546}

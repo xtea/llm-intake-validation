@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"vegetable and cheese lasagna\",\"grams\":210,\"kcal_per_100g\":165,\"greens\":false},{\"name\":\"mixed salad greens\",\"grams\":45,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"cherry tomatoes\",\"grams\":50,\"kcal_per_100g\":25,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0003411, "t": 1792127973.311291}

@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Sushi rolls\",\"grams\":190,\"kcal_per_100g\":160,\"greens\":false},{\"name\":\"Brownie\",\"grams\":45,\"kcal_per_100g\":450,\"greens\":false},{\"name\":\"Cola\",\"grams\":250,\"kcal_per_100g\":42,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0004091, "t": 1792127135.82739}

@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"cheese pizza\",\"grams\":220,\"kcal_per_100g\":270,\"greens\":false},{\"name\":\"lettuce salad with dressing\",\"grams\":75,\"kcal_per_100g\":20,\"greens\":true}]}", "model": "gpt-6-luna", "cost": 0.0003771, "t": 1792123175.691374}

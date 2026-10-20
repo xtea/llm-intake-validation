@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Toasted bread\",\"grams\":45,\"kcal_per_100g\":260,\"greens\":false},{\"name\":\"Chopped tomato topping\",\"grams\":45,\"kcal_per_100g\":30,\"greens\":false},{\"name\":\"Basil leaves\",\"grams\":1,\"kcal_per_100g\":20,\"greens\":true}]}", "model": "gpt-6-astra", "cost": 0.03775, "t": 1792113169.008203}

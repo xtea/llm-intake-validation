@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Beef steak, sliced\",\"grams\":180,\"kcal_per_100g\":250,\"greens\":false},{\"name\":\"Cooked cauliflower\",\"grams\":145,\"kcal_per_100g\":25,\"greens\":false},{\"name\":\"Leafy greens\",\"grams\":10,\"kcal_per_100g\":20,\"greens\":true}]}", "model": "gpt-6.1-sol", "cost": 0.00437, "t": 1792103892.0265548}

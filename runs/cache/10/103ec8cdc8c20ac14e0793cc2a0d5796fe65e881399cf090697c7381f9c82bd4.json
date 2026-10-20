@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Arugula\",\"grams\":45,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Cooked asparagus\",\"grams\":85,\"kcal_per_100g\":25,\"greens\":false},{\"name\":\"Prosciutto\",\"grams\":20,\"kcal_per_100g\":250,\"greens\":false}]}", "model": "gpt-6-astra", "cost": 0.02025, "t": 1792107993.1457338}

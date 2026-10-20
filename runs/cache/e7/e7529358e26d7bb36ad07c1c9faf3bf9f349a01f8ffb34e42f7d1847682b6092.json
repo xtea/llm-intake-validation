@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Stuffed pasta\",\"grams\":220,\"kcal_per_100g\":150,\"greens\":false},{\"name\":\"Tomato sauce\",\"grams\":60,\"kcal_per_100g\":50,\"greens\":false},{\"name\":\"Leafy greens\",\"grams\":70,\"kcal_per_100g\":20,\"greens\":true}]}", "model": "gpt-6-luna", "cost": 0.00042710000000000003, "t": 1792128011.569131}

@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Mixed leafy greens\",\"grams\":30,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Olives\",\"grams\":8,\"kcal_per_100g\":130,\"greens\":false},{\"name\":\"Sweet potato or squash cubes\",\"grams\":8,\"kcal_per_100g\":90,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0002645, "t": 1792109787.550727}

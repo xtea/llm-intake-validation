@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Scrambled eggs\",\"grams\":140,\"kcal_per_100g\":150,\"greens\":false},{\"name\":\"Bacon\",\"grams\":12,\"kcal_per_100g\":500,\"greens\":false},{\"name\":\"Chia seed pudding\",\"grams\":95,\"kcal_per_100g\":110,\"greens\":false}]}", "model": "gpt-6-astra", "cost": 0.02375, "t": 1792112719.301281}

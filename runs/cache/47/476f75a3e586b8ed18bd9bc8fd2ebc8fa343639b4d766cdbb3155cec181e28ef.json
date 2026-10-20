@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Mixed leafy greens\",\"grams\":40,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Cherry tomatoes\",\"grams\":125,\"kcal_per_100g\":25,\"greens\":false},{\"name\":\"Roasted Brussels sprouts\",\"grams\":155,\"kcal_per_100g\":45,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.004372, "t": 1792125695.656071}

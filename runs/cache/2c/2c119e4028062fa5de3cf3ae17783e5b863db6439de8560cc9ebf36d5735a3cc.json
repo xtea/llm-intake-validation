@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Raspberries\",\"grams\":38,\"kcal_per_100g\":52,\"greens\":false},{\"name\":\"Blackberries\",\"grams\":32,\"kcal_per_100g\":43,\"greens\":false},{\"name\":\"Banana pieces\",\"grams\":2,\"kcal_per_100g\":89,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0003055, "t": 1792103147.267366}

@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Leafy greens\",\"grams\":75,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Yellow and orange bell pepper\",\"grams\":15,\"kcal_per_100g\":30,\"greens\":false},{\"name\":\"Onion\",\"grams\":8,\"kcal_per_100g\":40,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.00038560000000000005, "t": 1792121774.048703}

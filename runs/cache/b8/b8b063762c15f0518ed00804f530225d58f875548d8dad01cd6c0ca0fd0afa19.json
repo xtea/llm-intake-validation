@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Scrambled eggs\",\"grams\":130,\"kcal_per_100g\":150,\"greens\":false},{\"name\":\"Cooked spinach\",\"grams\":10,\"kcal_per_100g\":30,\"greens\":false},{\"name\":\"Tomato\",\"grams\":10,\"kcal_per_100g\":20,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0004445, "t": 1792113929.439162}

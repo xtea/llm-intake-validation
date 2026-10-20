@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Pepperoni pizza\",\"grams\":115,\"kcal_per_100g\":290},{\"name\":\"Roasted potatoes\",\"grams\":55,\"kcal_per_100g\":150},{\"name\":\"Roasted eggplant\",\"grams\":25,\"kcal_per_100g\":100},{\"name\":\"Cooked cauliflower\",\"grams\":45,\"kcal_per_100g\":25}]}", "model": "gpt-6.1-sol", "cost": 0.005682, "t": 1792123412.369848}

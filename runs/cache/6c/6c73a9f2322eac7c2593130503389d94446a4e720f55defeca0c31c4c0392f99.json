@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Cooked chicken pieces\",\"grams\":130,\"kcal_per_100g\":165,\"greens\":false},{\"name\":\"Toasted bread strip\",\"grams\":10,\"kcal_per_100g\":260,\"greens\":false},{\"name\":\"Leafy greens\",\"grams\":4,\"kcal_per_100g\":20,\"greens\":true}]}", "model": "gpt-6-astra", "cost": 0.02405, "t": 1792112647.276096}

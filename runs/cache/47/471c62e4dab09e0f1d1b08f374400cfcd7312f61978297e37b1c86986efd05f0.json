@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"French toast\",\"grams\":120,\"kcal_per_100g\":230,\"greens\":false},{\"name\":\"Scrambled eggs\",\"grams\":150,\"kcal_per_100g\":150,\"greens\":false},{\"name\":\"Bacon\",\"grams\":55,\"kcal_per_100g\":500,\"greens\":false}]}", "model": "gpt-6-astra", "cost": 0.0329, "t": 1792115751.6780002}

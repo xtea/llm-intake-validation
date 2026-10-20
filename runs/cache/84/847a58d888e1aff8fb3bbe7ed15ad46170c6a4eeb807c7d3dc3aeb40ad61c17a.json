@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Sliced chicken breast\",\"grams\":145,\"kcal_per_100g\":165,\"greens\":false},{\"name\":\"Cooked rice with vegetables and spinach\",\"grams\":190,\"kcal_per_100g\":115,\"greens\":false},{\"name\":\"Raw spinach leaves\",\"grams\":25,\"kcal_per_100g\":20,\"greens\":true}]}", "model": "gpt-6-astra", "cost": 0.0264, "t": 1792112615.782123}

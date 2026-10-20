@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Bacon\",\"grams\":45,\"kcal_per_100g\":500,\"greens\":false},{\"name\":\"Strawberries\",\"grams\":70,\"kcal_per_100g\":50,\"greens\":false},{\"name\":\"Cooked eggs\",\"grams\":85,\"kcal_per_100g\":150,\"greens\":false}]}", "model": "gpt-6-astra", "cost": 0.0229, "t": 1792115690.6933901}

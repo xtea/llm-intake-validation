@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Meatloaf\",\"grams\":70,\"kcal_per_100g\":250,\"greens\":false},{\"name\":\"Grilled beef\",\"grams\":55,\"kcal_per_100g\":250,\"greens\":false},{\"name\":\"Breaded fried chicken pieces\",\"grams\":75,\"kcal_per_100g\":280,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.006132, "t": 1792117887.114486}

@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Mixed leafy greens\",\"grams\":25,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Squash cubes\",\"grams\":8,\"kcal_per_100g\":90,\"greens\":false},{\"name\":\"Feta crumbles\",\"grams\":3,\"kcal_per_100g\":265,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.00428, "t": 1792103783.047798}

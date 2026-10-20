@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Lasagna\",\"grams\":250,\"kcal_per_100g\":180,\"greens\":false},{\"name\":\"Chocolate chip cookie\",\"grams\":35,\"kcal_per_100g\":480,\"greens\":false},{\"name\":\"Lemonade\",\"grams\":180,\"kcal_per_100g\":40,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0003576, "t": 1792126548.966033}

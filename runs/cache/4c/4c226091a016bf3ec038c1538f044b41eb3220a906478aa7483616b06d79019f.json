@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Pear\",\"grams\":200,\"kcal_per_100g\":57,\"greens\":false},{\"name\":\"Almonds\",\"grams\":35,\"kcal_per_100g\":600,\"greens\":false},{\"name\":\"Olives\",\"grams\":75,\"kcal_per_100g\":130,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.00048560000000000004, "t": 1792121806.343919}

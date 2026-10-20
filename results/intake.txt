@@ -10,6 +10,8 @@ ACETADA consumed intake: 802 meals, 152 participants; >=10% energy left: 292 mea
 | GPT-6 luna | 23.9 / +4.3 | 26.2 / -17.6 | 21.0 / -6.1 | -2.8 [-5.0, -1.0] | 29.3 / 22.7 [-11.1, -2.6] | 0/0/0 |
 | GPT-6.1 sol | 26.9 / +14.8 | 23.7 / -10.7 | 19.5 / +1.2 | -7.4 [-10.3, -4.6] | 36.9 / 19.7 [-22.1, -12.6] | 0/0/1 |
 | GPT-6 astra | 27.6 / +16.4 | 22.5 / -7.7 | 19.0 / +5.3 | -8.6 [-11.3, -6.1] | 39.1 / 19.1 [-24.7, -15.3] | 0/0/0 |
+| Gemini 3.8 Flash | 21.9 / +7.9 | 18.5 / -8.1 | 16.7 / -2.2 | -5.2 [-7.5, -3.1] | 29.5 / 16.2 [-17.6, -9.4] | 0/0/0 |
+| Gemini 4 Argon | 27.9 / +17.4 | 21.2 / +2.7 | 18.2 / +3.0 | -9.6 [-12.3, -7.2] | 39.6 / 19.7 [-24.5, -15.4] | 0/0/0 |
 
 ### Eaten fraction read from the photos (both-photos prompt)
 
@@ -21,6 +23,8 @@ ACETADA consumed intake: 802 meals, 152 participants; >=10% energy left: 292 mea
 | GPT-6 luna | 0.93 | 0.94 | 0.69 |
 | GPT-6.1 sol | 0.94 | 0.94 | 0.77 |
 | GPT-6 astra | 0.94 | 0.94 | 0.77 |
+| Gemini 3.8 Flash | 0.97 | 0.94 | 0.74 |
+| Gemini 4 Argon | 0.97 | 0.94 | 0.74 |
 
 ## Q3 day level: 148 complete feeding days, 101 participants (thresholds: |mean| ≤ 10%, LoA within ±30%)
 
@@ -44,6 +48,12 @@ ACETADA consumed intake: 802 meals, 152 participants; >=10% energy left: 292 mea
 | GPT-6 astra, before only | +20.2 [+14.8, +26.1] | -31 to +71 | 24 | no | no |
 | GPT-6 astra, subtraction | -5.5 [-8.5, -2.5] | -38 to +27 | 42 | yes | no |
 | GPT-6 astra, both photos | +7.6 [+4.5, +10.9] | -27 to +42 | 45 | yes | no |
+| Gemini 3.8 Flash, before only | +10.6 [+5.8, +16.2] | -36 to +57 | 39 | no | no |
+| Gemini 3.8 Flash, subtraction | -6.5 [-8.9, -4.2] | -33 to +20 | 49 | yes | no |
+| Gemini 3.8 Flash, both photos | -0.5 [-3.0, +2.1] | -28 to +27 | 57 | yes | yes |
+| Gemini 4 Argon, before only | +20.4 [+15.0, +26.6] | -32 to +72 | 28 | no | no |
+| Gemini 4 Argon, subtraction | +3.9 [+1.4, +6.4] | -25 to +33 | 45 | yes | no |
+| Gemini 4 Argon, both photos | +4.5 [+1.9, +7.3] | -25 to +34 | 55 | yes | no |
 | *24-h recall ASA24 (Whitton 2024, n≈143–150 days)* | *+5.4* | *-51 to +62* | — | — | — |
 | *24-h recall Intake24 (Whitton 2024, n≈143–150 days)* | *+1.7* | *-55 to +59* | — | — | — |
 | *24-h recall mFR-TA (Whitton 2024, n≈143–150 days)* | *+1.3* | *-28 to +31* | — | — | — |
@@ -59,3 +69,5 @@ ACETADA consumed intake: 802 meals, 152 participants; >=10% energy left: 292 mea
 | GPT-6 luna | -16 (-63 to +30), n=148 | +12 (-31 to +55), n=148 | +0 (-45 to +46), n=148 |
 | GPT-6.1 sol | -13 (-57 to +30), n=147 | +16 (-26 to +58), n=147 | +7 (-36 to +51), n=147 |
 | GPT-6 astra | -10 (-54 to +35), n=148 | +21 (-23 to +64), n=148 | +12 (-31 to +56), n=148 |
+| Gemini 3.8 Flash | -20 (-53 to +13), n=145 | +11 (-25 to +47), n=145 | +5 (-35 to +45), n=145 |
+| Gemini 4 Argon | -3 (-46 to +40), n=148 | +11 (-29 to +51), n=148 | +10 (-34 to +54), n=148 |

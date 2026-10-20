@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Sliced ham\",\"grams\":65,\"kcal_per_100g\":145,\"greens\":false},{\"name\":\"Cooked asparagus\",\"grams\":75,\"kcal_per_100g\":30,\"greens\":false},{\"name\":\"Olives\",\"grams\":65,\"kcal_per_100g\":130,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.004402, "t": 1792124070.632496}

@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Almonds\",\"grams\":100,\"kcal_per_100g\":600,\"greens\":false},{\"name\":\"Cooked rice\",\"grams\":150,\"kcal_per_100g\":130,\"greens\":false},{\"name\":\"Spinach\",\"grams\":15,\"kcal_per_100g\":20,\"greens\":true}]}", "model": "gpt-6-luna", "cost": 0.00026260000000000004, "t": 1792123080.210516}

@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Cooked beef\",\"grams\":85,\"kcal_per_100g\":250,\"greens\":false},{\"name\":\"Leafy greens\",\"grams\":5,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Potato gratin\",\"grams\":85,\"kcal_per_100g\":160,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.000417, "t": 1792103544.69258}

@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Sliced beef\",\"grams\":95,\"kcal_per_100g\":250,\"greens\":false},{\"name\":\"Cheese pizza\",\"grams\":85,\"kcal_per_100g\":270,\"greens\":false},{\"name\":\"Leafy greens\",\"grams\":3,\"kcal_per_100g\":20,\"greens\":true}]}", "model": "gpt-6.1-sol", "cost": 0.00468, "t": 1792104582.415582}

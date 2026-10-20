@@ -8,6 +8,8 @@
 | GPT-6 luna | -4.3 | -38 to +30 | -38 to +30 | 13.3 | 0.40 | ×0.67 to ×1.33 (mean ×0.94) |
 | GPT-6.1 sol | +3.4 | -31 to +38 | -31 to +38 | 13.4 | 0.43 | ×0.74 to ×1.41 (mean ×1.02) |
 | GPT-6 astra | +7.6 | -27 to +42 | -27 to +42 | 12.7 | 0.49 | ×0.78 to ×1.46 (mean ×1.06) |
+| Gemini 3.8 Flash | -0.5 | -28 to +27 | -28 to +27 | 11.0 | 0.37 | ×0.76 to ×1.29 (mean ×0.99) |
+| Gemini 4 Argon | +4.5 | -25 to +34 | -25 to +34 | 13.8 | 0.15 | ×0.78 to ×1.37 (mean ×1.03) |
 
 Participants contribute 1–3 days; the RM method partitions the variance into between- and within-participant parts.
 
@@ -21,11 +23,13 @@ Participants contribute 1–3 days; the RM method partitions the variance into b
 | GPT-6 luna | 0.72 | 0.78 | -15.0 pts |
 | GPT-6.1 sol | 0.69 | 0.77 | -17.5 pts |
 | GPT-6 astra | 0.71 | 0.75 | -20.0 pts |
+| Gemini 3.8 Flash | 0.78 | 0.83 | -12.3 pts |
+| Gemini 4 Argon | 0.84 | 0.86 | -10.8 pts |
 
-## S3. Q2 as heterogeneity of Δ MAE% (both − before) across the six models, 802 meals
+## S3. Q2 as heterogeneity of Δ MAE% (both − before) across the 8 models, 802 meals
 
-range of Δ across models: 9.7 points [95% CI 7.2, 12.9]; SD of Δ: 3.6 [2.7, 4.7]
-direction: 5 of 6 models negative (improved); clear (CI excludes 0) for 4 (see Table 2)
+range of Δ across models: 9.8 points [95% CI 7.9, 13.0]; SD of Δ: 3.5 [2.7, 4.4]
+direction: 7 of 8 models negative (improved); see Table 2 for which CIs exclude 0
 
 | Model A | Model B | Δ_A − Δ_B [95% CI, unadjusted] |
 |---|---|---|
@@ -34,16 +38,29 @@ direction: 5 of 6 models negative (improved); clear (CI excludes 0) for 4 (see T
 | Haiku 5.5 | GPT-6 luna | +3.0 [+1.0, +5.1] |
 | Haiku 5.5 | GPT-6.1 sol | +7.5 [+4.9, +10.3] |
 | Haiku 5.5 | GPT-6 astra | +8.7 [+6.5, +11.2] |
+| Haiku 5.5 | Gemini 3.8 Flash | +5.4 [+3.2, +7.7] |
+| Haiku 5.5 | Gemini 4 Argon | +9.8 [+7.4, +12.5] |
 | Sonnet 5.5 | Opus 5.5 | +7.2 [+3.7, +10.7] |
 | Sonnet 5.5 | GPT-6 luna | +0.4 [-2.3, +2.9] |
 | Sonnet 5.5 | GPT-6.1 sol | +5.0 [+2.3, +7.5] |
 | Sonnet 5.5 | GPT-6 astra | +6.2 [+3.5, +8.6] |
+| Sonnet 5.5 | Gemini 3.8 Flash | +2.8 [+0.2, +5.3] |
+| Sonnet 5.5 | Gemini 4 Argon | +7.2 [+4.5, +9.9] |
 | Opus 5.5 | GPT-6 luna | -6.8 [-9.5, -4.2] |
 | Opus 5.5 | GPT-6.1 sol | -2.2 [-4.8, -0.0] |
 | Opus 5.5 | GPT-6 astra | -1.0 [-3.3, +1.0] |
+| Opus 5.5 | Gemini 3.8 Flash | -4.4 [-6.7, -2.4] |
+| Opus 5.5 | Gemini 4 Argon | +0.1 [-2.4, +2.3] |
 | GPT-6 luna | GPT-6.1 sol | +4.5 [+2.1, +6.9] |
 | GPT-6 luna | GPT-6 astra | +5.8 [+3.9, +7.8] |
+| GPT-6 luna | Gemini 3.8 Flash | +2.4 [+0.7, +4.2] |
+| GPT-6 luna | Gemini 4 Argon | +6.8 [+5.0, +8.8] |
 | GPT-6.1 sol | GPT-6 astra | +1.2 [-0.0, +2.7] |
+| GPT-6.1 sol | Gemini 3.8 Flash | -2.1 [-3.7, -0.4] |
+| GPT-6.1 sol | Gemini 4 Argon | +2.3 [+0.2, +4.7] |
+| GPT-6 astra | Gemini 3.8 Flash | -3.4 [-4.7, -2.2] |
+| GPT-6 astra | Gemini 4 Argon | +1.1 [-0.6, +2.7] |
+| Gemini 3.8 Flash | Gemini 4 Argon | +4.4 [+2.9, +6.0] |
 
 ## S4. Protein error vs meal composition, both photos (802 meals)
 
@@ -57,6 +74,8 @@ Animal-source items matched by name keyword (chicken, beef, salmon, ham, egg, ch
 | GPT-6 luna | -21.9 | -0.24 | -0.47 | -13 (n=194) / -24 (n=608) |
 | GPT-6.1 sol | -18.2 | -0.11 | -0.41 | -12 (n=194) / -20 (n=607) |
 | GPT-6 astra | -14.2 | -0.10 | -0.38 | -9 (n=194) / -15 (n=608) |
+| Gemini 3.8 Flash | -23.7 | -0.20 | -0.42 | -15 (n=194) / -26 (n=605) |
+| Gemini 4 Argon | -7.0 | -0.09 | -0.38 | -2 (n=194) / -8 (n=608) |
 
 ## S5. Before-only condition, per-meal MAE (kcal) and MAPE, for comparison with Coburn et al. 2025 Table II
 
@@ -70,3 +89,5 @@ Coburn 2025 (before photos, baseline prompt, consumed labels, 806 meals): closed
 | GPT-6 luna | 166 | 26.0 | 17.9 |
 | GPT-6.1 sol | 187 | 31.2 | 22.0 |
 | GPT-6 astra | 192 | 31.7 | 23.1 |
+| Gemini 3.8 Flash | 152 | 23.9 | 16.2 |
+| Gemini 4 Argon | 194 | 31.3 | 22.7 |

@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Broccoli\",\"grams\":100,\"kcal_per_100g\":35,\"greens\":false},{\"name\":\"Roasted potatoes\",\"grams\":180,\"kcal_per_100g\":130,\"greens\":false},{\"name\":\"Sweet potato or squash\",\"grams\":120,\"kcal_per_100g\":90,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0002721, "t": 1792121899.659626}

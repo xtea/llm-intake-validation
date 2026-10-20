@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Cornflakes\",\"grams\":35,\"kcal_per_100g\":360,\"greens\":false},{\"name\":\"Milk in bottle\",\"grams\":140,\"kcal_per_100g\":50,\"greens\":false},{\"name\":\"Coffee with milk and foam\",\"grams\":220,\"kcal_per_100g\":40,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.005322, "t": 1792129117.3830159}

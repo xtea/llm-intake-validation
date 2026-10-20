@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Yogurt\",\"grams\":125,\"kcal_per_100g\":60,\"greens\":false},{\"name\":\"Strawberries\",\"grams\":50,\"kcal_per_100g\":32,\"greens\":false},{\"name\":\"Coffee with milk\",\"grams\":200,\"kcal_per_100g\":30,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.00034510000000000004, "t": 1792126391.6502872}

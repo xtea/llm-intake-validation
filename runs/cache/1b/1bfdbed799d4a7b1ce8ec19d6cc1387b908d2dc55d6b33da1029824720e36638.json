@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Pizza slice\",\"grams\":100,\"kcal_per_100g\":270,\"greens\":false},{\"name\":\"Cooked white rice\",\"grams\":180,\"kcal_per_100g\":130,\"greens\":false},{\"name\":\"Sauced cooked chicken\",\"grams\":160,\"kcal_per_100g\":220,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.000356, "t": 1792113605.272703}

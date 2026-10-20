@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Pizza with cheese, tomato sauce and olives\",\"grams\":240,\"kcal_per_100g\":270,\"greens\":false},{\"name\":\"Mixed leafy greens\",\"grams\":30,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Cucumber\",\"grams\":25,\"kcal_per_100g\":15,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.00495, "t": 1792114731.7932868}

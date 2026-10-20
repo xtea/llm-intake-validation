@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Mixed leafy greens\",\"grams\":30,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Cantaloupe chunks\",\"grams\":170,\"kcal_per_100g\":34,\"greens\":false},{\"name\":\"Corn on the cob (edible kernels)\",\"grams\":45,\"kcal_per_100g\":96,\"greens\":false}]}", "model": "gpt-6-astra", "cost": 0.0233, "t": 1792107971.424486}

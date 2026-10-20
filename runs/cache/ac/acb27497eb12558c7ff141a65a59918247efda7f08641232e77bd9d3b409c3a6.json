@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Red apple\",\"grams\":180,\"kcal_per_100g\":52,\"greens\":false},{\"name\":\"Braised pork trotter pieces, skin-on\",\"grams\":270,\"kcal_per_100g\":250,\"greens\":false},{\"name\":\"Chocolate-drizzled cereal bar\",\"grams\":28,\"kcal_per_100g\":430,\"greens\":false}]}", "model": "gpt-6-astra", "cost": 0.03226, "t": 1792120279.427573}

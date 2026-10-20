@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Pepperoni pizza\",\"grams\":180,\"kcal_per_100g\":270,\"greens\":false},{\"name\":\"Cooked bacon\",\"grams\":75,\"kcal_per_100g\":500,\"greens\":false}]}", "model": "gpt-6-astra", "cost": 0.0208, "t": 1792115283.049525}

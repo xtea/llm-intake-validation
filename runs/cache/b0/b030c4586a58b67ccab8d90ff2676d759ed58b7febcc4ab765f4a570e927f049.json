@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"raw spinach\",\"grams\":50,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"asparagus\",\"grams\":70,\"kcal_per_100g\":25,\"greens\":false},{\"name\":\"pizza\",\"grams\":100,\"kcal_per_100g\":270,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.000296, "t": 1792109198.3570309}

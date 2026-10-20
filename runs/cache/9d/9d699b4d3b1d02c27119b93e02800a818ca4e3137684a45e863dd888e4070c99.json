@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Mixed leafy greens\",\"grams\":75,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Shredded carrot\",\"grams\":7,\"kcal_per_100g\":40,\"greens\":false},{\"name\":\"Cooked cauliflower\",\"grams\":180,\"kcal_per_100g\":25,\"greens\":false}]}", "model": "gpt-6-astra", "cost": 0.01995, "t": 1792107945.149697}

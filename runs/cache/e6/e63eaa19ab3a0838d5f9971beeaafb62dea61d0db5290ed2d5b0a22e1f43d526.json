@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Fried eggs\",\"grams\":100,\"kcal_per_100g\":150,\"greens\":false},{\"name\":\"Muffin\",\"grams\":75,\"kcal_per_100g\":370,\"greens\":false},{\"name\":\"Orange juice\",\"grams\":200,\"kcal_per_100g\":45,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.004652, "t": 1792130074.0947049}

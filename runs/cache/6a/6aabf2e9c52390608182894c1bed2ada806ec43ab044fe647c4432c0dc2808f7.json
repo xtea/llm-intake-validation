@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Mixed leafy greens\",\"grams\":35,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Cooked Brussels sprouts\",\"grams\":45,\"kcal_per_100g\":40,\"greens\":false},{\"name\":\"Cooked squash cubes\",\"grams\":12,\"kcal_per_100g\":90,\"greens\":false}]}", "model": "gpt-6-astra", "cost": 0.0265, "t": 1792107939.317894}

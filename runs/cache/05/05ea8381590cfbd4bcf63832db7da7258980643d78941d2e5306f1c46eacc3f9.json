@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Cooked shrimp\",\"grams\":50,\"kcal_per_100g\":100,\"greens\":false},{\"name\":\"Cooked broccoli\",\"grams\":110,\"kcal_per_100g\":35,\"greens\":false},{\"name\":\"Mixed nuts (cashews, walnuts and pecans)\",\"grams\":60,\"kcal_per_100g\":600,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.005722, "t": 1792124011.675101}

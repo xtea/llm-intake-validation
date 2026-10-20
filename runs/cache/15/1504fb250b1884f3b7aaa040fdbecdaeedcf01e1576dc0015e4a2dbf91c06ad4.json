@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Spinach and leafy greens\",\"grams\":35,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Corn on the cob\",\"grams\":70,\"kcal_per_100g\":96,\"greens\":false},{\"name\":\"Small mixed vegetable pieces\",\"grams\":10,\"kcal_per_100g\":30,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0003861, "t": 1792122080.600851}

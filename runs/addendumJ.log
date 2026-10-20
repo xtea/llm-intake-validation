@@ -1,0 +1,33 @@
+[2026-10-20 11:21:29] python3 -m fe.intake run candidates/intake/dual_direct_gemini_flash.py all 25
+dual_direct_gemini_flash all {'n': 802, 'failed': 0, 'usd': 2.8654, 'calls': 702, 'cache_hits': 100}
+[2026-10-20 11:32:18] python3 -m fe.evaluate candidates/gpt/b0_direct_gemini_flash.py --split acetada_intake --final --max-usd 15 --workers 12
+{"n": 802, "failed": 0, "mae_kcal": 152.4, "mae_pct_of_mean": 21.87, "median_ape": 16.2, "within20": 59.1, "bias_pct": 12.5, "small_bias_pct": 22.3, "mid_bias_pct": 13.9, "large_bias_pct": 1.2, "candidate": "candidates/gpt/b0_direct_gemini_flash.py", "split": "acetada_intake", "subset": "all", "usd": 2.3712, "calls": 802, "cache_hits": 0, "secs": 789.2}
+[2026-10-20 11:45:28] python3 -m fe.intake run candidates/intake/sub_direct_gemini_flash.py all 15
+sub_direct_gemini_flash all {'n': 802, 'failed': 0, 'usd': 1.8248, 'calls': 802, 'cache_hits': 802}
+[2026-10-20 11:57:15] python3 -m fe.intake run candidates/intake/dual_simple_gemini_flash.py all 15
+dual_simple_gemini_flash all {'n': 802, 'failed': 0, 'usd': 3.4008, 'calls': 802, 'cache_hits': 0}
+[2026-10-20 12:09:07] python3 -m fe.intake run candidates/intake/before_struct_gemini_flash.py all 15
+before_struct_gemini_flash all {'n': 802, 'failed': 0, 'usd': 2.1227, 'calls': 802, 'cache_hits': 0}
+[2026-10-20 12:19:14] python3 -m fe.intake run candidates/intake/dual_direct_gemini_flash.py pilot 5 1
+dual_direct_gemini_flash pilot {'n': 100, 'failed': 0, 'usd': 0.3771, 'calls': 100, 'cache_hits': 0}
+[2026-10-20 12:20:27] python3 -m fe.intake run candidates/intake/dual_direct_gemini_flash.py pilot 5 2
+dual_direct_gemini_flash pilot {'n': 100, 'failed': 0, 'usd': 0.3934, 'calls': 100, 'cache_hits': 0}
+[2026-10-20 12:22:00] python3 -m fe.intake run candidates/intake/dual_high_gemini_flash.py pilot 8
+dual_high_gemini_flash pilot {'n': 100, 'failed': 0, 'usd': 1.2936, 'calls': 100, 'cache_hits': 0}
+[2026-10-20 12:26:15] python3 -m fe.intake run candidates/intake/dual_direct_gemini_pro.py all 25
+dual_direct_gemini_pro all {'n': 802, 'failed': 0, 'usd': 4.1592, 'calls': 802, 'cache_hits': 0}
+[2026-10-20 12:37:04] python3 -m fe.evaluate candidates/gpt/b0_direct_gemini_pro.py --split acetada_intake --final --max-usd 15 --workers 12
+{"n": 802, "failed": 0, "mae_kcal": 194.2, "mae_pct_of_mean": 27.88, "median_ape": 22.7, "within20": 45.6, "bias_pct": 22.8, "small_bias_pct": 37.1, "mid_bias_pct": 22.3, "large_bias_pct": 9.1, "candidate": "candidates/gpt/b0_direct_gemini_pro.py", "split": "acetada_intake", "subset": "all", "usd": 2.0078, "calls": 802, "cache_hits": 0, "secs": 509.6}
+[2026-10-20 12:45:34] python3 -m fe.intake run candidates/intake/sub_direct_gemini_pro.py all 15
+sub_direct_gemini_pro all {'n': 802, 'failed': 0, 'usd': 1.9874, 'calls': 802, 'cache_hits': 802}
+[2026-10-20 12:52:42] python3 -m fe.intake run candidates/intake/dual_simple_gemini_pro.py all 15
+dual_simple_gemini_pro all {'n': 802, 'failed': 0, 'usd': 3.739, 'calls': 802, 'cache_hits': 0}
+[2026-10-20 13:00:39] python3 -m fe.intake run candidates/intake/before_struct_gemini_pro.py all 15
+before_struct_gemini_pro all {'n': 802, 'failed': 0, 'usd': 2.4272, 'calls': 802, 'cache_hits': 0}
+[2026-10-20 13:09:07] python3 -m fe.intake run candidates/intake/dual_direct_gemini_pro.py pilot 5 1
+dual_direct_gemini_pro pilot {'n': 100, 'failed': 0, 'usd': 0.5179, 'calls': 100, 'cache_hits': 0}
+[2026-10-20 13:13:06] python3 -m fe.intake run candidates/intake/dual_direct_gemini_pro.py pilot 5 2
+dual_direct_gemini_pro pilot {'n': 100, 'failed': 0, 'usd': 0.5183, 'calls': 100, 'cache_hits': 0}
+[2026-10-20 13:15:02] python3 -m fe.intake run candidates/intake/dual_high_gemini_pro.py pilot 8
+dual_high_gemini_pro pilot {'n': 100, 'failed': 0, 'usd': 2.2066, 'calls': 100, 'cache_hits': 0}
+[2026-10-20 13:19:07] ALL DONE

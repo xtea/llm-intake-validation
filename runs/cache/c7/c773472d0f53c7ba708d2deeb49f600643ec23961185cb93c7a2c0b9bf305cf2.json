@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Romaine lettuce and mixed greens\",\"grams\":25,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Grilled chicken\",\"grams\":8,\"kcal_per_100g\":165,\"greens\":false},{\"name\":\"Crouton\",\"grams\":3,\"kcal_per_100g\":400,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.00037660000000000005, "t": 1792122174.021682}

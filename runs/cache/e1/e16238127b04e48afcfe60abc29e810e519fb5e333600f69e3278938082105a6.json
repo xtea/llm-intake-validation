@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Broccoli\",\"grams\":110,\"kcal_per_100g\":35,\"greens\":false},{\"name\":\"Cheese pizza slice\",\"grams\":85,\"kcal_per_100g\":270,\"greens\":false},{\"name\":\"Pizza slice\",\"grams\":95,\"kcal_per_100g\":270,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0004265, "t": 1792113952.385746}

@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Mixed leafy greens\",\"grams\":35,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Radishes\",\"grams\":80,\"kcal_per_100g\":25,\"greens\":false},{\"name\":\"Roasted Brussels sprouts\",\"grams\":90,\"kcal_per_100g\":40,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0003816, "t": 1792123157.8651571}

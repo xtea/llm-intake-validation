@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Tomato and cheese pizza\",\"grams\":90,\"kcal_per_100g\":270,\"greens\":false},{\"name\":\"Raw spinach\",\"grams\":30,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Cooked asparagus\",\"grams\":85,\"kcal_per_100g\":25,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.005392, "t": 1792125642.831303}

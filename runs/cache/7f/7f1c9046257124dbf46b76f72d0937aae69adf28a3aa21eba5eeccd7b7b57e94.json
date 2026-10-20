@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Lasagna\",\"grams\":120,\"kcal_per_100g\":170,\"greens\":false},{\"name\":\"Tomato and meat sauce\",\"grams\":35,\"kcal_per_100g\":110,\"greens\":false},{\"name\":\"Basil leaves\",\"grams\":1,\"kcal_per_100g\":20,\"greens\":true}]}", "model": "gpt-6.1-sol", "cost": 0.0055, "t": 1792111513.8663292}

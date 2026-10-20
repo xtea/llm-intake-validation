@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Chicken breast\",\"grams\":220,\"kcal_per_100g\":165,\"greens\":false},{\"name\":\"Red onion\",\"grams\":20,\"kcal_per_100g\":40,\"greens\":false},{\"name\":\"Carrot\",\"grams\":15,\"kcal_per_100g\":41,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0002805, "t": 1792103030.659652}

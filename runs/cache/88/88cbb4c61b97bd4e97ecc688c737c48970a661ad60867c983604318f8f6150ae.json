@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Meat and cheese lasagna\",\"grams\":300,\"kcal_per_100g\":180,\"greens\":false},{\"name\":\"Raisin loaf cake\",\"grams\":95,\"kcal_per_100g\":350,\"greens\":false},{\"name\":\"Lemonade\",\"grams\":250,\"kcal_per_100g\":40,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.005712, "t": 1792131676.272222}

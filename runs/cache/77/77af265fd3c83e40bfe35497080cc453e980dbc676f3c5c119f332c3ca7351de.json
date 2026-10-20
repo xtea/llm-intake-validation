@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Scrambled eggs\",\"grams\":140,\"kcal_per_100g\":150,\"greens\":false},{\"name\":\"Mixed leafy greens\",\"grams\":50,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Olives\",\"grams\":75,\"kcal_per_100g\":130,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0004086, "t": 1792122301.998204}

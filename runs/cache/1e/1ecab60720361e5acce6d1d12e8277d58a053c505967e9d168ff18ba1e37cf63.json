@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Mixed leafy greens\",\"grams\":50,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Broccoli\",\"grams\":100,\"kcal_per_100g\":34,\"greens\":false},{\"name\":\"Chicken breast\",\"grams\":130,\"kcal_per_100g\":165,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.000222, "t": 1792103095.716608}

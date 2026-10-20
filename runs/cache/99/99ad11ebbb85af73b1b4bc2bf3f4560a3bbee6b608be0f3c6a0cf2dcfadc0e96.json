@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Cooked chicken breast\",\"grams\":125,\"kcal_per_100g\":165,\"greens\":false},{\"name\":\"Mixed leafy greens\",\"grams\":45,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Peas\",\"grams\":10,\"kcal_per_100g\":80,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.00029110000000000003, "t": 1792121688.9784698}

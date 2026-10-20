@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Cooked white rice\",\"grams\":90,\"kcal_per_100g\":130,\"greens\":false},{\"name\":\"Cooked chicken\",\"grams\":65,\"kcal_per_100g\":165,\"greens\":false},{\"name\":\"Cooked vegetables\",\"grams\":25,\"kcal_per_100g\":40,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0003616, "t": 1792122214.410959}

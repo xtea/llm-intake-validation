@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Mixed leafy greens\",\"grams\":45,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Sweet potato or squash\",\"grams\":12,\"kcal_per_100g\":90,\"greens\":false},{\"name\":\"Red pepper\",\"grams\":4,\"kcal_per_100g\":30,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0002656, "t": 1792122982.830781}

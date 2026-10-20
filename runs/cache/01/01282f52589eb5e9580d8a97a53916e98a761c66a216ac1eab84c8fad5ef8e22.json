@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"pizza\",\"grams\":230,\"kcal_per_100g\":270,\"greens\":false},{\"name\":\"chicken breast\",\"grams\":150,\"kcal_per_100g\":165,\"greens\":false},{\"name\":\"cherry tomatoes\",\"grams\":90,\"kcal_per_100g\":18,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0004095, "t": 1792109924.454699}

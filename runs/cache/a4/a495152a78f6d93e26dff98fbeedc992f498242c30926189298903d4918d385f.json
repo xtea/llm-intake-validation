@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Mixed leafy greens\",\"grams\":30,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Blueberries\",\"grams\":5,\"kcal_per_100g\":57,\"greens\":false}]}", "model": "gpt-6-astra", "cost": 0.01765, "t": 1792112097.729074}

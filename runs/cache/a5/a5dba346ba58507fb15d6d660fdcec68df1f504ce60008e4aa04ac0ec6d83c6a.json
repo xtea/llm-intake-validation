@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Pepperoni pizza\",\"grams\":75,\"kcal_per_100g\":270,\"greens\":false},{\"name\":\"Cooked broccoli\",\"grams\":70,\"kcal_per_100g\":35,\"greens\":false},{\"name\":\"Romaine lettuce\",\"grams\":65,\"kcal_per_100g\":20,\"greens\":true}]}", "model": "gpt-6.1-sol", "cost": 0.00366, "t": 1792104250.800075}

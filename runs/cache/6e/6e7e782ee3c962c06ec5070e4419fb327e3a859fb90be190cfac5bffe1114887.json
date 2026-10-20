@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Sliced chicken breast\",\"grams\":135,\"kcal_per_100g\":165,\"greens\":false},{\"name\":\"Cucumber slices\",\"grams\":85,\"kcal_per_100g\":15,\"greens\":false},{\"name\":\"Hummus\",\"grams\":55,\"kcal_per_100g\":166,\"greens\":false}]}", "model": "gpt-6-astra", "cost": 0.02625, "t": 1792115339.1771798}

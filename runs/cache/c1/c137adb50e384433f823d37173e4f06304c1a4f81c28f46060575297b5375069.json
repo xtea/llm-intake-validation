@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"pizza slice\",\"grams\":95,\"kcal_per_100g\":270,\"greens\":false},{\"name\":\"arugula\",\"grams\":7,\"kcal_per_100g\":20,\"greens\":true}]}", "model": "gpt-6-luna", "cost": 0.0002725, "t": 1792113562.789779}

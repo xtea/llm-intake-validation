@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Mixed leafy greens\",\"grams\":40,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Cherry tomatoes\",\"grams\":25,\"kcal_per_100g\":25,\"greens\":false},{\"name\":\"Red onion\",\"grams\":5,\"kcal_per_100g\":40,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0002875, "t": 1792109334.910014}

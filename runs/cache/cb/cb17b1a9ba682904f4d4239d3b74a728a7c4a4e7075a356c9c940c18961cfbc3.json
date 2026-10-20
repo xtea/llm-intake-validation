@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Leafy salad greens\",\"grams\":50,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Croutons\",\"grams\":20,\"kcal_per_100g\":260,\"greens\":false},{\"name\":\"Carrot pieces\",\"grams\":5,\"kcal_per_100g\":35,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0004106, "t": 1792122285.7638268}

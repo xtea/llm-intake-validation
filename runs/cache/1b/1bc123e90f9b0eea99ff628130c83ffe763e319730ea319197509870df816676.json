@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Banana\",\"grams\":240,\"kcal_per_100g\":89,\"greens\":false},{\"name\":\"Lemon slices\",\"grams\":110,\"kcal_per_100g\":29,\"greens\":false},{\"name\":\"Cauliflower\",\"grams\":110,\"kcal_per_100g\":25,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0004926, "t": 1792121635.882643}

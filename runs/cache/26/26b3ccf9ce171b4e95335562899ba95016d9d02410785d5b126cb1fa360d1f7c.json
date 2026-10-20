@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Sliced processed meat\",\"grams\":75,\"kcal_per_100g\":300,\"greens\":false},{\"name\":\"Leafy salad greens\",\"grams\":25,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Carrot and cucumber pieces\",\"grams\":8,\"kcal_per_100g\":30,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.00041210000000000004, "t": 1792121843.345286}

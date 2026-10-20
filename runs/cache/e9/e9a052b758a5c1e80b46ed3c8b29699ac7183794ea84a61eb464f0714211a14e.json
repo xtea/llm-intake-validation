@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Chicken breast pieces\",\"grams\":85,\"kcal_per_100g\":165,\"greens\":false},{\"name\":\"Cooked spinach\",\"grams\":25,\"kcal_per_100g\":30,\"greens\":false},{\"name\":\"Tomato-based sauce with onion\",\"grams\":25,\"kcal_per_100g\":45,\"greens\":false}]}", "model": "gpt-6-astra", "cost": 0.03035, "t": 1792113286.76468}

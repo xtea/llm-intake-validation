@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Broccoli\",\"grams\":150,\"kcal_per_100g\":34,\"greens\":false},{\"name\":\"Lettuce\",\"grams\":90,\"kcal_per_100g\":20,\"greens\":true}]}", "model": "gpt-6-luna", "cost": 0.00032, "t": 1792103051.7031271}

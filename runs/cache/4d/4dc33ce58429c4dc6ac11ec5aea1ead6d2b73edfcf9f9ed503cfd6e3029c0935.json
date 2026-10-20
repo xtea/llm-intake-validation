@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Cauliflower\",\"grams\":145,\"kcal_per_100g\":25,\"greens\":false},{\"name\":\"Mixed leafy greens\",\"grams\":45,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Chopped vegetables\",\"grams\":15,\"kcal_per_100g\":30,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.000416, "t": 1792109253.8613498}

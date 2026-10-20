@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Chicken, cooked\",\"grams\":100,\"kcal_per_100g\":165,\"greens\":false},{\"name\":\"Cooked carrot\",\"grams\":20,\"kcal_per_100g\":35,\"greens\":false},{\"name\":\"Leafy greens\",\"grams\":12,\"kcal_per_100g\":20,\"greens\":true}]}", "model": "gpt-6-luna", "cost": 0.0006171, "t": 1792123121.7138}

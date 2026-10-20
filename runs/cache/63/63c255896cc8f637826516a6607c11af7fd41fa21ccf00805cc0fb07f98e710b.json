@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Apple\",\"grams\":180,\"kcal_per_100g\":52,\"greens\":false},{\"name\":\"Tofu slices\",\"grams\":100,\"kcal_per_100g\":100,\"greens\":false},{\"name\":\"Chocolate-drizzled puff pastry stick\",\"grams\":35,\"kcal_per_100g\":450,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.008312, "t": 1792118765.633718}

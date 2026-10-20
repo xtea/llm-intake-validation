@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Roasted pork slices\",\"grams\":145,\"kcal_per_100g\":240,\"greens\":false},{\"name\":\"Mixed leafy greens and spinach\",\"grams\":60,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Shredded carrot\",\"grams\":8,\"kcal_per_100g\":40,\"greens\":false}]}", "model": "gpt-6-astra", "cost": 0.02595, "t": 1792112663.670889}

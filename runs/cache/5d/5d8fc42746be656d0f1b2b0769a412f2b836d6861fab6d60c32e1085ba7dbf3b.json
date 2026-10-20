@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Salmon\",\"grams\":100,\"kcal_per_100g\":200,\"greens\":false},{\"name\":\"Cooked leafy greens\",\"grams\":110,\"kcal_per_100g\":35,\"greens\":false},{\"name\":\"Squash\",\"grams\":30,\"kcal_per_100g\":40,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0003265, "t": 1792113857.497995}

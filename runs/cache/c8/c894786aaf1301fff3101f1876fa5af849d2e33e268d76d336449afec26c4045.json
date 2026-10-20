@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Lettuce salad\",\"grams\":45,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Croutons\",\"grams\":12,\"kcal_per_100g\":300,\"greens\":false},{\"name\":\"Cheese pizza\",\"grams\":30,\"kcal_per_100g\":270,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0004771, "t": 1792122560.213993}

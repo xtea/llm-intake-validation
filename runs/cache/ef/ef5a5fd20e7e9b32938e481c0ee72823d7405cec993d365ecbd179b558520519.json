@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Scrambled eggs\",\"grams\":85,\"kcal_per_100g\":150,\"greens\":false},{\"name\":\"Bacon\",\"grams\":17,\"kcal_per_100g\":500,\"greens\":false},{\"name\":\"Shredded cheddar cheese\",\"grams\":20,\"kcal_per_100g\":400,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.00402, "t": 1792104475.759407}

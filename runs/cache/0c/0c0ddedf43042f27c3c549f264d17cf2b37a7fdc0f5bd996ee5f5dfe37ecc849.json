@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Mixed leafy greens\",\"grams\":35,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Tomato pieces\",\"grams\":40,\"kcal_per_100g\":25,\"greens\":false}]}", "model": "gpt-6-astra", "cost": 0.01845, "t": 1792112193.9593012}

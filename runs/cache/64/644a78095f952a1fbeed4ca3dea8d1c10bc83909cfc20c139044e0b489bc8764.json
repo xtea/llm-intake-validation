@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Cooked white fish\",\"grams\":100,\"kcal_per_100g\":160,\"greens\":false},{\"name\":\"Cooked yellow rice\",\"grams\":110,\"kcal_per_100g\":130,\"greens\":false},{\"name\":\"Cooked spinach\",\"grams\":4,\"kcal_per_100g\":25,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.005362, "t": 1792124519.078004}

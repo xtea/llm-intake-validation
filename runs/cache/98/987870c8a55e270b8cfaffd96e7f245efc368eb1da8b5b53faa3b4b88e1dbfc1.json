@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Cooked fish\",\"grams\":55,\"kcal_per_100g\":170,\"greens\":false},{\"name\":\"Cooked rice\",\"grams\":45,\"kcal_per_100g\":130,\"greens\":false},{\"name\":\"Cooked leafy greens\",\"grams\":5,\"kcal_per_100g\":25,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0003, "t": 1792109877.1672692}

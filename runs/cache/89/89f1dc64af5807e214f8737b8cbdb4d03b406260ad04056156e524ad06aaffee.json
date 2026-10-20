@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Cooked meat\",\"grams\":22,\"kcal_per_100g\":240,\"greens\":false},{\"name\":\"Cooked vegetables\",\"grams\":12,\"kcal_per_100g\":35,\"greens\":false},{\"name\":\"Red onion\",\"grams\":1,\"kcal_per_100g\":40,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.000496, "t": 1792103320.050282}

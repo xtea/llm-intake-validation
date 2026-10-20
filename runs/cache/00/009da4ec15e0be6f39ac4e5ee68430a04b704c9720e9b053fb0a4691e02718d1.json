@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Cooked chicken breast\",\"grams\":210,\"kcal_per_100g\":165,\"greens\":false},{\"name\":\"Cooked broccoli\",\"grams\":170,\"kcal_per_100g\":35,\"greens\":false},{\"name\":\"Raw spinach\",\"grams\":35,\"kcal_per_100g\":20,\"greens\":true}]}", "model": "gpt-6.1-sol", "cost": 0.004322, "t": 1792125417.774691}

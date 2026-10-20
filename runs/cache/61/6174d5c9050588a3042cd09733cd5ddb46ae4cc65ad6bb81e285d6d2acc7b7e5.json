@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Cheese pizza\",\"grams\":135,\"kcal_per_100g\":270,\"greens\":false},{\"name\":\"Cooked asparagus\",\"grams\":110,\"kcal_per_100g\":25,\"greens\":false},{\"name\":\"Cooked bulgur wheat\",\"grams\":90,\"kcal_per_100g\":83,\"greens\":false}]}", "model": "gpt-6-astra", "cost": 0.03195, "t": 1792107792.059644}

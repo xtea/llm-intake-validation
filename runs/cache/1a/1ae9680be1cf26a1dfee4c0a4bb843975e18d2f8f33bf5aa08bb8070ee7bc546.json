@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Cheese pizza\",\"grams\":180,\"kcal_per_100g\":270,\"greens\":false},{\"name\":\"Roasted squash topping\",\"grams\":90,\"kcal_per_100g\":90,\"greens\":false},{\"name\":\"Leafy greens\",\"grams\":3,\"kcal_per_100g\":20,\"greens\":true}]}", "model": "gpt-6-astra", "cost": 0.02705, "t": 1792115545.931218}

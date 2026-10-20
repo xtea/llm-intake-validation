@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Pear\",\"grams\":190,\"kcal_per_100g\":57,\"greens\":false},{\"name\":\"Apple\",\"grams\":150,\"kcal_per_100g\":52,\"greens\":false},{\"name\":\"Toast\",\"grams\":60,\"kcal_per_100g\":260,\"greens\":false},{\"name\":\"Jam\",\"grams\":12,\"kcal_per_100g\":250,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0003146, "t": 1792116556.7675898}

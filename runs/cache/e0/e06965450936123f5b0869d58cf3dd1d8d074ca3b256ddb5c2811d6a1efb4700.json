@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Bacon\",\"grams\":30,\"kcal_per_100g\":500,\"greens\":false},{\"name\":\"Celery\",\"grams\":80,\"kcal_per_100g\":25,\"greens\":false},{\"name\":\"Roasted potatoes\",\"grams\":100,\"kcal_per_100g\":130,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.00032260000000000004, "t": 1792122588.655562}

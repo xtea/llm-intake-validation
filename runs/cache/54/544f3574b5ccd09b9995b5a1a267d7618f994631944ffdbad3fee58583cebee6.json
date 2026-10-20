@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Fried eggs\",\"grams\":100,\"kcal_per_100g\":150,\"greens\":false},{\"name\":\"Toasted English muffin\",\"grams\":55,\"kcal_per_100g\":260,\"greens\":false},{\"name\":\"Peach slices\",\"grams\":100,\"kcal_per_100g\":60,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.005442, "t": 1792131486.360235}

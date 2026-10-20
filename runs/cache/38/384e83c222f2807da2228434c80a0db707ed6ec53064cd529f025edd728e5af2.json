@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Mixed leafy greens\",\"grams\":30,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Tomato\",\"grams\":15,\"kcal_per_100g\":18,\"greens\":false},{\"name\":\"Cooked couscous\",\"grams\":45,\"kcal_per_100g\":112,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.00032060000000000004, "t": 1792122569.05681}

@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Raw spinach leaves\",\"grams\":30,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Sliced raw mushrooms\",\"grams\":12,\"kcal_per_100g\":25,\"greens\":false},{\"name\":\"Parmesan shavings\",\"grams\":4,\"kcal_per_100g\":400,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.00439, "t": 1792111120.2999098}

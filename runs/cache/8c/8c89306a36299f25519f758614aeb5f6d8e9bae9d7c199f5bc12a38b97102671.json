@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Mixed leafy greens (chard, spinach and kale)\",\"grams\":30,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Squash cubes\",\"grams\":10,\"kcal_per_100g\":90,\"greens\":false},{\"name\":\"Feta crumbles\",\"grams\":2,\"kcal_per_100g\":265,\"greens\":false}]}", "model": "gpt-6-astra", "cost": 0.01945, "t": 1792107893.3937159}

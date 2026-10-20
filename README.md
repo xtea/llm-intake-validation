@@ -16,6 +16,8 @@ Code, prompts and per-meal model outputs for:
 }
 ```
 
+Models: Claude Haiku/Sonnet/Opus 5.5, GPT-6 luna / 6.1 sol / 6 astra, and (added 2026-10-20 under pre-registered addendum J) Gemini 3.8 Flash and Gemini 4 Argon. Set `GEMINI_API_KEY` as well as the Anthropic and OpenAI keys to re-run; all tables rebuild from the cached outputs without any key (`python3 -m fe.paper_tables_B`).
+
 The repository also contains an earlier background experiment (agentic search over estimation pipelines on Nutrition5k), reported in Appendix E of the paper.
 
 ## What is here

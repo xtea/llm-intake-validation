@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Fried eggs\",\"grams\":100,\"kcal_per_100g\":150,\"greens\":false},{\"name\":\"Toast\",\"grams\":70,\"kcal_per_100g\":260,\"greens\":false},{\"name\":\"Tea, unsweetened\",\"grams\":200,\"kcal_per_100g\":1,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0003636, "t": 1792126568.1244879}

@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"almonds\",\"grams\":35,\"kcal_per_100g\":600,\"greens\":false},{\"name\":\"leafy greens\",\"grams\":25,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"apple\",\"grams\":150,\"kcal_per_100g\":52,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0002856, "t": 1792122649.694313}

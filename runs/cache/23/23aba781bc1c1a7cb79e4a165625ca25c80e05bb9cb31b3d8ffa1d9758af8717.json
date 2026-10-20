@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Mixed leafy greens\",\"grams\":25,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Roasted beet pieces\",\"grams\":20,\"kcal_per_100g\":45,\"greens\":false},{\"name\":\"Squash\",\"grams\":10,\"kcal_per_100g\":40,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.00041010000000000005, "t": 1792122907.178644}

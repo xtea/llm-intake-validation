@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Vegetable lasagna, excluding cheese topping\",\"grams\":190,\"kcal_per_100g\":150,\"greens\":false},{\"name\":\"Melted cheese topping\",\"grams\":35,\"kcal_per_100g\":350,\"greens\":false},{\"name\":\"Fresh leafy herb garnish\",\"grams\":2,\"kcal_per_100g\":20,\"greens\":true}]}", "model": "gpt-6-astra", "cost": 0.02405, "t": 1792115891.7214432}

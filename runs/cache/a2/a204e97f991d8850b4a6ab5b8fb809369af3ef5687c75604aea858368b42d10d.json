@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Fried egg\",\"grams\":45,\"kcal_per_100g\":150,\"greens\":false},{\"name\":\"Bread roll, split in half\",\"grams\":65,\"kcal_per_100g\":260,\"greens\":false},{\"name\":\"Coffee\",\"grams\":150,\"kcal_per_100g\":2,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0004196, "t": 1792127096.046898}

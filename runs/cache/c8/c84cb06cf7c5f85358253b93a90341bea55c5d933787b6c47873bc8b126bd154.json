@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Almonds\",\"grams\":42,\"kcal_per_100g\":600,\"greens\":false},{\"name\":\"Broccoli\",\"grams\":85,\"kcal_per_100g\":35,\"greens\":false},{\"name\":\"Mandarin orange\",\"grams\":95,\"kcal_per_100g\":53,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.004122, "t": 1792124496.8607821}

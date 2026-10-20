@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Red apple\",\"grams\":190,\"kcal_per_100g\":52,\"greens\":false},{\"name\":\"Tofu slices\",\"grams\":80,\"kcal_per_100g\":100,\"greens\":false},{\"name\":\"Chocolate chip and nut granola bar\",\"grams\":30,\"kcal_per_100g\":450,\"greens\":false}]}", "model": "gpt-6-astra", "cost": 0.03171, "t": 1792121350.294852}

@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Mixed leafy greens\",\"grams\":70,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Tomato\",\"grams\":25,\"kcal_per_100g\":25,\"greens\":false},{\"name\":\"Chickpeas\",\"grams\":8,\"kcal_per_100g\":140,\"greens\":false}]}", "model": "gpt-6-astra", "cost": 0.01905, "t": 1792112501.850253}

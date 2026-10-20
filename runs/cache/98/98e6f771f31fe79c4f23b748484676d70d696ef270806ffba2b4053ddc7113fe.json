@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Cooked rice\",\"grams\":90,\"kcal_per_100g\":130,\"greens\":false},{\"name\":\"Beef\",\"grams\":110,\"kcal_per_100g\":220,\"greens\":false},{\"name\":\"Brown sauce\",\"grams\":10,\"kcal_per_100g\":60,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.00036260000000000003, "t": 1792127635.970197}

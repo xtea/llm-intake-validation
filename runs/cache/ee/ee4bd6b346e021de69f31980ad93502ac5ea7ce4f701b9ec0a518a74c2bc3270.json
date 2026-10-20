@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Bacon\",\"grams\":40,\"kcal_per_100g\":500,\"greens\":false},{\"name\":\"Toast\",\"grams\":30,\"kcal_per_100g\":260,\"greens\":false},{\"name\":\"Pineapple chunks\",\"grams\":90,\"kcal_per_100g\":50,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.00508, "t": 1792111058.525548}

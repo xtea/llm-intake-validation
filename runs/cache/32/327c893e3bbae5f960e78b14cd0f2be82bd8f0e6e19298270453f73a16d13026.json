@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Romaine lettuce\",\"grams\":85,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Seasoned grilled chicken pieces\",\"grams\":190,\"kcal_per_100g\":190,\"greens\":false},{\"name\":\"Shredded cheddar cheese\",\"grams\":28,\"kcal_per_100g\":400,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.004532, "t": 1792125387.0124512}

@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Toast\",\"grams\":50,\"kcal_per_100g\":260,\"greens\":false},{\"name\":\"Jam portions\",\"grams\":30,\"kcal_per_100g\":250,\"greens\":false},{\"name\":\"Black tea\",\"grams\":200,\"kcal_per_100g\":1,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0004311, "t": 1792125718.488728}

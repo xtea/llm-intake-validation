@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Cooked rice\",\"grams\":18,\"kcal_per_100g\":130,\"greens\":false},{\"name\":\"Tomato\",\"grams\":7,\"kcal_per_100g\":25,\"greens\":false},{\"name\":\"Other cooked food mixed with the rice\",\"grams\":8,\"kcal_per_100g\":100,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0003785, "t": 1792113707.0842721}

@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Scrambled eggs\",\"grams\":120,\"kcal_per_100g\":150,\"greens\":false},{\"name\":\"Cooked sweet potato chunks\",\"grams\":70,\"kcal_per_100g\":90,\"greens\":false},{\"name\":\"Diced tomato\",\"grams\":35,\"kcal_per_100g\":25,\"greens\":false}]}", "model": "gpt-6-astra", "cost": 0.01875, "t": 1792115411.945184}

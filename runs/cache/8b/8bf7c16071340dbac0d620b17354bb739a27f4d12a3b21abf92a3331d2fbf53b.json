@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Mixed leafy greens\",\"grams\":18,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Beef\",\"grams\":25,\"kcal_per_100g\":250,\"greens\":false},{\"name\":\"Blackberry\",\"grams\":6,\"kcal_per_100g\":50,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.00039860000000000004, "t": 1792122268.511482}

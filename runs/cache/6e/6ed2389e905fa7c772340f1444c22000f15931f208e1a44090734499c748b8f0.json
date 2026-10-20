@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"bacon\",\"grams\":50,\"kcal_per_100g\":500,\"greens\":false},{\"name\":\"roasted potatoes\",\"grams\":100,\"kcal_per_100g\":130,\"greens\":false},{\"name\":\"roasted sweet potato or squash\",\"grams\":60,\"kcal_per_100g\":90,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0003755, "t": 1792109604.400274}

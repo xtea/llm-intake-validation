@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Pizza\",\"grams\":130,\"kcal_per_100g\":270,\"greens\":false},{\"name\":\"Leafy greens\",\"grams\":3,\"kcal_per_100g\":20,\"greens\":true}]}", "model": "gpt-6-luna", "cost": 0.000361, "t": 1792113765.944361}

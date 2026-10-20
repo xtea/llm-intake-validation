@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Almonds\",\"grams\":120,\"kcal_per_100g\":600,\"greens\":false},{\"name\":\"Apple\",\"grams\":150,\"kcal_per_100g\":52,\"greens\":false},{\"name\":\"Mixed leafy greens\",\"grams\":20,\"kcal_per_100g\":20,\"greens\":true}]}", "model": "gpt-6.1-sol", "cost": 0.004902, "t": 1792125540.3257768}

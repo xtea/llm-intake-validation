@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Raspberries\",\"grams\":30,\"kcal_per_100g\":52,\"greens\":false},{\"name\":\"Blackberries\",\"grams\":32,\"kcal_per_100g\":43,\"greens\":false},{\"name\":\"Scrambled egg remnants\",\"grams\":1,\"kcal_per_100g\":150,\"greens\":false}]}", "model": "gpt-6-astra", "cost": 0.02095, "t": 1792108064.009482}

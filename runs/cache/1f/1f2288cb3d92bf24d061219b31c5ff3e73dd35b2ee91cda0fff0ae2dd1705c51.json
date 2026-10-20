@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Plain yogurt\",\"grams\":100,\"kcal_per_100g\":65,\"greens\":false},{\"name\":\"Sliced strawberries\",\"grams\":45,\"kcal_per_100g\":32,\"greens\":false},{\"name\":\"Coffee with milk\",\"grams\":250,\"kcal_per_100g\":25,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.005462, "t": 1792130005.4560158}

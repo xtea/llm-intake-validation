@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Roasted chicken pieces\",\"grams\":100,\"kcal_per_100g\":165,\"greens\":false},{\"name\":\"Cooked Brussels sprouts and other vegetables\",\"grams\":85,\"kcal_per_100g\":35,\"greens\":false},{\"name\":\"Mixed leafy greens\",\"grams\":55,\"kcal_per_100g\":20,\"greens\":true}]}", "model": "gpt-6-luna", "cost": 0.000313, "t": 1792103051.884515}

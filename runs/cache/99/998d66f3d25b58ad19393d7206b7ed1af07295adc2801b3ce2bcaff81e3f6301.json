@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Mixed leafy greens\",\"grams\":50,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Chicken\",\"grams\":30,\"kcal_per_100g\":165,\"greens\":false},{\"name\":\"Croutons\",\"grams\":10,\"kcal_per_100g\":400,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.000376, "t": 1792109421.347219}

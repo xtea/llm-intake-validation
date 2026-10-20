@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Arugula and mixed leafy greens\",\"grams\":45,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Black olives\",\"grams\":20,\"kcal_per_100g\":130,\"greens\":false},{\"name\":\"Parmesan cheese pieces\",\"grams\":8,\"kcal_per_100g\":400,\"greens\":false}]}", "model": "gpt-6-astra", "cost": 0.02165, "t": 1792112820.178452}

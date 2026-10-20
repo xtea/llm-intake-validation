@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Raw spinach\",\"grams\":35,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Cooked chicken\",\"grams\":50,\"kcal_per_100g\":165,\"greens\":false},{\"name\":\"Tomato\",\"grams\":10,\"kcal_per_100g\":18,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0003285, "t": 1792109196.264877}

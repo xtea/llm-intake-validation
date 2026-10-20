@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Lasagna\",\"grams\":230,\"kcal_per_100g\":170,\"greens\":false},{\"name\":\"Fruit salad\",\"grams\":110,\"kcal_per_100g\":60,\"greens\":false},{\"name\":\"Orange juice\",\"grams\":190,\"kcal_per_100g\":45,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.00038510000000000004, "t": 1792127520.461358}

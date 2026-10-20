@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Lasagna\",\"grams\":230,\"kcal_per_100g\":180,\"greens\":false},{\"name\":\"Tomato sauce\",\"grams\":35,\"kcal_per_100g\":40,\"greens\":false},{\"name\":\"Grated Parmesan\",\"grams\":3,\"kcal_per_100g\":400,\"greens\":false}]}", "model": "gpt-6-astra", "cost": 0.02791, "t": 1792120049.507095}

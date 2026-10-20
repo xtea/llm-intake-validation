@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Leaf lettuce\",\"grams\":35,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Green apple slices\",\"grams\":55,\"kcal_per_100g\":52,\"greens\":false},{\"name\":\"Bacon\",\"grams\":15,\"kcal_per_100g\":500,\"greens\":false}]}", "model": "gpt-6.1-sol", "cost": 0.004582, "t": 1792124823.0819619}

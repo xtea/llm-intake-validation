@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Broccoli\",\"grams\":110,\"kcal_per_100g\":35},{\"name\":\"Cauliflower\",\"grams\":65,\"kcal_per_100g\":25},{\"name\":\"Cooked white rice\",\"grams\":25,\"kcal_per_100g\":130},{\"name\":\"Brown sauce\",\"grams\":20,\"kcal_per_100g\":70}]}", "model": "gpt-6-astra", "cost": 0.01775, "t": 1792111883.8037262}

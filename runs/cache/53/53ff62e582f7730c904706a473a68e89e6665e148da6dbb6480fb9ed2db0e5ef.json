@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Cooked beef\",\"grams\":160,\"kcal_per_100g\":250},{\"name\":\"Cooked cauliflower\",\"grams\":150,\"kcal_per_100g\":25},{\"name\":\"Cooked leafy greens\",\"grams\":15,\"kcal_per_100g\":25},{\"name\":\"Brown gravy\",\"grams\":15,\"kcal_per_100g\":60}]}", "model": "gpt-6-astra", "cost": 0.01925, "t": 1792116402.468103}

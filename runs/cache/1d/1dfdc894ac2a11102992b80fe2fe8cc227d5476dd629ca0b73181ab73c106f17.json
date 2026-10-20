@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Leafy greens\",\"grams\":45,\"kcal_per_100g\":20,\"greens\":true},{\"name\":\"Small nut pieces\",\"grams\":3,\"kcal_per_100g\":600,\"greens\":false},{\"name\":\"Red pepper\",\"grams\":1,\"kcal_per_100g\":30,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.000297, "t": 1792103353.99279}

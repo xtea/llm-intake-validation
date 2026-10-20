@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"apple\",\"grams\":125,\"kcal_per_100g\":52,\"greens\":false},{\"name\":\"yellow apple\",\"grams\":145,\"kcal_per_100g\":52,\"greens\":false},{\"name\":\"cooked chicken meat\",\"grams\":20,\"kcal_per_100g\":200,\"greens\":false}]}", "model": "gpt-6-luna", "cost": 0.0005046, "t": 1792116550.764429}

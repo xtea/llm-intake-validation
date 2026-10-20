@@ -1,0 +1,1 @@
+{"text": "{\"items\":[{\"name\":\"Cheese pizza\",\"grams\":60,\"kcal_per_100g\":270},{\"name\":\"Roast beef\",\"grams\":90,\"kcal_per_100g\":220},{\"name\":\"Lettuce\",\"grams\":5,\"kcal_per_100g\":15},{\"name\":\"Gravy\",\"grams\":5,\"kcal_per_100g\":60}]}", "model": "gpt-6-astra", "cost": 0.02285, "t": 1792111928.350243}
