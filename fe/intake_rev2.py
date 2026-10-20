@@ -3,7 +3,7 @@
 S1  Day-level LoA for repeated measures (Bland & Altman 2007, one-way ANOVA with unequal group sizes) and the
     within-participant ICC of e_day; also LoA on the log scale (ratio limits).
 S2  Shrinkage check: slope of log(estimate) on log(true) at meal and day level (slope < 1 = shrinkage toward a typical meal).
-S3  Q2 as heterogeneity: bootstrap of the range and SD of the six models' Δ; all 15 pairwise differences (unadjusted).
+S3  Q2 as heterogeneity: bootstrap of the range and SD of the models' Δ; all pairwise differences (unadjusted).
 S4  Protein under-estimate vs meal composition: Spearman of per-meal protein % error with (a) share of energy from
     animal-source items, (b) protein density (g per 100 kcal).
 S5  Sanity check vs Coburn et al. 2025: per-meal MAE kcal and MAPE of the before-only condition.
@@ -81,7 +81,7 @@ def s2():
 
 
 def s3():
-    print("\n## S3. Q2 as heterogeneity of Δ MAE% (both − before) across the six models, 802 meals\n")
+    print(f"\n## S3. Q2 as heterogeneity of Δ MAE% (both − before) across the {len(MODELS)} models, 802 meals\n")
     rng = random.Random(51)
     g = {}
     for i in ITS:
@@ -99,13 +99,13 @@ def s3():
         db = deltas(b)
         v = list(db.values())
         rng_.append(max(v) - min(v)); sd_.append(st.pstdev(v))
-        for a in range(6):
-            for c in range(a + 1, 6):
+        for a in range(len(names)):
+            for c in range(a + 1, len(names)):
                 pair.setdefault((names[a], names[c]), []).append(db[names[a]] - db[names[c]])
     v = list(d0.values())
     q = lambda z: (sorted(z)[int(.025 * B)], sorted(z)[int(.975 * B) - 1])
     print(f"range of Δ across models: {max(v) - min(v):.1f} points [95% CI {q(rng_)[0]:.1f}, {q(rng_)[1]:.1f}]; SD of Δ: {st.pstdev(v):.1f} [{q(sd_)[0]:.1f}, {q(sd_)[1]:.1f}]")
-    print(f"direction: {sum(x < 0 for x in v)} of 6 models negative (improved); clear (CI excludes 0) for 4 (see Table 2)\n")
+    print(f"direction: {sum(x < 0 for x in v)} of {len(v)} models negative (improved); see Table 2 for which CIs exclude 0\n")
     print("| Model A | Model B | Δ_A − Δ_B [95% CI, unadjusted] |")
     print("|---|---|---|")
     for (a, c), vals in pair.items():

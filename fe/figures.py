@@ -134,10 +134,15 @@ def fig_ba(out):
 
 
 def fig_intake_ba(out):
-    """Addendum H: day-level Bland-Altman of consumed energy, both photos, six models; preset limits only (no recall overlay)."""
+    """Addendum H: day-level Bland-Altman of consumed energy, both photos, all models; preset limits only (no recall overlay)."""
     from fe import intake_report as ir
     dd = ir.days()
-    fig, axes = plt.subplots(2, 3, figsize=(7.2, 4.6), sharex=True, sharey=True)
+    n = len(ir.MODELS)
+    cols = 3 if n <= 6 else 4
+    rows_ = -(-n // cols)
+    fig, axes = plt.subplots(rows_, cols, figsize=(2.4 * cols, 2.3 * rows_), sharex=True, sharey=True, squeeze=False)
+    for ax in list(axes.flat)[n:]:
+        ax.set_visible(False)
     for ax, (m, (_, d, _)) in zip(axes.flat, ir.MODELS.items()):
         est = ir.scored(d)[0]
         xs, ys = [], []
@@ -170,8 +175,9 @@ def fig_intake_ba(out):
         ax.text(0.97, 0.96, f"mean {mu:+.1f}%\nLoA {mu - 1.96 * sd:+.0f} to {mu + 1.96 * sd:+.0f}%", transform=ax.transAxes,
                 ha="right", va="top", fontsize=7, color=INK)
         ax.set_ylim(-80, 100)
-    for ax in axes[1]:
-        ax.set_xlabel("True energy eaten per day (kcal)")
+    for k, ax in enumerate(axes.flat):
+        if k >= n - cols:
+            ax.set_xlabel("True energy eaten per day (kcal)")
     for ax in axes[:, 0]:
         ax.set_ylabel("Day error (% of truth)")
     fig.tight_layout()
