@@ -186,3 +186,24 @@ All items are exploratory; the main conclusions remain those of addendum H.
 - High effort: MAE% change −4.2 (Haiku) to +0.9 (luna); cost ×1.1–×2.6. No consistent gain.
 - Bug fixed after the runs: intake.py did not store mass_g for (3a); rows rebuilt from the cache (0 new calls).
 Results: results/intake_abl.txt (fe/intake_abl.py).
+
+## Addendum J (2026-10-20) — Google Gemini, two tiers. REGISTERED BEFORE ANY GEMINI CALL
+Reason: reviewers of v0.3 and the JMIR AI version may ask why only two vendors; adding a third vendor tests whether the
+addendum H/I findings (subtraction under-estimates, the 0.87 constant, cancellation, wide individual error, protein
+under-estimate) hold outside Anthropic and OpenAI. Nothing else changes: same data (802 meals, 148 days), same prompts
+(verbatim), same metrics, same failure rule, same paired participant bootstrap, same pre-set margins (±10% equivalence,
+±30% LoA). Budget cap USD 100 (Jason's Gemini key, registered 2026-10-20).
+- Model selection rule (fixed here because model ids cannot be listed until the key works): the newest generally available,
+  non-preview **Flash** model and the newest generally available, non-preview **Pro** model returned by `models.list` on run day.
+  Flash-Lite, preview, experimental and image-generation variants are excluded. The exact version strings and the list output
+  are recorded in the execution log; prices are copied from ai.google.dev/gemini-api/docs/pricing on run day into runs/gemini_prices.json.
+- Runs, identical to the six existing models: (1) `b0_direct_gemini_{tier}` before photo, simple prompt, split acetada_intake;
+  (2) `sub_direct_gemini_{tier}`; (3) `dual_direct_gemini_{tier}`; (3a) `dual_simple_gemini_{tier}`; (3b) `before_struct_gemini_{tier}`;
+  all 802 meals. Test–retest: (3) on the 100 pilot meals, resample 1 and 2. High effort: `dual_high_gemini_{tier}` on the pilot.
+- Effort mapping: "low" → thinking_level low, "high" → thinking_level high (Gemini 3.x); if a selected model rejects thinking_level,
+  thinking_budget 1024 / 16384 is used instead and noted. Temperature 1.0 (vendor default), max_output_tokens 16000.
+- Order and stop rule: Flash pilot (100 meals, condition 3) first to measure cost per call; if the projected total for both tiers
+  exceeds the cap, Pro is limited to conditions (1)–(3) on all meals and the ablations/retest on the pilot only, and this is logged.
+- Reporting: Gemini rows are added to every table; counts in the text ("five of six" etc.) are recomputed over eight models;
+  the pairwise comparison in S3 extends to 28 pairs (unadjusted, as before). Conclusions of addendum H stand or fall on the
+  pre-set criteria, not on the new vendor.

@@ -21,6 +21,12 @@ PRICES = {
     "gpt-6.1-sol": (2.00, 10.00),
     "gpt-6-astra": (10.00, 50.00),
 }
+# Google Gemini (ai.google.dev/gemini-api/docs/pricing): rows are added by fe.llm `gemini-models` after models.list on run day
+# (addendum J); thinking tokens are billed as output.
+GEMINI_PRICES_FILE = os.path.join(ROOT, "runs", "gemini_prices.json")
+if os.path.exists(GEMINI_PRICES_FILE):
+    PRICES.update({k: tuple(v) for k, v in json.load(open(GEMINI_PRICES_FILE)).items()})
+GEMINI_LEVEL = {"low": "low", "medium": "medium", "high": "high", "xhigh": "high", "max": "high"}
 OPENAI_EFFORT = {"low": "low", "medium": "medium", "high": "high", "xhigh": "high", "max": "high"}
 
 
@@ -30,7 +36,7 @@ def _load_key():
     if not os.path.exists(env):
         return
     for line in open(env):
-        for k in ("ANTHROPIC_API_KEY", "OPENAI_API_KEY"):
+        for k in ("ANTHROPIC_API_KEY", "OPENAI_API_KEY", "GEMINI_API_KEY"):
             if line.startswith(k + "=") and not os.environ.get(k):
                 os.environ[k] = line.split("=", 1)[1].strip().strip('"')
 
@@ -44,6 +50,7 @@ class LLM:
         _load_key()
         self.client = anthropic.Anthropic(max_retries=6)
         self._oa = None
+        self._gg = None
         self.lock = threading.Lock()
         self.usd = 0.0
         self.calls = 0
@@ -74,8 +81,12 @@ class LLM:
         with self.lock:
             if self.max_usd is not None and self.usd >= self.max_usd:
                 raise Budget(f"budget {self.max_usd} reached")
-        if model.startswith("gpt-"):
-            text, cost = self._ask_openai(model, prompt, ([image] if image is not None else []) + list(images or ()), effort, system, max_tokens)
+        if model.startswith(("gpt-", "gemini-")):
+            imgs = ([image] if image is not None else []) + list(images or ())
+            if model.startswith("gpt-"):
+                text, cost = self._ask_openai(model, prompt, imgs, effort, system, max_tokens)
+            else:
+                text, cost = self._ask_gemini(model, prompt, imgs, effort, system, max_tokens)
             with self.lock:
                 self.usd += cost
                 self.calls += 1
@@ -123,3 +134,43 @@ class LLM:
         pin, pout = PRICES[model]
         cost = (u.prompt_tokens * pin + u.completion_tokens * pout) / 1e6
         return text, cost
+
+    def _ask_gemini(self, model, prompt, imgs, effort, system, max_tokens):
+        """Gemini via google-genai. Reasoning effort maps to thinking_level (Gemini 3.x); older models fall back to thinking_budget."""
+        from google import genai
+        from google.genai import types
+        if self._gg is None:
+            self._gg = genai.Client(http_options=types.HttpOptions(retry_options=types.HttpRetryOptions(attempts=6)))
+        parts = [types.Part.from_bytes(data=im, mime_type="image/png") for im in imgs] + [types.Part.from_text(text=prompt)]
+        level = GEMINI_LEVEL.get(effort, "medium")
+        base = dict(system_instruction=system, max_output_tokens=max(max_tokens, 16000), temperature=1.0)
+        try:
+            cfg = types.GenerateContentConfig(thinking_config=types.ThinkingConfig(thinking_level=level), **base)
+            r = self._gg.models.generate_content(model=model, contents=parts, config=cfg)
+        except Exception as e:  # models without thinking_level (2.5 generation)
+            if "thinking_level" not in str(e) and "INVALID_ARGUMENT" not in str(e):
+                raise
+            budget = {"low": 1024, "medium": 4096, "high": 16384}[level]
+            cfg = types.GenerateContentConfig(thinking_config=types.ThinkingConfig(thinking_budget=budget), **base)
+            r = self._gg.models.generate_content(model=model, contents=parts, config=cfg)
+        text = r.text or ""
+        u = r.usage_metadata
+        pin, pout = PRICES[model]
+        cost = ((u.prompt_token_count or 0) * pin + ((u.candidates_token_count or 0) + (u.thoughts_token_count or 0)) * pout) / 1e6
+        return text, cost
+
+
+def gemini_models():
+    """List Gemini models visible to the key (addendum J selection step). Prints name, display name and version."""
+    _load_key()
+    from google import genai
+    c = genai.Client()
+    for m in c.models.list():
+        if "gemini" in m.name and "generateContent" in (m.supported_actions or []):
+            print(m.name, "|", m.display_name, "|", getattr(m, "version", ""))
+
+
+if __name__ == "__main__":
+    import sys
+    if sys.argv[1:] == ["gemini-models"]:
+        gemini_models()
