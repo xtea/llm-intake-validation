@@ -107,19 +107,21 @@ Photos in a Feeding Trial}
 Photo-based estimation of food energy could reduce the burden of dietary assessment, and general-purpose
 multimodal large language models (LLMs) make such estimates easy to obtain. Most evaluations use one photo
 taken before eating and compare with the energy served, while dietary assessment needs the energy actually
-eaten. We evaluated six general-purpose models from two vendors (Claude Haiku, Sonnet and Opus 5.5; GPT-6
-luna, GPT-6.1 sol and GPT-6 astra) on 802 meals from ACETADA, a controlled feeding trial with weighed intake,
-giving each model the before photo only, before and after photos in separate calls, or both photos in one
-request. Three questions and two limits were set in advance; the further analyses are exploratory. Several
-results went against what we expected. Estimating the two photos separately and subtracting under-estimated
-intake for five of six models: the models still report hundreds of kilocalories for a nearly empty tray. Much
-of the gain from the after photo could be had without it, by scaling the before-only estimate by the average
-share eaten in other participants (0.87); beyond that constant, the second photo lowered meal-level error by
-2.2 to 3.4 points, mainly in meals with food left. With one photo, two models showed a near-zero intake bias,
-but only because they under-estimated the served energy and ignored the uneaten food. In ablations, adding the
-after photo improved accuracy under both prompt formats for five models, while prompt effects varied across
-models. Summed over 148 feeding days, three models kept the 90\% confidence interval of their mean error
-within a pre-set ±10\% margin, but no model reached the pre-set ±30\% limits of agreement. Protein was
+eaten. We evaluated eight general-purpose models from three vendors (Claude Haiku, Sonnet and Opus 5.5; GPT-6
+luna, GPT-6.1 sol and GPT-6 astra; Gemini 3.8 Flash and Gemini 4 Argon) on 802 meals from ACETADA, a
+controlled feeding trial with weighed intake, giving each model the before photo only, before and after photos
+in separate calls, or both photos in one request. Three questions and two limits were set in advance; the
+further analyses are exploratory. Several results went against what we expected. Estimating the two photos
+separately and subtracting under-estimated intake for six of eight models: the models still report hundreds of
+kilocalories for a nearly empty tray. Much of the gain from the after photo could be had without it, by
+scaling the before-only estimate by the average share eaten in other participants (0.87); beyond that
+constant, the second photo lowered meal-level error by 2.2 to 4.4 points, mainly in meals with food left. With
+one photo, two models showed a near-zero intake bias, but only because they under-estimated the served energy
+and ignored the uneaten food. In ablations, adding the after photo improved accuracy under both prompt formats
+for seven models, while prompt effects varied across models. Summed over 148 feeding days, five models kept
+the 90\% confidence interval of their mean error within a pre-set ±10\% margin, and one (Gemini 3.8 Flash)
+also reached the pre-set ±30\% limits of agreement, narrowly (−28\% to +27\%; the confidence intervals of both
+limits cross 30\%, so limits outside ±30\% cannot be excluded); the other seven did not. Protein was
 under-estimated by every model, most in protein-dense meals; repeated calls changed error by at most 1.4
 points, and a higher reasoning effort helped only the smallest model (Haiku 5.5, 4.2 points) and changed the
 others by less than 1 point. A low average bias is not evidence of accurate individual intake estimation, and
@@ -159,11 +161,11 @@ We use the public ACETADA data from such a trial {[}4,~5{]} and ask three pre-re
 \end{itemize}
 
 We make three contributions. First, a paired comparison of three input conditions (before photo only; separate
-calls with subtraction; both photos in one request) for six general-purpose models from two vendors, on 802
-meals with weighed consumed energy. It shows that subtraction fails and that a fixed-fraction baseline matches
-much of the two-photo gain. Second, ablations that separate the second photo from the prompt (the photo helped
-under both prompt formats; prompt effects varied by model), and a decomposition showing that a small
-before-only intake bias can coexist with a large under-estimate of served energy; mean error alone is
+calls with subtraction; both photos in one request) for eight general-purpose models from three vendors, on
+802 meals with weighed consumed energy. It shows that subtraction fails and that a fixed-fraction baseline
+matches much of the two-photo gain. Second, ablations that separate the second photo from the prompt (the
+photo helped under both prompt formats; prompt effects varied by model), and a decomposition showing that a
+small before-only intake bias can coexist with a large under-estimate of served energy; mean error alone is
 therefore a misleading criterion. Third, day-level agreement with Bland--Altman limits and an
 equivalence-style check of the mean error, together with macronutrient, repeatability and reasoning-effort
 results. The trial's published recall results are given as a descriptive reference only.
@@ -249,9 +251,10 @@ Energy eaten per day, median (IQR), kcal & 2,017 (1,593--2,636) \\
 \section{Methods}\label{methods}
 
 \textbf{Models.} Claude Haiku 5.5, Sonnet 5.5 and Opus 5.5 (Anthropic API) and GPT-6 luna, GPT-6.1 sol and
-GPT-6 astra (OpenAI API), all with low reasoning effort for the main runs, called on 16 October 2026 (Appendix
-B gives the order of the runs). We report results by model name. The two vendors' models differ in more than
-size, so we do not attribute differences to the number of parameters.
+GPT-6 astra (OpenAI API), called on 16 October 2026, and Gemini 3.8 Flash and Gemini 4 Argon (Google Gemini
+API), added under a pre-registered rule and called on 20 October 2026 (Appendix B gives the order of the
+runs). All main runs used low reasoning effort. We report results by model name. The vendors' models differ in
+more than size, so we do not attribute differences to the number of parameters.
 
 \textbf{Input conditions.} (1) \emph{Before only:} the before photo with a direct prompt for the energy of
 everything on the plate; this assumes that everything was eaten. (2) \emph{Subtraction:} the same prompt on
@@ -264,9 +267,9 @@ relative to condition (1). To separate the two, we added after the main results 
 photo only with the structured prompt of condition (3). The photo effect is then (3) − (3b) with the
 structured prompt held, and (3a) − (1) with the simple prompt held; the prompt effect is (3b) − (1) and (3) −
 (3a). Photos are converted to PNG with the long side at most 1,024 pixels, which also removes embedded
-metadata. GPT images are sent with detail ``high''; the Anthropic API has no equivalent setting and processes
-the image at its given size, so the two vendors may see the images at different effective resolutions. We did
-not try to equalize this. Full prompts are in Appendix A; prompts are identical across models.
+metadata. GPT images are sent with detail ``high''; the Anthropic and Gemini APIs have no equivalent setting
+and process the image at its given size, so the vendors may see the images at different effective resolutions.
+We did not try to equalize this. Full prompts are in Appendix A; prompts are identical across models.
 
 \textbf{Metrics.} At meal level: mean absolute error as a percentage of mean true energy (MAE\%) and bias
 (total estimate minus total truth, as a percentage of total truth). For the share eaten, we compare the
@@ -290,9 +293,9 @@ to what the best recall method reached in the same trial (an image-based record 
 \textbf{Statistics.} Confidence intervals come from 2,000 bootstrap resamples of participants. Differences
 between input conditions are paired. To test whether the gain depends on leftovers, we compute the gain
 separately in meals with ≥10\% and \textless10\% of energy left and bootstrap the difference between the two
-gains. For Q2 we describe heterogeneity between models by the range and standard deviation of the six models'
-gains, with bootstrap intervals, and list all 15 pairwise differences (unadjusted) in Appendix F. Point
-estimates are computed on the full sample; the bootstrap is used only for intervals. Some participants
+gains. For Q2 we describe heterogeneity between models by the range and standard deviation of the eight
+models' gains, with bootstrap intervals, and list all 28 pairwise differences (unadjusted) in Appendix F.
+Point estimates are computed on the full sample; the bootstrap is used only for intervals. Some participants
 contributed up to three feeding days; resampling participants keeps their days together. Confidence intervals
 are not adjusted for multiple comparisons, so we emphasize effect sizes and intervals.
 
@@ -323,24 +326,28 @@ before the full run, we added the subtraction condition. The leftover-group diff
 decomposition, the model comparison against Haiku, the equivalence check, the fixed-fraction baseline, the
 kcal-scale and pilot-exclusion sensitivity analyses, the local recalibration and the breakdown by meal were
 added after the main results were known, following review, and are exploratory. Because the full run depended
-on the pilot meeting its rule, we also report results without the pilot meals (Appendix F).
+on the pilot meeting its rule, we also report results without the pilot meals (Appendix F). The two Gemini
+models were added after the first version of this paper, under a selection rule and budget registered before
+any Gemini call (Appendix B); they were run through every condition, including the exploratory ones, with the
+same prompts and scripts.
 
 \section{Results}\label{results}
 
 \subsection{Q1: the after photo}\label{q1-the-after-photo}
 
 Table 2 shows meal-level results. Against the before-only condition, which assumes that everything was eaten,
-the both-photos protocol lowered MAE\% for four of six models, by 2.8 to 9.6 points (Opus 5.5, GPT-6 luna,
-GPT-6.1 sol, GPT-6 astra); the change was not clear for Sonnet 5.5 and absent for Haiku 5.5. This comparison,
-however, favours the protocol by construction in meals with food left: the before-only error contains the
-uneaten energy by definition. The more informative baseline is the before-only estimate scaled by a fixed
-share eaten taken from other participants (c = 0.87). Against that baseline the protocol was better by 2.2 to
-3.4 points, with intervals excluding zero for five models (Opus 5.5: −2.2, CI −4.8 to +0.3). In meals with
-≥10\% of energy left, its gain over the constant was clear for GPT-6 astra (−8.8 points), Opus 5.5 (−7.5) and
-GPT-6.1 sol (−6.6), but not for Haiku 5.5, Sonnet 5.5 or GPT-6 luna; in mostly eaten meals there was no gain
-for any model (Appendix F). On the subset of meals with valid output in all conditions, Sonnet 5.5's
-both-photos error is 19.3\% rather than 21.8\%, because its 11 failures are scored at its worst error; the
-other models change by at most 0.6 points.
+the both-photos protocol lowered MAE\% for six of eight models, by 2.8 to 9.6 points (Opus 5.5, GPT-6 luna,
+GPT-6.1 sol, GPT-6 astra, Gemini 3.8 Flash, Gemini 4 Argon); the change was not clear for Sonnet 5.5 and
+absent for Haiku 5.5. This comparison, however, favours the protocol by construction in meals with food left:
+the before-only error contains the uneaten energy by definition. The more informative baseline is the
+before-only estimate scaled by a fixed share eaten taken from other participants (c = 0.87). Against that
+baseline the protocol was better by 2.2 to 4.4 points, with intervals excluding zero for seven models (Opus
+5.5: −2.2, CI −4.8 to +0.3). In meals with ≥10\% of energy left, its gain over the constant was clear for
+GPT-6 astra (−8.8 points), Gemini 4 Argon (−7.7), Opus 5.5 (−7.5), GPT-6.1 sol (−6.6) and Gemini 3.8 Flash
+(−5.4), but not for Haiku 5.5, Sonnet 5.5 or GPT-6 luna; in mostly eaten meals there was no gain for any model
+(Appendix F). On the subset of meals with valid output in all conditions, Sonnet 5.5's both-photos error is
+19.3\% rather than 21.8\%, because its 11 failures are scored at its worst error; the other models change by
+at most 0.6 points.
 
 Table 2. Meal-level MAE\% (bias \%) by input condition, with the fixed-fraction baseline (before only × c, c =
 share eaten in other participants). Δ = both photos − baseline, MAE\% points {[}95\% CI{]}, on all 802 meals
@@ -394,25 +401,29 @@ GPT-6.1 sol & 26.9 (+14.8) & 22.3 & 23.7 (−10.7) & 19.5 (+1.2) & 19.1 (801) & 
 {[}−4.8,~−0.7{]} & −6.6 {[}−10.6,~−3.1{]} \\
 GPT-6 astra & 27.6 (+16.4) & 22.4 & 22.5 (−7.7) & 19.0 (+5.3) & 19.0 (802) & −8.6 {[}−11.3,~−6.1{]} & −3.4
 {[}−5.3,~−1.5{]} & −8.8 {[}−12.7,~−5.1{]} \\
+Gemini 3.8 Flash & 21.9 (+7.9) & 20.4 & 18.5 (−8.1) & 16.7 (−2.2) & 16.7 (802) & −5.2 {[}−7.5,~−3.1{]} & −3.7
+{[}−5.2,~−2.3{]} & −5.4 {[}−8.4,~−2.8{]} \\
+Gemini 4 Argon & 27.9 (+17.4) & 22.6 & 21.2 (+2.7) & 18.2 (+3.0) & 18.2 (802) & −9.6 {[}−12.3,~−7.2{]} & −4.4
+{[}−6.2,~−2.6{]} & −7.7 {[}−11.2,~−4.4{]} \\
 \end{longtable}
 }
 
 \textbf{Photo or prompt?} Table 3 separates the two changes made in condition (3). With the structured prompt
-held fixed, adding the after photo lowered MAE\% for five of six models (Sonnet 5.5 −5.1, Opus 5.5 −2.5, GPT-6
-luna −2.5, GPT-6.1 sol −6.7, GPT-6 astra −8.1 points; Haiku 5.5 −1.3, CI −2.8 to +0.4). With the simple prompt
-held fixed, the second photo had the same or a larger effect (−3.1 to −9.7 points for the same five models;
-Haiku 5.5 +0.2). Prompt effects varied across models. With the before photo only, the structured prompt
-changed MAE\% by −0.7 to +2.7 points for five models, but improved Opus 5.5 by 7.1 points, because it makes
-the model subtract a predicted leftover from its over-estimate. With both photos, the simple prompt was as
-good as or slightly better than the structured one for every model (Sonnet 5.5: 18.9\% vs 21.8\%, of which the
-structured prompt's 11 failures account for most). Adding the after photo therefore improved accuracy under
-both prompt formats for five models, while the prompt's contribution depended on the model; the structured
-prompt is needed for the macronutrient outputs. Day-level results for the simple-prompt protocol are similar
-to those of condition (3) (Appendix F). From the simple two-photo prompt the models also returned grams eaten;
-against weighed grams, the error relative to mean weight was 20.6\% (Opus 5.5) to 37.9\% (Haiku 5.5), with
-every model under-estimating grams by 12--37\%. This is in the range that a closed model reached on the same
-photo pairs when given the true list of foods (38.9\%) and well above a model trained on this data (14.2\%)
-{[}6{]}.
+held fixed, adding the after photo lowered MAE\% for seven of eight models (Sonnet 5.5 −5.1, Opus 5.5 −2.5,
+GPT-6 luna −2.5, GPT-6.1 sol −6.7, GPT-6 astra −8.1, Gemini 3.8 Flash −5.3, Gemini 4 Argon −5.3 points; Haiku
+5.5 −1.3, CI −2.8 to +0.4). With the simple prompt held fixed, the second photo had the same or a larger
+effect (−3.1 to −9.7 points for the same seven models; Haiku 5.5 +0.2). Prompt effects varied across models.
+With the before photo only, the structured prompt changed MAE\% by −0.7 to +2.7 points for five models, but
+improved Opus 5.5 by 7.1 points and Gemini 4 Argon by 4.4 points, because it makes these models subtract a
+predicted leftover from their over-estimate. With both photos, the simple prompt was as good as or slightly
+better than the structured one for every model (Sonnet 5.5: 18.9\% vs 21.8\%, of which the structured prompt's
+11 failures account for most). Adding the after photo therefore improved accuracy under both prompt formats
+for seven models, while the prompt's contribution depended on the model; the structured prompt is needed for
+the macronutrient outputs. Day-level results for the simple-prompt protocol are similar to those of condition
+(3) (Appendix F). From the simple two-photo prompt the models also returned grams eaten; against weighed
+grams, the error relative to mean weight was 18.6\% (Gemini 4 Argon) to 37.9\% (Haiku 5.5), with every model
+under-estimating grams by 12--37\%. This is in the range that a closed model reached on the same photo pairs
+when given the true list of foods (38.9\%) and well above a model trained on this data (14.2\%) {[}6{]}.
 
 Table 3. Photo versus prompt (exploratory): meal-level MAE\% (bias \%) for four combinations of input and
 prompt, and paired differences {[}95\% CI{]}, 802 meals.
@@ -464,19 +475,24 @@ GPT-6.1 sol & 26.9 (+14.8) & 26.2 (+17.0) & 18.7 (−2.2) & 19.5 (+1.2) & −6.7
 {[}−11.1,~−5.6{]} & −0.7 {[}−1.5,~+0.2{]} & +0.8 {[}−0.2,~+2.1{]} \\
 GPT-6 astra & 27.6 (+16.4) & 27.2 (+19.1) & 18.4 (+1.6) & 19.0 (+5.3) & −8.1 {[}−10.9,~−5.6{]} & −9.2
 {[}−12.1,~−6.6{]} & −0.5 {[}−1.4,~+0.4{]} & +0.6 {[}+0.0,~+1.2{]} \\
+Gemini 3.8 Flash & 21.9 (+7.9) & 21.9 (+9.6) & 16.8 (−4.3) & 16.7 (−2.2) & −5.3 {[}−7.8,~−3.2{]} & −5.1
+{[}−7.4,~−2.9{]} & +0.1 {[}−0.7,~+0.9{]} & −0.2 {[}−0.9,~+0.6{]} \\
+Gemini 4 Argon & 27.9 (+17.4) & 23.5 (−5.4) & 19.0 (−1.7) & 18.2 (+3.0) & −5.3 {[}−7.2,~−3.3{]} & −8.8
+{[}−11.7,~−6.0{]} & −4.4 {[}−7.3,~−1.4{]} & −0.8 {[}−1.9,~+0.2{]} \\
 \end{longtable}
 }
 
 The models read the share eaten with little bias. From their own numbers, the ratio of eaten to served
 differed from the true ratio by −0.3 to +2.6 percentage points on average, with a mean absolute difference of
-5.3 to 7.8 points and Spearman correlations of 0.63 to 0.77. Subtraction under-estimated intake for five of
-six models (bias −7.7\% to −33.5\%), in line with {[}7{]}: the estimate for the after photo stays too high.
-Opus 5.5 was the exception (+1.8\%).
+5.3 to 7.8 points and Spearman correlations of 0.63 to 0.77. Subtraction under-estimated intake for six of
+eight models (bias −7.7\% to −33.5\%), in line with {[}7{]}: the estimate for the after photo stays too high.
+Opus 5.5 (+1.8\%) and Gemini 4 Argon (+2.7\%) were the exceptions; both over-estimate the served energy with
+one photo, which offsets the too-high after-photo estimate.
 
 \textbf{Day level.} The both-photos protocol had narrower day-level limits of agreement than the constant
-baseline for five models (for example Sonnet 5.5: −67\% to +51\% vs −41\% to +40\%; Haiku 5.5 was the
-exception, 77 vs 82 points wide) and more days within 800 kJ for all six, while the constant sometimes gave a
-smaller mean error (Opus 5.5: +9.2\% vs +12.0\%) (Appendix F). The constant estimates a meal's share eaten
+baseline for seven models (for example Sonnet 5.5: −67\% to +51\% vs −41\% to +40\%; Haiku 5.5 was the
+exception, 77 vs 82 points wide) and more days within 800 kJ for all eight, while the constant sometimes gave
+a smaller mean error (Opus 5.5: +9.2\% vs +12.0\%) (Appendix F). The constant estimates a meal's share eaten
 with a mean absolute error of 11.2 points, compared with 5.3--7.8 points for the models' own shares.
 
 \textbf{Robustness.} On the kcal scale, the per-meal change \textbar both − eaten\textbar{} − \textbar before
@@ -484,30 +500,31 @@ with a mean absolute error of 11.2 points, compared with 5.3--7.8 points for the
 (differences −43 to −138 kcal per meal, all intervals excluding zero; Appendix F); as noted above, part of
 this difference follows from the definition of the before-only condition. Excluding the 100 pilot meals, or
 all pilot participants, did not change the direction of any main result (Appendix F). Our before-only errors
-(161--205 kcal per meal, mean absolute percentage error 24--33\%) are in the range that the dataset paper
+(152--205 kcal per meal, mean absolute percentage error 24--33\%) are in the range that the dataset paper
 reported for closed models with a plain prompt on the same photos (166--211 kcal, 23--34\%) {[}5{]}.
 
 \subsection{Q2: differences between models}\label{q2-differences-between-models}
 
-The direction of the change was the same for five of six models and clear for four, but its size was not
-consistent: across the six models the gains against the before-only condition ranged over 9.7 points (95\% CI
-7.2 to 12.9; standard deviation 3.6 points, CI 2.7 to 4.7). Of the 15 pairwise differences, 11 had intervals
-excluding zero (Appendix F); Opus 5.5, GPT-6.1 sol and GPT-6 astra gained most, Haiku 5.5, Sonnet 5.5 and
-GPT-6 luna least. Against the fixed-fraction baseline the gains were more alike (2.2 to 3.4 points), so much
-of the heterogeneity reflects how much each model over-estimated intake with the before photo alone.
+The direction of the change was the same for seven of eight models and clear for six, but its size was not
+consistent: across the eight models the gains against the before-only condition ranged over 9.8 points (95\%
+CI 7.9 to 13.0; standard deviation 3.5 points, CI 2.7 to 4.4). Of the 28 pairwise differences, 21 had
+intervals excluding zero (Appendix F); Opus 5.5, Gemini 4 Argon, GPT-6 astra and GPT-6.1 sol gained most,
+Haiku 5.5, Sonnet 5.5 and GPT-6 luna least. Against the fixed-fraction baseline the gains were more alike (2.2
+to 4.4 points), so much of the heterogeneity reflects how much each model over-estimated intake with the
+before photo alone.
 
 The before-only results help explain this (Table 4). The error of a before-only estimate against energy eaten
 is the sum of two parts: the error against energy served, and the energy left. The true energy left cannot be
 negative; in our labels it is slightly negative for a few meals because of weighing error (Section 3), and on
-average it is +103 kcal per meal. Opus 5.5, GPT-6.1 sol and GPT-6 astra estimated the served energy with
-little bias, so the leftover appeared as an over-estimate of intake. Haiku 5.5, Sonnet 5.5 and GPT-6 luna
-under-estimated the served energy, and this under-estimate offset the leftover; for Sonnet 5.5 the two parts
-almost cancelled (−104 and +103 kcal per meal). The offset also happened within the same meal: among meals
-with ≥10\% left, Haiku 5.5 under-estimated the served energy and still ended closer to the energy eaten in 178
-of 292 meals, by a median of 137 kcal. These results show that a small before-only intake bias can coexist
-with a substantial under-estimate of served energy, partly offset by uneaten food. This decomposition does not
-isolate why predictions change under the both-photos protocol, which may also change the model's estimate of
-the served energy.
+average it is +103 kcal per meal. Opus 5.5, GPT-6.1 sol, GPT-6 astra and Gemini 4 Argon estimated the served
+energy with little bias, so the leftover appeared as an over-estimate of intake. Haiku 5.5, Sonnet 5.5, GPT-6
+luna and Gemini 3.8 Flash under-estimated the served energy, and this under-estimate offset the leftover; for
+Sonnet 5.5 the two parts almost cancelled (−104 and +103 kcal per meal). The offset also happened within the
+same meal: among meals with ≥10\% left, Haiku 5.5 under-estimated the served energy and still ended closer to
+the energy eaten in 178 of 292 meals, by a median of 137 kcal. These results show that a small before-only
+intake bias can coexist with a substantial under-estimate of served energy, partly offset by uneaten food.
+This decomposition does not isolate why predictions change under the both-photos protocol, which may also
+change the model's estimate of the served energy.
 
 Table 4. Decomposition of the before-only error, kcal per meal (764 meals with energy served defined).
 
@@ -537,12 +554,14 @@ Median offset, kcal
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-Haiku 5.5 & −156 & +103 & −53 & 178 / 292 & 137 \\
-Sonnet 5.5 & −104 & +103 & −1 & 146 / 292 & 118 \\
-Opus 5.5 & +38 & +103 & +141 & 61 / 292 & 87 \\
-GPT-6 luna & −80 & +103 & +23 & 141 / 292 & 127 \\
-GPT-6.1 sol & −8 & +103 & +95 & 84 / 292 & 105 \\
-GPT-6 astra & +4 & +103 & +107 & 88 / 292 & 105 \\
+Haiku 5.5 & −156 & +103 & −53 & 178 / 292 & 153 \\
+Sonnet 5.5 & −104 & +103 & −1 & 146 / 292 & 147 \\
+Opus 5.5 & +38 & +103 & +141 & 61 / 292 & 126 \\
+GPT-6 luna & −80 & +103 & +23 & 141 / 292 & 153 \\
+GPT-6.1 sol & −8 & +103 & +95 & 84 / 292 & 141 \\
+GPT-6 astra & +4 & +103 & +107 & 88 / 292 & 126 \\
+Gemini 3.8 Flash & −55 & +103 & +48 & 111 / 292 & 140 \\
+Gemini 4 Argon & +12 & +103 & +115 & 71 / 292 & 133 \\
 \end{longtable}
 }
 
@@ -552,15 +571,20 @@ served. Offset = \textbar estimate − served\textbar{} − \textbar estimate �
 \subsection{Q3: agreement over a feeding day}\label{q3-agreement-over-a-feeding-day}
 
 Table 5 and Figure 1 show day-level results. With both photos, the 90\% confidence interval of the mean day
-error was within ±10\% for Sonnet 5.5 (−0.6\%), GPT-6 luna (−4.3\%) and GPT-6.1 sol (+3.4\%); GPT-6 astra was
-just outside (+7.6\%, upper limit 10.3\%). Haiku 5.5 (−12.0\%) and Opus 5.5 (+12.0\%) were outside. No system
-met the ±30\% limits for individual agreement. With both photos, the limits spanned 68 to 82 percentage
-points; GPT-6 luna was closest to the pre-set limits (−38\% to +30\%), and GPT-6.1 sol (−31\% to +38\%) and
-GPT-6 astra (−27\% to +42\%) had similar widths but were placed differently. Between 43\% and 51\% of days
-were within 800 kJ of truth for the four models whose meal-level error fell. With the before photo only, Haiku
-5.5 also passed the equivalence check (−4.2\%, 90\% CI −8.1 to −0.3), in line with the pattern seen in the
-meal-level decomposition (Section 5.2). A small mean error alone therefore does not show that a method reads
-intake correctly.
+error was within ±10\% for Sonnet 5.5 (−0.6\%), Gemini 3.8 Flash (−0.5\%), GPT-6.1 sol (+3.4\%), GPT-6 luna
+(−4.3\%) and Gemini 4 Argon (+4.5\%); GPT-6 astra was just outside (+7.6\%, upper limit 10.3\%). Haiku 5.5
+(−12.0\%) and Opus 5.5 (+12.0\%) were outside. One system met the ±30\% limits for individual agreement:
+Gemini 3.8 Flash, with limits of −28\% to +27\%. It met them narrowly: the bootstrap 95\% confidence intervals
+of the two limits were −32\% to −23\% and +20\% to +32\%, so limits outside ±30\% cannot be excluded, and the
+same model with the simple two-photo prompt gave −28\% to +24\% (Appendix F). For the other seven systems the
+limits spanned 59 to 82 percentage points; Gemini 4 Argon (−25\% to +34\%) and GPT-6 luna (−38\% to +30\%)
+were closest to the pre-set limits, and GPT-6.1 sol (−31\% to +38\%) and GPT-6 astra (−27\% to +42\%) had
+similar widths but were placed differently. Between 41\% and 57\% of days were within 800 kJ of truth for the
+seven models whose meal-level error fell. Even for the model within the limits, a single feeding day can be
+off by about a quarter of its energy in either direction. With the before photo only, Haiku 5.5 also passed
+the equivalence check (−4.2\%, 90\% CI −8.1 to −0.3), in line with the pattern seen in the meal-level
+decomposition (Section 5.2). A small mean error alone therefore does not show that a method reads intake
+correctly.
 
 Table 5. Day-level agreement for energy eaten (148 days, 101 participants). Mean = mean of day \% errors
 {[}95\% CI{]}. Equivalence: 90\% CI within ±10\%.
@@ -573,18 +597,22 @@ Model, input & Mean day error \% & 90\% CI & Equivalence & 95\% LoA \% & Days wi
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-Haiku 5.5, before only & −4.2 {[}−8.8,~+0.7{]} & −8.1, −0.3 & yes & −48 to +39 & 34 \\
-Haiku 5.5, both photos & −12.0 {[}−16.0,~−7.4{]} & −15.7, −8.2 & no & −53 to +29 & 29 \\
-Sonnet 5.5, before only & +5.5 {[}−0.4,~+12.4{]} & +0.1, +11.0 & no & −62 to +73 & 37 \\
+Haiku 5.5, before only & −4.2 {[}−8.9,~+0.7{]} & −8.1, −0.3 & yes & −48 to +39 & 34 \\
+Haiku 5.5, both photos & −12.0 {[}−16.2,~−7.2{]} & −15.7, −8.2 & no & −53 to +29 & 29 \\
+Sonnet 5.5, before only & +5.5 {[}−0.7,~+12.3{]} & +0.1, +11.0 & no & −62 to +73 & 37 \\
 Sonnet 5.5, both photos & −0.6 {[}−4.2,~+3.2{]} & −3.7, +2.5 & yes & −41 to +40 & 41 \\
-Opus 5.5, before only & +25.4 {[}+19.4,~+32.4{]} & +20.3, +31.0 & no & −32 to +83 & 25 \\
-Opus 5.5, both photos & +12.0 {[}+8.7,~+15.6{]} & +9.2, +14.8 & no & −25 to +49 & 43 \\
-GPT-6 luna, before only & +6.7 {[}+1.9,~+11.9{]} & +2.6, +10.9 & no & −41 to +54 & 39 \\
-GPT-6 luna, both photos & −4.3 {[}−7.5,~−0.7{]} & −6.9, −1.5 & yes & −38 to +30 & 43 \\
-GPT-6.1 sol, before only & +17.7 {[}+12.5,~+23.6{]} & +13.1, +22.5 & no & −33 to +69 & 29 \\
-GPT-6.1 sol, both photos & +3.4 {[}+0.4,~+6.7{]} & +0.8, +6.0 & yes & −31 to +38 & 51 \\
-GPT-6 astra, before only & +20.2 {[}+14.8,~+26.1{]} & +15.6, +25.0 & no & −31 to +71 & 24 \\
-GPT-6 astra, both photos & +7.6 {[}+4.5,~+10.9{]} & +5.0, +10.3 & no & −27 to +42 & 45 \\
+Opus 5.5, before only & +25.4 {[}+19.4,~+32.3{]} & +20.3, +31.0 & no & −32 to +83 & 25 \\
+Opus 5.5, both photos & +12.0 {[}+8.7,~+15.5{]} & +9.2, +14.8 & no & −25 to +49 & 43 \\
+GPT-6 luna, before only & +6.7 {[}+1.9,~+11.8{]} & +2.6, +10.9 & no & −41 to +54 & 39 \\
+GPT-6 luna, both photos & −4.3 {[}−7.4,~−1.0{]} & −6.9, −1.5 & yes & −38 to +30 & 43 \\
+GPT-6.1 sol, before only & +17.7 {[}+12.6,~+23.4{]} & +13.1, +22.5 & no & −33 to +69 & 29 \\
+GPT-6.1 sol, both photos & +3.4 {[}+0.3,~+6.5{]} & +0.8, +6.0 & yes & −31 to +38 & 51 \\
+GPT-6 astra, before only & +20.2 {[}+15.0,~+25.9{]} & +15.6, +25.0 & no & −31 to +71 & 24 \\
+GPT-6 astra, both photos & +7.6 {[}+4.4,~+10.8{]} & +5.0, +10.3 & no & −27 to +42 & 45 \\
+Gemini 3.8 Flash, before only & +10.6 {[}+5.8,~+16.0{]} & +6.4, +15.0 & no & −36 to +57 & 39 \\
+Gemini 3.8 Flash, both photos & −0.5 {[}−2.9,~+2.0{]} & −2.5, +1.6 & yes & −28 to +27 & 57 \\
+Gemini 4 Argon, before only & +20.4 {[}+14.9,~+26.4{]} & +15.8, +25.4 & no & −32 to +72 & 28 \\
+Gemini 4 Argon, both photos & +4.5 {[}+1.9,~+7.1{]} & +2.3, +6.7 & yes & −25 to +34 & 55 \\
 \end{longtable}
 }
 
@@ -596,16 +624,17 @@ participant's feeding day. Solid and dashed orange lines: mean error and 95\% li
 the pre-set ±10\% (solid) and ±30\% (dotted) limits. Black dashed line: local-linear smoother.}
 \end{figure}
 
-Repeated days from the same participant were correlated (intraclass correlation of e\_day 0.22 to 0.53); the
+Repeated days from the same participant were correlated (intraclass correlation of e\_day 0.15 to 0.53); the
 repeated-measures limits {[}21{]} were the same as the naive ones to the nearest point, because the within-
 and between-participant components add up to the total variance. On the log scale the limits are ratio limits
-of about ×0.67 to ×1.4 for the better models (Appendix F). In Figure 1 the day error falls as the true intake
-rises for every model (smoothed lines): days with low intake were over-estimated and days with high intake
-under-estimated, by 15 to 22 percentage points per doubling of true intake. On the log scale the slope of the
-estimate on the truth was 0.74 to 0.78 at day level and 0.68 to 0.76 at meal level. This is the pattern of
-shrinkage toward a typical meal rather than a specific failure on large portions; it also means that
-percentage limits are not constant across the intake range. Subtraction gave a small mean error for Opus 5.5
-(+3.7\%, LoA −29\% to +37\%) but large negative errors for the other five models (Appendix C).
+of about ×0.67 to ×1.4 for the better models and ×0.76 to ×1.29 for Gemini 3.8 Flash (Appendix F). In Figure 1
+the day error falls as the true intake rises for every model (smoothed lines): days with low intake were
+over-estimated and days with high intake under-estimated, by 11 to 22 percentage points per doubling of true
+intake. On the log scale the slope of the estimate on the truth was 0.74 to 0.86 at day level and 0.68 to 0.84
+at meal level; the two Gemini models shrank least. This is the pattern of shrinkage toward a typical meal
+rather than a specific failure on large portions; it also means that percentage limits are not constant across
+the intake range. Subtraction gave a small mean error for Opus 5.5 (+3.7\%, LoA −29\% to +37\%) and Gemini 4
+Argon (+3.9\%, LoA −25\% to +33\%) but large negative errors for the other six models (Appendix C).
 
 For orientation only, Table 6 lists the energy results that the trial reported for four 24-hour recall methods
 {[}3{]}. They come from the same trial and the same reference (weighed intake), but from different feeding
@@ -648,54 +677,61 @@ Opus 5.5 & −8 (−52 to +37) & +25 (−24 to +75) & +18 (−33 to +70) \\
 GPT-6 luna & −16 (−63 to +30) & +12 (−31 to +55) & +0 (−45 to +46) \\
 GPT-6.1 sol & −13 (−57 to +30) & +16 (−26 to +58) & +7 (−36 to +51) \\
 GPT-6 astra & −10 (−54 to +35) & +21 (−23 to +64) & +12 (−31 to +56) \\
+Gemini 3.8 Flash & −20 (−53 to +13) & +11 (−25 to +47) & +5 (−35 to +45) \\
+Gemini 4 Argon & −3 (−46 to +40) & +11 (−29 to +51) & +10 (−34 to +54) \\
 \end{longtable}
 }
 
-Protein was under-estimated by every model (−8\% to −29\%). The under-estimate was larger in protein-dense
-meals: across meals, the protein error correlated negatively with protein density (Spearman −0.38 to −0.50
-across models) and with the share of energy from animal-source items (−0.10 to −0.35), and the bias was two to
-three times larger in meals where animal-source items supplied at least a third of the energy than in other
-meals (Appendix F). The models appear to assign typical, rather than observed, protein contents. Carbohydrate
-errors were positive for five models (+12\% to +25\%) and near zero for Haiku 5.5 (+1\%); we did not test
-these differences. Limits of agreement were wider than for energy. A model that estimates energy well does not
-necessarily estimate the nutrients well.
+Protein was under-estimated by every model (−3\% to −29\% at day level; −7\% to −34\% of total protein at meal
+level). The under-estimate was larger in protein-dense meals: across meals, the protein error correlated
+negatively with protein density (Spearman −0.38 to −0.50 across models) and with the share of energy from
+animal-source items (−0.09 to −0.35), and the bias was 6 to 17 percentage points larger in meals where
+animal-source items supplied at least a third of the energy than in other meals (Appendix F). The models
+appear to assign typical, rather than observed, protein contents. Carbohydrate errors were positive for seven
+models (+11\% to +25\%) and near zero for Haiku 5.5 (+1\%); we did not test these differences. Limits of
+agreement were wider than for energy. A model that estimates energy well does not necessarily estimate the
+nutrients well.
 
 \subsection{Exploratory: reliability and reasoning effort}\label{exploratory-reliability-and-reasoning-effort}
 
 Hosted models are stochastic. On the 100 pilot meals, three fresh calls of condition (3) gave MAE\% values
 that differed by at most 1.4 points within a model (Haiku 5.5 28.2--29.3; Sonnet 5.5 20.1--21.4; Opus 5.5
-21.9--23.3; GPT-6 luna 22.4--23.7; GPT-6.1 sol 20.5--21.2; GPT-6 astra 20.5--21.1). The median per-meal
-coefficient of variation was 3.5--8.2\%, and two calls on the same meal differed by 6--12\% of the true energy
-on average. Call-to-call noise is therefore smaller than the photo effects in Table 3 for the five models that
-improved, but of the same size as the smallest differences we report (1--2 points). A high reasoning effort on
-the same meals helped one model: Haiku 5.5 improved by 4.2 points (28.8\% to 24.6\%), while the other five
-changed by less than 1 point (Opus 5.5 −0.4, Sonnet 5.5 −0.3, GPT-6.1 sol +0.3, GPT-6 astra +0.5, GPT-6 luna
-+0.9), at 1.1 to 2.6 times the cost per meal (Appendix F). For the larger models, more reasoning did not buy
-more accuracy on this task.
+21.9--23.3; GPT-6 luna 22.4--23.7; GPT-6.1 sol 20.5--21.2; GPT-6 astra 20.5--21.1; Gemini 3.8 Flash
+18.9--19.8; Gemini 4 Argon 18.8--20.2). The median per-meal coefficient of variation was 3.5--8.2\%, and two
+calls on the same meal differed by 6--12\% of the true energy on average. Call-to-call noise is therefore
+smaller than the photo effects in Table 3 for the seven models that improved, but of the same size as the
+smallest differences we report (1--2 points). A high reasoning effort on the same meals helped one model:
+Haiku 5.5 improved by 4.2 points (28.8\% to 24.6\%), while the other seven changed by less than 1 point (Opus
+5.5 −0.4, Sonnet 5.5 −0.3, Gemini 3.8 Flash −0.1, Gemini 4 Argon 0.0, GPT-6.1 sol +0.3, GPT-6 astra +0.5,
+GPT-6 luna +0.9), at 1.1 to 4.3 times the cost per meal (Appendix F). For the larger models, more reasoning
+did not buy more accuracy on this task.
 
 \subsection{Exploratory: does a small local sample help?}\label{exploratory-does-a-small-local-sample-help}
 
 We refit two constants of a power law on the log scale (an intercept and a slope, as in the updating of
 clinical prediction models {[}18,~19{]}) on 20 meals from other participants and applied it to the both-photos
 estimates (200 random draws). The mean day error moved toward zero for most models (for example Opus 5.5 from
-+12.1\% to +0.5\%, GPT-6 astra from +7.7\% to −1.1\%). The width of the limits of agreement changed in both
-directions (narrower for Opus 5.5 by 7 points and GPT-6 astra by 4 points; wider for Haiku 5.5 by 9 points and
-GPT-6 luna by 4 points; about the same for the others) while their centre moved toward zero; meal-level MAE\%
-went up slightly for five models and down for Opus 5.5; and the share of days within 800 kJ fell for some
-models (GPT-6.1 sol from 51\% to 41\%). Because calibration meals' participants are left out, these
-comparisons use a slightly smaller set of days than Table 5 (hence, for example, +12.1\% instead of +12.0\%
-for Opus 5.5 without calibration). The metrics moved in different directions, so in this trial a small local
-sample mainly corrected the mean (Appendix D).
++12.1\% to +0.5\%, GPT-6 astra from +7.7\% to −1.1\%, Gemini 4 Argon from +4.5\% to +0.1\%). The width of the
+limits of agreement changed in both directions (narrower for Opus 5.5 by 7 points and GPT-6 astra by 4 points;
+wider for Haiku 5.5 by 9 points and GPT-6 luna by 4 points; about the same for the others) while their centre
+moved toward zero; meal-level MAE\% went up slightly for seven models and down for Opus 5.5; and the share of
+days within 800 kJ fell for some models (GPT-6.1 sol from 51\% to 41\%, Gemini 4 Argon from 56\% to 47\%).
+Because calibration meals' participants are left out, these comparisons use a slightly smaller set of days
+than Table 5 (hence, for example, +12.1\% instead of +12.0\% for Opus 5.5 without calibration). The metrics
+moved in different directions, so in this trial a small local sample mainly corrected the mean (Appendix D).
 
 \section{Discussion}\label{discussion}
 
 \textbf{Main finding.} In this controlled feeding trial, the intuitive ways of using and judging a photo-based
 estimator both misled. Estimating the two photos separately and subtracting failed, as previously reported
 {[}7{]}, because the models do not read an almost empty tray as almost zero. Giving both photos in one request
-did help, for five of six models, under both prompt formats, while prompt effects varied across models. But a
-constant discount for the share eaten reproduced much of it. What the photo added on its own was 2 to 3 points
-of meal-level error, concentrated in meals with food left, and narrower day-level limits. The clearest lesson
-is about evaluation: a model can show a near-zero intake bias with one photo because two errors cancel, and a
+did help, for seven of eight models, under both prompt formats, while prompt effects varied across models. But
+a constant discount for the share eaten reproduced much of it. What the photo added on its own was 2 to 4
+points of meal-level error, concentrated in meals with food left, and narrower day-level limits. One model,
+Gemini 3.8 Flash, met both pre-set day-level limits, the ±30\% limits only narrowly; the vendor's flagship
+model, Gemini 4 Argon, had the second-lowest meal-level error but limits of −25\% to +34\%. As with Sonnet 5.5
+and Opus 5.5, the larger model of a vendor was not the more accurate one on this task. The clearest lesson is
+about evaluation: a model can show a near-zero intake bias with one photo because two errors cancel, and a
 method can pass a mean-error criterion while single-day errors remain wide.
 
 \textbf{Scope.} The photos were taken under study instructions, by hand, on a tray with a reference card, and
@@ -718,11 +754,11 @@ failure on large portions. The protein result, where protein-dense meals are und
 same reading.
 
 \textbf{Practical meaning.} Two photos per meal are more work than one, so this approach fits research and
-supervised settings better than everyday self-tracking. Because individual error is wide, single-day estimates
-for one person should be used with care, and the protein under-estimate matters for people who need a protein
-target. A systematic error in either direction could be harmful for people with or at risk of eating
-disorders, and for people with low appetite on GLP-1 receptor agonist drugs. Estimates of this kind should
-support, not replace, assessment by a dietitian.
+supervised settings better than everyday self-tracking. Because individual error is wide, even for the one
+model within our pre-set limits, single-day estimates for one person should be used with care, and the protein
+under-estimate matters for people who need a protein target. A systematic error in either direction could be
+harmful for people with or at risk of eating disorders, and for people with low appetite on GLP-1 receptor
+agonist drugs. Estimates of this kind should support, not replace, assessment by a dietitian.
 
 \textbf{Relation to recall methods.} The recall results in Table 6 come from the same trial but not from the
 same days, and they are summarized by a different team. We list them so that readers can see the range that
@@ -749,6 +785,10 @@ established methods reached under the same reference; this does not show that on
   separately but test only two prompts, and other prompts or settings may do better. On 100 meals, a high
   reasoning effort improved only Haiku 5.5.
 \item
+  The Gemini models were added after the first version of this paper; their selection rule and budget were
+  registered before any call, but the choice to add a third vendor was made with knowledge of the first six
+  models' results, and the top-tier Gemini model was chosen by interpreting the registered rule (Appendix B).
+\item
   Many tests are exploratory and unadjusted for multiple comparisons.
 \item
   The full run was made conditional on a pilot result (Appendix B), so the existence of this study depends on
@@ -765,9 +805,10 @@ In this controlled feeding trial, estimating intake by subtracting an after-phot
 estimate failed, and a constant consumption discount matched much of what a dual-photo protocol added; the
 protocol still improved consumed-energy estimates for several general-purpose multimodal LLMs, particularly
 for meals with substantial leftovers. Small mean daily errors coexisted with wide individual limits of
-agreement, systematic protein underestimation, and, for one photo, error cancellation that made an inaccurate
-estimator look accurate. These findings show that improvement over an assumption of complete consumption, or
-low average bias alone, is insufficient evidence of accurate individual intake estimation.
+agreement (one of eight models met the pre-set ±30\% limits, and only narrowly), systematic protein
+underestimation, and, for one photo, error cancellation that made an inaccurate estimator look accurate. These
+findings show that improvement over an assumption of complete consumption, or low average bias alone, is
+insufficient evidence of accurate individual intake estimation.
 
 \section*{Data and Code Availability}\label{data-and-code-availability}
 \addcontentsline{toc}{section}{Data and Code Availability}
@@ -781,7 +822,8 @@ https://github.com/xtea/llm-intake-validation. It contains the prompts, the eval
 the pre-registration file with its commit history, per-meal outputs of every model and condition, and the
 scripts for all tables and figures. Because model responses are cached, all tables and figures can be rebuilt
 without API calls. The code is released under the MIT license. The README lists the Python version (3.12),
-pinned package versions (anthropic 0.84.0, openai 2.28.0, matplotlib 3.11.2) and example commands.
+pinned package versions (anthropic 0.84.0, openai 2.28.0, google-genai 2.31.0, matplotlib 3.11.2) and example
+commands.
 
 \section*{Institutional Review Board (IRB)}\label{institutional-review-board-irb}
 \addcontentsline{toc}{section}{Institutional Review Board (IRB)}
@@ -810,8 +852,9 @@ LLMs are the object of this study and were also used as tools.
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  \textbf{Models under study.} Claude Haiku/Sonnet/Opus 5.5 and GPT-6 luna/6.1 sol/6 astra produced all
-  estimates (Section 4). \emph{Check:} metrics are computed by deterministic scripts from stored outputs.
+  \textbf{Models under study.} Claude Haiku/Sonnet/Opus 5.5, GPT-6 luna/6.1 sol/6 astra and Gemini 3.8 Flash/4
+  Argon produced all estimates (Section 4). \emph{Check:} metrics are computed by deterministic scripts from
+  stored outputs.
 \item
   \textbf{Code.} Evaluation and analysis scripts were written with help from Claude Opus 5.5 in Claude Code
   (version 2.1). \emph{Check:} the author reviewed the code; key numbers were recomputed by separate scripts
@@ -864,15 +907,17 @@ LLMs are the object of this study and were also used as tools.
 \end{quote}
 
 Model API identifiers: claude-haiku-5-5, claude-sonnet-5-5, claude-opus-5-5 (Anthropic Messages API);
-gpt-6-luna, gpt-6.1-sol, gpt-6-astra (OpenAI Chat Completions API). All study calls were made on 16 October
-2026.
+gpt-6-luna, gpt-6.1-sol, gpt-6-astra (OpenAI Chat Completions API); gemini-3.8-flash, gemini-4-argon (Google
+Gemini API, google-genai SDK). Anthropic and OpenAI calls were made on 16 October 2026, Gemini calls on 20
+October 2026.
 
-Settings: low reasoning effort (Claude: adaptive thinking with effort ``low''; GPT: reasoning\_effort
-``low''), except the high-effort runs in Section 5.5 (effort ``high''); no temperature setting; images as PNG,
-long side ≤ 1,024 px; GPT images with detail ``high''. Unparsable answers (malformed JSON) per system, before
-only / subtraction / both photos / (3a) / (3b): Haiku 0/0/2/6/0, Sonnet 2/2/11/0/10, Opus 1/1/0/1/0, GPT-6
-luna 0/0/0/0/0, GPT-6.1 sol 0/0/1/0/0, GPT-6 astra 0/0/0/0/0. Per-call cost records for every run are in the
-repository.
+Settings: low reasoning effort (Claude: adaptive thinking with effort ``low''; GPT: reasoning\_effort ``low'';
+Gemini: thinking\_level ``low''), except the high-effort runs in Section 5.5 (effort or thinking\_level
+``high''); temperature left at each vendor's default; images as PNG, long side ≤ 1,024 px; GPT images with
+detail ``high''. Unparsable answers (malformed JSON) per system, before only / subtraction / both photos /
+(3a) / (3b): Haiku 0/0/2/6/0, Sonnet 2/2/11/0/10, Opus 1/1/0/1/0, GPT-6 luna 0/0/0/0/0, GPT-6.1 sol 0/0/1/0/0,
+GPT-6 astra 0/0/0/0/0, Gemini 3.8 Flash 0/0/0/0/0, Gemini 4 Argon 0/0/0/0/0. Per-call cost records for every
+run are in the repository.
 
 \section*{Appendix B. Pre-registration and deviations}\label{appendix-b.-pre-registration-and-deviations}
 \addcontentsline{toc}{section}{Appendix B. Pre-registration and deviations}
@@ -898,6 +943,16 @@ repository's commit history is the record.
 \item
   \textbf{Added after a second review (exploratory, registered before the calls):} conditions (3a) and (3b),
   the repeated calls and the high-effort runs.
+\item
+  \textbf{Third vendor, added after the first version of the paper (20 October 2026).} A selection rule, the
+  same seven runs per model, the effort mapping and a budget cap were committed at 11:09 (US Central) before
+  any Gemini call. Rule: the newest generally available, non-preview Flash model and the newest generally
+  available, non-preview Pro model listed by the API on the run day. Flash resolved to Gemini 3.8 Flash. The
+  Pro line had no generally available release newer than Gemini 2.5 Pro (June 2025; Gemini 3.1 Pro was preview
+  only), while the vendor's pricing page listed Gemini 4 Argon as its flagship model; we took the flagship as
+  the counterpart of Opus 5.5 and GPT-6 astra and recorded this as a deviation from the literal rule, decided
+  before any Argon call. Runs took place 11:21--13:19 and all results were committed afterwards; no prompt,
+  metric or threshold was changed.
 \item
   \textbf{Added after the main results (exploratory):} direct test of the leftover-group difference;
   decomposition of the before-only error; model differences against Haiku 5.5; equivalence check of the day
@@ -931,18 +986,22 @@ Both photos
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-Haiku 5.5 & −4.2 {[}−8.8,~+0.7{]}; −48 to +39; 34 & −32.9 {[}−35.6,~−30.3{]}; −62 to −4; 8 & −12.0
-{[}−16.0,~−7.4{]}; −53 to +29; 29 \\
-Sonnet 5.5 & +5.5 {[}−0.4,~+12.4{]}; −62 to +73; 37 & −16.1 {[}−18.8,~−13.3{]}; −48 to +15; 28 & −0.6
+Haiku 5.5 & −4.2 {[}−8.9,~+0.7{]}; −48 to +39; 34 & −32.9 {[}−35.7,~−30.3{]}; −62 to −4; 8 & −12.0
+{[}−16.2,~−7.2{]}; −53 to +29; 29 \\
+Sonnet 5.5 & +5.5 {[}−0.7,~+12.3{]}; −62 to +73; 37 & −16.1 {[}−18.8,~−13.4{]}; −48 to +15; 28 & −0.6
 {[}−4.2,~+3.2{]}; −41 to +40; 41 \\
-Opus 5.5 & +25.4 {[}+19.4,~+32.4{]}; −32 to +83; 25 & +3.7 {[}+0.6,~+6.6{]}; −29 to +37; 49 & +12.0
-{[}+8.7,~+15.6{]}; −25 to +49; 43 \\
-GPT-6 luna & +6.7 {[}+1.9,~+11.9{]}; −41 to +54; 39 & −16.5 {[}−19.5,~−13.6{]}; −49 to +16; 22 & −4.3
-{[}−7.5,~−0.7{]}; −38 to +30; 43 \\
-GPT-6.1 sol & +17.7 {[}+12.5,~+23.6{]}; −33 to +69; 29 & −9.4 {[}−12.4,~−6.2{]}; −43 to +24; 30 & +3.4
-{[}+0.4,~+6.7{]}; −31 to +38; 51 \\
-GPT-6 astra & +20.2 {[}+14.8,~+26.1{]}; −31 to +71; 24 & −5.5 {[}−8.5,~−2.5{]}; −38 to +27; 42 & +7.6
-{[}+4.5,~+10.9{]}; −27 to +42; 45 \\
+Opus 5.5 & +25.4 {[}+19.4,~+32.3{]}; −32 to +83; 25 & +3.7 {[}+0.9,~+6.5{]}; −29 to +37; 49 & +12.0
+{[}+8.7,~+15.5{]}; −25 to +49; 43 \\
+GPT-6 luna & +6.7 {[}+1.9,~+11.8{]}; −41 to +54; 39 & −16.5 {[}−19.4,~−13.5{]}; −49 to +16; 22 & −4.3
+{[}−7.4,~−1.0{]}; −38 to +30; 43 \\
+GPT-6.1 sol & +17.7 {[}+12.6,~+23.4{]}; −33 to +69; 29 & −9.4 {[}−12.5,~−6.3{]}; −43 to +24; 30 & +3.4
+{[}+0.3,~+6.5{]}; −31 to +38; 51 \\
+GPT-6 astra & +20.2 {[}+15.0,~+25.9{]}; −31 to +71; 24 & −5.5 {[}−8.5,~−2.6{]}; −38 to +27; 42 & +7.6
+{[}+4.4,~+10.8{]}; −27 to +42; 45 \\
+Gemini 3.8 Flash & +10.6 {[}+5.8,~+16.0{]}; −36 to +57; 39 & −6.5 {[}−8.8,~−4.2{]}; −33 to +20; 49 & −0.5
+{[}−2.9,~+2.0{]}; −28 to +27; 57 \\
+Gemini 4 Argon & +20.4 {[}+14.9,~+26.4{]}; −32 to +72; 28 & +3.9 {[}+1.4,~+6.5{]}; −25 to +33; 45 & +4.5
+{[}+1.9,~+7.1{]}; −25 to +34; 55 \\
 \end{longtable}
 }
 
@@ -982,6 +1041,8 @@ Opus 5.5 & 20.5 → 19.1 & +12.1 → +0.5 & −25..+49 → −33..+34 & 43 → 4
 GPT-6 luna & 21.0 → 22.3 & −4.2 → −1.9 & −38..+29 → −37..+34 & 43 → 40 \\
 GPT-6.1 sol & 19.5 → 20.8 & +3.4 → −1.1 & −31..+38 → −36..+33 & 51 → 41 \\
 GPT-6 astra & 19.1 → 19.3 & +7.7 → −1.1 & −27..+43 → −34..+32 & 45 → 42 \\
+Gemini 3.8 Flash & 16.6 → 17.8 & −0.5 → −1.0 & −27..+26 → −29..+27 & 57 → 52 \\
+Gemini 4 Argon & 18.2 → 18.9 & +4.5 → +0.1 & −25..+34 → −29..+29 & 56 → 47 \\
 \end{longtable}
 }
 
@@ -1001,11 +1062,13 @@ Opus 5.5 & 20.6 / +12.1 & 20.0 / +12.3 & 20.8 / +4.1 \\
 GPT-6 luna & 19.1 / −3.5 & 19.5 / +1.8 & 23.8 / −14.3 \\
 GPT-6.1 sol & 19.8 / +5.0 & 18.2 / +10.0 & 20.4 / −8.7 \\
 GPT-6 astra & 20.3 / +8.8 & 17.9 / +11.7 & 19.0 / −2.4 \\
+Gemini 3.8 Flash & 15.9 / +1.6 & 15.2 / +5.3 & 18.4 / −11.2 \\
+Gemini 4 Argon & 19.9 / +8.7 & 17.8 / +4.0 & 17.3 / −2.2 \\
 \end{longtable}
 }
 
-Dinner, the largest meal, had the largest error for Haiku 5.5, Sonnet 5.5 and GPT-6 luna, in line with the
-fall of the day error with rising intake.
+Dinner, the largest meal, had the largest error for Haiku 5.5, Sonnet 5.5, GPT-6 luna and Gemini 3.8 Flash, in
+line with the fall of the day error with rising intake.
 
 \section*{Appendix E. Background experiment: optimizing on a public
 benchmark}\label{appendix-e.-background-experiment-optimizing-on-a-public-benchmark}
@@ -1069,6 +1132,10 @@ GPT-6.1 sol & 22.3 / 19.5 & −2.8 {[}−4.8,~−0.7{]} & −6.6 {[}−10.6,~−
 & 41 / 51 \\
 GPT-6 astra & 22.4 / 19.0 & −3.4 {[}−5.3,~−1.5{]} & −8.8 {[}−12.7,~−5.1{]} & +4.7 / +7.6 & −40..+49 / −27..+42
 & 40 / 45 \\
+Gemini 3.8 Flash & 20.4 / 16.7 & −3.7 {[}−5.2,~−2.3{]} & −5.4 {[}−8.4,~−2.8{]} & −3.7 / −0.5 & −45..+37 /
+−28..+27 & 41 / 57 \\
+Gemini 4 Argon & 22.6 / 18.2 & −4.4 {[}−6.2,~−2.6{]} & −7.7 {[}−11.2,~−4.4{]} & +4.8 / +4.5 & −41..+50 /
+−25..+34 & 39 / 55 \\
 \end{longtable}
 }
 
@@ -1089,35 +1156,39 @@ Opus 5.5 & −145 {[}−181,~−110{]} & −8 {[}−29,~+8{]} & −138 {[}−178
 GPT-6 luna & −45 {[}−76,~−14{]} & −1 {[}−10,~+7{]} & −43 {[}−74,~−12{]} \\
 GPT-6.1 sol & −116 {[}−147,~−84{]} & −3 {[}−16,~+13{]} & −113 {[}−146,~−79{]} \\
 GPT-6 astra & −135 {[}−166,~−102{]} & −8 {[}−16,~−0{]} & −127 {[}−157,~−93{]} \\
+Gemini 3.8 Flash & −90 {[}−116,~−63{]} & +2 {[}−5,~+9{]} & −92 {[}−119,~−64{]} \\
+Gemini 4 Argon & −134 {[}−163,~−102{]} & −20 {[}−31,~−9{]} & −114 {[}−146,~−82{]} \\
 \end{longtable}
 }
 
 \textbf{Without the pilot.} Excluding the 100 pilot meals leaves 702 meals and 100 complete days; excluding
 all pilot participants leaves 371 meals and 64 complete days. MAE\% change (both − before), all meals: Haiku
 5.5 +0.3 / −0.8, Sonnet 5.5 −3.1 / −2.7, Opus 5.5 −10.0 / −10.4, GPT-6 luna −2.3 / −3.3, GPT-6.1 sol −7.3 /
-−7.9, GPT-6 astra −8.7 / −9.3 (pilot meals excluded / pilot participants excluded). Day mean error with both
-photos: −12.7 / −15.8, −1.2 / −2.9, +11.1 / +9.0, −5.3 / −6.8, +3.4 / +3.8, +7.6 / +6.1; LoA widths 69--79 and
-61--76 points. No conclusion changes.
+−7.9, GPT-6 astra −8.7 / −9.3, Gemini 3.8 Flash −5.0 / −4.7, Gemini 4 Argon −9.6 / −10.5.
 
-\textbf{Between-model differences in Δ MAE\% (both − before), all 15 pairs, unadjusted {[}95\% CI{]}.}
+\textbf{Between-model differences in Δ MAE\% (both − before), all 28 pairs, unadjusted {[}95\% CI{]}.}
 Haiku−Sonnet +2.5 {[}−0.1,~+5.2{]}; Haiku−Opus +9.7 {[}+6.7,~+12.9{]}; Haiku−luna +3.0 {[}+1.0,~+5.1{]};
-Haiku−sol +7.5 {[}+4.9,~+10.3{]}; Haiku−astra +8.7 {[}+6.5,~+11.2{]}; Sonnet−Opus +7.2 {[}+3.7,~+10.7{]};
-Sonnet−luna +0.4 {[}−2.3,~+2.9{]}; Sonnet−sol +5.0 {[}+2.3,~+7.5{]}; Sonnet−astra +6.2 {[}+3.5,~+8.6{]};
-Opus−luna −6.8 {[}−9.5,~−4.2{]}; Opus−sol −2.2 {[}−4.8,~−0.0{]}; Opus−astra −1.0 {[}−3.3,~+1.0{]}; luna−sol
-+4.5 {[}+2.1,~+6.9{]}; luna−astra +5.8 {[}+3.9,~+7.8{]}; sol−astra +1.2 {[}−0.0,~+2.7{]}.
+Haiku−sol +7.5 {[}+4.9,~+10.3{]}; Haiku−astra +8.7 {[}+6.5,~+11.2{]}; Haiku−Flash +5.4 {[}+3.2,~+7.7{]};
+Haiku−Argon +9.8 {[}+7.4,~+12.5{]}; Sonnet−Opus +7.2 {[}+3.7,~+10.7{]}; Sonnet−luna +0.4 {[}−2.3,~+2.9{]};
+Sonnet−sol +5.0 {[}+2.3,~+7.5{]}; Sonnet−astra +6.2 {[}+3.5,~+8.6{]}; Sonnet−Flash +2.8 {[}+0.2,~+5.3{]};
+Sonnet−Argon +7.2 {[}+4.5,~+9.9{]}; Opus−luna −6.8 {[}−9.5,~−4.2{]}; Opus−sol −2.2 {[}−4.8,~−0.0{]};
+Opus−astra −1.0 {[}−3.3,~+1.0{]}; Opus−Flash −4.4 {[}−6.7,~−2.4{]}; Opus−Argon +0.1 {[}−2.4,~+2.3{]}; luna−sol
++4.5 {[}+2.1,~+6.9{]}; luna−astra +5.8 {[}+3.9,~+7.8{]}; luna−Flash +2.4 {[}+0.7,~+4.2{]}; luna−Argon +6.8
+{[}+5.0,~+8.8{]}; sol−astra +1.2 {[}−0.0,~+2.7{]}; sol−Flash −2.1 {[}−3.7,~−0.4{]}; sol−Argon +2.3
+{[}+0.2,~+4.7{]}; astra−Flash −3.4 {[}−4.7,~−2.2{]}; astra−Argon +1.1 {[}−0.6,~+2.7{]}; Flash−Argon +4.4
+{[}+2.9,~+6.0{]}.
 
 \textbf{Day-level agreement, repeated-measures and log-scale} (both photos). Within-participant SD of e\_day /
 ICC / ratio LoA (estimate ÷ truth): Haiku 5.5 16.3 / 0.41 / ×0.57--×1.30; Sonnet 5.5 18.3 / 0.22 /
 ×0.67--×1.42; Opus 5.5 12.9 / 0.53 / ×0.81--×1.51; GPT-6 luna 13.3 / 0.40 / ×0.67--×1.33; GPT-6.1 sol 13.4 /
-0.43 / ×0.74--×1.41; GPT-6 astra 12.7 / 0.49 / ×0.78--×1.46. Repeated-measures LoA equal the naive LoA to the
-nearest point for all six models.
+0.43 / ×0.74--×1.41; GPT-6 astra 12.7 / 0.49 / ×0.78--×1.46; Gemini 3.8 Flash 11.0 / 0.37 / ×0.76--×1.29;
+Gemini 4 Argon 13.8 / 0.15 / ×0.78--×1.37. ICC range 0.15 to 0.53.
 
 \textbf{Protein error and meal composition} (both photos; Spearman with protein density g/100 kcal, Spearman
 with animal-source energy share; bias in meals with animal share \textless1/3 vs ≥1/3): Haiku 5.5 −0.50,
 −0.35; −20\% vs −37\%. Sonnet 5.5 −0.50, −0.31; −16\% vs −31\%. Opus 5.5 −0.46, −0.27; −2\% vs −15\%. GPT-6
 luna −0.47, −0.24; −13\% vs −24\%. GPT-6.1 sol −0.41, −0.11; −12\% vs −20\%. GPT-6 astra −0.38, −0.10; −9\% vs
-−15\%. Animal-source items were matched by name (chicken, beef, salmon, ham, egg, cheese, yoghurt, milk, sushi
-and similar).
+−15\%. Gemini 3.8 Flash −0.42, −0.20; −15\% vs −26\%. Gemini 4 Argon −0.38, −0.09; −2\% vs −8\%.
 
 \textbf{Recall methods, approximate error range.} From the trial's mean (SD) of estimated ÷ true energy in \%,
 (mean − 100) ± 1.96 SD: ASA24 −52 to +62; Intake24 −55 to +59; mobile food record with trained analyst −28 to
@@ -1130,27 +1201,33 @@ Sonnet 5.5 +5.5, −62..+73, 37 / −0.4, −63..+62, 40 / −5.7, −36..+24, 4
 −32..+83, 25 / +12.5, −33..+58, 33 / +8.0, −25..+41, 50 / +12.0, −25..+49, 43. GPT-6 luna +6.7, −41..+54, 39 /
 +6.0, −40..+52, 32 / −5.7, −39..+27, 39 / −4.3, −38..+30, 43. GPT-6.1 sol +17.7, −33..+69, 29 / +20.0,
 −31..+71, 28 / −0.5, −31..+30, 48 / +3.4, −31..+38, 51. GPT-6 astra +20.2, −31..+71, 24 / +22.5, −27..+72, 25
-/ +3.7, −29..+36, 47 / +7.6, −27..+42, 45.
+/ +3.7, −29..+36, 47 / +7.6, −27..+42, 45. Gemini 3.8 Flash +10.6, −36..+57, 39 / +12.5, −34..+59, 37 / −2.1,
+−28..+24, 53 / −0.5, −28..+27, 57. Gemini 4 Argon +20.4, −32..+72, 28 / −3.5, −42..+35, 36 / −0.5, −31..+30,
+47 / +4.5, −25..+34, 55.
 
 \textbf{Grams eaten from (3a)} (MAE g; error relative to mean true grams; bias): Haiku 5.5 274 g, 37.9\%,
 −36.7\%; Sonnet 5.5 185 g, 25.6\%, −21.9\%; Opus 5.5 149 g, 20.6\%, −11.9\%; GPT-6 luna 268 g, 37.1\%,
-−36.0\%; GPT-6.1 sol 183 g, 25.2\%, −21.9\%; GPT-6 astra 171 g, 23.6\%, −19.5\%.
+−36.0\%; GPT-6.1 sol 183 g, 25.2\%, −21.9\%; GPT-6 astra 171 g, 23.6\%, −19.5\%; Gemini 3.8 Flash 166 g,
+23.0\%, −20.4\%; Gemini 4 Argon 135 g, 18.6\%, −12.5\%.
 
 \textbf{Test--retest, condition (3), 100 pilot meals, three calls} (MAE\% per call; median per-meal CV; mean
 absolute difference between two calls as \% of truth): Haiku 5.5 29.3 / 28.8 / 28.2; 8.2\%; 11.4\%. Sonnet 5.5
 21.4 / 21.4 / 20.1; 4.6\%; 8.2\% (96 meals parsed in all three). Opus 5.5 23.3 / 21.9 / 23.1; 5.9\%; 8.7\%.
-GPT-6 luna 23.7 / 22.4 / 23.5; 7.6\%; 11.9\% (99). GPT-6.1 sol 20.5 / 20.7 / 21.2; 3.5\%; 6.6\%. GPT-6 astra
-20.5 / 21.0 / 21.1; 3.8\%; 6.1\%.
+GPT-6 luna 23.7 / 22.4 / 23.5; 7.6\%; 11.9\% (99 meals parsed in all three). GPT-6.1 sol 20.5 / 20.7 / 21.2;
+3.5\%; 6.6\%. GPT-6 astra 20.5 / 21.0 / 21.1; 3.8\%; 6.1\%. Gemini 3.8 Flash 18.9 / 19.8 / 19.4; 4.7\%; 7.5\%.
+Gemini 4 Argon 18.8 / 20.2 / 19.4; 4.2\%; 8.5\%.
 
 \textbf{Reasoning effort, condition (3), same 100 meals} (MAE\% low, mean of three calls → high; bias low →
 high; cost per meal, high relative to low): Haiku 5.5 28.8 → 24.6; −15.7 → −12.6; ×1.7. Sonnet 5.5 21.0 →
 20.7; −7.3 → −9.3; ×1.1. Opus 5.5 22.7 → 22.3; +7.5 → +4.7; ×1.2. GPT-6 luna 23.2 → 24.1; −7.6 → −8.4; ×2.2.
-GPT-6.1 sol 20.8 → 21.1; −1.9 → −0.3; ×2.5. GPT-6 astra 20.9 → 21.4; +3.1 → +3.1; ×2.6.
+GPT-6.1 sol 20.8 → 21.1; −1.9 → −0.3; ×2.5. GPT-6 astra 20.9 → 21.4; +3.1 → +3.1; ×2.6. Gemini 3.8 Flash 19.4
+→ 19.2; −6.3 → −6.7; ×3.4. Gemini 4 Argon 19.5 → 19.4; −0.7 → +0.7; ×4.3.
 
 \textbf{Valid-output subset} (meals parsed in all three conditions for that model): MAE\% before / subtraction
-/ both --- Haiku 5.5 (n = 800) 24.7 / 36.5 / 24.1; Sonnet 5.5 (789) 23.1 / 24.9 / 19.3; Opus 5.5 (801) 29.4 /
-21.0 / 20.5; GPT-6 luna (802) 23.9 / 26.2 / 21.0; GPT-6.1 sol (801) 26.9 / 23.8 / 19.1; GPT-6 astra (802) 27.6
-/ 22.5 / 19.0. The failure rule did not drive the results.
+/ both --- Haiku 5.5 (n = 800) 24.7 / 36.5 / 24.1; Sonnet 5.5 (n = 789) 23.1 / 24.9 / 19.3; Opus 5.5 (n = 801)
+29.4 / 21.0 / 20.5; GPT-6 luna (n = 802) 23.9 / 26.2 / 21.0; GPT-6.1 sol (n = 801) 26.9 / 23.8 / 19.1; GPT-6
+astra (n = 802) 27.6 / 22.5 / 19.0; Gemini 3.8 Flash (n = 802) 21.9 / 18.5 / 16.7; Gemini 4 Argon (n = 802)
+27.9 / 21.2 / 18.2.
 
 \section*{References}\label{references}
 \addcontentsline{toc}{section}{References}
