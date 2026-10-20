@@ -139,8 +139,9 @@ class LLM:
         """Gemini via google-genai. Reasoning effort maps to thinking_level (Gemini 3.x); older models fall back to thinking_budget."""
         from google import genai
         from google.genai import types
-        if self._gg is None:
-            self._gg = genai.Client(http_options=types.HttpOptions(retry_options=types.HttpRetryOptions(attempts=6)))
+        with self.lock:  # one shared client; a per-thread race here closed clients that other threads were still using
+            if self._gg is None:
+                self._gg = genai.Client(http_options=types.HttpOptions(retry_options=types.HttpRetryOptions(attempts=6)))
         parts = [types.Part.from_bytes(data=im, mime_type="image/png") for im in imgs] + [types.Part.from_text(text=prompt)]
         level = GEMINI_LEVEL.get(effort, "medium")
         base = dict(system_instruction=system, max_output_tokens=max(max_tokens, 16000), temperature=1.0)

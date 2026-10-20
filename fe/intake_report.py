@@ -11,7 +11,11 @@ MODELS = {  # name: (single-image run, dual run, subtraction run)
     "GPT-6 luna": ("b0_direct_gpt_6_luna", "dual_direct_gpt_6_luna", "sub_direct_gpt_6_luna"),
     "GPT-6.1 sol": ("b0_direct_gpt_6_1_sol", "dual_direct_gpt_6_1_sol", "sub_direct_gpt_6_1_sol"),
     "GPT-6 astra": ("b0_direct_gpt_6_astra", "dual_direct_gpt_6_astra", "sub_direct_gpt_6_astra"),
+    # addendum J (Google), listed only once their runs exist so the earlier tables can still be rebuilt from a checkout without them
+    "Gemini 3.8 Flash": ("b0_direct_gemini_flash", "dual_direct_gemini_flash", "sub_direct_gemini_flash"),
+    "Gemini 4 Argon": ("b0_direct_gemini_pro", "dual_direct_gemini_pro", "sub_direct_gemini_pro"),
 }
+MODELS = {m: r for m, r in MODELS.items() if os.path.exists(os.path.join(ROOT, "runs", r[1], "intake-all.json"))}
 # Whitton et al. 2024 Table 3 (consumed, day level): estimated as % of true, mean (SD); LoA = mean ± 1.96 SD
 RECALL = {"ASA24": (5.4, 29), "Intake24": (1.7, 29), "mFR-TA": (1.3, 15), "IA-24HR": (15.0, 20)}
 

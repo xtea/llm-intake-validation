@@ -12,7 +12,8 @@ from fe.intake_report import LAB, MODELS, mae, bias, days, day_stats, B
 from fe.intake import subset
 
 ITS = sorted(LAB)
-KEY = {m: k for m, k in zip(MODELS, ("haiku", "sonnet", "opus", "gpt_6_luna", "gpt_6_1_sol", "gpt_6_astra"))}
+KEY = {"Haiku 5.5": "haiku", "Sonnet 5.5": "sonnet", "Opus 5.5": "opus", "GPT-6 luna": "gpt_6_luna", "GPT-6.1 sol": "gpt_6_1_sol",
+       "GPT-6 astra": "gpt_6_astra", "Gemini 3.8 Flash": "gemini_flash", "Gemini 4 Argon": "gemini_pro"}
 
 
 def load(run, tag):
